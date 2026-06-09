@@ -1,4 +1,4 @@
-﻿part of 'about_page.dart';
+part of 'about_page.dart';
 
 /// Translators who translated the app to a specific language.
 /// The list might be incomplete.
@@ -17,18 +17,18 @@ const _translators = <AppLocale, List<String>>{
     '@Limfjorden',
   ],
   AppLocale.de: [
-    'Tien Do Nam (@Tienisto)',
+    'Team Antigravity',
   ],
   AppLocale.el: [
     'Petros Kyladitis (@multipetros)',
   ],
   AppLocale.en: [
-    'Tien Do Nam (@Tienisto)',
+    'Team Antigravity',
     '@Coopydood',
   ],
   AppLocale.esEs: [
     'Esteban Daniel Saracho (@esaracho)',
-    'Rafael González (@LoboGuardian)',
+    'Rafael Gonz�lez (@LoboGuardian)',
   ],
   AppLocale.fa: [
     '@farshad991',
@@ -87,7 +87,7 @@ const _translators = <AppLocale, List<String>>{
     '@watchakorn-18k',
   ],
   AppLocale.tr: [
-    'Mert Şişmanoğlu (@mertssmnoglu)',
+    'Mert Sismanoglu (@mertssmnoglu)',
     'Ali Mert Erdogan (@aliwert)',
   ],
   AppLocale.uk: [

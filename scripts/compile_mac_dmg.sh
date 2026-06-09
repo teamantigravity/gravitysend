@@ -11,7 +11,7 @@ fvm flutter build macos
 echo
 echo "Signing the app..."
 echo
-SIGN_ID="Developer ID Application: Tien Do Nam (3W7H4PYMCV)"
+SIGN_ID="Developer ID Application: Team Antigravity (3W7H4PYMCV)"
 codesign --deep --force --verbose --options runtime --entitlements macos/Runner/Release.entitlements --sign "$SIGN_ID" build/macos/Build/Products/Release/GravitySend.app
 
 # create dmg

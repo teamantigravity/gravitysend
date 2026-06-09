@@ -1,4 +1,4 @@
-﻿import 'package:collection/collection.dart';
+import 'package:collection/collection.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:gravitysend_app/gen/strings.g.dart';
@@ -31,7 +31,7 @@ class AboutPage extends StatelessWidget {
           const SizedBox(height: 20),
           const LocalSendLogo(withText: true),
           Text(
-            '© ${DateTime.now().year} Tien Do Nam',
+            '� ${DateTime.now().year} Team Antigravity',
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 10),
@@ -49,7 +49,7 @@ class AboutPage extends StatelessWidget {
           Text(t.aboutPage.author, style: const TextStyle(fontWeight: FontWeight.bold)),
           Text.rich(
             _buildContributor(
-              label: 'Tien Do Nam (@Tienisto)',
+              label: 'Team Antigravity',
               primaryColor: primaryColor,
             ),
           ),

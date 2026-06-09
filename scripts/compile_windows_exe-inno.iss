@@ -5,7 +5,7 @@
 
 #define MyAppName "GravitySend"
 #define MyAppVersion "1.17.0"
-#define MyAppPublisher "Tien Do Nam"
+#define MyAppPublisher "Team Antigravity"
 #define MyAppURL "https://GravitySend.org"
 #define MyAppExeName "GravitySend_app.exe"
 #define MyAppMsixHelper "GravitySend_msix_helper.msix"

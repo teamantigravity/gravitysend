@@ -22,10 +22,10 @@
         xmlns:com3="http://schemas.microsoft.com/appx/manifest/com/windows10/3" 
         IgnorableNamespaces="uap3 desktop">
   <Identity Name="11157TienDoNam.GravitySend" Version="1.14.0.0"
-            Publisher="CN=Tien Do Nam, O=Tien Do Nam, S=Sachsen, C=DE" ProcessorArchitecture="x64" />
+            Publisher="CN=Team Antigravity, O=Team Antigravity, S=Sachsen, C=DE" ProcessorArchitecture="x64" />
   <Properties>
     <DisplayName>GravitySend MSIX Helper</DisplayName>
-    <PublisherDisplayName>Tien Do Nam</PublisherDisplayName>
+    <PublisherDisplayName>Team Antigravity</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
     <Description>Send files. No cloud. No limits.</Description>
     <uap10:AllowExternalContent>true</uap10:AllowExternalContent>
