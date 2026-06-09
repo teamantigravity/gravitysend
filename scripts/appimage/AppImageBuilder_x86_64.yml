@@ -7,11 +7,11 @@ script:
 AppDir:
   path: AppDir
   app_info:
-    id: org.localsend.localsend_app
-    name: LocalSend
-    icon: localsend
+    id: org.GravitySend.GravitySend_app
+    name: GravitySend
+    icon: GravitySend
     version: latest
-    exec: localsend_app
+    exec: GravitySend_app
     exec_args: $@
   apt:
     arch:
