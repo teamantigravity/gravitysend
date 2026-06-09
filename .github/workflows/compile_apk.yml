@@ -18,6 +18,12 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Setup Android NDK
+        uses: nttld/setup-ndk@v1
+        id: setup-ndk
+        with:
+          ndk-version: r26d
+
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -28,10 +34,11 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
         with:
           toolchain: '1.84.1'
+          targets: aarch64-linux-android, armv7-linux-androideabi, x86_64-linux-android, i686-linux-android
 
-      # ----------------------------------------------------------------------
-      # KEYSTORE SETUP
-      # ----------------------------------------------------------------------
+      - name: Install flutter_rust_bridge_codegen
+        run: cargo install flutter_rust_bridge_codegen@^2.0.0-dev.0
+
       - name: Decode key.properties
         if: ${{ env.ANDROID_KEY_PROPERTIES != '' }}
         env:
@@ -50,13 +57,10 @@ jobs:
         working-directory: app
         run: flutter pub get
 
-      # ----------------------------------------------------------------------
-      # BUILD APK
-      # We default to a Debug APK so you can test it immediately without keys.
-      # Change --debug to --release when you add your signing keys.
-      # ----------------------------------------------------------------------
       - name: Build Debug APK for Testing
         working-directory: app
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
         run: flutter build apk --debug
 
       - name: Upload APK Artifact
