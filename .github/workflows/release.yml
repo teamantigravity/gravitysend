@@ -1,338 +1,148 @@
 name: Release Draft
 
+# Trigger manually from the GitHub Actions tab
 on:
   workflow_dispatch:
 
 env:
-  FLUTTER_VERSION: "3.35.6"
-  RUST_VERSION: "1.84.1"
-  APK_BUILD_DIR: "/tmp/build"
+  FLUTTER_VERSION: "3.38.10"
+  RUST_VERSION: "1.93.1"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SECRETS REQUIRED FOR SIGNED RELEASE BUILDS:
+#   ANDROID_KEY_PROPERTIES  — base64-encoded key.properties file
+#   ANDROID_KEY_STORE       — base64-encoded .jks keystore file
+#   GITHUB_TOKEN            — automatically provided by GitHub
+# ─────────────────────────────────────────────────────────────────────────────
 
 jobs:
-  build:
+
+  # ── Get version ─────────────────────────────────────────────────────────────
+  get_version:
+    name: Read version from pubspec.yaml
     runs-on: ubuntu-24.04
     outputs:
       version: ${{ steps.get_version.outputs.version }}
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Get version from pubspec.yaml
         id: get_version
         run: |
           VERSION=$(sed -n 's/^version: \([0-9]*\.[0-9]*\.[0-9]*\).*/\1/p' app/pubspec.yaml)
           echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Building version: $VERSION"
 
-  build_apk:
-    needs: build
-    runs-on: ubuntu-22.04
+  # ── Android APKs (arm32, arm64, x64) + AAB ──────────────────────────────────
+  build_android:
+    name: Build Android (APK + AAB)
+    needs: get_version
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Remove proprietary dependencies
-        run: sh scripts/remove_proprietary_dependencies.sh
-
-      - name: Copy files to env.APK_BUILD_DIR
-        run: |
-          mkdir -p $APK_BUILD_DIR
-          cp -r . $APK_BUILD_DIR
-
-      - name: Decode key.properties file
-        working-directory: ${{ env.APK_BUILD_DIR }}
-        env:
-          ENCODED_STRING: ${{ secrets.ANDROID_KEY_PROPERTIES }}
-        run: echo $ENCODED_STRING | base64 -di > app/android/key.properties
-
-      - name: Decode android-keystore.jks file
-        working-directory: ${{ env.APK_BUILD_DIR }}
-        env:
-          ENCODED_STRING: ${{ secrets.ANDROID_KEY_STORE }}
-        run: mkdir secrets && echo $ENCODED_STRING | base64 -di > secrets/android-keystore.jks
+        uses: actions/checkout@v4
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v5
+        uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
+
+      - name: Setup Android NDK
+        uses: nttld/setup-ndk@v1
+        id: setup-ndk
+        with:
+          ndk-version: r27c
 
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: 'stable'
+          cache: true
 
-      - name: Install Rust
-        uses: actions-rs/toolchain@v1
+      - name: Install Rust Toolchain
+        uses: dtolnay/rust-toolchain@master
         with:
-          toolchain: stable
-          override: ${{ env.RUST_VERSION }}
+          toolchain: ${{ env.RUST_VERSION }}
+          targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android,i686-linux-android
 
-      - name: Check rust-toolchain.toml
-        working-directory: ${{ env.APK_BUILD_DIR }}/app
-        run: rustup show
-
-      - name: Dependencies
-        working-directory: ${{ env.APK_BUILD_DIR }}/app
-        run: flutter pub get
-
-      - name: Build APK
-        working-directory: ${{ env.APK_BUILD_DIR }}/app
-        run: flutter build apk --split-per-abi
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v6
+      - name: Cache Rust build artifacts
+        uses: actions/cache@v4
         with:
-          name: apk-result
           path: |
-            ${{ env.APK_BUILD_DIR }}/app/build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk
-            ${{ env.APK_BUILD_DIR }}/app/build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
-            ${{ env.APK_BUILD_DIR }}/app/build/app/outputs/flutter-apk/app-x86_64-release.apk
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: ${{ runner.os }}-cargo-android-${{ env.RUST_VERSION }}-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-android-${{ env.RUST_VERSION }}-
 
-  build_tar_x86_64:
-    needs: build
-    runs-on: ubuntu-24.04
-
-    steps:
-      - uses: actions/checkout@v6
-
-      - name: Install dependencies
+      - name: Decode key.properties
+        env:
+          ANDROID_KEY_PROPERTIES: ${{ secrets.ANDROID_KEY_PROPERTIES }}
         run: |
-          sudo apt-get update
-          sudo apt-get install -y clang cmake libgtk-3-dev ninja-build libayatana-appindicator3-dev
-
-      - uses: subosito/flutter-action@v2
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
-          channel: "stable"
-
-      - name: Install Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          override: ${{ env.RUST_VERSION }}
-
-      - name: Check rust-toolchain.toml
-        working-directory: app
-        run: rustup show
-
-      - name: Dependencies
-        working-directory: app
-        run: flutter pub get
-
-      - name: Compile linux
-        working-directory: app
-        run: flutter build linux
-
-      - name: Create tar.gz archive
-        run: |
-          cd app/build/linux/x64/release/bundle
-          tar -czvf ../../../../../result.tar.gz *
-
-      - name: Upload tar.gz archive
-        uses: actions/upload-artifact@v6
-        with:
-          name: tar-gz-x86-64-result
-          path: ./app/*.tar.gz
-
-  # Manage the Flutter version on the self-hosted runner manually!
-  # Flutter currently doesn't provide Linux ARM64 binaries.
-  build_tar_arm_64:
-    needs: build
-    runs-on: [ self-hosted, linux, arm64 ]
-
-    steps:
-      - uses: actions/checkout@v6
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y clang cmake libgtk-3-dev ninja-build libayatana-appindicator3-dev
-
-      - name: Dependencies
-        working-directory: app
-        run: flutter pub get
-
-      - name: Compile linux
-        working-directory: app
-        run: flutter build linux
-
-      - name: Create tar.gz archive
-        run: |
-          cd app/build/linux/arm64/release/bundle
-          tar -czvf ../../../../../result.tar.gz *
-
-      - name: Upload tar.gz archive
-        uses: actions/upload-artifact@v6
-        with:
-          name: tar-gz-arm-64-result
-          path: ./app/*.tar.gz
-
-  build_deb_x86_64:
-    needs: build
-    runs-on: ubuntu-24.04
-
-    steps:
-      - uses: actions/checkout@v6
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y clang cmake libgtk-3-dev ninja-build libayatana-appindicator3-dev
-
-      - uses: subosito/flutter-action@v2
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
-          channel: "stable"
-
-      - name: Install Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          override: ${{ env.RUST_VERSION }}
-
-      - name: Check rust-toolchain.toml
-        working-directory: app
-        run: rustup show
-
-      - name: Enable dart_distributor
-        run: dart pub global activate flutter_distributor
-
-      - name: Update PATH
-        run: echo 'export PATH="$PATH:$HOME/.pub-cache/bin"' >> ~/.bashrc
-
-      - name: Build deb package
-        working-directory: app
-        run: flutter_distributor package --platform linux --targets deb
-
-      - name: Find deb file
-        id: find_deb
-        run: |
-          VERSION=${{ needs.build.outputs.version }}
-          DEB_PATH=$(find app/dist -name "GravitySend_app-$VERSION*-linux.deb")
-          echo "deb_path=$DEB_PATH" >> $GITHUB_OUTPUT
-
-      - name: Check if deb file exists
-        id: check_file
-        run: |
-          if [[ ! -f "${{ steps.find_deb.outputs.deb_path }}" ]]; then
-            echo "File not found: ${{ steps.find_deb.outputs.deb_path }}"
-            exit 1
+          if [ -n "$ANDROID_KEY_PROPERTIES" ]; then
+            echo "$ANDROID_KEY_PROPERTIES" | base64 -d > app/android/key.properties
+            echo "Signing keystore configured"
+          else
+            echo "No keystore secret found — release build will use debug signing"
           fi
 
-      - name: Upload deb file
-        uses: actions/upload-artifact@v6
-        with:
-          name: deb-x86-64-result
-          path: ${{ steps.find_deb.outputs.deb_path }}
-
-  # Manage the Flutter version on the self-hosted runner manually!
-  # Flutter currently doesn't provide Linux ARM64 binaries.
-  build_deb_arm_64:
-    needs: build
-    runs-on: [ self-hosted, linux, arm64 ]
-
-    steps:
-      - uses: actions/checkout@v6
-
-      - name: Install dependencies
+      - name: Decode android-keystore.jks
+        env:
+          ANDROID_KEY_STORE: ${{ secrets.ANDROID_KEY_STORE }}
         run: |
-          sudo apt-get update
-          sudo apt-get install -y clang cmake libgtk-3-dev ninja-build libayatana-appindicator3-dev
-
-      - name: Enable dart_distributor
-        run: dart pub global activate flutter_distributor
-
-      - name: Build deb package
-        working-directory: app
-        run: PATH="$PATH:$HOME/.pub-cache/bin" flutter_distributor package --platform linux --targets deb
-
-      - name: Find deb file
-        id: find_deb
-        run: |
-          VERSION=${{ needs.build.outputs.version }}
-          DEB_PATH=$(find app/dist -name "GravitySend_app-$VERSION*-linux.deb")
-          echo "deb_path=$DEB_PATH" >> $GITHUB_OUTPUT
-
-      - name: Check if deb file exists
-        id: check_file
-        run: |
-          if [[ ! -f "${{ steps.find_deb.outputs.deb_path }}" ]]; then
-            echo "File not found: ${{ steps.find_deb.outputs.deb_path }}"
-            exit 1
+          if [ -n "$ANDROID_KEY_STORE" ]; then
+            mkdir -p secrets
+            echo "$ANDROID_KEY_STORE" | base64 -d > secrets/android-keystore.jks
           fi
 
-      - name: Upload deb file
-        uses: actions/upload-artifact@v6
-        with:
-          name: deb-arm-64-result
-          path: ${{ steps.find_deb.outputs.deb_path }}
-
-  build_appimage_x86_64:
-    needs: build
-    runs-on: ubuntu-24.04
-
-    steps:
-      - uses: actions/checkout@v6
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y clang cmake libgtk-3-dev ninja-build libayatana-appindicator3-dev libfuse2
-
-      - uses: subosito/flutter-action@v2
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
-          channel: "stable"
-
-      - name: Install Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          override: ${{ env.RUST_VERSION }}
-
-      - name: Check rust-toolchain.toml
-        working-directory: app
-        run: rustup show
-
-      - name: Dependencies
+      - name: Fetch Flutter dependencies
         working-directory: app
         run: flutter pub get
 
-      - name: Compile linux
+      - name: Build APKs (split per ABI)
         working-directory: app
-        run: flutter build linux
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+        run: flutter build apk --release --split-per-abi
 
-      - name: Copy compiled linux files
+      - name: Build App Bundle (AAB for Play Store)
+        working-directory: app
+        env:
+          ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
+        run: flutter build appbundle --release
+
+      - name: Rename APK artifacts
         run: |
-          mkdir AppDir
-          cp -r app/build/linux/x64/release/bundle/* AppDir/
+          VERSION=${{ needs.get_version.outputs.version }}
+          cp app/build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk \
+             app/GravitySend-$VERSION-android-arm32.apk
+          cp app/build/app/outputs/flutter-apk/app-arm64-v8a-release.apk \
+             app/GravitySend-$VERSION-android-arm64.apk
+          cp app/build/app/outputs/flutter-apk/app-x86_64-release.apk \
+             app/GravitySend-$VERSION-android-x64.apk
+          cp app/build/app/outputs/bundle/release/app-release.aab \
+             app/GravitySend-$VERSION-android-playstore.aab
 
-      - name: Copy logo to AppDir
-        run: |
-          mkdir -p AppDir/usr/share/icons/hicolor/32x32/apps
-          cp app/assets/img/logo-32.png AppDir/usr/share/icons/hicolor/32x32/apps/GravitySend.png
-          mkdir -p AppDir/usr/share/icons/hicolor/128x128/apps
-          cp app/assets/img/logo-128.png AppDir/usr/share/icons/hicolor/128x128/apps/GravitySend.png
-          mkdir -p AppDir/usr/share/icons/hicolor/256x256/apps
-          cp app/assets/img/logo-256.png AppDir/usr/share/icons/hicolor/256x256/apps/GravitySend.png
-
-      - name: Copy Recipe to correct location
-        run: cp scripts/appimage/AppImageBuilder_x86_64.yml AppImageBuilder.yml
-
-      - name: Build AppImage
-        uses: AppImageCrafters/build-appimage@57c3bc6963f870ce3be103117de5b5e33ffbaeb6
+      - name: Upload APK artifacts
+        uses: actions/upload-artifact@v4
         with:
-          recipe: ./AppImageBuilder.yml
+          name: android-release
+          path: |
+            app/GravitySend-*-android-arm32.apk
+            app/GravitySend-*-android-arm64.apk
+            app/GravitySend-*-android-x64.apk
+            app/GravitySend-*-android-playstore.aab
+          retention-days: 7
 
-      - name: Upload AppImage file
-        uses: actions/upload-artifact@v6
-        with:
-          name: appimage-x86-64-result
-          path: ./*.AppImage
-
-  build_windows_zip_x86_64:
-    needs: build
+  # ── Windows ZIP ──────────────────────────────────────────────────────────────
+  build_windows:
+    name: Build Windows (ZIP)
+    needs: get_version
     runs-on: windows-latest
 
     steps:
@@ -340,236 +150,152 @@ jobs:
         run: git config --system core.longpaths true
 
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
-      - uses: subosito/flutter-action@v2
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: ${{ env.FLUTTER_VERSION }}
-          channel: "stable"
+          channel: 'stable'
+          cache: true
 
-      - name: Dependencies
+      - name: Install Rust Toolchain
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ env.RUST_VERSION }}
+
+      - name: Fetch Flutter dependencies
         working-directory: app
         run: flutter pub get
 
-      - name: Compile for Windows
+      - name: Build for Windows
         working-directory: app
-        run: flutter build windows
+        run: flutter build windows --release
 
       - name: Create empty settings.json
         working-directory: app
         run: echo {} > build/windows/x64/runner/Release/settings.json
 
-      - name: Add DLL files
+      - name: Add runtime DLLs
         working-directory: app
         run: |
           Copy-Item ../scripts/windows/x64/msvcp140.dll build/windows/x64/runner/Release/
           Copy-Item ../scripts/windows/x64/vcruntime140.dll build/windows/x64/runner/Release/
           Copy-Item ../scripts/windows/x64/vcruntime140_1.dll build/windows/x64/runner/Release/
 
-      - name: Zip compiled files
+      - name: Zip release folder
         working-directory: app
-        run: Compress-Archive -Path build/windows/x64/runner/Release/* -DestinationPath GravitySend.zip
+        run: |
+          $version = "${{ needs.get_version.outputs.version }}"
+          Compress-Archive -Path build/windows/x64/runner/Release/* `
+                           -DestinationPath "GravitySend-$version-windows-x64.zip"
 
-      - name: Upload zip
-        uses: actions/upload-artifact@v6
+      - name: Upload Windows ZIP
+        uses: actions/upload-artifact@v4
         with:
-          name: windows-zip-x86-64-result
-          path: app/GravitySend.zip
+          name: windows-release
+          path: app/GravitySend-*-windows-x64.zip
+          retention-days: 7
 
-  release:
-    needs:
-      - build
-      - build_apk
-      - build_tar_x86_64
-      - build_tar_arm_64
-      - build_deb_x86_64
-      - build_deb_arm_64
-      - build_appimage_x86_64
-      - build_windows_zip_x86_64
+  # ── Linux x86_64 TAR.GZ ─────────────────────────────────────────────────────
+  build_linux:
+    name: Build Linux x86_64 (tar.gz)
+    needs: get_version
     runs-on: ubuntu-24.04
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Draft release
-        id: draft_release
-        uses: release-drafter/release-drafter@v6
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag: v${{ needs.build.outputs.version }}
-          name: v${{ needs.build.outputs.version }}
-
-      # APK
-      - name: Download apk file
-        uses: actions/download-artifact@v7
-        with:
-          name: apk-result
-          path: apk-result
-
-      - name: Copy apk file to root
-        run: cp apk-result/*.apk .
-
-      - name: Upload Release Asset (arm32v7)
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.draft_release.outputs.upload_url }}
-          asset_path: app-armeabi-v7a-release.apk
-          asset_name: GravitySend-${{ needs.build.outputs.version }}-android-arm32v7.apk
-          asset_content_type: application/vnd.android.package-archive
-
-      - name: Upload Release Asset (arm64v8)
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.draft_release.outputs.upload_url }}
-          asset_path: app-arm64-v8a-release.apk
-          asset_name: GravitySend-${{ needs.build.outputs.version }}-android-arm64v8.apk
-          asset_content_type: application/vnd.android.package-archive
-
-      - name: Upload Release Asset (x64)
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.draft_release.outputs.upload_url }}
-          asset_path: app-x86_64-release.apk
-          asset_name: GravitySend-${{ needs.build.outputs.version }}-android-x64.apk
-          asset_content_type: application/vnd.android.package-archive
-
-      # TAR.GZ (x86_64)
-      - name: Download tar.gz file
-        uses: actions/download-artifact@v7
-        with:
-          name: tar-gz-x86-64-result
-          path: tar-gz-x86-64-result
-
-      - name: List files in tar.gz-directory
-        run: ls -l tar-gz-x86-64-result
-
-      - name: Copy tar.gz file to root
-        run: cp tar-gz-x86-64-result/* result.tar.gz
-
-      - name: Upload Release Asset (tar.gz)
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.draft_release.outputs.upload_url }}
-          asset_path: result.tar.gz
-          asset_name: GravitySend-${{ needs.build.outputs.version }}-linux-x86-64.tar.gz
-          asset_content_type: application/gzip
-
-      # TAR.GZ (arm_64)
-      - name: Download tar.gz file
-        uses: actions/download-artifact@v7
-        with:
-          name: tar-gz-arm-64-result
-          path: tar-gz-arm-64-result
-
-      - name: List files in tar.gz-directory
-        run: ls -l tar-gz-arm-64-result
-
-      - name: Copy tar.gz file to root
-        run: cp tar-gz-arm-64-result/* result.tar.gz
-
-      - name: Upload Release Asset (tar.gz)
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.draft_release.outputs.upload_url }}
-          asset_path: result.tar.gz
-          asset_name: GravitySend-${{ needs.build.outputs.version }}-linux-arm-64.tar.gz
-          asset_content_type: application/gzip
-
-      # DEB (x86_64)
-      - name: Download deb file
-        uses: actions/download-artifact@v7
-        with:
-          name: deb-x86-64-result
-          path: deb-x86-64-result
-
-      - name: Copy deb file to root
-        run: cp deb-x86-64-result/*.deb result.deb
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.draft_release.outputs.upload_url }}
-          asset_path: result.deb
-          asset_name: GravitySend-${{ needs.build.outputs.version }}-linux-x86-64.deb
-          asset_content_type: application/vnd.debian.binary-package
-
-      # DEB (arm_64)
-      - name: Download deb file
-        uses: actions/download-artifact@v7
-        with:
-          name: deb-arm-64-result
-          path: deb-arm-64-result
-
-      - name: Copy deb file to root
-        run: cp deb-arm-64-result/*.deb result.deb
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.draft_release.outputs.upload_url }}
-          asset_path: result.deb
-          asset_name: GravitySend-${{ needs.build.outputs.version }}-linux-arm-64.deb
-          asset_content_type: application/vnd.debian.binary-package
-
-      # APPIMAGE (x86_64)
-      - name: Download AppImage file
-        uses: actions/download-artifact@v7
-        with:
-          name: appimage-x86-64-result
-          path: appimage-x86-64-result
-
-      - name: List files in appimage-directory
-        run: ls -l appimage-x86-64-result
-
-      - name: Copy AppImage file to root
+      - name: Install system dependencies
         run: |
-          for file in appimage-x86-64-result/*; do
-            if [[ $file == *.AppImage && $file != *.AppImage.zsync ]]; then
-              cp "$file" result.AppImage
-            fi
-          done
+          sudo apt-get update
+          sudo apt-get install -y \
+            clang cmake libgtk-3-dev ninja-build \
+            libayatana-appindicator3-dev
 
-      - name: Upload Release Asset (AppImage)
-        uses: actions/upload-release-asset@v1
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: 'stable'
+          cache: true
+
+      - name: Install Rust Toolchain
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ env.RUST_VERSION }}
+
+      - name: Fetch Flutter dependencies
+        working-directory: app
+        run: flutter pub get
+
+      - name: Build Linux
+        working-directory: app
+        run: flutter build linux --release
+
+      - name: Create tar.gz archive
+        run: |
+          VERSION=${{ needs.get_version.outputs.version }}
+          cd app/build/linux/x64/release/bundle
+          tar -czvf ../../../../../GravitySend-$VERSION-linux-x86_64.tar.gz *
+
+      - name: Upload Linux tar.gz
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-x86_64-release
+          path: app/GravitySend-*-linux-x86_64.tar.gz
+          retention-days: 7
+
+  # ── Create GitHub Release ────────────────────────────────────────────────────
+  create_release:
+    name: Create GitHub Release Draft
+    needs:
+      - get_version
+      - build_android
+      - build_windows
+      - build_linux
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release-assets
+          merge-multiple: true
+
+      - name: List release assets
+        run: ls -lh release-assets/
+
+      - name: Create GitHub Release Draft
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ needs.get_version.outputs.version }}
+          name: GravitySend v${{ needs.get_version.outputs.version }}
+          draft: true
+          generate_release_notes: true
+          files: release-assets/*
+          body: |
+            ## GravitySend v${{ needs.get_version.outputs.version }}
+
+            Send files. No cloud. No limits.
+
+            ### Downloads
+            | Platform | File |
+            |---|---|
+            | Android (arm64, recommended) | `GravitySend-*-android-arm64.apk` |
+            | Android (arm32) | `GravitySend-*-android-arm32.apk` |
+            | Android (x64) | `GravitySend-*-android-x64.apk` |
+            | Google Play Store | `GravitySend-*-android-playstore.aab` |
+            | Windows (x64) | `GravitySend-*-windows-x64.zip` |
+            | Linux (x86_64) | `GravitySend-*-linux-x86_64.tar.gz` |
+
+            ### Privacy Policy
+            https://gravitysend.com/privacy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.draft_release.outputs.upload_url }}
-          asset_path: result.AppImage
-          asset_name: GravitySend-${{ needs.build.outputs.version }}-linux-x86-64.AppImage
-          asset_content_type: application/x-appimage
-
-      # WINDOWS ZIP (x86_64)
-      - name: Download windows zip file
-        uses: actions/download-artifact@v7
-        with:
-          name: windows-zip-x86-64-result
-          path: windows-zip-x86-64-result
-
-      - name: Copy zip file to root
-        run: cp windows-zip-x86-64-result/*.zip result.zip
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.draft_release.outputs.upload_url }}
-          asset_path: result.zip
-          asset_name: GravitySend-${{ needs.build.outputs.version }}-windows-x86-64.zip
-          asset_content_type: application/zip

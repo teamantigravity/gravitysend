@@ -11,25 +11,32 @@ env:
 
 jobs:
   format:
+    name: Check formatting
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v4
+        uses: subosito/flutter-action@v2
         with:
-          version: ${{ env.FLUTTER_VERSION }}
+          flutter-version: ${{ env.FLUTTER_VERSION }}
           channel: "stable"
+          cache: true
 
       - name: Dependencies (app)
         working-directory: app
         run: flutter pub get
+
       - name: Dependencies (cargokit - rust_builder)
         working-directory: app/rust_builder/cargokit/build_tool
         run: flutter pub get
+
       - name: Remove gen directory (app)
         working-directory: app
         run: rm -rf lib/gen
+
       - name: Check format (app)
         working-directory: app
         run: dart format --set-exit-if-changed lib test
@@ -37,30 +44,38 @@ jobs:
       - name: Dependencies (common)
         working-directory: common
         run: dart pub get
+
       - name: Check format (common)
         working-directory: common
         run: dart format --set-exit-if-changed lib test
 
   test:
+    name: Analyze and test
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v4
+        uses: subosito/flutter-action@v2
         with:
-          version: ${{ env.FLUTTER_VERSION }}
+          flutter-version: ${{ env.FLUTTER_VERSION }}
           channel: "stable"
+          cache: true
 
       - name: Dependencies (app)
         working-directory: app
         run: flutter pub get
+
       - name: Dependencies (cargokit - rust_builder)
         working-directory: app/rust_builder/cargokit/build_tool
         run: flutter pub get
+
       - name: Analyze (app)
         working-directory: app
         run: flutter analyze
+
       - name: Test (app)
         working-directory: app
         run: flutter test
@@ -68,18 +83,23 @@ jobs:
       - name: Dependencies (common)
         working-directory: common
         run: dart pub get
+
       - name: Analyze (common)
         working-directory: common
         run: dart analyze
+
       - name: Test (common)
         working-directory: common
         run: dart test
 
   packaging:
+    name: Check version consistency
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Extract version from pubspec.yaml
         id: pubspec_version
         run: |
@@ -102,4 +122,3 @@ jobs:
           else
             echo "Versions match."
           fi
-
