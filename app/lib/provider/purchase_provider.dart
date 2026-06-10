@@ -73,24 +73,8 @@ class FetchPricesAction extends AsyncReduxAction<PurchaseService, PurchaseState>
       priceMap[item] = product.price;
     }
 
-    // HOT SWAP MISSING IDs
-    if (priceMap.length != PurchaseItem.values.length) {
-      for (final item in PurchaseItem.values) {
-        if (!priceMap.containsKey(item)) {
-          if (item == PurchaseItem.removeAds) {
-            priceMap[item] = '\$2.99';
-          } else if (item == PurchaseItem.donate5) {
-            priceMap[item] = '\$5.00';
-          } else if (item == PurchaseItem.donate10) {
-            priceMap[item] = '\$10.00';
-          } else if (item == PurchaseItem.donate20) {
-            priceMap[item] = '\$20.00';
-          } else if (item == PurchaseItem.donate50) {
-            priceMap[item] = '\$50.00';
-          }
-        }
-      }
-    }
+    // HOT SWAP MISSING IDs logic removed to force real store values only.
+    
     return state.copyWith(
       prices: priceMap,
     );
@@ -197,26 +181,11 @@ class PurchaseAction extends AsyncReduxAction<PurchaseService, PurchaseState> {
     final response = await InAppPurchase.instance.queryProductDetails(<String>{item.platformProductId});
     final productDetails = response.productDetails.firstOrNull;
     if (productDetails == null) {
-      // Hot swap purchase locally if product not found
-      dispatch(_SetPendingAction(true));
-      await Future.delayed(const Duration(seconds: 1)); // simulate loading
-      
-      // Dispatch mock successful purchase update
-      // We pass a mock PurchaseDetails to trigger the success UI and Redux flow
-      // Without relying on actual store validation
-      dispatchAsync(_HandlePurchaseUpdate(
-        PurchaseDetails(
-          productID: item.platformProductId,
-          purchaseID: 'mock_purchase_id',
-          status: PurchaseStatus.purchased,
-          transactionDate: DateTime.now().millisecondsSinceEpoch.toString(),
-          verificationData: PurchaseVerificationData(localVerificationData: 'mock', serverVerificationData: 'mock', source: 'mock'),
-        )
-      ));
+      dispatch(_SetPendingAction(false));
+      emitMessage('Product not found in the Store. Ensure Play Console is fully configured.');
       return state;
     }
 
-    // TODO: Handle changing subscriptions if subscriptions would be added
     try {
       await InAppPurchase.instance.buyNonConsumable(
         purchaseParam: PurchaseParam(productDetails: productDetails),
