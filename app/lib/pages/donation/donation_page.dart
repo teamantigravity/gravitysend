@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:gravitysend_app/gen/strings.g.dart';
 import 'package:gravitysend_app/model/state/purchase_state.dart';
 import 'package:gravitysend_app/pages/donation/donation_page_vm.dart';
@@ -74,7 +74,7 @@ class _StoreDonation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ...PurchaseItem.values.map((item) {
+        ...PurchaseItem.values.where((item) => item != PurchaseItem.removeAds).map((item) {
           return Padding(
             padding: const EdgeInsets.only(bottom: 10),
             child: FilledButton.icon(
