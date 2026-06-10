@@ -1,43 +1,43 @@
-ï»¿{
+{
   "locale": "Dansk",
   "appName": "GravitySend",
   "general": {
-    "accept": "AcceptÃ©r",
+    "accept": "Acceptér",
     "accepted": "Accepteret",
-    "add": "TilfÃ¸j",
+    "add": "Tilføj",
     "advanced": "Avanceret",
     "cancel": "Afbryd",
     "close": "Luk",
-    "confirm": "BekrÃ¦ft",
-    "continueStr": "FortsÃ¦t",
-    "copy": "KopiÃ©r",
+    "confirm": "Bekræft",
+    "continueStr": "Fortsæt",
+    "copy": "Kopiér",
     "copiedToClipboard": "Kopieret til udklipsholder",
     "decline": "Afvis",
-    "done": "FÃ¦rdig",
+    "done": "Færdig",
     "delete": "Slet",
     "edit": "Rediger",
     "error": "Fejl",
     "example": "Eksempel",
     "files": "Filer",
-    "finished": "FuldfÃ¸rt",
+    "finished": "Fuldført",
     "hide": "Skjul",
     "off": "Fra",
     "offline": "Offline",
     "on": "Til",
     "online": "Online",
-    "open": "Ã…bn",
-    "queue": "KÃ¸",
+    "open": "Åbn",
+    "queue": "Kø",
     "quickSave": "Gem hurtigt",
     "quickSaveFromFavorites": "Gem hurtigt til \"Favoritter\"",
-    "renamed": "OmdÃ¸bt",
-    "reset": "Fortryd Ã¦ndringer",
+    "renamed": "Omdøbt",
+    "reset": "Fortryd ændringer",
     "restart": "Genstart",
     "settings": "Indstillinger",
     "skipped": "Sprunget over",
     "start": "Start",
     "stop": "Stop",
     "save": "Gem",
-    "unchanged": "UÃ¦ndret",
+    "unchanged": "Uændret",
     "unknown": "Ukendt",
     "noItemInClipboard": "Ingen elementer i udklipsholder."
   },
@@ -59,7 +59,7 @@
     "selection": {
       "title": "Valg",
       "files": "Filer: {files}",
-      "size": "StÃ¸rrelse: {size}"
+      "size": "Størrelse: {size}"
     },
     "picker": {
       "file": "Fil",
@@ -67,12 +67,12 @@
       "media": "Medie",
       "text": "Tekst",
       "app": "App",
-      "clipboard": "IndsÃ¦t"
+      "clipboard": "Indsæt"
     },
-    "shareIntentInfo": "Du kan ogsÃ¥ bruge din mobilenheds \"Del\"-funktion til nemmere at vÃ¦lge filer.",
-    "nearbyDevices": "Enheder i nÃ¦rheden",
+    "shareIntentInfo": "Du kan også bruge din mobilenheds \"Del\"-funktion til nemmere at vælge filer.",
+    "nearbyDevices": "Enheder i nærheden",
     "thisDevice": "Denne enhed",
-    "scan": "SÃ¸g efter enheder",
+    "scan": "Søg efter enheder",
     "manualSending": "Manuel afsendelse",
     "sendMode": "Send-tilstand",
     "sendModes": {
@@ -81,7 +81,7 @@
       "link": "Del med link"
     },
     "sendModeHelp": "Forklaring",
-    "help": "SÃ¸rg for, at den Ã¸nskede enhed er pÃ¥ det samme Wi-Fi-netvÃ¦rk.",
+    "help": "Sørg for, at den ønskede enhed er på det samme Wi-Fi-netværk.",
     "placeItems": "Placer filer til deling."
   },
   "settingsTab": {
@@ -91,7 +91,7 @@
       "brightness": "Tema",
       "brightnessOptions": {
         "system": "System",
-        "dark": "MÃ¸rk",
+        "dark": "Mørk",
         "light": "Lys"
       },
       "color": "Farve",
@@ -116,72 +116,72 @@
       "quickSave": "@:general.quickSave",
       "quickSaveFromFavorites": "@:general.quickSaveFromFavorites",
       "requirePin": "@:webSharePage.requirePin",
-      "autoFinish": "Auto-fuldfÃ¸r",
+      "autoFinish": "Auto-fuldfør",
       "destination": "Gem til mappe",
-      "downloads": "(OverfÃ¸rsler)",
+      "downloads": "(Overførsler)",
       "saveToGallery": "Gem medier til galleri",
       "saveToHistory": "Gem til historik"
     },
     "send": {
       "title": "Send",
-      "shareViaLinkAutoAccept": "AcceptÃ©r automatisk anmodninger i \"Del med link\"-tilstand"
+      "shareViaLinkAutoAccept": "Acceptér automatisk anmodninger i \"Del med link\"-tilstand"
     },
     "network": {
-      "title": "NetvÃ¦rk",
-      "needRestart": "Genstart serveren for at anvende Ã¦ndringerne!",
+      "title": "Netværk",
+      "needRestart": "Genstart serveren for at anvende ændringerne!",
       "server": "Server",
       "alias": "Enhedsnavn",
       "deviceType": "Enhedstype",
       "deviceModel": "Enhedsmodel",
       "port": "Port",
-      "discoveryTimeout": "Timeout for sÃ¸gning",
+      "discoveryTimeout": "Timeout for søgning",
       "portWarning": "Andre enheder registrerer dig muligvis ikke, da du bruger en brugerdefineret port (standard: {defaultPort}).",
       "encryption": "Kryptering",
       "multicastGroup": "Multicast-adresse",
       "multicastGroupWarning": "Andre enheder registrerer dig muligvis ikke, da du bruger en brugerdefineret multicast-adresse (standard: {defaultMulticast}).",
-      "network": "NetvÃ¦rk",
+      "network": "Netværk",
       "networkOptions": {
         "all": "Alle",
         "filtered": "Filtreret"
       },
       "useSystemName": "Brug systemnavn",
-      "generateRandomAlias": "GenerÃ©r tilfÃ¦ldigt alias"
+      "generateRandomAlias": "Generér tilfældigt alias"
     },
     "other": {
       "title": "Andet",
-      "support": "StÃ¸t GravitySend",
-      "donate": "DonÃ©r",
+      "support": "Støt GravitySend",
+      "donate": "Donér",
       "privacyPolicy": "Privatlivspolitik",
       "termsOfUse": "Brugsbetingelser"
     },
     "advancedSettings": "Avancerede indstillinger"
   },
   "troubleshootPage": {
-    "title": "FejlsÃ¸gning",
-    "subTitle": "Fungerer appen ikke som forventet? Her finder du lÃ¸sninger pÃ¥ almindelige problemer.",
-    "solution": "LÃ¸sning:",
-    "fixButton": "LÃ¸s automatisk",
+    "title": "Fejlsøgning",
+    "subTitle": "Fungerer appen ikke som forventet? Her finder du løsninger på almindelige problemer.",
+    "solution": "Løsning:",
+    "fixButton": "Løs automatisk",
     "firewall": {
       "symptom": "Denne enhed kan sende filer til andre enheder, men andre kan ikke sende til denne enhed.",
-      "solution": "Dette er sandsynligvis et firewall-problem. LÃ¸s det ved at tillade indgÃ¥ende forbindelser (UDP og TCP) pÃ¥ port {port}.",
-      "openFirewall": "Ã…bn firewall"
+      "solution": "Dette er sandsynligvis et firewall-problem. Løs det ved at tillade indgående forbindelser (UDP og TCP) på port {port}.",
+      "openFirewall": "Åbn firewall"
     },
     "noDiscovery": {
       "symptom": "Denne enhed kan ikke finde andre enheder.",
-      "solution": "SÃ¸rg for, at alle enheder er pÃ¥ samme Wi-Fi-netvÃ¦rk og har den samme konfiguration (port, multicast-adresse, kryptering). Du kan prÃ¸ve at indtaste den Ã¸nskede enheds IP-adresse manuelt. Hvis det virker, kan du fÃ¸je enheden til favoritter, sÃ¥ den kan findes automatisk fremover."
+      "solution": "Sørg for, at alle enheder er på samme Wi-Fi-netværk og har den samme konfiguration (port, multicast-adresse, kryptering). Du kan prøve at indtaste den ønskede enheds IP-adresse manuelt. Hvis det virker, kan du føje enheden til favoritter, så den kan findes automatisk fremover."
     },
     "noConnection": {
       "symptom": "Begge enheder kan hverken se hinanden eller dele data.",
-      "solution": "Er problemet der pÃ¥ begge enheder? Hvis ja, skal du sikre, at begge er pÃ¥ samme Wi-Fi-netvÃ¦rk og har den samme konfiguration (port, multicast-adresse, kryptering). Det kan vÃ¦re, at Wi-Fi-netvÃ¦rket forhindrer kommunikation mellem enheder grundet Access Point (AP) Isolation. I sÃ¥ fald skal denne indstilling deaktiveres pÃ¥ routeren."
+      "solution": "Er problemet der på begge enheder? Hvis ja, skal du sikre, at begge er på samme Wi-Fi-netværk og har den samme konfiguration (port, multicast-adresse, kryptering). Det kan være, at Wi-Fi-netværket forhindrer kommunikation mellem enheder grundet Access Point (AP) Isolation. I så fald skal denne indstilling deaktiveres på routeren."
     }
   },
   "receiveHistoryPage": {
     "title": "Historik",
-    "openFolder": "Ã…bn mappe",
+    "openFolder": "Åbn mappe",
     "deleteHistory": "Slet historik",
     "empty": "Historikken er tom.",
     "entryActions": {
-      "open": "Ã…bn fil",
+      "open": "Åbn fil",
       "showInFolder": "Vis i mappe",
       "info": "Information",
       "deleteFromHistory": "Slet fra historik"
@@ -210,10 +210,10 @@
     "destination": "@:settingsTab.receive.destination",
     "appDirectory": "(GravitySend mappe)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "SlÃ¥et fra automatisk, fordi der er mapper."
+    "saveToGalleryOff": "Slået fra automatisk, fordi der er mapper."
   },
   "sendPage": {
-    "waiting": "Venter pÃ¥ svarâ€¦",
+    "waiting": "Venter på svar…",
     "rejected": "Modtageren har afvist delingen.",
     "tooManyAttempts": "@:web.tooManyAttempts",
     "busy": "Modtageren er optaget med en anden deling."
@@ -225,61 +225,61 @@
     "total": {
       "title": {
         "sending": "Samlet tid ({time})",
-        "finishedError": "FuldfÃ¸rt med fejl",
+        "finishedError": "Fuldført med fejl",
         "canceledSender": "Afbrudt af afsender",
         "canceledReceiver": "Afbrudt af modtager"
       },
       "count": "Filer: {curr} / {n}",
-      "size": "StÃ¸rrelse: {curr} / {n}",
+      "size": "Størrelse: {curr} / {n}",
       "speed": "Hastighed: {speed}/s"
     }
   },
   "webSharePage": {
     "title": "Del med link",
-    "loading": "Starter serverâ€¦",
-    "stopping": "Stopper serverâ€¦",
+    "loading": "Starter server…",
+    "stopping": "Stopper server…",
     "error": "En fejl opstod, mens serveren blev startet.",
     "openLink": {
-      "one": "Ã…bn dette link i din browser:",
-      "other": "Ã…bn et af disse links i din browser:"
+      "one": "Åbn dette link i din browser:",
+      "other": "Åbn et af disse links i din browser:"
     },
-    "requests": "ForespÃ¸rgsler",
-    "noRequests": "Ingen forespÃ¸rgsler endnu.",
+    "requests": "Forespørgsler",
+    "noRequests": "Ingen forespørgsler endnu.",
     "encryption": "@:settingsTab.network.encryption",
     "autoAccept": "Accepter automatisk anmodninger",
-    "requirePin": "KrÃ¦v PIN-kode",
+    "requirePin": "Kræv PIN-kode",
     "pinHint": "PIN-koden er \"{pin}\"",
     "encryptionHint": "GravitySend bruger et selvsigneret certifikat. Du skal acceptere det i din browser.",
-    "pendingRequests": "Afventende forespÃ¸rgsler: {n}"
+    "pendingRequests": "Afventende forespørgsler: {n}"
   },
   "aboutPage": {
     "title": "Om GravitySend",
     "description": [
-      "GravitySend er en gratis, open source-app, der lader dig dele filer og beskeder sikkert med enheder i nÃ¦rheden over dit lokale netvÃ¦rk uden behov for en internetforbindelse.",
-      "Appen er tilgÃ¦ngelig pÃ¥ Android, iOS, macOS, Windows og Linux. Du finder alle downloadmuligheder pÃ¥ den officielle hjemmeside."
+      "GravitySend er en gratis, open source-app, der lader dig dele filer og beskeder sikkert med enheder i nærheden over dit lokale netværk uden behov for en internetforbindelse.",
+      "Appen er tilgængelig på Android, iOS, macOS, Windows og Linux. Du finder alle downloadmuligheder på den officielle hjemmeside."
     ],
     "author": "Skaber",
     "contributors": "Bidragydere",
     "packagers": "Pakkere",
-    "translators": "OversÃ¦ttere"
+    "translators": "Oversættere"
   },
   "donationPage": {
-    "title": "DonÃ©r",
-    "info": "GravitySend er gratis, open source og uden annoncer. Hvis du kan lide appen, kan du stÃ¸tte udviklingen med en donation.",
-    "donate": "DonÃ©r {amount}",
-    "thanks": "Tusind tak for din stÃ¸tte!",
-    "restore": "Gendan kÃ¸b"
+    "title": "Donér",
+    "info": "GravitySend er gratis, open source og uden annoncer. Hvis du kan lide appen, kan du støtte udviklingen med en donation.",
+    "donate": "Donér {amount}",
+    "thanks": "Tusind tak for din støtte!",
+    "restore": "Gendan køb"
   },
   "changelogPage": {
-    "title": "Ã†ndringslog"
+    "title": "Ændringslog"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
     "@info": "Lokaliteter kan have forskellige ord og matcher ikke altid 1:1"
   },
   "dialogs": {
     "addFile": {
-      "title": "FÃ¸j til valg",
-      "content": "Hvad vil du tilfÃ¸je?"
+      "title": "Føj til valg",
+      "content": "Hvad vil du tilføje?"
     },
     "addressInput": {
       "title": "Indtast adresse",
@@ -288,16 +288,16 @@
       "recentlyUsed": "Senest brugt: "
     },
     "cancelSession": {
-      "title": "Afbryd filoverfÃ¸rsel",
-      "content": "Vil du virkelig afbryde filoverfÃ¸rslen?"
+      "title": "Afbryd filoverførsel",
+      "content": "Vil du virkelig afbryde filoverførslen?"
     },
     "cannotOpenFile": {
-      "title": "Kan ikke Ã¥bne filen",
-      "content": "Filen \"{file}\" kunne ikke Ã¥bnes. Er denne fil blevet flyttet, omdÃ¸bt eller slettet?"
+      "title": "Kan ikke åbne filen",
+      "content": "Filen \"{file}\" kunne ikke åbnes. Er denne fil blevet flyttet, omdøbt eller slettet?"
     },
     "encryptionDisabledNotice": {
       "title": "Kryptering deaktiveret",
-      "content": "Kommunikationen sker nu via den ukrypterede HTTP-protokol. AktivÃ©r kryptering igen for at bruge HTTPS."
+      "content": "Kommunikationen sker nu via den ukrypterede HTTP-protokol. Aktivér kryptering igen for at bruge HTTPS."
     },
     "errorDialog": {
       "title": "@:general.error"
@@ -305,14 +305,14 @@
     "favoriteDialog": {
       "title": "Favoritter",
       "noFavorites": "Ingen favoritter endnu.",
-      "addFavorite": "TilfÃ¸j"
+      "addFavorite": "Tilføj"
     },
     "favoriteDeleteDialog": {
       "title": "Slet favorit",
       "content": "Vil du virkelig slette \"{name}\"?"
     },
     "favoriteEditDialog": {
-      "titleAdd": "FÃ¸j til favoritter",
+      "titleAdd": "Føj til favoritter",
       "titleEdit": "Rediger favorit",
       "name": "Enhedsnavn",
       "auto": "(auto)",
@@ -323,7 +323,7 @@
       "title": "Filoplysninger",
       "fileName": "Filnavn:",
       "path": "Sti:",
-      "size": "StÃ¸rrelse:",
+      "size": "Størrelse:",
       "sender": "Afsender:",
       "time": "Tidspunkt:"
     },
@@ -337,7 +337,7 @@
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "GravitySend kan ikke finde andre enheder uden tilladelse til at scanne det lokale netvÃ¦rk. Giv venligst tilladelse i systemindstillingerne.",
+      "description": "GravitySend kan ikke finde andre enheder uden tilladelse til at scanne det lokale netværk. Giv venligst tilladelse i systemindstillingerne.",
       "gotoSettings": "Indstillinger"
     },
     "messageInput": {
@@ -346,37 +346,37 @@
     },
     "noFiles": {
       "title": "Ingen fil valgt",
-      "content": "VÃ¦lg mindst Ã©n fil."
+      "content": "Vælg mindst én fil."
     },
     "noPermission": {
       "title": "Ingen tilladelse",
-      "content": "Du har ikke givet de nÃ¸dvendige tilladelser. Giv venligst tilladelse i systemindstillingerne."
+      "content": "Du har ikke givet de nødvendige tilladelser. Giv venligst tilladelse i systemindstillingerne."
     },
     "notAvailableOnPlatform": {
-      "title": "Ikke tilgÃ¦ngelig",
-      "content": "Denne funktion er ikke tilgÃ¦ngelig:"
+      "title": "Ikke tilgængelig",
+      "content": "Denne funktion er ikke tilgængelig:"
     },
     "qr": {
       "title": "QR-kode"
     },
     "quickActions": {
       "title": "Hurtighandlinger",
-      "counter": "TÃ¦ller",
-      "prefix": "PrÃ¦fiks",
+      "counter": "Tæller",
+      "prefix": "Præfiks",
       "padZero": "Fyld med nuller",
-      "sortBeforeCount": "SortÃ©r alfabetisk pÃ¥ forhÃ¥nd (A-Ã…)",
-      "random": "TilfÃ¦ldig"
+      "sortBeforeCount": "Sortér alfabetisk på forhånd (A-Å)",
+      "random": "Tilfældig"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "FiloverfÃ¸rsler accepteres nu automatisk. BemÃ¦rk, at alle pÃ¥ det lokale netvÃ¦rk kan sende dig filer."
+      "content": "Filoverførsler accepteres nu automatisk. Bemærk, at alle på det lokale netværk kan sende dig filer."
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "FiloverfÃ¸rsler accepteres nu automatisk fra enheder pÃ¥ din favoritliste.",
-        "Advarsel! Dette er ikke helt sikkert, da hvis en hacker har fingeraftrykket pÃ¥ enhver enhed fra din favoritliste, kan de sende filer til dig uden restriktioner.",
-        "Denne mulighed er dog stadig sikrere end at tillade alle brugere pÃ¥ det lokale netvÃ¦rk at sende filer til dig uden restriktioner."
+        "Filoverførsler accepteres nu automatisk fra enheder på din favoritliste.",
+        "Advarsel! Dette er ikke helt sikkert, da hvis en hacker har fingeraftrykket på enhver enhed fra din favoritliste, kan de sende filer til dig uden restriktioner.",
+        "Denne mulighed er dog stadig sikrere end at tillade alle brugere på det lokale netværk at sende filer til dig uden restriktioner."
       ]
     },
     "pin": {
@@ -384,24 +384,24 @@
     },
     "sendModeHelp": {
       "title": "Send-tilstande",
-      "single": "Sender filer til Ã©n modtager. Valget ryddes efter filoverfÃ¸rsel er fÃ¦rdig.",
-      "multiple": "Sender filer til flere modtager. Valget ryddes ikke efter filoverfÃ¸rsel er fÃ¦rdig.",
-      "link": "Modtagere, der ikke har GravitySend installeret, kan hente de valgte filer ved at Ã¥bne linket i deres browser."
+      "single": "Sender filer til én modtager. Valget ryddes efter filoverførsel er færdig.",
+      "multiple": "Sender filer til flere modtager. Valget ryddes ikke efter filoverførsel er færdig.",
+      "link": "Modtagere, der ikke har GravitySend installeret, kan hente de valgte filer ved at åbne linket i deres browser."
     },
     "zoom": {
       "title": "URL"
     },
     "openFile": {
-      "title": "Ã…bn fil",
-      "content": "Vil du Ã¥bne den modtagne fil?"
+      "title": "Åbn fil",
+      "content": "Vil du åbne den modtagne fil?"
     }
   },
   "sanitization": {
-    "empty": "Filnavn mÃ¥ ikke vÃ¦re tomt",
+    "empty": "Filnavn må ikke være tomt",
     "invalid": "Filnavn indeholder ugyldige tegn"
   },
   "tray": {
-    "@info": "Apples retningslinjer er meget strenge angÃ¥ende ordet \"luk\".",
+    "@info": "Apples retningslinjer er meget strenge angående ordet \"luk\".",
     "open": "@:general.open",
     "close": "Afslut GravitySend",
     "closeWindows": "Luk"
@@ -410,50 +410,51 @@
     "waiting": "@:sendPage.waiting",
     "enterPin": "Indtast PIN-kode",
     "invalidPin": "Ugyldig PIN-kode",
-    "tooManyAttempts": "For mange forsÃ¸g",
+    "tooManyAttempts": "For mange forsøg",
     "rejected": "Afvist",
     "files": "Filer",
     "fileName": "Filnavn",
-    "size": "StÃ¸rrelse"
+    "size": "Størrelse"
   },
   "assetPicker": {
-    "@info": "OversÃ¦ttelser til medievalgvÃ¦rktÃ¸jet pÃ¥ Android og iPhone",
-    "confirm": "BekrÃ¦ft",
+    "@info": "Oversættelser til medievalgværktøjet på Android og iPhone",
+    "confirm": "Bekræft",
     "cancel": "Afbryd",
     "edit": "Rediger",
     "gifIndicator": "GIF",
-    "loadFailed": "IndlÃ¦sning mislykkedes",
+    "loadFailed": "Indlæsning mislykkedes",
     "original": "Original",
-    "preview": "ForhÃ¥ndsvisning",
-    "select": "VÃ¦lg",
+    "preview": "Forhåndsvisning",
+    "select": "Vælg",
     "emptyList": "Tom liste",
-    "unSupportedAssetType": "Ikke-understÃ¸ttet filtype.",
-    "unableToAccessAll": "Kan ikke tilgÃ¥ alle filer pÃ¥ enheden",
-    "viewingLimitedAssetsTip": "Vis kun filer og mapper tilgÃ¦ngelige for appen.",
-    "changeAccessibleLimitedAssets": "Klik for at opdatere tilgÃ¦ngelige filer",
-    "accessAllTip": "Appen kan kun tilgÃ¥ nogle filer pÃ¥ enheden. GÃ¥ til systemindstillingerne, og giv den adgang til alle medier pÃ¥ enheden.",
-    "goToSystemSettings": "GÃ¥ til systemindstillinger",
-    "accessLimitedAssets": "FortsÃ¦t med begrÃ¦nset adgang",
-    "accessiblePathName": "TilgÃ¦ngelige filer",
+    "unSupportedAssetType": "Ikke-understøttet filtype.",
+    "unableToAccessAll": "Kan ikke tilgå alle filer på enheden",
+    "viewingLimitedAssetsTip": "Vis kun filer og mapper tilgængelige for appen.",
+    "changeAccessibleLimitedAssets": "Klik for at opdatere tilgængelige filer",
+    "accessAllTip": "Appen kan kun tilgå nogle filer på enheden. Gå til systemindstillingerne, og giv den adgang til alle medier på enheden.",
+    "goToSystemSettings": "Gå til systemindstillinger",
+    "accessLimitedAssets": "Fortsæt med begrænset adgang",
+    "accessiblePathName": "Tilgængelige filer",
     "sTypeAudioLabel": "Lyd",
     "sTypeImageLabel": "Billede",
     "sTypeVideoLabel": "Video",
     "sTypeOtherLabel": "Andre medier",
     "sActionPlayHint": "Afspil",
-    "sActionPreviewHint": "ForhÃ¥ndsvisning",
-    "sActionSelectHint": "VÃ¦lg",
-    "sActionSwitchPathLabel": "Ã†ndr filsti",
+    "sActionPreviewHint": "Forhåndsvisning",
+    "sActionSelectHint": "Vælg",
+    "sActionSwitchPathLabel": "Ændr filsti",
     "sActionUseCameraHint": "Brug kamera",
     "sNameDurationLabel": "Varighed",
     "sUnitAssetCountLabel": "Antal"
   },
   "networkInterfacesPage": {
-    "title": "NetvÃ¦rksgrÃ¦nseflader",
-    "info": "Som standard bruger GravitySend alle tilgÃ¦ngelige netvÃ¦rksgrÃ¦nseflader. Du kan ekskludere uÃ¸nskede netvÃ¦rk her. Du skal genstarte serveren for at anvende Ã¦ndringerne.",
-    "preview": "ForhÃ¥ndsvisning",
+    "title": "Netværksgrænseflader",
+    "info": "Som standard bruger GravitySend alle tilgængelige netværksgrænseflader. Du kan ekskludere uønskede netværk her. Du skal genstarte serveren for at anvende ændringerne.",
+    "preview": "Forhåndsvisning",
     "whitelist": "Hvidliste",
     "blacklist": "Sortliste"
   }
 }
+
 
 

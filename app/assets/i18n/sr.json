@@ -1,12 +1,12 @@
-Ôªø{
+{
   "locale": "Srpski (latinica)",
   "appName": "GravitySend",
   "general": {
     "accept": "Prihvati",
-    "accepted": "Prihvaƒáeno",
+    "accepted": "Prihvaceno",
     "add": "Dodaj",
     "advanced": "Napredno",
-    "cancel": "Otka≈æi",
+    "cancel": "Otkaûi",
     "close": "Zatvori",
     "confirm": "Potvrdi",
     "continueStr": "Nastavi",
@@ -14,29 +14,29 @@
     "copiedToClipboard": "Kopirano u privremenu memoriju",
     "decline": "Odbij",
     "done": "Gotovo",
-    "delete": "Izbri≈°i",
+    "delete": "Izbriöi",
     "edit": "Izmeni",
-    "error": "Gre≈°ka",
+    "error": "Greöka",
     "example": "Primer",
     "files": "Fajlovi",
-    "finished": "Zavr≈°eno",
+    "finished": "Zavröeno",
     "hide": "Sakrij",
-    "off": "Iskljuƒçeno",
+    "off": "Iskljuceno",
     "offline": "Oflajn",
-    "on": "Ukljuƒçeno",
+    "on": "Ukljuceno",
     "online": "Onlajn",
     "open": "Otvori",
     "queue": "Redosled",
-    "quickSave": "Brzo ƒçuvanje",
-    "quickSaveFromFavorites": "Brzo ƒçuvanje u ‚ÄûOmiljeno‚Äú",
+    "quickSave": "Brzo cuvanje",
+    "quickSaveFromFavorites": "Brzo cuvanje u ÑOmiljenoì",
     "renamed": "Preimenovano",
-    "reset": "Poni≈°ti promene",
+    "reset": "Poniöti promene",
     "restart": "Restartuj",
-    "settings": "Pode≈°avanja",
-    "skipped": "Preskoƒçeno",
+    "settings": "Podeöavanja",
+    "skipped": "Preskoceno",
     "start": "Pokreni",
     "stop": "Zaustavi",
-    "save": "Saƒçuvaj",
+    "save": "Sacuvaj",
     "unchanged": "Nepromenjeno",
     "unknown": "Nepoznato",
     "noItemInClipboard": "Nema predmeta u privremenoj memoriji."
@@ -46,7 +46,7 @@
     "infoBox": {
       "ip": "IP:",
       "port": "Port:",
-      "alias": "Naziv ureƒëaja:"
+      "alias": "Naziv uredaja:"
     },
     "quickSave": {
       "off": "@:general.off",
@@ -59,7 +59,7 @@
     "selection": {
       "title": "Izbor",
       "files": "Fajlovi: {files}",
-      "size": "Veliƒçina: {size}"
+      "size": "Velicina: {size}"
     },
     "picker": {
       "file": "Fajl",
@@ -69,25 +69,25 @@
       "app": "Aplikacija",
       "clipboard": "Nalepi"
     },
-    "shareIntentInfo": "Takoƒëe, mo≈æete da koristite funkciju ‚ÄûDeli‚Äú na svom mobilnom ureƒëaju da biste lak≈°e birali fajlove.",
-    "nearbyDevices": "Ureƒëaji u blizini",
-    "thisDevice": "Ovaj ureƒëaj",
-    "scan": "Pretraga ureƒëaja",
-    "manualSending": "Ruƒçno slanje",
-    "sendMode": "Re≈æim slanja",
+    "shareIntentInfo": "Takode, moûete da koristite funkciju ÑDeliì na svom mobilnom uredaju da biste laköe birali fajlove.",
+    "nearbyDevices": "Uredaji u blizini",
+    "thisDevice": "Ovaj uredaj",
+    "scan": "Pretraga uredaja",
+    "manualSending": "Rucno slanje",
+    "sendMode": "Reûim slanja",
     "sendModes": {
       "single": "Jedan primalac",
-      "multiple": "Vi≈°e primalaca",
+      "multiple": "Viöe primalaca",
       "link": "Deljenje putem linka"
     },
-    "sendModeHelp": "Obja≈°njenje",
-    "help": "Uverite se da je primalac takoƒëe na istoj Wi-Fi mre≈æi.",
+    "sendModeHelp": "Objaönjenje",
+    "help": "Uverite se da je primalac takode na istoj Wi-Fi mreûi.",
     "placeItems": "Postavite predmete za deljenje."
   },
   "settingsTab": {
-    "title": "Pode≈°avanja",
+    "title": "Podeöavanja",
     "general": {
-      "title": "Op≈°te",
+      "title": "Opöte",
       "brightness": "Tema",
       "brightnessOptions": {
         "system": "Sistemska",
@@ -103,12 +103,12 @@
       "languageOptions": {
         "system": "Sistemski"
       },
-      "saveWindowPlacement": "Saƒçuvaj polo≈æaj prozora nakon napu≈°tanja",
-      "saveWindowPlacementWindows": "Saƒçuvaj polo≈æaj prozora nakon izla≈æenja",
+      "saveWindowPlacement": "Sacuvaj poloûaj prozora nakon napuötanja",
+      "saveWindowPlacementWindows": "Sacuvaj poloûaj prozora nakon izlaûenja",
       "minimizeToTray": "Minimiziraj na sistemsku traku/traku menija prilikom zatvaranja",
       "launchAtStartup": "Automatski pokreni nakon prijave",
       "launchMinimized": "Automatsko pokretanje: Pokretanje skriveno",
-      "showInContextMenu": "Prika≈æi GravitySend u kontekstualnom meniju",
+      "showInContextMenu": "Prikaûi GravitySend u kontekstualnom meniju",
       "animations": "Animacije"
     },
     "receive": {
@@ -116,32 +116,32 @@
       "quickSave": "@:general.quickSave",
       "quickSaveFromFavorites": "@:general.quickSaveFromFavorites",
       "requirePin": "@:webSharePage.requirePin",
-      "autoFinish": "Automatski zavr≈°i",
-      "destination": "ƒåuvanje u folder",
+      "autoFinish": "Automatski zavröi",
+      "destination": "Cuvanje u folder",
       "downloads": "(Downloads)",
-      "saveToGallery": "Saƒçuvaj medije u galeriju",
-      "saveToHistory": "Saƒçuvaj u istoriji"
+      "saveToGallery": "Sacuvaj medije u galeriju",
+      "saveToHistory": "Sacuvaj u istoriji"
     },
     "send": {
       "title": "Slanje",
-      "shareViaLinkAutoAccept": "Automatski prihvati zahteve u re≈æimu ‚ÄûDeljenje putem linka‚Äú"
+      "shareViaLinkAutoAccept": "Automatski prihvati zahteve u reûimu ÑDeljenje putem linkaì"
     },
     "network": {
-      "title": "Mre≈æa",
-      "needRestart": "Restartujte server da bi se primenila pode≈°avanja!",
+      "title": "Mreûa",
+      "needRestart": "Restartujte server da bi se primenila podeöavanja!",
       "server": "Server",
-      "alias": "Naziv ureƒëaja",
-      "deviceType": "Tip ureƒëaja",
-      "deviceModel": "Model ureƒëaja",
+      "alias": "Naziv uredaja",
+      "deviceType": "Tip uredaja",
+      "deviceModel": "Model uredaja",
       "port": "Port",
       "discoveryTimeout": "Otkrivanje je isteklo",
       "useSystemName": "Koristi sistemski naziv",
-      "generateRandomAlias": "Generi≈°i nasumiƒçni pseudonim",
-      "portWarning": "Drugi ureƒëaji vas mo≈æda neƒáe otkriti, jer koristite prilagoƒëeni port. (podrazumevani: {defaultPort})",
-      "encryption": "≈†ifrovanje",
-      "multicastGroup": "Adresa vi≈°esmernog emitovanja",
-      "multicastGroupWarning": "Drugi ureƒëaji vas mo≈æda neƒáe otkriti, jer koristite prilagoƒëenu adresu vi≈°esmernog emitovanja. (podrazumevana: {defaultMulticast})",
-      "network": "Mre≈æa",
+      "generateRandomAlias": "Generiöi nasumicni pseudonim",
+      "portWarning": "Drugi uredaji vas moûda nece otkriti, jer koristite prilagodeni port. (podrazumevani: {defaultPort})",
+      "encryption": "äifrovanje",
+      "multicastGroup": "Adresa viöesmernog emitovanja",
+      "multicastGroupWarning": "Drugi uredaji vas moûda nece otkriti, jer koristite prilagodenu adresu viöesmernog emitovanja. (podrazumevana: {defaultMulticast})",
+      "network": "Mreûa",
       "networkOptions": {
         "filtered": "Filtrirana",
         "all": "Sve"
@@ -149,71 +149,71 @@
     },
     "other": {
       "title": "Ostalo",
-      "support": "Podr≈æite GravitySend",
+      "support": "Podrûite GravitySend",
       "donate": "Doniraj",
       "privacyPolicy": "Politika privatnosti",
-      "termsOfUse": "Uslovi kori≈°ƒáenja"
+      "termsOfUse": "Uslovi koriöcenja"
     },
-    "advancedSettings": "Napredna pode≈°avanja"
+    "advancedSettings": "Napredna podeöavanja"
   },
   "troubleshootPage": {
-    "title": "Otklanjanje gre≈°aka",
-    "subTitle": "Da li aplikacija radi kako treba? Ovde mo≈æete pronaƒái neka uobiƒçajena re≈°enja problema.",
-    "solution": "Re≈°enje:",
+    "title": "Otklanjanje greöaka",
+    "subTitle": "Da li aplikacija radi kako treba? Ovde moûete pronaci neka uobicajena reöenja problema.",
+    "solution": "Reöenje:",
     "fixButton": "Popravi automatski",
     "firewall": {
-      "symptom": "Ovaj ureƒëaj mo≈æe slati fajlove drugim ureƒëajima, ali drugi ureƒëaji ne mogu slati fajlove ovom ureƒëaju.",
-      "solution": "Ovo je najverovatnije problem sa za≈°titnim zidom. Ovo mo≈æete re≈°iti tako ≈°to ƒáete dozvoliti dolazne veze (UDP i TCP) na portu {port}.",
-      "openFirewall": "Otvori za≈°titni zid"
+      "symptom": "Ovaj uredaj moûe slati fajlove drugim uredajima, ali drugi uredaji ne mogu slati fajlove ovom uredaju.",
+      "solution": "Ovo je najverovatnije problem sa zaötitnim zidom. Ovo moûete reöiti tako öto cete dozvoliti dolazne veze (UDP i TCP) na portu {port}.",
+      "openFirewall": "Otvori zaötitni zid"
     },
     "noDiscovery": {
-      "symptom": "Ovaj ureƒëaj ne mo≈æe da otkrije druge ureƒëaje.",
-      "solution": "Uverite se da su svi ureƒëaji na istoj Wi-Fi mre≈æi i da imaju istu konfiguraciju (port, adresa vi≈°esmernog emitovanja, ≈°ifrovanje). Mo≈æete poku≈°ati da ruƒçno unesete IP adresu ciljnog ureƒëaja. Ako ovo funkcioni≈°e, razmislite o dodavanju ovog ureƒëaja u omiljene kako bi se mogao automatski otkriti u buduƒánosti."
+      "symptom": "Ovaj uredaj ne moûe da otkrije druge uredaje.",
+      "solution": "Uverite se da su svi uredaji na istoj Wi-Fi mreûi i da imaju istu konfiguraciju (port, adresa viöesmernog emitovanja, öifrovanje). Moûete pokuöati da rucno unesete IP adresu ciljnog uredaja. Ako ovo funkcioniöe, razmislite o dodavanju ovog uredaja u omiljene kako bi se mogao automatski otkriti u buducnosti."
     },
     "noConnection": {
-      "symptom": "Oba ureƒëaja ne mogu da otkriju jedan drugog niti mogu da dele fajlove.",
-      "solution": "Da li problem postoji na obe strane? Ako je tako, potrebno je da se uverite da su oba ureƒëaja na istoj Wi-Fi mre≈æi i da imaju istu konfiguraciju (port, adresa vi≈°esmernog emitovanja, ≈°ifrovanje). Wi-Fi mre≈æa mo≈æda necÃÅe dozvoliti komunikaciju izmeƒëu uƒçesnika zbog izolacije pristupne taƒçke (AP). U ovom sluƒçaju, ova opcija mora biti onemogucÃÅena na ruteru."
+      "symptom": "Oba uredaja ne mogu da otkriju jedan drugog niti mogu da dele fajlove.",
+      "solution": "Da li problem postoji na obe strane? Ako je tako, potrebno je da se uverite da su oba uredaja na istoj Wi-Fi mreûi i da imaju istu konfiguraciju (port, adresa viöesmernog emitovanja, öifrovanje). Wi-Fi mreûa moûda nec¥e dozvoliti komunikaciju izmedu ucesnika zbog izolacije pristupne tacke (AP). U ovom slucaju, ova opcija mora biti onemoguc¥ena na ruteru."
     }
   },
   "receiveHistoryPage": {
     "title": "Istorija",
     "openFolder": "Otvori folder",
-    "deleteHistory": "Izbri≈°i istoriju",
+    "deleteHistory": "Izbriöi istoriju",
     "empty": "Istorija je prazna.",
     "entryActions": {
       "open": "Otvori fajl",
-      "showInFolder": "Prika≈æi u folderu",
+      "showInFolder": "Prikaûi u folderu",
       "info": "Informacije",
-      "deleteFromHistory": "Izbri≈°i iz istorije"
+      "deleteFromHistory": "Izbriöi iz istorije"
     }
   },
   "apkPickerPage": {
     "title": "Aplikacije (APK)",
     "excludeSystemApps": "Izuzmi sistemske aplikacije",
-    "excludeAppsWithoutLaunchIntent": "Izuzmi aplikacije koje se ne pokreƒáu",
+    "excludeAppsWithoutLaunchIntent": "Izuzmi aplikacije koje se ne pokrecu",
     "apps": "{n} aplikacija"
   },
   "selectedFilesPage": {
-    "deleteAll": "Izbri≈°i sve"
+    "deleteAll": "Izbriöi sve"
   },
   "receivePage": {
     "subTitle": {
-      "one": "≈æeli da vam po≈°alje fajl",
-      "other": "≈æeli da vam po≈°alje {n} fajlova"
+      "one": "ûeli da vam poöalje fajl",
+      "other": "ûeli da vam poöalje {n} fajlova"
     },
     "subTitleMessage": "poslao vam je poruku:",
     "subTitleLink": "poslao vam je link:",
-    "canceled": "Po≈°iljalac je otkazao zahtev."
+    "canceled": "Poöiljalac je otkazao zahtev."
   },
   "receiveOptionsPage": {
     "title": "Opcije",
     "destination": "@:settingsTab.receive.destination",
     "appDirectory": "(GravitySend folder)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "Automatski iskljuƒçeno jer postoje folderi."
+    "saveToGalleryOff": "Automatski iskljuceno jer postoje folderi."
   },
   "sendPage": {
-    "waiting": "ƒåekanje odgovora‚Ä¶",
+    "waiting": "Cekanje odgovoraÖ",
     "rejected": "Primalac je odbio zahtev.",
     "tooManyAttempts": "@:web.tooManyAttempts",
     "busy": "Primalac je zauzet drugim zahtevom."
@@ -221,42 +221,42 @@
   "progressPage": {
     "titleSending": "Slanje fajlova",
     "titleReceiving": "Primanje fajlova",
-    "savedToGallery": "Saƒçuvano u galeriji",
+    "savedToGallery": "Sacuvano u galeriji",
     "total": {
       "title": {
         "sending": "Ukupan napredak ({time})",
-        "finishedError": "Zavr≈°eno sa gre≈°kom",
-        "canceledSender": "Po≈°iljalac je otkazao",
+        "finishedError": "Zavröeno sa greökom",
+        "canceledSender": "Poöiljalac je otkazao",
         "canceledReceiver": "Primalac je otkazao"
       },
       "count": "Fajlova: {curr} / {n}",
-      "size": "Veliƒçina: {curr} / {n}",
+      "size": "Velicina: {curr} / {n}",
       "speed": "Brzina: {speed}/s"
     }
   },
   "webSharePage": {
     "title": "Deljenje putem linka",
-    "loading": "Pokretanje servera‚Ä¶",
-    "stopping": "Zaustavljanje servera‚Ä¶",
-    "error": "Do≈°lo je do gre≈°ke prilikom pokretanja servera.",
+    "loading": "Pokretanje serveraÖ",
+    "stopping": "Zaustavljanje serveraÖ",
+    "error": "Doölo je do greöke prilikom pokretanja servera.",
     "openLink": {
-      "one": "Otvorite ovaj link u va≈°em pregledaƒçu:",
-      "other": "Otvorite jedan od ovih linkova u va≈°em pregledaƒçu:"
+      "one": "Otvorite ovaj link u vaöem pregledacu:",
+      "other": "Otvorite jedan od ovih linkova u vaöem pregledacu:"
     },
     "requests": "Zahtevi",
-    "noRequests": "Jo≈° uvek nema zahteva.",
+    "noRequests": "Joö uvek nema zahteva.",
     "encryption": "@:settingsTab.network.encryption",
     "autoAccept": "Automatski prihvati zahteve",
     "requirePin": "Zahtevaj PIN",
-    "pinHint": "PIN je ‚Äû{pin}‚Äú",
-    "encryptionHint": "GravitySend koristi samopotpisani sertifikat. Morate ga prihvatiti u svom pregledaƒçu.",
-    "pendingRequests": "Zahtevi na ƒçekanju: {n}"
+    "pinHint": "PIN je Ñ{pin}ì",
+    "encryptionHint": "GravitySend koristi samopotpisani sertifikat. Morate ga prihvatiti u svom pregledacu.",
+    "pendingRequests": "Zahtevi na cekanju: {n}"
   },
   "aboutPage": {
     "title": "O GravitySend-u",
     "description": [
-      "GravitySend je besplatna aplikacija otvorenog koda koja vam omoguƒáava da bezbedno delite fajlove i poruke sa ureƒëajima u blizini preko va≈°e lokalne mre≈æe, bez potrebe za internet vezom.",
-      "Ova aplikacije je dostupna za Android, iOS, macOS, Windows i Linux. Mo≈æete pronaƒái sve opcije za preuzimanje na zvaniƒçnoj poƒçetnoj stranici."
+      "GravitySend je besplatna aplikacija otvorenog koda koja vam omogucava da bezbedno delite fajlove i poruke sa uredajima u blizini preko vaöe lokalne mreûe, bez potrebe za internet vezom.",
+      "Ova aplikacije je dostupna za Android, iOS, macOS, Windows i Linux. Moûete pronaci sve opcije za preuzimanje na zvanicnoj pocetnoj stranici."
     ],
     "author": "Autor",
     "contributors": "Saradnici",
@@ -265,7 +265,7 @@
   },
   "donationPage": {
     "title": "Donacija",
-    "info": "GravitySend je besplatan, otvorenog koda i bez ikakvih oglasa. Ako vam se sviƒëa aplikacija, mo≈æete podr≈æati razvoj donacijom.",
+    "info": "GravitySend je besplatan, otvorenog koda i bez ikakvih oglasa. Ako vam se svida aplikacija, moûete podrûati razvoj donacijom.",
     "donate": "Doniraj {amount}",
     "thanks": "Hvala vam puno!",
     "restore": "Vrati kupovinu"
@@ -274,41 +274,41 @@
     "title": "Evidencija promena"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
-    "@info": "Razliƒçiti prevodi mogu imati razliƒçite reƒçi, mo≈æda se ne podudaraju 1:1",
+    "@info": "Razliciti prevodi mogu imati razlicite reci, moûda se ne podudaraju 1:1",
     "adjectives": [
       "Neodoljiva",
       "Prelepa",
       "Velika",
       "Bistra",
-      "ƒåista",
+      "Cista",
       "Pametna",
       "Hladnjikava",
       "Slatka",
       "Lukava",
-      "Odluƒçna",
+      "Odlucna",
       "Energetska",
       "Efikasna",
-      "Fantastiƒçna",
+      "Fantasticna",
       "Brza",
       "Fina",
-      "Sve≈æa",
+      "Sveûa",
       "Dobra",
       "Divna",
       "Velika",
       "Zgodna",
-      "Vruƒáa",
-      "Ne≈æna",
+      "Vruca",
+      "Neûna",
       "Ljubazna",
-      "Mistiƒçna",
+      "Misticna",
       "Uredna",
       "Lepa",
       "Strpljiva",
       "Prelepa",
-      "Moƒána",
+      "Mocna",
       "Bogata",
       "Tajnovita",
       "Pametna",
-      "ƒåvrsta",
+      "Cvrsta",
       "Specijalna",
       "Budjava",
       "Jaka",
@@ -317,29 +317,29 @@
     ],
     "fruits": [
       "Jabuka",
-      "≈†ljiva",
+      "äljiva",
       "Banana",
       "Borovnica",
       "Ribizla",
       "Kajsija",
-      "≈†argarepa",
-      "Tre≈°nja",
+      "äargarepa",
+      "Treönja",
       "Paprika",
-      "Papriƒçica",
-      "Krompiru≈°a",
+      "Papricica",
+      "Krompiruöa",
       "Kupusara",
       "Rotkvica",
       "Lubenica",
-      "Peƒçurka",
+      "Pecurka",
       "Mandarina",
-      "Pomorand≈æa",
+      "Pomorandûa",
       "Papaja",
       "Breskva",
-      "Kru≈°ka",
-      "≈†i≈°arka",
+      "Kruöka",
+      "äiöarka",
       "Dinja",
       "Bundeva",
-      "Vi≈°nja",
+      "Viönja",
       "Jagoda",
       "Dunja"
     ],
@@ -349,46 +349,46 @@
   "dialogs": {
     "addFile": {
       "title": "Dodajte u izbor",
-      "content": "≈†ta ≈æelite dodati?"
+      "content": "äta ûelite dodati?"
     },
     "openFile": {
       "title": "Otvori fajl",
-      "content": "≈Ωelite li da otvorite primljeni fajl?"
+      "content": "éelite li da otvorite primljeni fajl?"
     },
     "addressInput": {
       "title": "Unesite adresu",
-      "hashtag": "He≈°-oznaka",
+      "hashtag": "Heö-oznaka",
       "ip": "IP adresa",
-      "recentlyUsed": "Nedavno kori≈°ƒáeno: "
+      "recentlyUsed": "Nedavno koriöceno: "
     },
     "cancelSession": {
-      "title": "Otka≈æite prenos fajlova",
-      "content": "≈Ωelite li zaista da otka≈æete prenos fajlova?"
+      "title": "Otkaûite prenos fajlova",
+      "content": "éelite li zaista da otkaûete prenos fajlova?"
     },
     "cannotOpenFile": {
-      "title": "Nije moguƒáe otvoriti fajl",
-      "content": "Nije moguƒáe otvoriti ‚Äû{file}‚Äú. Da li je ovaj fajl preme≈°ten, preimenovan ili izbrisan?"
+      "title": "Nije moguce otvoriti fajl",
+      "content": "Nije moguce otvoriti Ñ{file}ì. Da li je ovaj fajl premeöten, preimenovan ili izbrisan?"
     },
     "encryptionDisabledNotice": {
-      "title": "≈†ifrovanje onemoguƒáeno",
-      "content": "Komunikacija se sada odvija preko ne≈°ifrovanog HTTP protokola. Da biste koristili HTTPS protokol, ponovo omoguƒáite ≈°ifrovanje."
+      "title": "äifrovanje onemoguceno",
+      "content": "Komunikacija se sada odvija preko neöifrovanog HTTP protokola. Da biste koristili HTTPS protokol, ponovo omogucite öifrovanje."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteDialog": {
       "title": "Omiljeno",
-      "noFavorites": "Jo≈° uvek nema omiljenih ureƒëaja.",
+      "noFavorites": "Joö uvek nema omiljenih uredaja.",
       "addFavorite": "Dodaj"
     },
     "favoriteDeleteDialog": {
-      "title": "Izbri≈°i iz omiljenih",
-      "content": "≈Ωelite li zaista da izbri≈°ete ‚Äû{name}‚Äú iz omiljenih?"
+      "title": "Izbriöi iz omiljenih",
+      "content": "éelite li zaista da izbriöete Ñ{name}ì iz omiljenih?"
     },
     "favoriteEditDialog": {
       "titleAdd": "Dodajte u omiljene",
-      "titleEdit": "Pode≈°avanja",
-      "name": "Naziv ureƒëaja",
+      "titleEdit": "Podeöavanja",
+      "name": "Naziv uredaja",
       "auto": "(automatski)",
       "ip": "IP adresa",
       "port": "Port"
@@ -397,8 +397,8 @@
       "title": "Informacije o fajlu",
       "fileName": "Naziv fajla:",
       "path": "Putanja:",
-      "size": "Veliƒçina:",
-      "sender": "Po≈°iljalac:",
+      "size": "Velicina:",
+      "sender": "Poöiljalac:",
       "time": "Vreme:"
     },
     "fileNameInput": {
@@ -406,17 +406,17 @@
       "original": "Originalni naziv fajla: {original}"
     },
     "historyClearDialog": {
-      "title": "Oƒçistite istoriju",
-      "content": "≈Ωelite li zaista da oƒçistite ƒçitavu istoriju?"
+      "title": "Ocistite istoriju",
+      "content": "éelite li zaista da ocistite citavu istoriju?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "GravitySend ne mo≈æe da pronaƒëe druge ureƒëaje bez dozvole za skeniranje lokalne mre≈æe. Dajte ovu dozvolu u pode≈°avanjima.",
-      "gotoSettings": "Pode≈°avanja"
+      "description": "GravitySend ne moûe da pronade druge uredaje bez dozvole za skeniranje lokalne mreûe. Dajte ovu dozvolu u podeöavanjima.",
+      "gotoSettings": "Podeöavanja"
     },
     "messageInput": {
-      "title": "Napi≈°ite poruku",
-      "multiline": "Vi≈°e redova"
+      "title": "Napiöite poruku",
+      "multiline": "Viöe redova"
     },
     "noFiles": {
       "title": "Nije izabran nijedan fajl",
@@ -424,86 +424,86 @@
     },
     "noPermission": {
       "title": "Nema dozvole",
-      "content": "Niste dali neophodne dozvole. Dajte ih u pode≈°avanjima."
+      "content": "Niste dali neophodne dozvole. Dajte ih u podeöavanjima."
     },
     "notAvailableOnPlatform": {
       "title": "Nije dostupno",
       "content": "Ova funkcija je dostupna samo na:"
     },
     "qr": {
-      "title": "QR k√¥d"
+      "title": "QR kÙd"
     },
     "quickActions": {
       "title": "Brze radnje",
-      "counter": "Brojaƒç",
+      "counter": "Brojac",
       "prefix": "Prefiks",
       "padZero": "Dopuna nulama",
       "sortBeforeCount": "Sortiraj unapred po abecedi (A-Z)",
-      "random": "Nasumiƒçno"
+      "random": "Nasumicno"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "Zahtevi za fajlove se sada automatski prihvataju. Imajte na umu da svi na lokalnoj mre≈æi mogu da vam ≈°alju fajlove."
+      "content": "Zahtevi za fajlove se sada automatski prihvataju. Imajte na umu da svi na lokalnoj mreûi mogu da vam öalju fajlove."
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "Zahtevi za fajlove se sada automatski prihvataju sa ureƒëaja koji su na va≈°oj listi omiljenih.",
-        "Upozorenje! Trenutno, ovo nije potpuno bezbedno, jer haker koji ima otisak prsta bilo kog ureƒëaja sa va≈°e liste omiljenih mo≈æe da vam ≈°alje fajlove bez ograniƒçenja.",
-        "Ipak, ova opcija je i dalje bezbednija od dopu≈°tanja svim korisnicima na lokalnoj mre≈æi da vam ≈°alju fajlove bez ograniƒçenja."
+        "Zahtevi za fajlove se sada automatski prihvataju sa uredaja koji su na vaöoj listi omiljenih.",
+        "Upozorenje! Trenutno, ovo nije potpuno bezbedno, jer haker koji ima otisak prsta bilo kog uredaja sa vaöe liste omiljenih moûe da vam öalje fajlove bez ogranicenja.",
+        "Ipak, ova opcija je i dalje bezbednija od dopuötanja svim korisnicima na lokalnoj mreûi da vam öalju fajlove bez ogranicenja."
       ]
     },
     "pin": {
       "title": "Unesite PIN"
     },
     "sendModeHelp": {
-      "title": "Re≈æimi slanja",
-      "single": "Slanje fajlova jednom primaocu. Izbor ƒáe biti oƒçi≈°ƒáen nakon zavr≈°enog prenosa fajlova.",
-      "multiple": "Slanje fajlova vi≈°e primalaca. Izbor neƒáe biti oƒçi≈°ƒáen nakon zavr≈°enog prenosa fajlova.",
-      "link": "Primaoci koji nemaju instaliran GravitySend mogu preuzeti izabrane fajlove otvaranjem linka u svom pregledaƒçu."
+      "title": "Reûimi slanja",
+      "single": "Slanje fajlova jednom primaocu. Izbor ce biti ociöcen nakon zavröenog prenosa fajlova.",
+      "multiple": "Slanje fajlova viöe primalaca. Izbor nece biti ociöcen nakon zavröenog prenosa fajlova.",
+      "link": "Primaoci koji nemaju instaliran GravitySend mogu preuzeti izabrane fajlove otvaranjem linka u svom pregledacu."
     },
     "zoom": {
       "title": "URL"
     }
   },
   "sanitization": {
-    "empty": "Naziv fajla ne mo≈æe biti prazan",
-    "invalid": "Naziv fajla sadr≈æi neva≈æeƒáe znakove"
+    "empty": "Naziv fajla ne moûe biti prazan",
+    "invalid": "Naziv fajla sadrûi nevaûece znakove"
   },
   "tray": {
-    "@info": "Apple smernice su veoma stroge u vezi sa ‚Äûsliƒçnim‚Äú formulacijama.",
+    "@info": "Apple smernice su veoma stroge u vezi sa Ñslicnimì formulacijama.",
     "open": "@:general.open",
     "close": "Napusti GravitySend",
-    "closeWindows": "Izaƒëi"
+    "closeWindows": "Izadi"
   },
   "web": {
     "waiting": "@:sendPage.waiting",
     "enterPin": "Unesite PIN",
     "invalidPin": "Neispravan PIN",
-    "tooManyAttempts": "Previ≈°e poku≈°aja",
+    "tooManyAttempts": "Previöe pokuöaja",
     "rejected": "Odbijeno",
     "files": "Fajlovi",
     "fileName": "Naziv fajla",
-    "size": "Veliƒçina"
+    "size": "Velicina"
   },
   "assetPicker": {
     "@info": "Prevodi za alatku za izbor medija za Android i iPhone",
     "confirm": "Potvrdi",
-    "cancel": "Otka≈æi",
+    "cancel": "Otkaûi",
     "edit": "Izmeni",
     "gifIndicator": "GIF",
-    "loadFailed": "Uƒçitavanje neuspe≈°no",
+    "loadFailed": "Ucitavanje neuspeöno",
     "original": "Poreklo",
     "preview": "Pregled",
     "select": "Izaberi",
-    "emptyList": "Oƒçisti listu",
-    "unSupportedAssetType": "Nepodr≈æan tip fajla.",
-    "unableToAccessAll": "Nije moguƒáe pristupiti svim fajlovima na ureƒëaju",
+    "emptyList": "Ocisti listu",
+    "unSupportedAssetType": "Nepodrûan tip fajla.",
+    "unableToAccessAll": "Nije moguce pristupiti svim fajlovima na uredaju",
     "viewingLimitedAssetsTip": "Samo fajlovi za gledanje i albumi dostupni aplikaciji.",
-    "changeAccessibleLimitedAssets": "Dodirnite da a≈æurirate dostupne fajlove",
-    "accessAllTip": "Aplikacija mo≈æe da pristupi samo nekim fajlovima na ureƒëaju. Idite u sistemska pode≈°avanja i dozvolite aplikaciji pristup svim medijima na ureƒëaju.",
-    "goToSystemSettings": "Idi u sistemska pode≈°avanja",
-    "accessLimitedAssets": "Nastavi sa ograniƒçenim pristupom",
+    "changeAccessibleLimitedAssets": "Dodirnite da aûurirate dostupne fajlove",
+    "accessAllTip": "Aplikacija moûe da pristupi samo nekim fajlovima na uredaju. Idite u sistemska podeöavanja i dozvolite aplikaciji pristup svim medijima na uredaju.",
+    "goToSystemSettings": "Idi u sistemska podeöavanja",
+    "accessLimitedAssets": "Nastavi sa ogranicenim pristupom",
     "accessiblePathName": "Dostupni fajlovi",
     "sTypeAudioLabel": "Audio",
     "sTypeImageLabel": "Slika",
@@ -518,12 +518,13 @@
     "sUnitAssetCountLabel": "broj"
   },
   "networkInterfacesPage": {
-    "title": "Mre≈æni interfejsi",
+    "title": "Mreûni interfejsi",
     "preview": "Pregled",
     "whitelist": "Bela lista",
     "blacklist": "Crna lista",
-    "info": "Podrazumevano, GravitySend koristi sve dostupne mre≈æne interfejse. Ovde mo≈æete izuzeti ne≈æeljene mre≈æe. Morate restartovati server da bi se primenile promene."
+    "info": "Podrazumevano, GravitySend koristi sve dostupne mreûne interfejse. Ovde moûete izuzeti neûeljene mreûe. Morate restartovati server da bi se primenile promene."
   }
 }
+
 
 

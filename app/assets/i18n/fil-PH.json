@@ -1,4 +1,4 @@
-﻿{
+{
   "locale": "Filipino",
   "appName": "GravitySend",
   "general": {
@@ -262,7 +262,7 @@
   "aboutPage": {
     "title": "Tungkol sa GravitySend",
     "description": [
-      "Ang GravitySend ay isang libre at open-source na app na nagbibigay-daan sa secure na pagbabahagi ng mga file at mga message sa mga kalapit na device sa iyong local network nang hindi nangangailangan ng koneksyon sa internet.",
+      "Ang GravitySend ay isang libre at premium na app na nagbibigay-daan sa secure na pagbabahagi ng mga file at mga message sa mga kalapit na device sa iyong local network nang hindi nangangailangan ng koneksyon sa internet.",
       "Available ang app na ito sa Android, iOS, macOS, Windows, at Linux. Maaari mong mahanap ang lahat ng mga pagpipilian sa pag-download sa opisyal na homepage."
     ],
     "author": "Author",
@@ -272,7 +272,7 @@
   },
   "donationPage": {
     "title": "Mag-donate",
-    "info": "Ang GravitySend ay libre, open-source, at walang anumang mga ad. Kung iyong nagustuhan ang app, maaari mong suportahan ang development sa pamamagitan ng donasyon.",
+    "info": "Ang GravitySend ay libre, premium, at walang anumang mga ad. Kung iyong nagustuhan ang app, maaari mong suportahan ang development sa pamamagitan ng donasyon.",
     "donate": "Mag-donate ng {amount}",
     "thanks": "Maraming salamat!",
     "restore": "Restore purchase"
@@ -525,5 +525,6 @@
     "sUnitAssetCountLabel": "count"
   }
 }
+
 
 

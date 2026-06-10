@@ -1,4 +1,4 @@
-ï»¿{
+{
   "locale": "Galego",
   "appName": "GravitySend",
   "general": {
@@ -22,23 +22,23 @@
     "finished": "Rematou",
     "hide": "Ocultar",
     "off": "Apagado",
-    "offline": "Sen ConexiÃ³n",
+    "offline": "Sen Conexión",
     "on": "Activado",
-    "online": "En LiÃ±a",
+    "online": "En Liña",
     "open": "Aberto",
     "queue": "Fila",
-    "quickSave": "Gardar RÃ¡pido",
-    "quickSaveFromFavorites": "Gardar rÃ¡pido para \"Favoritos\"",
+    "quickSave": "Gardar Rápido",
+    "quickSaveFromFavorites": "Gardar rápido para \"Favoritos\"",
     "renamed": "Renomeado",
     "reset": "Desfacer os cambios",
     "restart": "Reiniciar",
-    "settings": "ConfiguraciÃ³n",
+    "settings": "Configuración",
     "skipped": "Omitido",
     "start": "Comeza",
     "stop": "Parar",
     "save": "Gardar",
     "unchanged": "Sen Cambios",
-    "unknown": "DescoÃ±ecido",
+    "unknown": "Descoñecido",
     "noItemInClipboard": "Non hai elementos no Portapapeis."
   },
   "receiveTab": {
@@ -57,9 +57,9 @@
   "sendTab": {
     "title": "Enviar",
     "selection": {
-      "title": "SelecciÃ³n",
+      "title": "Selección",
       "files": "Ficheiros: {files}",
-      "size": "TamaÃ±o: {size}"
+      "size": "Tamaño: {size}"
     },
     "picker": {
       "file": "Arquivo",
@@ -69,23 +69,23 @@
       "app": "App",
       "clipboard": "Pegar"
     },
-    "shareIntentInfo": "TamÃ©n podes usar a funciÃ³n \"Compartir\" do teu dispositivo mÃ³bil para seleccionar ficheiros mÃ¡is facilmente.",
-    "nearbyDevices": "Dispositivos PrÃ³ximos",
+    "shareIntentInfo": "Tamén podes usar a función \"Compartir\" do teu dispositivo móbil para seleccionar ficheiros máis facilmente.",
+    "nearbyDevices": "Dispositivos Próximos",
     "thisDevice": "Este Dispositivo",
     "scan": "Busca Dispositivos",
-    "manualSending": "EnvÃ­o Manual",
-    "sendMode": "Modo de EnvÃ­o",
+    "manualSending": "Envío Manual",
+    "sendMode": "Modo de Envío",
     "sendModes": {
-      "single": "Destinatario Ãšnico",
-      "multiple": "MÃºltiples Destinatarios",
-      "link": "Comparte via ligazÃ³n"
+      "single": "Destinatario Único",
+      "multiple": "Múltiples Destinatarios",
+      "link": "Comparte via ligazón"
     },
-    "sendModeHelp": "ExplicaciÃ³n",
-    "help": "AsegÃºrate de que o obxectivo desexado tamÃ©n estea na mesma rede wifi.",
+    "sendModeHelp": "Explicación",
+    "help": "Asegúrate de que o obxectivo desexado tamén estea na mesma rede wifi.",
     "placeItems": "Coloca elementos para compartir."
   },
   "settingsTab": {
-    "title": "ConfiguraciÃ³n",
+    "title": "Configuración",
     "general": {
       "title": "Xeral",
       "brightness": "Tema",
@@ -103,23 +103,23 @@
       "languageOptions": {
         "system": "Sistema"
       },
-      "saveWindowPlacement": "Garda a posiciÃ³n da xanela despois de saÃ­r",
-      "saveWindowPlacementWindows": "Garda a posiciÃ³n da xanela despois da saÃ­da",
-      "minimizeToTray": "Minimizar Ã¡ Bandexa do Sistema/Barra de MenÃº ao Pechar",
-      "launchAtStartup": "Arrancar automÃ¡ticamente despois do inicio de sesiÃ³n",
-      "launchMinimized": "Arranque automÃ¡tico: Iniciar minimizada",
-      "showInContextMenu": "Amosar GravitySend no menÃº contextual",
-      "animations": "AnimaciÃ³ns"
+      "saveWindowPlacement": "Garda a posición da xanela despois de saír",
+      "saveWindowPlacementWindows": "Garda a posición da xanela despois da saída",
+      "minimizeToTray": "Minimizar á Bandexa do Sistema/Barra de Menú ao Pechar",
+      "launchAtStartup": "Arrancar automáticamente despois do inicio de sesión",
+      "launchMinimized": "Arranque automático: Iniciar minimizada",
+      "showInContextMenu": "Amosar GravitySend no menú contextual",
+      "animations": "Animacións"
     },
     "receive": {
       "title": "Recibir",
       "quickSave": "@:general.quickSave",
       "quickSaveFromFavorites": "@:general.quickSaveFromFavorites",
       "requirePin": "@:webSharePage.requirePin",
-      "autoFinish": "Finalizar automÃ¡ticamente",
+      "autoFinish": "Finalizar automáticamente",
       "destination": "Gardar no cartafol",
       "downloads": "(Descargas)",
-      "saveToGallery": "Gardar multimedia na galerÃ­a",
+      "saveToGallery": "Gardar multimedia na galería",
       "saveToHistory": "Gardar no historial"
     },
     "network": {
@@ -130,7 +130,7 @@
       "alias": "Nome do dispositivo",
       "deviceModel": "Modelo de dispositivo",
       "port": "Porto",
-      "discoveryTimeout": "Tempo lÃ­mite de Descubrimento",
+      "discoveryTimeout": "Tempo límite de Descubrimento",
       "multicastGroup": "Enderezo multicast",
       "network": "Rede",
       "networkOptions": {
@@ -140,61 +140,61 @@
       "encryption": "Cifrado",
       "useSystemName": "Usar o nome do sistema",
       "generateRandomAlias": "Xerar alias aleatorio",
-      "portWarning": "Pode que non sexas detectado por outros dispositivos porque estÃ¡s a empregar un porto personalizado. (Porto por defecto: {defaultPort})",
-      "multicastGroupWarning": "Pode que non sexas detectado por outros dispositivos porque estÃ¡s a empregar un enderezo multicast personalizada. (Por defecto: {defaultMulticast})"
+      "portWarning": "Pode que non sexas detectado por outros dispositivos porque estás a empregar un porto personalizado. (Porto por defecto: {defaultPort})",
+      "multicastGroupWarning": "Pode que non sexas detectado por outros dispositivos porque estás a empregar un enderezo multicast personalizada. (Por defecto: {defaultMulticast})"
     },
     "send": {
       "title": "Enviar",
-      "shareViaLinkAutoAccept": "Aceptar automÃ¡ticamente peticiÃ³ns no modo \"Compartir mediante ligazÃ³n\""
+      "shareViaLinkAutoAccept": "Aceptar automáticamente peticións no modo \"Compartir mediante ligazón\""
     },
     "other": {
       "title": "Outros",
       "support": "Apoia a GravitySend",
       "donate": "Doar",
-      "privacyPolicy": "PolÃ­tica de privacidade",
-      "termsOfUse": "CondiciÃ³ns de uso"
+      "privacyPolicy": "Política de privacidade",
+      "termsOfUse": "Condicións de uso"
     },
-    "advancedSettings": "ConfiguraciÃ³n avanzada"
+    "advancedSettings": "Configuración avanzada"
   },
   "troubleshootPage": {
     "noDiscovery": {
-      "solution": "Por favor asegÃºrese de que todos os dispositivos estÃ¡n na mesma rede Wi-Fi e que co partan a mesma configuraciÃ³n (porto, enderezo multicast, cifrado). Podes tentar escribir o enderezo IP do dispositivo de destino manualmente. Se funciona, considera agregar o dispositivo a favoritos para poder descubrilo automaticamente no futuro.",
+      "solution": "Por favor asegúrese de que todos os dispositivos están na mesma rede Wi-Fi e que co partan a mesma configuración (porto, enderezo multicast, cifrado). Podes tentar escribir o enderezo IP do dispositivo de destino manualmente. Se funciona, considera agregar o dispositivo a favoritos para poder descubrilo automaticamente no futuro.",
       "symptom": "Este dispositivo non pode descubrir outros dispositivos."
     },
     "firewall": {
-      "solution": "O mÃ¡is probÃ¡bel Ã© que se trate dun problema do firewall. Podes resolver este problema permitindo conexiÃ³ns entrantes (UDP e TCP) no porto {port}.",
+      "solution": "O máis probábel é que se trate dun problema do firewall. Podes resolver este problema permitindo conexións entrantes (UDP e TCP) no porto {port}.",
       "openFirewall": "Abrir Firewall",
       "symptom": "Este dispositivo pode enviar ficheiros a outros dispositivos, pero outros dispositivos non lle poden enviar ficheiros."
     },
     "noConnection": {
       "symptom": "Ambos dispositivos non poden descubrirse nin enviarse ficheiros.",
-      "solution": "O problema existe nos dous lados? Se Ã© asÃ­, cÃ³mpre asegurarse de que ambos os dispositivos estÃ¡n na mesma rede Wi-Fi e comparten a mesma configuraciÃ³n (porto, enderezo de multidifusiÃ³n, cifrado). Ã‰ posÃ­bel que a rede wifi non permita a comunicaciÃ³n entre os participantes debido ao illamento do punto de acceso (AP). Neste caso, esta opciÃ³n debe estar desactivada no router."
+      "solution": "O problema existe nos dous lados? Se é así, cómpre asegurarse de que ambos os dispositivos están na mesma rede Wi-Fi e comparten a mesma configuración (porto, enderezo de multidifusión, cifrado). É posíbel que a rede wifi non permita a comunicación entre os participantes debido ao illamento do punto de acceso (AP). Neste caso, esta opción debe estar desactivada no router."
     },
     "title": "Solucionar problemas",
-    "subTitle": "A aplicaciÃ³n non funciona segundo o esperado? AquÃ³ podes atopar algunhas soluciÃ³ns comÃºns aos problemas.",
-    "solution": "SoluciÃ³n:",
-    "fixButton": "Corrixir automÃ¡ticamente"
+    "subTitle": "A aplicación non funciona segundo o esperado? Aquó podes atopar algunhas solucións comúns aos problemas.",
+    "solution": "Solución:",
+    "fixButton": "Corrixir automáticamente"
   },
   "apkPickerPage": {
-    "title": "AplicaciÃ³ns (APK)",
-    "excludeSystemApps": "ExcluÃ­r aplicaciÃ³ns do sistema",
-    "excludeAppsWithoutLaunchIntent": "ExcluÃ­r aplicaciÃ³ns non executÃ¡bels",
-    "apps": "{n} AplicaciÃ³ns"
+    "title": "Aplicacións (APK)",
+    "excludeSystemApps": "Excluír aplicacións do sistema",
+    "excludeAppsWithoutLaunchIntent": "Excluír aplicacións non executábels",
+    "apps": "{n} Aplicacións"
   },
   "networkInterfacesPage": {
     "preview": "Vista previa",
     "title": "Interfaces de rede",
     "whitelist": "Lista de permitidos",
     "blacklist": "Lista negra",
-    "info": "Por defecto, GravitySend emprega todas as interfaces de rede dispoÃ±Ã­beis. EiquÃ­ podes desactivar as redes non desexadas. Tes que reiniciar o servidor para aplicar os cambios."
+    "info": "Por defecto, GravitySend emprega todas as interfaces de rede dispoñíbeis. Eiquí podes desactivar as redes non desexadas. Tes que reiniciar o servidor para aplicar os cambios."
   },
   "receiveHistoryPage": {
     "title": "Historial",
-    "empty": "O historial estÃ¡ vacÃ­o.",
+    "empty": "O historial está vacío.",
     "openFolder": "Abrir cartafol",
     "deleteHistory": "Borrar historial",
     "entryActions": {
-      "info": "InformaciÃ³n",
+      "info": "Información",
       "open": "Abrir ficheiro",
       "showInFolder": "Amosar no cartafol",
       "deleteFromHistory": "Borrar do historial"
@@ -209,20 +209,20 @@
       "other": "quere enviarte {n} ficheiros"
     },
     "subTitleMessage": "envioute unha mensaxe:",
-    "subTitleLink": "envioute unha ligazÃ³n:",
-    "canceled": "O remitente cancelou a peticiÃ³n."
+    "subTitleLink": "envioute unha ligazón:",
+    "canceled": "O remitente cancelou a petición."
   },
   "receiveOptionsPage": {
-    "title": "OpciÃ³ns",
+    "title": "Opcións",
     "destination": "@:settingsTab.receive.destination",
     "appDirectory": "(Cartafol GravitySend)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "Desactivado automÃ¡ticamente porque hai cartafois."
+    "saveToGalleryOff": "Desactivado automáticamente porque hai cartafois."
   },
   "dialogs": {
     "encryptionDisabledNotice": {
       "title": "Cifrado deshabilitado",
-      "content": "A comunicaciÃ³n ten lugar agora mediante o protocolo sen cifrado HTTP. Para usar o protocolo HTTPS, habilite novamente o cifrado."
+      "content": "A comunicación ten lugar agora mediante o protocolo sen cifrado HTTP. Para usar o protocolo HTTPS, habilite novamente o cifrado."
     },
     "openFile": {
       "title": "Abrir ficheiro",
@@ -236,7 +236,7 @@
     },
     "addFile": {
       "content": "Que queres engadir?",
-      "title": "Engadir Ã¡ selecciÃ³n"
+      "title": "Engadir á selección"
     },
     "cancelSession": {
       "title": "Cancelar a transferencia de ficheiros",
@@ -248,7 +248,7 @@
     },
     "favoriteDialog": {
       "title": "Favoritos",
-      "noFavorites": "AÃ­nda non hai ningÃºn dispositivo favorito.",
+      "noFavorites": "Aínda non hai ningún dispositivo favorito.",
       "addFavorite": "Engadir"
     },
     "errorDialog": {
@@ -268,10 +268,10 @@
     },
     "fileInfo": {
       "time": "Hora:",
-      "title": "InformaciÃ³n do ficheiro",
+      "title": "Información do ficheiro",
       "fileName": "Nome do ficheiro:",
       "path": "Ruta:",
-      "size": "TamaÃ±o:",
+      "size": "Tamaño:",
       "sender": "Remitente:"
     },
     "fileNameInput": {
@@ -283,7 +283,7 @@
       "content": "Realmente queres eliminar todo o historial?"
     },
     "noPermission": {
-      "content": "Non concedeches os permisos necesarios. Por favor, concÃ©deos na configuraciÃ³n.",
+      "content": "Non concedeches os permisos necesarios. Por favor, concédeos na configuración.",
       "title": "Sen permiso"
     },
     "noFiles": {
@@ -292,31 +292,31 @@
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "GravitySend non pode atopar outros dispositivos sen ter permiso para escanear a rede local. Por favor, concede este permiso na configuraciÃ³n.",
+      "description": "GravitySend non pode atopar outros dispositivos sen ter permiso para escanear a rede local. Por favor, concede este permiso na configuración.",
       "gotoSettings": "Axustes"
     },
     "messageInput": {
       "title": "Escribir mensaxe",
-      "multiline": "MultiliÃ±a"
+      "multiline": "Multiliña"
     },
     "notAvailableOnPlatform": {
-      "title": "Non dispoÃ±Ã­bel",
-      "content": "Esta caracterÃ­stica sÃ³ estÃ¡ dispoÃ±Ã­bel en:"
+      "title": "Non dispoñíbel",
+      "content": "Esta característica só está dispoñíbel en:"
     },
     "qr": {
-      "title": "CÃ³digo QR"
+      "title": "Código QR"
     },
     "quickActions": {
-      "title": "AcciÃ³ns rÃ¡pidas",
+      "title": "Accións rápidas",
       "counter": "Contador",
       "prefix": "Prefixo",
       "padZero": "Encher con ceros",
-      "sortBeforeCount": "Ordenar alfabÃ©ticamente de antemÃ¡n (A-Z)",
+      "sortBeforeCount": "Ordenar alfabéticamente de antemán (A-Z)",
       "random": "Aleatorio"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "Agora as solicitudes de ficheiros acÃ©ptanse automaticamente. TeÃ±a en conta que todos os usuarios da rede local poden enviarche ficheiros."
+      "content": "Agora as solicitudes de ficheiros acéptanse automaticamente. Teña en conta que todos os usuarios da rede local poden enviarche ficheiros."
     },
     "zoom": {
       "title": "URL"
@@ -325,36 +325,36 @@
       "title": "Insira o PIN"
     },
     "sendModeHelp": {
-      "title": "Modos de envÃ­o",
-      "single": "Envia ficheiros a un receptor. A selecciÃ³n borrarase unha vez rematada a transferencia de ficheiros.",
-      "multiple": "Envia ficheiros a mÃºltiples receptores. A selecciÃ³n non se borrarÃ¡ unha vez rematada a transferencia de ficheiros.",
-      "link": "Os destinatarios que non teÃ±an instalado GravitySend poden descargar os ficheiros seleccionados abrindo a ligazÃ³n no seu navegador."
+      "title": "Modos de envío",
+      "single": "Envia ficheiros a un receptor. A selección borrarase unha vez rematada a transferencia de ficheiros.",
+      "multiple": "Envia ficheiros a múltiples receptores. A selección non se borrará unha vez rematada a transferencia de ficheiros.",
+      "link": "Os destinatarios que non teñan instalado GravitySend poden descargar os ficheiros seleccionados abrindo a ligazón no seu navegador."
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "Agora as solicitudes de ficheiros da tÃºa lista de dispositivos favoritos acÃ©ptanse automaticamente.",
-        "Aviso! Actualmente isto non Ã© completamente seguro, xa que un hacker que teÃ±a a pegada dixital de calquera dos dispositivos da tÃºa lista de favoritos pode enviarte ficheiros sen restricciÃ³ns.",
-        "PorÃ©n, esta opciÃ³n aÃ­nda Ã© mÃ¡is segura que permitir que todos os usuarios da rede local te envÃ­en ficheiros sen restriciÃ³ns."
+        "Agora as solicitudes de ficheiros da túa lista de dispositivos favoritos acéptanse automaticamente.",
+        "Aviso! Actualmente isto non é completamente seguro, xa que un hacker que teña a pegada dixital de calquera dos dispositivos da túa lista de favoritos pode enviarte ficheiros sen restriccións.",
+        "Porén, esta opción aínda é máis segura que permitir que todos os usuarios da rede local te envíen ficheiros sen restricións."
       ]
     }
   },
   "webSharePage": {
     "encryption": "@:settingsTab.network.encryption",
     "encryptionHint": "GravitySend precisa un certificado autoasinado. Tes que aceptalo no teu navegador.",
-    "title": "Compartir mediante ligazÃ³n",
-    "stopping": "Parando o servidorâ€¦",
-    "loading": "Iniciando servidorâ€¦",
+    "title": "Compartir mediante ligazón",
+    "stopping": "Parando o servidor…",
+    "loading": "Iniciando servidor…",
     "error": "Produciuse un erro ao iniciar o servidor.",
     "openLink": {
-      "one": "Abre esta ligazÃ³n no teu navegador:",
-      "other": "Abre unha destas ligazÃ³ns no teu navegador:"
+      "one": "Abre esta ligazón no teu navegador:",
+      "other": "Abre unha destas ligazóns no teu navegador:"
     },
     "requests": "Solicitudes",
-    "noRequests": "AÃ­nda non hai solicitudes.",
+    "noRequests": "Aínda non hai solicitudes.",
     "autoAccept": "Aceptar solicitudes automaticamente",
     "requirePin": "Requerir PIN",
-    "pinHint": "O PIN Ã© \"{pin}\"",
+    "pinHint": "O PIN é \"{pin}\"",
     "pendingRequests": "Solicitudes pendentes: {n}"
   },
   "progressPage": {
@@ -366,7 +366,7 @@
         "canceledSender": "Cancelado polo remitente"
       },
       "count": "Ficheiros: {curr} / {n}",
-      "size": "TamaÃ±o: {curr} / {n}",
+      "size": "Tamaño: {curr} / {n}",
       "speed": "Velocidade: {speed}/s"
     },
     "titleReceiving": "Recibindo ficheiros",
@@ -377,14 +377,14 @@
       "minutes": "{n}:{ss}",
       "hours": "{h}h {m}m",
       "days": "{d}d {h}h {m}m",
-      "@hours": "Usa Â«hÂ» para abreviatura de horas e Â«mÂ» para minutos",
-      "@days": "Usa Â«dÂ» para dÃ­as, Â«hÂ» para horas e Â«mÂ» para minutos"
+      "@hours": "Usa «h» para abreviatura de horas e «m» para minutos",
+      "@days": "Usa «d» para días, «h» para horas e «m» para minutos"
     }
   },
   "aboutPage": {
     "description": [
-      "GravitySend Ã© unha aplicaciÃ³n gratuita, de cÃ³digo aberto, que che permite compartir ficheiros e mensaxes de xeito seguro con dispositivos cercanos a travÃ©s da tÃºa rede local sen necesidade dunha conexiÃ³n a internet.",
-      "Esta aplicaciÃ³n estÃ¡ dispoÃ±Ã­bel en Android, iOS, macOS, Windows e Linux. Podes atopar todas as opciÃ³ns de descarga na pÃ¡xina web oficial."
+      "GravitySend é unha aplicación gratuita, de código aberto, que che permite compartir ficheiros e mensaxes de xeito seguro con dispositivos cercanos a través da túa rede local sen necesidade dunha conexión a internet.",
+      "Esta aplicación está dispoñíbel en Android, iOS, macOS, Windows e Linux. Podes atopar todas as opcións de descarga na páxina web oficial."
     ],
     "contributors": "Colaboradores",
     "author": "Autor",
@@ -393,14 +393,14 @@
     "title": "Acerca de GravitySend"
   },
   "sendPage": {
-    "waiting": "Agardando pola respostaâ€¦",
+    "waiting": "Agardando pola resposta…",
     "rejected": "O destinatario rexeitou a solicitude.",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "O destinatario estÃ¡ ocupado con outra peticiÃ³n."
+    "busy": "O destinatario está ocupado con outra petición."
   },
   "donationPage": {
     "title": "Doar",
-    "info": "LocalSen Ã© gratuita, de cÃ³digo aberto e non ten anuncios. Se che gusta a aplicaciÃ³n, podes apoiar o desenvolvemento cunha doazÃ³n.",
+    "info": "LocalSen é gratuita, de código aberto e non ten anuncios. Se che gusta a aplicación, podes apoiar o desenvolvemento cunha doazón.",
     "donate": "Doar {amount}",
     "thanks": "Moitas grazas!",
     "restore": "Restaurar a compra"
@@ -412,27 +412,27 @@
     "@info": "Diferentes idiomas poden ter palabras diferentes, podendo non coincidir 1:1"
   },
   "tray": {
-    "@info": "As directrices de Apple son moi estrictas sobre a expresiÃ³n \"pechar\".",
+    "@info": "As directrices de Apple son moi estrictas sobre a expresión \"pechar\".",
     "open": "@:general.open",
-    "close": "SaÃ­r de GravitySend",
-    "closeWindows": "SaÃ­r"
+    "close": "Saír de GravitySend",
+    "closeWindows": "Saír"
   },
   "sanitization": {
     "empty": "O nome do ficheiro non pode estar valeiro",
-    "invalid": "O nome do ficheiro contÃ©n caracteres invÃ¡lidos"
+    "invalid": "O nome do ficheiro contén caracteres inválidos"
   },
   "web": {
     "waiting": "@:sendPage.waiting",
     "enterPin": "Insira o PIN",
-    "invalidPin": "PIN non vÃ¡lido",
+    "invalidPin": "PIN non válido",
     "tooManyAttempts": "Demasiados intentos",
     "rejected": "Rexeitado",
     "files": "Ficheiros",
     "fileName": "Nome do ficheiro",
-    "size": "TamaÃ±o"
+    "size": "Tamaño"
   },
   "assetPicker": {
-    "@info": "TraducciÃ³ns para ferramenta de SelecciÃ³n de ficheiros para Android e iPhone",
+    "@info": "Traduccións para ferramenta de Selección de ficheiros para Android e iPhone",
     "confirm": "Confirmar",
     "cancel": "Cancelar",
     "edit": "Editar",
@@ -449,19 +449,20 @@
     "sActionPreviewHint": "vista previa",
     "sTypeImageLabel": "Imaxe",
     "sActionSelectHint": "seleccionar",
-    "sTypeVideoLabel": "VÃ­deo",
+    "sTypeVideoLabel": "Vídeo",
     "sActionSwitchPathLabel": "cambiar ruta",
-    "changeAccessibleLimitedAssets": "Preme para actualizar os ficheiros accesÃ­beis",
-    "goToSystemSettings": "Vaia Ã¡ configuraciÃ³n do sistema",
+    "changeAccessibleLimitedAssets": "Preme para actualizar os ficheiros accesíbeis",
+    "goToSystemSettings": "Vaia á configuración do sistema",
     "accessLimitedAssets": "Continuar con acceso limitado",
-    "sActionUseCameraHint": "usar cÃ¡mara",
+    "sActionUseCameraHint": "usar cámara",
     "sUnitAssetCountLabel": "cantidade",
-    "viewingLimitedAssetsTip": "Ver sÃ³ ficheiros e Ã¡lbums accesÃ­beis para a aplicaciÃ³n.",
+    "viewingLimitedAssetsTip": "Ver só ficheiros e álbums accesíbeis para a aplicación.",
     "sTypeAudioLabel": "Audio",
-    "sNameDurationLabel": "duraciÃ³n",
-    "accessAllTip": "A aplicaciÃ³n sÃ³ pode acceder a algÃºns ficheiros do dispositivo. Vaia Ã¡ configuraciÃ³n do sistema e permite que a aplicaciÃ³n acceda a todos os elementos do dispositivo.",
-    "accessiblePathName": "Ficheiros accesÃ­beis"
+    "sNameDurationLabel": "duración",
+    "accessAllTip": "A aplicación só pode acceder a algúns ficheiros do dispositivo. Vaia á configuración do sistema e permite que a aplicación acceda a todos os elementos do dispositivo.",
+    "accessiblePathName": "Ficheiros accesíbeis"
   }
 }
+
 
 

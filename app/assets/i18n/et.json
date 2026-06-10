@@ -1,48 +1,48 @@
-ï»¿{
+{
   "locale": "Eesti keel",
   "appName": "GravitySend",
   "general": {
-    "accept": "NÃµustu",
-    "accepted": "NÃµustusid",
+    "accept": "Nõustu",
+    "accepted": "Nõustusid",
     "add": "Lisa",
     "advanced": "Lisavalikud",
     "cancel": "Katkesta",
     "close": "Sulge",
     "confirm": "Kinnita",
-    "continueStr": "JÃ¤tka",
+    "continueStr": "Jätka",
     "copy": "Kopeeri",
-    "copiedToClipboard": "Kopeeritud lÃµikelauale",
+    "copiedToClipboard": "Kopeeritud lõikelauale",
     "decline": "Keeldu",
     "done": "Valmis",
     "delete": "Kustuta",
     "edit": "Muuda",
     "error": "Viga",
-    "example": "NÃ¤ide",
+    "example": "Näide",
     "files": "Failid",
     "finished": "Valmis",
     "hide": "Peida",
-    "off": "VÃ¤ljas",
-    "offline": "Pole vÃµrgus",
+    "off": "Väljas",
+    "offline": "Pole võrgus",
     "on": "Sees",
-    "online": "VÃµrgus",
+    "online": "Võrgus",
     "open": "Ava",
-    "queue": "JÃ¤rjekorras",
+    "queue": "Järjekorras",
     "quickSave": "Kiirsalvestus",
-    "quickSaveFromFavorites": "Kiirsalvestamine â€Lemmikuteltâ€œ",
+    "quickSaveFromFavorites": "Kiirsalvestamine „Lemmikutelt“",
     "renamed": "Nimi on muudetud",
-    "reset": "TÃ¼hista muudatused",
-    "restart": "KÃ¤ivita uuesti",
+    "reset": "Tühista muudatused",
+    "restart": "Käivita uuesti",
     "settings": "Seadistused",
-    "skipped": "VahelejÃ¤etud",
+    "skipped": "Vahelejäetud",
     "start": "Alusta",
     "stop": "Peata",
     "save": "Salvesta",
     "unchanged": "Muutmata",
     "unknown": "Teadmata",
-    "noItemInClipboard": "LÃµikelaual pole midagi."
+    "noItemInClipboard": "Lõikelaual pole midagi."
   },
   "receiveTab": {
-    "title": "VÃµta vastu",
+    "title": "Võta vastu",
     "infoBox": {
       "ip": "IP-aadress:",
       "port": "Port:",
@@ -69,54 +69,54 @@
       "app": "Rakendus",
       "clipboard": "Aseta"
     },
-    "shareIntentInfo": "Klikates nutiseadmes olevates rakendustes nuppu â€Jagaâ€œ vÃµid kasutada ka mugavat jagamise vÃµimalust.",
-    "nearbyDevices": "LÃ¤heduses asuvad seadmed",
+    "shareIntentInfo": "Klikates nutiseadmes olevates rakendustes nuppu „Jaga“ võid kasutada ka mugavat jagamise võimalust.",
+    "nearbyDevices": "Läheduses asuvad seadmed",
     "thisDevice": "See seade",
     "scan": "Otsi seadmeid",
-    "manualSending": "Saada kÃ¤sitsi",
+    "manualSending": "Saada käsitsi",
     "sendMode": "Saatmisviis",
     "sendModes": {
-      "single": "Ãœks vastuvÃµtja",
-      "multiple": "Mitu vastuvÃµtjat",
+      "single": "Üks vastuvõtja",
+      "multiple": "Mitu vastuvõtjat",
       "link": "Jagamine lingi vahendusel"
     },
     "sendModeHelp": "Selgitus",
-    "help": "Palun kontrolli, et sihtseade asub sama WiFi Ã¼henduse piires.",
+    "help": "Palun kontrolli, et sihtseade asub sama WiFi ühenduse piires.",
     "placeItems": "Lisa jagatavad failid siia."
   },
   "settingsTab": {
     "title": "Seadistused",
     "general": {
-      "title": "Ãœldised seadistused",
+      "title": "Üldised seadistused",
       "brightness": "Kujundus",
       "brightnessOptions": {
-        "system": "SÃ¼steemi kujundus",
+        "system": "Süsteemi kujundus",
         "dark": "Tume kujundus",
         "light": "Hele kujundus"
       },
-      "color": "VÃ¤rv",
+      "color": "Värv",
       "colorOptions": {
-        "system": "SÃ¼steemi vÃ¤rvid",
+        "system": "Süsteemi värvid",
         "oled": "OLED"
       },
       "language": "Keel",
       "languageOptions": {
-        "system": "SÃ¼steemi keel"
+        "system": "Süsteemi keel"
       },
-      "saveWindowPlacement": "Peale vÃ¤ljumist salvesta akna asukoht",
-      "saveWindowPlacementWindows": "Peale lÃµpetamist salvesta akna asukoht",
-      "minimizeToTray": "Sulgemisel aseta rakendus sÃ¼steemisalve",
-      "launchAtStartup": "Sisselogimisel kÃ¤ivita automaatselt",
-      "launchMinimized": "Automaatsel kÃ¤ivitamisel: kÃ¤ivita peidetuna",
-      "showInContextMenu": "NÃ¤ita GravitySendi kontekstimenÃ¼Ã¼s",
+      "saveWindowPlacement": "Peale väljumist salvesta akna asukoht",
+      "saveWindowPlacementWindows": "Peale lõpetamist salvesta akna asukoht",
+      "minimizeToTray": "Sulgemisel aseta rakendus süsteemisalve",
+      "launchAtStartup": "Sisselogimisel käivita automaatselt",
+      "launchMinimized": "Automaatsel käivitamisel: käivita peidetuna",
+      "showInContextMenu": "Näita GravitySendi kontekstimenüüs",
       "animations": "Animatsioonid"
     },
     "receive": {
-      "title": "VastuvÃµtmine",
+      "title": "Vastuvõtmine",
       "quickSave": "@:general.quickSave",
       "quickSaveFromFavorites": "@:general.quickSaveFromFavorites",
       "requirePin": "@:webSharePage.requirePin",
-      "autoFinish": "LÃµpeta automaatselt",
+      "autoFinish": "Lõpeta automaatselt",
       "destination": "Salvesta kausta",
       "downloads": "(Allalaadimised)",
       "saveToGallery": "Lisa meedia galeriisse",
@@ -124,86 +124,86 @@
     },
     "send": {
       "title": "Saatmine",
-      "shareViaLinkAutoAccept": "Kui kasutusel on â€Jaga lingi abilâ€œ, siis nÃµustu vastuvÃµtmisega automaatselt"
+      "shareViaLinkAutoAccept": "Kui kasutusel on „Jaga lingi abil“, siis nõustu vastuvõtmisega automaatselt"
     },
     "network": {
-      "title": "VÃµrk",
-      "needRestart": "Muudatuste jÃµustamiseks palun kÃ¤ivita server uuesti!",
+      "title": "Võrk",
+      "needRestart": "Muudatuste jõustamiseks palun käivita server uuesti!",
       "server": "Server",
       "alias": "Seadme nimi",
-      "deviceType": "Seadme tÃ¼Ã¼p",
+      "deviceType": "Seadme tüüp",
       "deviceModel": "Seadme mudel",
       "port": "Kasutatav port",
       "discoveryTimeout": "Leitavuse aegumine",
-      "useSystemName": "Kasuta sÃ¼steemset nime",
+      "useSystemName": "Kasuta süsteemset nime",
       "generateRandomAlias": "Loo juhuslik nimi",
-      "portWarning": "Kuna kasutad endamÃ¤Ã¤ratud porti, siis muud seadmed ei pruugi seda seadet leida. (vaikimisi: {defaultPort})",
-      "encryption": "KrÃ¼ptimine",
+      "portWarning": "Kuna kasutad endamääratud porti, siis muud seadmed ei pruugi seda seadet leida. (vaikimisi: {defaultPort})",
+      "encryption": "Krüptimine",
       "multicastGroup": "Multiedastuse aadress",
-      "multicastGroupWarning": "Kuna kasutad endamÃ¤Ã¤ratud multiedastuse aadressi, siis muud seadmed ei pruugi seda seadet leida. (vaikimisi: {defaultMulticast})",
+      "multicastGroupWarning": "Kuna kasutad endamääratud multiedastuse aadressi, siis muud seadmed ei pruugi seda seadet leida. (vaikimisi: {defaultMulticast})",
       "networkOptions": {
         "filtered": "Filtreeritud",
-        "all": "KÃµik"
+        "all": "Kõik"
       },
-      "network": "VÃµrk"
+      "network": "Võrk"
     },
     "other": {
       "title": "Muu teave",
       "support": "Toeta GravitySendi",
       "donate": "Toeta rahaliselt",
-      "privacyPolicy": "AndmekaitsepÃµhimÃµtted",
+      "privacyPolicy": "Andmekaitsepõhimõtted",
       "termsOfUse": "Kasutustingimused"
     },
-    "advancedSettings": "TÃ¤iendavad seadistused"
+    "advancedSettings": "Täiendavad seadistused"
   },
   "troubleshootPage": {
     "title": "Veaotsing",
-    "subTitle": "Kas rakendus toimib nii, nagu vaja? Siin vÃµid leida lahendusi levinumatele probleemidele.",
+    "subTitle": "Kas rakendus toimib nii, nagu vaja? Siin võid leida lahendusi levinumatele probleemidele.",
     "solution": "Lahendus:",
     "fixButton": "Paranda automaatselt",
     "firewall": {
-      "symptom": "Siit seadmest on vÃµimalik teisele faile saata, kuid teised ei saa siia saata.",
-      "solution": "TÃµenÃ¤oliselt on see seotud tulemÃ¼Ã¼riga. Olukorra vÃµid lahendada lubades sisenevad (UDP ja TCP) Ã¼hendused pordis {port}.",
-      "openFirewall": "Ava tulemÃ¼Ã¼ri seadistused"
+      "symptom": "Siit seadmest on võimalik teisele faile saata, kuid teised ei saa siia saata.",
+      "solution": "Tõenäoliselt on see seotud tulemüüriga. Olukorra võid lahendada lubades sisenevad (UDP ja TCP) ühendused pordis {port}.",
+      "openFirewall": "Ava tulemüüri seadistused"
     },
     "noDiscovery": {
       "symptom": "See seade ei suuda tuvastada teisi seadeid.",
-      "solution": "Palun kontrolli, et kÃµik seadmed asuvad samas WiFi vÃµrgus ning kasutavad samu seadistusi (port, multiedastuse aadress ja krÃ¼ptimine). Sa vÃµid ka proovida sihtseadme IP-aadressi lisamist kÃ¤sitsi. Kui siis Ã¼hendus toimib, vÃµid ta lisada lemmikuks ja hilisem tuvastamine saab olema automaatne."
+      "solution": "Palun kontrolli, et kõik seadmed asuvad samas WiFi võrgus ning kasutavad samu seadistusi (port, multiedastuse aadress ja krüptimine). Sa võid ka proovida sihtseadme IP-aadressi lisamist käsitsi. Kui siis ühendus toimib, võid ta lisada lemmikuks ja hilisem tuvastamine saab olema automaatne."
     },
     "noConnection": {
-      "symptom": "MÃµlemad seadmed ei suuda Ã¼ksteist leida ega jagada faile.",
-      "solution": "Kas identne probleem on mÃµlemas seadmes? Kui nii, siis palun kontrolli, et mÃµlemad seadmed asuvad samas WiFi vÃµrgus ning kasutavad samu seadistusi (port, multiedastuse aadress ja krÃ¼ptimine). Aga samas on vÃµimalik, et WiFi vÃµrk on seadistatud nii, et kÃµik seadmed on Ã¼ksteisest isoleeritud. Sel juhul kÃ¼si abi vÃµrgu haldajalt, kes saab ruuteris teha vajalikud muudatused."
+      "symptom": "Mõlemad seadmed ei suuda üksteist leida ega jagada faile.",
+      "solution": "Kas identne probleem on mõlemas seadmes? Kui nii, siis palun kontrolli, et mõlemad seadmed asuvad samas WiFi võrgus ning kasutavad samu seadistusi (port, multiedastuse aadress ja krüptimine). Aga samas on võimalik, et WiFi võrk on seadistatud nii, et kõik seadmed on üksteisest isoleeritud. Sel juhul küsi abi võrgu haldajalt, kes saab ruuteris teha vajalikud muudatused."
     }
   },
   "receiveHistoryPage": {
     "title": "Ajalugu",
     "openFolder": "Ava kaust",
     "deleteHistory": "Kustuta ajalugu",
-    "empty": "Ajalugu on tÃ¼hi.",
+    "empty": "Ajalugu on tühi.",
     "entryActions": {
       "open": "Ava fail",
-      "showInFolder": "NÃ¤ita kaustas",
+      "showInFolder": "Näita kaustas",
       "info": "Teave",
       "deleteFromHistory": "Kustuta ajaloost"
     }
   },
   "apkPickerPage": {
     "title": "Rakendused (apk-failid)",
-    "excludeSystemApps": "VÃ¤lista sÃ¼steemi rakendused",
-    "excludeAppsWithoutLaunchIntent": "VÃ¤lista mittekÃ¤ivitatavad rakendused",
+    "excludeSystemApps": "Välista süsteemi rakendused",
+    "excludeAppsWithoutLaunchIntent": "Välista mittekäivitatavad rakendused",
     "apps": "{n} rakendust"
   },
   "selectedFilesPage": {
-    "deleteAll": "Kustuta kÃµik"
+    "deleteAll": "Kustuta kõik"
   },
   "receivePage": {
     "subTitle": {
       "one": "soovib sulle saata faili",
       "other": "soovib sulle saata {n} faili"
     },
-    "subTitleMessage": "saatis sulle sÃµnumi:",
+    "subTitleMessage": "saatis sulle sõnumi:",
     "subTitleLink": "saatis sulle lingi:",
-    "canceled": "Saatja on pÃ¤ringu tÃ¼histanud."
+    "canceled": "Saatja on päringu tühistanud."
   },
   "receiveOptionsPage": {
     "title": "Eelistused",
@@ -213,21 +213,21 @@
     "saveToGalleryOff": "Pole kasutusel, kuna saadetavate hulgas leidub kaustu."
   },
   "sendPage": {
-    "waiting": "Ootame vastustâ€¦",
-    "rejected": "VastuvÃµtja on vastuvÃµtmisest keeldunud.",
+    "waiting": "Ootame vastust…",
+    "rejected": "Vastuvõtja on vastuvõtmisest keeldunud.",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "VastuvÃµtja on hÃµivatud teise pÃ¤ringuga tegelemisega."
+    "busy": "Vastuvõtja on hõivatud teise päringuga tegelemisega."
   },
   "progressPage": {
     "titleSending": "Saadame faile",
-    "titleReceiving": "VÃµtame faile vastu",
+    "titleReceiving": "Võtame faile vastu",
     "savedToGallery": "Salvestatud kausta Fotod",
     "total": {
       "title": {
         "sending": "Edenemine kokku ({time})",
-        "finishedError": "LÃµppes veaga",
+        "finishedError": "Lõppes veaga",
         "canceledSender": "Saatja poolt katkestatud",
-        "canceledReceiver": "VastuvÃµtja poolt katkestatud"
+        "canceledReceiver": "Vastuvõtja poolt katkestatud"
       },
       "count": "Faile: {curr} / {n}",
       "size": "Andmemaht: {curr} / {n}",
@@ -238,51 +238,51 @@
       "minutes": "{n}:{ss}",
       "hours": "{h} t {m} min",
       "days": "{d} pv {h} t {m} min",
-      "@hours": "Kasuta â€hâ€œ tunni lÃ¼hendina ja â€mâ€œ minutite jaoks",
-      "@days": "Kasuta â€dâ€œ pÃ¤eva, lÃ¼hendina â€hâ€œ tunni lÃ¼hendina ja â€mâ€œ minutite jaoks"
+      "@hours": "Kasuta „h“ tunni lühendina ja „m“ minutite jaoks",
+      "@days": "Kasuta „d“ päeva, lühendina „h“ tunni lühendina ja „m“ minutite jaoks"
     }
   },
   "webSharePage": {
     "title": "Jaga lingi vahendusel",
-    "loading": "KÃ¤ivitame serveritâ€¦",
-    "stopping": "Peatame serveritâ€¦",
-    "error": "Serveri kÃ¤ivitamisel tekkis viga.",
+    "loading": "Käivitame serverit…",
+    "stopping": "Peatame serverit…",
+    "error": "Serveri käivitamisel tekkis viga.",
     "openLink": {
       "one": "Ava see link oma veebibrauseris:",
-      "other": "Ava Ã¼ks neist linkidest oma veebibrauseris:"
+      "other": "Ava üks neist linkidest oma veebibrauseris:"
     },
-    "requests": "PÃ¤ringuid",
-    "noRequests": "PÃ¤ringuid veel pole.",
+    "requests": "Päringuid",
+    "noRequests": "Päringuid veel pole.",
     "encryption": "@:settingsTab.network.encryption",
-    "autoAccept": "NÃµustu pÃ¤ringutega automaatselt",
-    "requirePin": "KÃ¼si PIN-koodi",
-    "pinHint": "PIN-kood on â€{pin}â€œ",
-    "encryptionHint": "GravitySend kasutab enda poolt allkirjastatud sertifikaate. Ãœhenduse toimimiseks palun nÃµustu nendega veebibrauseris.",
-    "pendingRequests": "Ootel pÃ¤ringuid: {n}"
+    "autoAccept": "Nõustu päringutega automaatselt",
+    "requirePin": "Küsi PIN-koodi",
+    "pinHint": "PIN-kood on „{pin}“",
+    "encryptionHint": "GravitySend kasutab enda poolt allkirjastatud sertifikaate. Ühenduse toimimiseks palun nõustu nendega veebibrauseris.",
+    "pendingRequests": "Ootel päringuid: {n}"
   },
   "aboutPage": {
     "title": "Rakenduse teave: GravitySend",
     "description": [
-      "GravitySend pÃµhineb avatud lÃ¤htekoodil, on kÃµikide jaoks vaba ning tasuta kasutatav. Rakenduse eesmÃ¤rgiks on vÃµimaldada failide ja tekstide jagamist kohtvÃµrgus asuvate arvutite vahel nii, et vÃ¤list internetiÃ¼hendust pole vaja kasutada.",
-      "See rakendus on saadaval Androidi, iOSi, macOSi, Windowsi ja Linuxi jaoks. KÃµik allalaaditavad paigaldusfailid leiad meie ametlikust veebisaidist."
+      "GravitySend põhineb avatud lähtekoodil, on kõikide jaoks vaba ning tasuta kasutatav. Rakenduse eesmärgiks on võimaldada failide ja tekstide jagamist kohtvõrgus asuvate arvutite vahel nii, et välist internetiühendust pole vaja kasutada.",
+      "See rakendus on saadaval Androidi, iOSi, macOSi, Windowsi ja Linuxi jaoks. Kõik allalaaditavad paigaldusfailid leiad meie ametlikust veebisaidist."
     ],
     "author": "Autor",
     "contributors": "Kaasautorid",
     "packagers": "Pakendajad",
-    "translators": "TÃµlkijad"
+    "translators": "Tõlkijad"
   },
   "donationPage": {
     "title": "Toeta meid rahaliselt",
-    "info": "GravitySend pÃµhineb avatud lÃ¤htekoodil, on kÃµikide jaoks vaba ning tasuta kasutatav, ega sisalda reklaame. Kui sulle see rakendus meeldib, siis palun toeta meie arendust.",
+    "info": "GravitySend põhineb avatud lähtekoodil, on kõikide jaoks vaba ning tasuta kasutatav, ega sisalda reklaame. Kui sulle see rakendus meeldib, siis palun toeta meie arendust.",
     "donate": "Anneta {amount}",
-    "thanks": "Suur tÃ¤nu!",
+    "thanks": "Suur tänu!",
     "restore": "Taasta ost"
   },
   "changelogPage": {
     "title": "Muudatuste logi"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
-    "@info": "Erinevates lokaatides vÃµivad olla kasutusel erinevad sÃµnad ning nad ei pruugi 1:1 kattuda"
+    "@info": "Erinevates lokaatides võivad olla kasutusel erinevad sõnad ning nad ei pruugi 1:1 kattuda"
   },
   "dialogs": {
     "addFile": {
@@ -304,24 +304,24 @@
       "content": "Kas sa kindlasti soovid katkestada failide edastamise?"
     },
     "cannotOpenFile": {
-      "title": "Faili avamine ei Ãµnnestu",
-      "content": "â€{file}â€œ faili avamine ei Ãµnnestunud. Kas ta vÃµib olla teisaldatud, Ã¼mbernimetatud vÃµi kustutatud?"
+      "title": "Faili avamine ei õnnestu",
+      "content": "„{file}“ faili avamine ei õnnestunud. Kas ta võib olla teisaldatud, ümbernimetatud või kustutatud?"
     },
     "encryptionDisabledNotice": {
-      "title": "KrÃ¼ptimine pole kasutusel",
-      "content": "Andmevahetus toimub nÃ¼Ã¼d krÃ¼ptimata HTTP-protokolli vahendusel. Turvalise HTTPS-protokolli kasutamiseks lÃ¼lita krÃ¼ptimine sisse."
+      "title": "Krüptimine pole kasutusel",
+      "content": "Andmevahetus toimub nüüd krüptimata HTTP-protokolli vahendusel. Turvalise HTTPS-protokolli kasutamiseks lülita krüptimine sisse."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteDialog": {
       "title": "Lemmikud",
-      "noFavorites": "Ãœhtegi lemmikseadet veel pole.",
+      "noFavorites": "Ühtegi lemmikseadet veel pole.",
       "addFavorite": "Lisa"
     },
     "favoriteDeleteDialog": {
       "title": "Kustuta lemmikute hulgast",
-      "content": "Kas sa kindlasti soovid â€{name}â€œ kustutada lemmikute hulgast?"
+      "content": "Kas sa kindlasti soovid „{name}“ kustutada lemmikute hulgast?"
     },
     "favoriteEditDialog": {
       "titleAdd": "Lisa lemmikuks",
@@ -344,25 +344,25 @@
       "original": "Algne: {original}"
     },
     "historyClearDialog": {
-      "title": "TÃ¼hjenda ajalugu",
+      "title": "Tühjenda ajalugu",
       "content": "Kas sa kindlasti soovid kogu ajaloo kustutada?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "Ilma kohtvÃµrgu skaneerimise Ãµiguseta ei suuda GravitySend leida teisi seadmeid. Palun luba sÃ¼steemi seadistustest vajalikud Ãµigused.",
+      "description": "Ilma kohtvõrgu skaneerimise õiguseta ei suuda GravitySend leida teisi seadmeid. Palun luba süsteemi seadistustest vajalikud õigused.",
       "gotoSettings": "Seadistused"
     },
     "messageInput": {
-      "title": "Kirjuta sÃµnum",
+      "title": "Kirjuta sõnum",
       "multiline": "Mitmerealine"
     },
     "noFiles": {
-      "title": "Ãœhtegi faili pole valitud",
-      "content": "Palun vali vÃ¤hemalt Ã¼ks fail."
+      "title": "Ühtegi faili pole valitud",
+      "content": "Palun vali vähemalt üks fail."
     },
     "noPermission": {
-      "title": "Ã•igused puuduvad",
-      "content": "Sa pole rakendusele jaganud vajalikke Ãµigusi. Palun tee seda sÃ¼steemi seadistustes."
+      "title": "Õigused puuduvad",
+      "content": "Sa pole rakendusele jaganud vajalikke õigusi. Palun tee seda süsteemi seadistustes."
     },
     "notAvailableOnPlatform": {
       "title": "Pole saadaval",
@@ -375,20 +375,20 @@
       "title": "Kiirtoimingud",
       "counter": "Loendur",
       "prefix": "Eesliide",
-      "padZero": "TÃ¤ida nullidega",
-      "sortBeforeCount": "Enne loendamist jÃ¤rjesta tÃ¤hestiku jÃ¤rjekorras (A-Z)",
+      "padZero": "Täida nullidega",
+      "sortBeforeCount": "Enne loendamist järjesta tähestiku järjekorras (A-Z)",
       "random": "Juhuslikult"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "FailipÃ¤ringutega nÃµustume nÃ¼Ã¼d automaatselt. Palun arvesta, et seelÃ¤bi vÃµivad kÃµik sinu kohtvÃµrgus saata sulle faile."
+      "content": "Failipäringutega nõustume nüüd automaatselt. Palun arvesta, et seeläbi võivad kõik sinu kohtvõrgus saata sulle faile."
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "FailipÃ¤ringutega nÃµustume nÃ¼Ã¼d automaatselt vaid nende seadmete puhul, mis on lemmikuks mÃ¤rgitud.",
-        "Hoiatus! Kui kohtvÃµrgus tegutsev vÃµimalik pahatahtlik osapool saaks kÃ¤tte sinul lemmikuks mÃ¤rgitud seadmete vÃµtmed ja sÃµrmejÃ¤ljed, siis saaks sulle piiranguteta faile saata ja seega pole lahendus hetkel tÃ¤iesti turvaline.",
-        "Aga siiski on see valik turvalisem, kui lubada kÃµigil sinu kohtvÃµrgu kasutajatel saata sulle faile ilma igasuguste piiranguteta."
+        "Failipäringutega nõustume nüüd automaatselt vaid nende seadmete puhul, mis on lemmikuks märgitud.",
+        "Hoiatus! Kui kohtvõrgus tegutsev võimalik pahatahtlik osapool saaks kätte sinul lemmikuks märgitud seadmete võtmed ja sõrmejäljed, siis saaks sulle piiranguteta faile saata ja seega pole lahendus hetkel täiesti turvaline.",
+        "Aga siiski on see valik turvalisem, kui lubada kõigil sinu kohtvõrgu kasutajatel saata sulle faile ilma igasuguste piiranguteta."
       ]
     },
     "pin": {
@@ -396,23 +396,23 @@
     },
     "sendModeHelp": {
       "title": "Saatmisviisid",
-      "single": "Sellega saadame faile Ã¼hele vastuvÃµtjale. Peale failide saatmise lÃµppu eemaldame failid saatmisloendist.",
-      "multiple": "Sellega saadame faile mitmele vastuvÃµtjale. Peale failide saatmise lÃµppu failid jÃ¤Ã¤vad saatmisloendisse alles.",
-      "link": "Kui failide vastuvÃµtjatel pole arvutis vÃµi nutiseadmes rakendust GravitySend, siis avades etteantud lingi oma veebibrauseris, saavad nad failid alla laadida."
+      "single": "Sellega saadame faile ühele vastuvõtjale. Peale failide saatmise lõppu eemaldame failid saatmisloendist.",
+      "multiple": "Sellega saadame faile mitmele vastuvõtjale. Peale failide saatmise lõppu failid jäävad saatmisloendisse alles.",
+      "link": "Kui failide vastuvõtjatel pole arvutis või nutiseadmes rakendust GravitySend, siis avades etteantud lingi oma veebibrauseris, saavad nad failid alla laadida."
     },
     "zoom": {
-      "title": "VÃµrguaadress"
+      "title": "Võrguaadress"
     }
   },
   "sanitization": {
     "empty": "Failil peab olema nimi",
-    "invalid": "Failinimes on valesid tÃ¤hemÃ¤rke"
+    "invalid": "Failinimes on valesid tähemärke"
   },
   "tray": {
-    "@info": "Apple'i kasutajaliidese juhendid on vÃ¤ga ranged sÃµna â€Sulgeâ€œ kasutamise osas.",
+    "@info": "Apple'i kasutajaliidese juhendid on väga ranged sõna „Sulge“ kasutamise osas.",
     "open": "@:general.open",
     "close": "Sulge GravitySend",
-    "closeWindows": "VÃ¤lju"
+    "closeWindows": "Välju"
   },
   "web": {
     "waiting": "@:sendPage.waiting",
@@ -425,23 +425,23 @@
     "size": "Suurus"
   },
   "assetPicker": {
-    "@info": "Androidis ja iPhone'is kasutatava meediavalija tÃµlked",
+    "@info": "Androidis ja iPhone'is kasutatava meediavalija tõlked",
     "confirm": "Kinnita",
     "cancel": "Katkesta",
     "edit": "Muuda",
     "gifIndicator": "GIF",
-    "loadFailed": "Laadimine ei Ãµnnestunud",
+    "loadFailed": "Laadimine ei õnnestunud",
     "original": "Algne",
     "preview": "Eelvaade",
     "select": "Vali",
-    "emptyList": "TÃ¼hi loend",
-    "unSupportedAssetType": "FailitÃ¼Ã¼p pole toetatud.",
-    "unableToAccessAll": "Selles seadmes puudub ligipÃ¤Ã¤s failidele",
-    "viewingLimitedAssetsTip": "NÃ¤ed vaid faile ja albumeid, millele oled sellele rakendusele ligipÃ¤Ã¤su andnud.",
-    "changeAccessibleLimitedAssets": "LigipÃ¤Ã¤setavate failide loendi uuendmiseks klÃµpsi",
-    "accessAllTip": "Rakendusel on selles nutiseadmes ligipÃ¤Ã¤s vaid mÃµnedele failidele. Kui vajad ligipÃ¤Ã¤su kÃµikidele meediafailidele, siis ava seadistused ning luba vastavad Ãµigused.",
-    "goToSystemSettings": "Ava sÃ¼steemi seadistused",
-    "accessLimitedAssets": "JÃ¤tka piiratud ligipÃ¤Ã¤suga",
+    "emptyList": "Tühi loend",
+    "unSupportedAssetType": "Failitüüp pole toetatud.",
+    "unableToAccessAll": "Selles seadmes puudub ligipääs failidele",
+    "viewingLimitedAssetsTip": "Näed vaid faile ja albumeid, millele oled sellele rakendusele ligipääsu andnud.",
+    "changeAccessibleLimitedAssets": "Ligipääsetavate failide loendi uuendmiseks klõpsi",
+    "accessAllTip": "Rakendusel on selles nutiseadmes ligipääs vaid mõnedele failidele. Kui vajad ligipääsu kõikidele meediafailidele, siis ava seadistused ning luba vastavad õigused.",
+    "goToSystemSettings": "Ava süsteemi seadistused",
+    "accessLimitedAssets": "Jätka piiratud ligipääsuga",
     "accessiblePathName": "Kasutatavad failid",
     "sTypeAudioLabel": "Heli",
     "sTypeImageLabel": "Pilt",
@@ -456,12 +456,13 @@
     "sUnitAssetCountLabel": "kogus"
   },
   "networkInterfacesPage": {
-    "title": "VÃµrguliidesed",
+    "title": "Võrguliidesed",
     "preview": "Eelvaade",
     "whitelist": "Lubatud loend",
     "blacklist": "Keelatud loend",
-    "info": "Vaikimisi kasutab GravitySend kÃµiki vÃµrguliideseid. Kui sul on vaja, siis saad mittesoovitud vÃµrgud siinkohal vÃ¤listada ning muudatuste jÃµustumine eeldab serverikomponendi uuesti kÃ¤ivitamist."
+    "info": "Vaikimisi kasutab GravitySend kõiki võrguliideseid. Kui sul on vaja, siis saad mittesoovitud võrgud siinkohal välistada ning muudatuste jõustumine eeldab serverikomponendi uuesti käivitamist."
   }
 }
+
 
 

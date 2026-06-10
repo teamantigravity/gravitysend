@@ -1,20 +1,20 @@
-ï»¿{
+{
   "locale": "Deutsch",
   "appName": "GravitySend",
   "general": {
     "accept": "Akzeptieren",
     "accepted": "Akzeptiert",
-    "add": "HinzufÃ¼gen",
+    "add": "Hinzufügen",
     "advanced": "Erweitert",
     "cancel": "Abbrechen",
-    "close": "SchlieÃŸen",
-    "confirm": "BestÃ¤tigen",
+    "close": "Schließen",
+    "confirm": "Bestätigen",
     "continueStr": "Weiter",
     "copy": "Kopieren",
     "copiedToClipboard": "In die Zwischenablage kopiert",
     "decline": "Ablehnen",
     "done": "Fertig",
-    "delete": "LÃ¶schen",
+    "delete": "Löschen",
     "edit": "Bearbeiten",
     "error": "Fehler",
     "example": "Beispiel",
@@ -25,19 +25,19 @@
     "offline": "Offline",
     "on": "An",
     "online": "Online",
-    "open": "Ã–ffnen",
+    "open": "Öffnen",
     "queue": "Warteschlange",
     "quickSave": "Quick Save",
-    "quickSaveFromFavorites": "Quick Save fÃ¼r \"Favoriten\"",
+    "quickSaveFromFavorites": "Quick Save für \"Favoriten\"",
     "renamed": "Umbenannt",
-    "reset": "ZurÃ¼cksetzen",
+    "reset": "Zurücksetzen",
     "restart": "Neustarten",
     "settings": "Einstellungen",
-    "skipped": "Ãœbersprungen",
+    "skipped": "Übersprungen",
     "start": "Start",
     "stop": "Stop",
     "save": "Speichern",
-    "unchanged": "UnverÃ¤ndert",
+    "unchanged": "Unverändert",
     "unknown": "Unbekannt",
     "noItemInClipboard": "Kein Element in der Zwischenablage gefunden."
   },
@@ -59,7 +59,7 @@
     "selection": {
       "title": "Auswahl",
       "files": "Dateien: {files}",
-      "size": "GrÃ¶ÃŸe: {size}"
+      "size": "Größe: {size}"
     },
     "picker": {
       "file": "Datei",
@@ -69,19 +69,19 @@
       "app": "App",
       "clipboard": "Ablage"
     },
-    "shareIntentInfo": "Du kannst auch die \"Teilen\"-Funktion deines mobilen GerÃ¤ts nutzen, um Dateien einfacher auszuwÃ¤hlen.",
-    "nearbyDevices": "GerÃ¤te in der NÃ¤he",
-    "thisDevice": "Dieses GerÃ¤t",
-    "scan": "GerÃ¤te suchen",
+    "shareIntentInfo": "Du kannst auch die \"Teilen\"-Funktion deines mobilen Geräts nutzen, um Dateien einfacher auszuwählen.",
+    "nearbyDevices": "Geräte in der Nähe",
+    "thisDevice": "Dieses Gerät",
+    "scan": "Geräte suchen",
     "manualSending": "Manuelles Senden",
     "sendMode": "Sendemodus",
     "sendModes": {
-      "single": "Einzelner EmpfÃ¤nger",
-      "multiple": "Mehrere EmpfÃ¤nger",
+      "single": "Einzelner Empfänger",
+      "multiple": "Mehrere Empfänger",
       "link": "Per Link teilen"
     },
-    "sendModeHelp": "ErklÃ¤rung",
-    "help": "Bitte stelle sicher, dass sich das gewÃ¼nschte Ziel auch im selben WLAN-Netzwerk befindet.",
+    "sendModeHelp": "Erklärung",
+    "help": "Bitte stelle sicher, dass sich das gewünschte Ziel auch im selben WLAN-Netzwerk befindet.",
     "placeItems": "Dateien ablegen, um zu teilen."
   },
   "settingsTab": {
@@ -108,7 +108,7 @@
       "minimizeToTray": "Beenden: in Symbolleiste minimieren",
       "launchAtStartup": "Autostart nach Login",
       "launchMinimized": "Autostart: versteckt starten",
-      "showInContextMenu": "GravitySend im KontextmenÃ¼ anzeigen",
+      "showInContextMenu": "GravitySend im Kontextmenü anzeigen",
       "animations": "Animationen"
     },
     "receive": {
@@ -128,11 +128,11 @@
     },
     "network": {
       "title": "Netzwerk",
-      "needRestart": "Starte den Server neu, um die Ã„nderungen zu Ã¼bernehmen!",
+      "needRestart": "Starte den Server neu, um die Änderungen zu übernehmen!",
       "server": "Server",
       "alias": "Alias",
-      "deviceType": "GerÃ¤tetyp",
-      "deviceModel": "GerÃ¤temodell",
+      "deviceType": "Gerätetyp",
+      "deviceModel": "Gerätemodell",
       "port": "Port",
       "network": "Netzwerk",
       "networkOptions": {
@@ -141,54 +141,54 @@
       },
       "discoveryTimeout": "Erkennungs-Timeout",
       "useSystemName": "Systemnamen verwenden",
-      "generateRandomAlias": "ZufÃ¤lligen Alias generieren",
-      "portWarning": "MÃ¶glicherweise wirst du von anderen GerÃ¤ten nicht erkannt, weil du einen benutzerdefinierten Port verwendest. (Standard: {defaultPort})",
-      "encryption": "VerschlÃ¼sselung",
+      "generateRandomAlias": "Zufälligen Alias generieren",
+      "portWarning": "Möglicherweise wirst du von anderen Geräten nicht erkannt, weil du einen benutzerdefinierten Port verwendest. (Standard: {defaultPort})",
+      "encryption": "Verschlüsselung",
       "multicastGroup": "Multicast",
-      "multicastGroupWarning": "MÃ¶glicherweise wirst du von anderen GerÃ¤ten nicht erkannt, weil du eine benutzerdefinierte Multicast-Adresse verwendest. (Standard: {defaultMulticast})"
+      "multicastGroupWarning": "Möglicherweise wirst du von anderen Geräten nicht erkannt, weil du eine benutzerdefinierte Multicast-Adresse verwendest. (Standard: {defaultMulticast})"
     },
     "other": {
       "title": "Weitere",
-      "support": "GravitySend unterstÃ¼tzen",
+      "support": "GravitySend unterstützen",
       "donate": "Spenden",
-      "privacyPolicy": "DatenschutzerklÃ¤rung",
+      "privacyPolicy": "Datenschutzerklärung",
       "termsOfUse": "Nutzungsbedingungen"
     },
     "advancedSettings": "Erweiterte Einstellungen"
   },
   "troubleshootPage": {
     "title": "Fehlerbehebung",
-    "subTitle": "Diese App funktioniert nicht wie erwartet? Hier findest du hÃ¤ufige LÃ¶sungsansÃ¤tze.",
-    "solution": "LÃ¶sung:",
+    "subTitle": "Diese App funktioniert nicht wie erwartet? Hier findest du häufige Lösungsansätze.",
+    "solution": "Lösung:",
     "fixButton": "Automatisch beheben",
     "firewall": {
-      "symptom": "Diese App kann Dateien an andere GerÃ¤te senden, aber nicht umgekehrt.",
-      "solution": "Dies ist hÃ¶chstwahrscheinlich ein Firewall-Problem. Du kannst es lÃ¶sen, indem du eingehende Verbindungen (UDP und TCP) auf Port {port} zulÃ¤sst.",
-      "openFirewall": "Firewall Ã¶ffnen"
+      "symptom": "Diese App kann Dateien an andere Geräte senden, aber nicht umgekehrt.",
+      "solution": "Dies ist höchstwahrscheinlich ein Firewall-Problem. Du kannst es lösen, indem du eingehende Verbindungen (UDP und TCP) auf Port {port} zulässt.",
+      "openFirewall": "Firewall öffnen"
     },
     "noDiscovery": {
-      "symptom": "Dieses GerÃ¤t kann keine anderen GerÃ¤te entdecken.",
-      "solution": "Stelle sicher, dass alle GerÃ¤te im selben Wi-Fi-Netzwerk sind und die gleiche Konfiguration teilen (Port, Multicast-Adresse, VerschlÃ¼sselung). Du kannst versuchen, die IP-Adresse des ZielgerÃ¤ts manuell einzugeben. Wenn dies funktioniert, fÃ¼ge dieses GerÃ¤t zu den Favoriten hinzu, damit es in Zukunft automatisch entdeckt werden kann."
+      "symptom": "Dieses Gerät kann keine anderen Geräte entdecken.",
+      "solution": "Stelle sicher, dass alle Geräte im selben Wi-Fi-Netzwerk sind und die gleiche Konfiguration teilen (Port, Multicast-Adresse, Verschlüsselung). Du kannst versuchen, die IP-Adresse des Zielgeräts manuell einzugeben. Wenn dies funktioniert, füge dieses Gerät zu den Favoriten hinzu, damit es in Zukunft automatisch entdeckt werden kann."
     },
     "noConnection": {
-      "symptom": "Beide GerÃ¤te kÃ¶nnen sich weder sehen noch kÃ¶nnen sie Dateien miteinander teilen.",
-      "solution": "Das Problem tritt auf beiden Seiten auf? Dann stelle sicher, dass beide GerÃ¤te im selben WLAN sind sowie dieselbe Konfiguration (Port, Multicast-Adresse, VerschlÃ¼sselung) haben. Es kann sein, dass das WLAN keine Kommunikation zwischen Teilnehmern erlaubt (AP-Isolation). In diesem Fall muss am Router diese Option aktiviert werden."
+      "symptom": "Beide Geräte können sich weder sehen noch können sie Dateien miteinander teilen.",
+      "solution": "Das Problem tritt auf beiden Seiten auf? Dann stelle sicher, dass beide Geräte im selben WLAN sind sowie dieselbe Konfiguration (Port, Multicast-Adresse, Verschlüsselung) haben. Es kann sein, dass das WLAN keine Kommunikation zwischen Teilnehmern erlaubt (AP-Isolation). In diesem Fall muss am Router diese Option aktiviert werden."
     }
   },
   "networkInterfacesPage": {
     "title": "Netzwerkschnittstellen",
-    "info": "StandardmÃ¤ÃŸig verwendet GravitySend alle verfÃ¼gbaren Netzwerkschnittstellen. Hier kÃ¶nnen Sie unerwÃ¼nschte Netzwerke ausschlieÃŸen. Sie mÃ¼ssen den Server neu starten, um die Ã„nderungen zu Ã¼bernehmen.",
+    "info": "Standardmäßig verwendet GravitySend alle verfügbaren Netzwerkschnittstellen. Hier können Sie unerwünschte Netzwerke ausschließen. Sie müssen den Server neu starten, um die Änderungen zu übernehmen.",
     "preview": "Vorschau",
     "whitelist": "Whitelist",
     "blacklist": "Blacklist"
   },
   "receiveHistoryPage": {
     "title": "Verlauf",
-    "openFolder": "Ordner Ã¶ffnen",
-    "deleteHistory": "Verlauf lÃ¶schen",
+    "openFolder": "Ordner öffnen",
+    "deleteHistory": "Verlauf löschen",
     "empty": "Der Verlauf ist leer.",
     "entryActions": {
-      "open": "Datei Ã¶ffnen",
+      "open": "Datei öffnen",
       "showInFolder": "Im Ordner anzeigen",
       "info": "Information",
       "deleteFromHistory": "Vom Verlauf entfernen"
@@ -196,17 +196,17 @@
   },
   "apkPickerPage": {
     "title": "Apps (APK)",
-    "excludeSystemApps": "System-Apps ausschlieÃŸen",
-    "excludeAppsWithoutLaunchIntent": "Nicht-startbare Apps ausschlieÃŸen",
+    "excludeSystemApps": "System-Apps ausschließen",
+    "excludeAppsWithoutLaunchIntent": "Nicht-startbare Apps ausschließen",
     "apps": "{n} Apps"
   },
   "selectedFilesPage": {
-    "deleteAll": "Alle lÃ¶schen"
+    "deleteAll": "Alle löschen"
   },
   "receivePage": {
     "subTitle": {
-      "one": "mÃ¶chte dir eine Datei senden",
-      "other": "mÃ¶chte dir {n} Dateien senden"
+      "one": "möchte dir eine Datei senden",
+      "other": "möchte dir {n} Dateien senden"
     },
     "subTitleMessage": "sendet dir eine Nachricht:",
     "subTitleLink": "sendet dir einen Link:",
@@ -220,10 +220,10 @@
     "saveToGalleryOff": "Aufgrund von Ordnern automatisch ausgeschaltet."
   },
   "sendPage": {
-    "waiting": "Warte auf Antwortâ€¦",
-    "rejected": "Der EmpfÃ¤nger hat die Anfrage abgelehnt.",
+    "waiting": "Warte auf Antwort…",
+    "rejected": "Der Empfänger hat die Anfrage abgelehnt.",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "Der EmpfÃ¤nger ist mit einer anderen Anfrage beschÃ¤ftigt."
+    "busy": "Der Empfänger ist mit einer anderen Anfrage beschäftigt."
   },
   "progressPage": {
     "titleSending": "Sende Dateien",
@@ -234,15 +234,15 @@
         "sending": "Gesamtfortschritt ({time})",
         "finishedError": "Abgeschlossen mit Fehler",
         "canceledSender": "Abgebrochen durch Absender",
-        "canceledReceiver": "Abgebrochen durch EmpfÃ¤nger"
+        "canceledReceiver": "Abgebrochen durch Empfänger"
       },
       "count": "Dateien: {curr} / {n}",
-      "size": "GrÃ¶ÃŸe: {curr} / {n}",
+      "size": "Größe: {curr} / {n}",
       "speed": "Geschwindigkeit: {speed}/s"
     },
     "remainingTime": {
-      "@hours": "Benutze 'h' als AbkÃ¼rzung fÃ¼r Stunden und 'm' fÃ¼r Minuten",
-      "@days": "Benutze 'd' fÃ¼r Tage, 'h' fÃ¼r Stunden und 'm' fÃ¼r Minuten",
+      "@hours": "Benutze 'h' als Abkürzung für Stunden und 'm' für Minuten",
+      "@days": "Benutze 'd' für Tage, 'h' für Stunden und 'm' für Minuten",
       "seconds": "{n}:{ss}",
       "minutes": "{n}:{ss}",
       "hours": "{h}h {m}m",
@@ -251,12 +251,12 @@
   },
   "webSharePage": {
     "title": "Per Link teilen",
-    "loading": "Starte Serverâ€¦",
-    "stopping": "Stoppe serverâ€¦",
+    "loading": "Starte Server…",
+    "stopping": "Stoppe server…",
     "error": "Ein Fehler ist beim Starten des Servers aufgetreten.",
     "openLink": {
-      "one": "Ã–ffne diesen Link im Browser:",
-      "other": "Ã–ffne einer dieser Links im Browser:"
+      "one": "Öffne diesen Link im Browser:",
+      "other": "Öffne einer dieser Links im Browser:"
     },
     "requests": "Anfragen",
     "noRequests": "Bisher keine Anfragen erhalten.",
@@ -268,37 +268,37 @@
     "pendingRequests": "Offene Anfragen: {n}"
   },
   "aboutPage": {
-    "title": "Ãœber GravitySend",
+    "title": "Über GravitySend",
     "description": [
-      "GravitySend ist eine kostenlose Open-Source-App, mit der du Dateien und Nachrichten sicher Ã¼ber dein lokales Netzwerk mit GerÃ¤ten in der NÃ¤he teilen kannst, ohne dass eine Internetverbindung erforderlich ist.",
-      "Diese App ist fÃ¼r Android, iOS, macOS, Windows und Linux verfÃ¼gbar. Alle DownloadmÃ¶glichkeiten findest du auf der offiziellen Homepage."
+      "GravitySend ist eine kostenlose premium-App, mit der du Dateien und Nachrichten sicher über dein lokales Netzwerk mit Geräten in der Nähe teilen kannst, ohne dass eine Internetverbindung erforderlich ist.",
+      "Diese App ist für Android, iOS, macOS, Windows und Linux verfügbar. Alle Downloadmöglichkeiten findest du auf der offiziellen Homepage."
     ],
     "author": "Autor",
     "contributors": "Mitwirkende",
     "packagers": "Paketierende",
-    "translators": "Ãœbersetzende"
+    "translators": "Übersetzende"
   },
   "donationPage": {
     "title": "Spenden",
-    "info": "GravitySend ist kostenlos, quelloffen und frei von Werbung. Wenn dir diese App gefÃ¤llt, kannst du die Entwicklung mit einer Spende unterstÃ¼tzen.",
+    "info": "GravitySend ist kostenlos, quelloffen und frei von Werbung. Wenn dir diese App gefällt, kannst du die Entwicklung mit einer Spende unterstützen.",
     "donate": "Spende {amount}",
-    "thanks": "Vielen Dank fÃ¼r deine UnterstÃ¼tzung!",
-    "restore": "KÃ¤ufe wiederherstellen"
+    "thanks": "Vielen Dank für deine Unterstützung!",
+    "restore": "Käufe wiederherstellen"
   },
   "changelogPage": {
-    "title": "Ã„nderungsprotokoll"
+    "title": "Änderungsprotokoll"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
     "@info": "Inherits from the English version"
   },
   "dialogs": {
     "addFile": {
-      "title": "Zur Auswahl hinzufÃ¼gen",
-      "content": "Was mÃ¶chtest du zum Senden hinzufÃ¼gen?"
+      "title": "Zur Auswahl hinzufügen",
+      "content": "Was möchtest du zum Senden hinzufügen?"
     },
     "openFile": {
-      "title": "Datei Ã¶ffnen",
-      "content": "MÃ¶chtest du die empfangene Datei Ã¶ffnen?"
+      "title": "Datei öffnen",
+      "content": "Möchtest du die empfangene Datei öffnen?"
     },
     "addressInput": {
       "title": "Adresse eingeben",
@@ -307,16 +307,16 @@
       "recentlyUsed": "Zuletzt verwendet: "
     },
     "cancelSession": {
-      "title": "DateiÃ¼bertragung abbrechen",
-      "content": "MÃ¶chtest du wirklich die DateiÃ¼bertragung abbrechen?"
+      "title": "Dateiübertragung abbrechen",
+      "content": "Möchtest du wirklich die Dateiübertragung abbrechen?"
     },
     "cannotOpenFile": {
-      "title": "Ã–ffnen fehlgeschlagen",
-      "content": "Die Datei \"{file}\" konnte nicht geÃ¶ffnet werden. Wurde diese Datei verschoben, umbenannt oder gelÃ¶scht?"
+      "title": "Öffnen fehlgeschlagen",
+      "content": "Die Datei \"{file}\" konnte nicht geöffnet werden. Wurde diese Datei verschoben, umbenannt oder gelöscht?"
     },
     "encryptionDisabledNotice": {
-      "title": "VerschlÃ¼sselung deaktiviert",
-      "content": "Die Kommunikation erfolgt nun Ã¼ber das unverschlÃ¼sselte HTTP-Protokoll. Um HTTPS zu verwenden, aktiviere wieder die VerschlÃ¼sselung."
+      "title": "Verschlüsselung deaktiviert",
+      "content": "Die Kommunikation erfolgt nun über das unverschlüsselte HTTP-Protokoll. Um HTTPS zu verwenden, aktiviere wieder die Verschlüsselung."
     },
     "errorDialog": {
       "title": "@:general.error"
@@ -327,11 +327,11 @@
       "addFavorite": "Neu"
     },
     "favoriteDeleteDialog": {
-      "title": "Favorit lÃ¶schen",
-      "content": "MÃ¶chtest du wirklich \"{name}\" lÃ¶schen?"
+      "title": "Favorit löschen",
+      "content": "Möchtest du wirklich \"{name}\" löschen?"
     },
     "favoriteEditDialog": {
-      "titleAdd": "Favorit hinzufÃ¼gen",
+      "titleAdd": "Favorit hinzufügen",
       "titleEdit": "Favorit bearbeiten",
       "name": "Name",
       "auto": "(auto)",
@@ -342,7 +342,7 @@
       "title": "Datei-Information",
       "fileName": "Dateiname:",
       "path": "Pfad:",
-      "size": "GrÃ¶ÃŸe:",
+      "size": "Größe:",
       "sender": "Absender:",
       "time": "Zeit:"
     },
@@ -351,8 +351,8 @@
       "original": "Original: {original}"
     },
     "historyClearDialog": {
-      "title": "Verlauf lÃ¶schen",
-      "content": "MÃ¶chtest du wirklich den gesamten Verlauf lÃ¶schen?"
+      "title": "Verlauf löschen",
+      "content": "Möchtest du wirklich den gesamten Verlauf löschen?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
@@ -364,25 +364,25 @@
       "multiline": "Mehrzeilig"
     },
     "noFiles": {
-      "title": "Keine Datei ausgewÃ¤hlt",
-      "content": "Bitte wÃ¤hle mindestens eine Datei aus."
+      "title": "Keine Datei ausgewählt",
+      "content": "Bitte wähle mindestens eine Datei aus."
     },
     "noPermission": {
       "title": "Keine Berechtigung",
-      "content": "Du hast die erforderlichen Berechtigungen nicht gewÃ¤hrt. Bitte gewÃ¤hre sie in den Einstellungen."
+      "content": "Du hast die erforderlichen Berechtigungen nicht gewährt. Bitte gewähre sie in den Einstellungen."
     },
     "notAvailableOnPlatform": {
-      "title": "Nicht verfÃ¼gbar",
-      "content": "Diese Funktion ist nur verfÃ¼gbar auf:"
+      "title": "Nicht verfügbar",
+      "content": "Diese Funktion ist nur verfügbar auf:"
     },
     "qr": {
       "title": "QR-Code"
     },
     "quickActions": {
       "title": "Quick Actions",
-      "counter": "ZÃ¤hler",
+      "counter": "Zähler",
       "prefix": "Prefix",
-      "padZero": "Mit Nullen auffÃ¼llen",
+      "padZero": "Mit Nullen auffüllen",
       "sortBeforeCount": "Vorher alphabetisch sortieren",
       "random": "Zufall"
     },
@@ -393,9 +393,9 @@
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "Dateianfragen werden jetzt automatisch von GerÃ¤ten in deiner Favoritenliste akzeptiert.",
-        "Warnung: Dies ist derzeit nicht vollstÃ¤ndig sicher, da ein Hacker, der den Fingerabdruck der GerÃ¤te in deiner Favoritenliste kennt, dir immer noch Dateien senden kann.",
-        "Diese Option ist jedoch immer noch sicherer als die Erlaubnis fÃ¼r jedes GerÃ¤t."
+        "Dateianfragen werden jetzt automatisch von Geräten in deiner Favoritenliste akzeptiert.",
+        "Warnung: Dies ist derzeit nicht vollständig sicher, da ein Hacker, der den Fingerabdruck der Geräte in deiner Favoritenliste kennt, dir immer noch Dateien senden kann.",
+        "Diese Option ist jedoch immer noch sicherer als die Erlaubnis für jedes Gerät."
       ]
     },
     "pin": {
@@ -403,9 +403,9 @@
     },
     "sendModeHelp": {
       "title": "Sendemodus",
-      "single": "Sende Dateien an einen EmpfÃ¤nger. Die Auswahl wird nach Abschluss der DateiÃ¼bertragung gelÃ¶scht.",
-      "multiple": "Sende Dateien an mehrere EmpfÃ¤nger. Die Auswahl bleibt erhalten.",
-      "link": "EmpfÃ¤nger, die GravitySend nicht installiert haben, kÃ¶nnen die ausgewÃ¤hlten Dateien herunterladen, in dem sie den Link im Browser Ã¶ffnen."
+      "single": "Sende Dateien an einen Empfänger. Die Auswahl wird nach Abschluss der Dateiübertragung gelöscht.",
+      "multiple": "Sende Dateien an mehrere Empfänger. Die Auswahl bleibt erhalten.",
+      "link": "Empfänger, die GravitySend nicht installiert haben, können die ausgewählten Dateien herunterladen, in dem sie den Link im Browser öffnen."
     },
     "zoom": {
       "title": "URL"
@@ -413,7 +413,7 @@
   },
   "sanitization": {
     "empty": "Dateiname darf nicht leer sein",
-    "invalid": "Dateiname enthÃ¤lt ungÃ¼ltige Zeichen"
+    "invalid": "Dateiname enthält ungültige Zeichen"
   },
   "tray": {
     "@info": "Apple Guidelines are very strict about the \"close\" wording.",
@@ -424,44 +424,45 @@
   "web": {
     "waiting": "@:sendPage.waiting",
     "enterPin": "PIN eingeben",
-    "invalidPin": "UngÃ¼ltige PIN",
+    "invalidPin": "Ungültige PIN",
     "tooManyAttempts": "Zu viele Versuche",
     "rejected": "Abgelehnt",
     "files": "Dateien",
     "fileName": "Dateiname",
-    "size": "GrÃ¶ÃŸe"
+    "size": "Größe"
   },
   "assetPicker": {
     "@info": "Translations for the Media selection tool for Android and Iphone",
-    "confirm": "BestÃ¤tigen",
+    "confirm": "Bestätigen",
     "cancel": "Abbrechen",
     "edit": "Bearbeiten",
     "gifIndicator": "GIF",
     "loadFailed": "Ladevorgang ist fehlgeschlagen",
     "original": "Ursprung",
     "preview": "Vorschau",
-    "select": "AuswÃ¤hlen",
+    "select": "Auswählen",
     "emptyList": "Leere Liste",
-    "unSupportedAssetType": "Format ist nicht unterstÃ¼tzt.",
-    "unableToAccessAll": "Zugriff nicht mÃ¶glich",
+    "unSupportedAssetType": "Format ist nicht unterstützt.",
+    "unableToAccessAll": "Zugriff nicht möglich",
     "viewingLimitedAssetsTip": "Zeige nur Dateien und Alben an, auf die die App zugreifen kann.",
     "changeAccessibleLimitedAssets": "Tippen, um erlaubte Dateien zu aktualisieren",
-    "accessAllTip": "Die App kann nur auf einige der Dateien auf dem GerÃ¤t zugreifen. Ã–ffne die Systemeinstellungen und erlaube der App, auf alle Dateien auf dem GerÃ¤t zuzugreifen.",
+    "accessAllTip": "Die App kann nur auf einige der Dateien auf dem Gerät zugreifen. Öffne die Systemeinstellungen und erlaube der App, auf alle Dateien auf dem Gerät zuzugreifen.",
     "goToSystemSettings": "Gehe zu den Systemeinstellungen",
-    "accessLimitedAssets": "Fahre mit eingeschrÃ¤nktem Zugriff fort",
-    "accessiblePathName": "VerfÃ¼gbare Assets",
+    "accessLimitedAssets": "Fahre mit eingeschränktem Zugriff fort",
+    "accessiblePathName": "Verfügbare Assets",
     "sTypeAudioLabel": "Audio",
     "sTypeImageLabel": "Bild",
     "sTypeVideoLabel": "Video",
     "sTypeOtherLabel": "Andere Medien",
     "sActionPlayHint": "Abspielen",
     "sActionPreviewHint": "Vorschau",
-    "sActionSelectHint": "AuswÃ¤hlen",
-    "sActionSwitchPathLabel": "Dateipfad Ã¤ndern",
+    "sActionSelectHint": "Auswählen",
+    "sActionSwitchPathLabel": "Dateipfad ändern",
     "sActionUseCameraHint": "Kamera benutzen",
     "sNameDurationLabel": "Dauer",
     "sUnitAssetCountLabel": "Anzahl"
   }
 }
+
 
 

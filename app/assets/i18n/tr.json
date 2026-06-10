@@ -1,48 +1,48 @@
-﻿{
-  "locale": "Türkçe",
+{
+  "locale": "T�rk�e",
   "appName": "GravitySend",
   "general": {
     "accept": "Kabul et",
     "accepted": "Kabul edildi",
     "add": "Ekle",
-    "advanced": "Gelişmiş",
-    "cancel": "İptal et",
+    "advanced": "Gelismis",
+    "cancel": "Iptal et",
     "close": "Kapat",
     "confirm": "Onayla",
     "continueStr": "Devam et",
     "copy": "Kopyala",
-    "copiedToClipboard": "Panoya kopyalandı",
+    "copiedToClipboard": "Panoya kopyalandi",
     "decline": "Reddet",
     "done": "Bitir",
     "delete": "Sil",
-    "edit": "Düzenle",
+    "edit": "D�zenle",
     "error": "Hata",
-    "example": "Örnek",
+    "example": "�rnek",
     "files": "Dosyalar",
-    "finished": "Sonlandırıldı",
+    "finished": "Sonlandirildi",
     "hide": "Gizle",
-    "off": "Kapalı",
-    "offline": "Çevrim dışı",
-    "on": "Açık",
-    "online": "Çevrim içi",
-    "open": "Aç",
-    "queue": "Sıra",
-    "quickSave": "Hızlı kaydetme",
+    "off": "Kapali",
+    "offline": "�evrim disi",
+    "on": "A�ik",
+    "online": "�evrim i�i",
+    "open": "A�",
+    "queue": "Sira",
+    "quickSave": "Hizli kaydetme",
     "quickSaveFromFavorites": "Favoriler",
-    "renamed": "Yeniden adlandırıldı",
-    "reset": "Sıfırla",
-    "restart": "Yeniden başlat",
+    "renamed": "Yeniden adlandirildi",
+    "reset": "Sifirla",
+    "restart": "Yeniden baslat",
     "settings": "Ayarlar",
-    "skipped": "Geçildi",
-    "start": "Başlat",
+    "skipped": "Ge�ildi",
+    "start": "Baslat",
     "stop": "Durdur",
     "save": "Kaydet",
-    "unchanged": "Değiştirilmemiş",
+    "unchanged": "Degistirilmemis",
     "unknown": "Bilinmiyor",
-    "noItemInClipboard": "Panoda öğe yok."
+    "noItemInClipboard": "Panoda �ge yok."
   },
   "receiveTab": {
-    "title": "Alım",
+    "title": "Alim",
     "infoBox": {
       "ip": "IP:",
       "port": "Port:",
@@ -55,34 +55,34 @@
     }
   },
   "sendTab": {
-    "title": "Gönder",
+    "title": "G�nder",
     "selection": {
-      "title": "Seçiminiz",
+      "title": "Se�iminiz",
       "files": "Dosyalar: {files}",
       "size": "Boyut: {size}"
     },
     "picker": {
       "file": "Dosya",
-      "folder": "Klasör",
+      "folder": "Klas�r",
       "media": "Medya",
       "text": "Metin",
       "app": "Uygulama",
-      "clipboard": "Yapıştır"
+      "clipboard": "Yapistir"
     },
-    "shareIntentInfo": "Dosyalarınızı daha kolay seçmek için cihazınızın \"Paylaş\" özelliğini kullanabilirsiniz.",
-    "nearbyDevices": "Yakınınızdaki cihazlar",
-    "thisDevice": "Cihazınız",
-    "scan": "Cihazları tara",
-    "manualSending": "Manuel Gönderme",
-    "sendMode": "Gönderme Modu",
+    "shareIntentInfo": "Dosyalarinizi daha kolay se�mek i�in cihazinizin \"Paylas\" �zelligini kullanabilirsiniz.",
+    "nearbyDevices": "Yakininizdaki cihazlar",
+    "thisDevice": "Cihaziniz",
+    "scan": "Cihazlari tara",
+    "manualSending": "Manuel G�nderme",
+    "sendMode": "G�nderme Modu",
     "sendModes": {
-      "single": "Tek alıcı",
-      "multiple": "Birden fazla alıcı",
-      "link": "Link üzerinden paylaşın"
+      "single": "Tek alici",
+      "multiple": "Birden fazla alici",
+      "link": "Link �zerinden paylasin"
     },
-    "sendModeHelp": "Açıklama",
-    "help": "Lütfen hedef cihaz ile aynı wifi ağında olduğunuzdan emin olun.",
-    "placeItems": "Paylaşmak istediğiniz dosyayı yerleştiriniz."
+    "sendModeHelp": "A�iklama",
+    "help": "L�tfen hedef cihaz ile ayni wifi aginda oldugunuzdan emin olun.",
+    "placeItems": "Paylasmak istediginiz dosyayi yerlestiriniz."
   },
   "settingsTab": {
     "title": "Ayarlar",
@@ -90,9 +90,9 @@
       "title": "Genel",
       "brightness": "Tema",
       "brightnessOptions": {
-        "system": "Sistem teması",
+        "system": "Sistem temasi",
         "dark": "Koyu",
-        "light": "Açık"
+        "light": "A�ik"
       },
       "color": "Renk",
       "colorOptions": {
@@ -103,94 +103,94 @@
       "languageOptions": {
         "system": "Sistem dili"
       },
-      "saveWindowPlacement": "Çıkış: Burayı Kaydet",
-      "saveWindowPlacementWindows": "Çıkıştan sonra pencere konumunu kaydet",
-      "minimizeToTray": "Çıkış: Simge durumuna küçült",
-      "launchAtStartup": "Giriş yapıldıktan sonra otomatik başlat",
-      "launchMinimized": "Otomatik başlatma: Gizli Başlatma",
-      "showInContextMenu": "GravitySend'i bağlam menüsünde göster",
+      "saveWindowPlacement": "�ikis: Burayi Kaydet",
+      "saveWindowPlacementWindows": "�ikistan sonra pencere konumunu kaydet",
+      "minimizeToTray": "�ikis: Simge durumuna k���lt",
+      "launchAtStartup": "Giris yapildiktan sonra otomatik baslat",
+      "launchMinimized": "Otomatik baslatma: Gizli Baslatma",
+      "showInContextMenu": "GravitySend'i baglam men�s�nde g�ster",
       "animations": "Animasyonlar"
     },
     "receive": {
-      "title": "Alım",
+      "title": "Alim",
       "quickSave": "@:general.quickSave",
       "requirePin": "@:webSharePage.requirePin",
       "autoFinish": "Otomatik bitir",
-      "destination": "Hedef klasör",
-      "downloads": "(İndirilenler)",
-      "saveToGallery": "Medyayı galeriye kaydet",
-      "saveToHistory": "Geçmişe kaydet",
+      "destination": "Hedef klas�r",
+      "downloads": "(Indirilenler)",
+      "saveToGallery": "Medyayi galeriye kaydet",
+      "saveToHistory": "Ge�mise kaydet",
       "quickSaveFromFavorites": "@:general.quickSaveFromFavorites"
     },
     "send": {
-      "title": "Gönder",
-      "shareViaLinkAutoAccept": "Link aracılığıyla paylaş: Otomatik olarak kabul et"
+      "title": "G�nder",
+      "shareViaLinkAutoAccept": "Link araciligiyla paylas: Otomatik olarak kabul et"
     },
     "network": {
-      "title": "Ağ",
-      "needRestart": "Ayarları uygulamak için sunucuyu yeniden başlatınız!",
+      "title": "Ag",
+      "needRestart": "Ayarlari uygulamak i�in sunucuyu yeniden baslatiniz!",
       "server": "Sunucu",
       "alias": "Takma isminiz",
       "deviceType": "Cihaz tipi",
       "deviceModel": "Cihaz modeli",
       "port": "Port",
-      "discoveryTimeout": "Arama zaman aşımına uğradı",
-      "portWarning": "Kişiselleştirilmiş bir port kullanıyorsanız ağınızdaki diğer cihazlar tarafından bulunamayabilirsiniz. (varsayılan: {defaultPort})",
-      "encryption": "Şifreleme",
-      "multicastGroup": "Çoklu yayın",
-      "multicastGroupWarning": "Özel çoklu yayın adresini kullandığınız için diğer cihazlar tarafından algılanamayabilirsiniz.(varsayılan: {defaultMulticast})",
-      "network": "Ağ",
+      "discoveryTimeout": "Arama zaman asimina ugradi",
+      "portWarning": "Kisisellestirilmis bir port kullaniyorsaniz aginizdaki diger cihazlar tarafindan bulunamayabilirsiniz. (varsayilan: {defaultPort})",
+      "encryption": "Sifreleme",
+      "multicastGroup": "�oklu yayin",
+      "multicastGroupWarning": "�zel �oklu yayin adresini kullandiginiz i�in diger cihazlar tarafindan algilanamayabilirsiniz.(varsayilan: {defaultMulticast})",
+      "network": "Ag",
       "networkOptions": {
-        "all": "Tümü",
-        "filtered": "Filtrelenmiş"
+        "all": "T�m�",
+        "filtered": "Filtrelenmis"
       },
-      "useSystemName": "Sistem adını kullan",
-      "generateRandomAlias": "Rastgele takma ad oluştur"
+      "useSystemName": "Sistem adini kullan",
+      "generateRandomAlias": "Rastgele takma ad olustur"
     },
     "other": {
-      "title": "Diğer",
+      "title": "Diger",
       "support": "GravitySend'i destekle",
-      "donate": "Bağış yap",
-      "privacyPolicy": "Gizlilik politikası",
-      "termsOfUse": "Kullanım koşulları"
+      "donate": "Bagis yap",
+      "privacyPolicy": "Gizlilik politikasi",
+      "termsOfUse": "Kullanim kosullari"
     },
-    "advancedSettings": "Gelişmiş ayarlar"
+    "advancedSettings": "Gelismis ayarlar"
   },
   "troubleshootPage": {
     "title": "Sorun Giderme",
-    "subTitle": "Bu uygulama beklendiği gibi çalışmıyor mu? Burada ortak çözümler bulabilirsiniz.",
-    "solution": "Çözüm:",
-    "fixButton": "Otomatik olarak düzelt",
+    "subTitle": "Bu uygulama beklendigi gibi �alismiyor mu? Burada ortak ��z�mler bulabilirsiniz.",
+    "solution": "��z�m:",
+    "fixButton": "Otomatik olarak d�zelt",
     "firewall": {
-      "symptom": "Bu uygulama diğer cihazlara dosya gönderebilir, ancak diğer cihazlar bu cihaza dosya gönderemez.",
-      "solution": "Bu büyük olasılıkla bir güvenlik duvarı sorunudur. Port {port} 'da gelen bağlantılara (UDP ve TCP) izin vererek bunu çözebilirsiniz.",
-      "openFirewall": "Güvenlik Duvarını Aç"
+      "symptom": "Bu uygulama diger cihazlara dosya g�nderebilir, ancak diger cihazlar bu cihaza dosya g�nderemez.",
+      "solution": "Bu b�y�k olasilikla bir g�venlik duvari sorunudur. Port {port} 'da gelen baglantilara (UDP ve TCP) izin vererek bunu ��zebilirsiniz.",
+      "openFirewall": "G�venlik Duvarini A�"
     },
     "noDiscovery": {
-      "symptom": "Bu cihaz diğer cihazları keşfedemez.",
-      "solution": "Lütfen tüm cihazların aynı Wi-Fi ağında olduğundan ve aynı yapılandırmayı (bağlantı noktası, çok noktaya yayın adresi, şifreleme) paylaştığından emin olun. Hedef cihazın IP adresini manuel olarak yazmayı deneyebilirsiniz. Bu işe yararsa, gelecekte otomatik olarak keşfedilebilmesi için bu cihazı favorilere eklemeyi düşünün."
+      "symptom": "Bu cihaz diger cihazlari kesfedemez.",
+      "solution": "L�tfen t�m cihazlarin ayni Wi-Fi aginda oldugundan ve ayni yapilandirmayi (baglanti noktasi, �ok noktaya yayin adresi, sifreleme) paylastigindan emin olun. Hedef cihazin IP adresini manuel olarak yazmayi deneyebilirsiniz. Bu ise yararsa, gelecekte otomatik olarak kesfedilebilmesi i�in bu cihazi favorilere eklemeyi d�s�n�n."
     },
     "noConnection": {
-      "symptom": "Her iki cihaz da birbirini keşfedemez ve dosya paylaşamazlar.",
-      "solution": "Sorun her iki tarafta da var mı? O zaman her iki cihazın da aynı WiFi ağında olduğundan ve aynı yapılandırmayı (bağlantı noktası, çoklu yayın adresi, şifreleme) paylaştığından emin olmanız gerekir. WiFi, katılımcılar arasında iletişime izin vermeyebilir. Bu durumda, bu seçenek yönlendiricide etkinleştirilmelidir."
+      "symptom": "Her iki cihaz da birbirini kesfedemez ve dosya paylasamazlar.",
+      "solution": "Sorun her iki tarafta da var mi? O zaman her iki cihazin da ayni WiFi aginda oldugundan ve ayni yapilandirmayi (baglanti noktasi, �oklu yayin adresi, sifreleme) paylastigindan emin olmaniz gerekir. WiFi, katilimcilar arasinda iletisime izin vermeyebilir. Bu durumda, bu se�enek y�nlendiricide etkinlestirilmelidir."
     }
   },
   "receiveHistoryPage": {
-    "title": "Geçmiş",
-    "openFolder": "Dosyayı aç",
-    "deleteHistory": "Geçmişi sil",
-    "empty": "Geçmiş yok.",
+    "title": "Ge�mis",
+    "openFolder": "Dosyayi a�",
+    "deleteHistory": "Ge�misi sil",
+    "empty": "Ge�mis yok.",
     "entryActions": {
-      "open": "Dosya aç",
-      "showInFolder": "Klasörde göster",
+      "open": "Dosya a�",
+      "showInFolder": "Klas�rde g�ster",
       "info": "Bilgi",
-      "deleteFromHistory": "Geçmişten sil"
+      "deleteFromHistory": "Ge�misten sil"
     }
   },
   "apkPickerPage": {
     "title": "Uygulamalar (APK)",
-    "excludeSystemApps": "Sistem uygulamalarını hariç tut",
-    "excludeAppsWithoutLaunchIntent": "Başlatılamayan uygulamaları hariç tut",
+    "excludeSystemApps": "Sistem uygulamalarini hari� tut",
+    "excludeAppsWithoutLaunchIntent": "Baslatilamayan uygulamalari hari� tut",
     "apps": "{n} Uygulamalar"
   },
   "selectedFilesPage": {
@@ -198,130 +198,130 @@
   },
   "receivePage": {
     "subTitle": {
-      "one": "sana bir dosya göndermek istiyor",
-      "other": "sana {n} tane dosya göndermek istiyor"
+      "one": "sana bir dosya g�ndermek istiyor",
+      "other": "sana {n} tane dosya g�ndermek istiyor"
     },
-    "subTitleMessage": "bir mesaj gönderdi:",
-    "subTitleLink": "bir bağlantı gönderdi:",
-    "canceled": "Gönderici isteği iptal etti."
+    "subTitleMessage": "bir mesaj g�nderdi:",
+    "subTitleLink": "bir baglanti g�nderdi:",
+    "canceled": "G�nderici istegi iptal etti."
   },
   "receiveOptionsPage": {
-    "title": "Seçenekler",
+    "title": "Se�enekler",
     "destination": "@:settingsTab.receive.destination",
-    "appDirectory": "(GravitySend klasörü)",
+    "appDirectory": "(GravitySend klas�r�)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "Otomatik olarak kapanır çünkü bunlar klasör."
+    "saveToGalleryOff": "Otomatik olarak kapanir ��nk� bunlar klas�r."
   },
   "sendPage": {
-    "waiting": "Alıcıdan cevap bekleniyor…",
-    "rejected": "Alıcı isteği reddetti.",
+    "waiting": "Alicidan cevap bekleniyor�",
+    "rejected": "Alici istegi reddetti.",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "Alıcı başka bir istekle meşgul."
+    "busy": "Alici baska bir istekle mesgul."
   },
   "progressPage": {
-    "titleSending": "Dosyalar gönderiliyor",
-    "titleReceiving": "Dosyalar alınıyor",
+    "titleSending": "Dosyalar g�nderiliyor",
+    "titleReceiving": "Dosyalar aliniyor",
     "savedToGallery": "Galeriye kaydedildi",
     "total": {
       "title": {
         "sending": "Toplam ilerleme ({time})",
-        "finishedError": "İşlem hatayla sonuçlandı",
-        "canceledSender": "Gönderici tarafından iptal edildi",
-        "canceledReceiver": "Alıcı tarafından iptal edildi"
+        "finishedError": "Islem hatayla sonu�landi",
+        "canceledSender": "G�nderici tarafindan iptal edildi",
+        "canceledReceiver": "Alici tarafindan iptal edildi"
       },
       "count": "Dosyalar: {curr} / {n}",
       "size": "Boyut: {curr} / {n}",
-      "speed": "Hız: {speed}/s"
+      "speed": "Hiz: {speed}/s"
     },
     "remainingTime": {
       "seconds": "{n}:{ss}",
-      "@days": "Günler için 'g', saatler için 's' ve dakikalar için 'd' kullanın",
-      "@hours": "Saat kısaltması için 's', dakika kısaltması için 'd' kullanın",
+      "@days": "G�nler i�in 'g', saatler i�in 's' ve dakikalar i�in 'd' kullanin",
+      "@hours": "Saat kisaltmasi i�in 's', dakika kisaltmasi i�in 'd' kullanin",
       "minutes": "{n}:{ss}",
       "hours": "{h}s {m}d",
       "days": "{d}g {h}s {m}d"
     }
   },
   "webSharePage": {
-    "title": "Link üzerinden paylaşın",
-    "loading": "Sunucu başlıyor…",
-    "stopping": "Sunucu durduruluyor…",
-    "error": "Sunucuyu başlatırken bir hata oluştu.",
+    "title": "Link �zerinden paylasin",
+    "loading": "Sunucu basliyor�",
+    "stopping": "Sunucu durduruluyor�",
+    "error": "Sunucuyu baslatirken bir hata olustu.",
     "openLink": {
-      "one": "Bu bağlantıyı tarayıcıda açın:",
-      "other": "Bu bağlantılardan birini tarayıcıda açın:"
+      "one": "Bu baglantiyi tarayicida a�in:",
+      "other": "Bu baglantilardan birini tarayicida a�in:"
     },
-    "requests": "İstekler",
-    "noRequests": "Henüz istek yok.",
+    "requests": "Istekler",
+    "noRequests": "Hen�z istek yok.",
     "encryption": "@:settingsTab.network.encryption",
-    "autoAccept": "İstekleri otomatik olarak kabul et",
+    "autoAccept": "Istekleri otomatik olarak kabul et",
     "requirePin": "PIN gerektir",
     "pinHint": "PIN \"{pin}\"",
-    "encryptionHint": "GravitySend, tarayıcıda kabul etmeniz gereken kendi-üretimli bir sertifika kullanır.",
+    "encryptionHint": "GravitySend, tarayicida kabul etmeniz gereken kendi-�retimli bir sertifika kullanir.",
     "pendingRequests": "Bekleyen istekler: {n}"
   },
   "aboutPage": {
-    "title": "GravitySend hakkında",
+    "title": "GravitySend hakkinda",
     "description": [
-      "GravitySend, internet bağlantısına ihtiyaç duymadan yerel ağınız üzerinden yakınınızdaki cihazlarla dosya ve mesajlarınızı güvenli bir şekilde paylaşmanıza olanak tanıyan özgür ve açık kaynaklı bir uygulamadır.",
-      "Bu uygulama Android, iOS, macOS, Windows ve Linux'ta mevcuttur. Tüm indirme seçeneklerini resmi ana sayfada bulabilirsiniz."
+      "GravitySend, internet baglantisina ihtiya� duymadan yerel aginiz �zerinden yakininizdaki cihazlarla dosya ve mesajlarinizi g�venli bir sekilde paylasmaniza olanak taniyan �zg�r ve a�ik kaynakli bir uygulamadir.",
+      "Bu uygulama Android, iOS, macOS, Windows ve Linux'ta mevcuttur. T�m indirme se�eneklerini resmi ana sayfada bulabilirsiniz."
     ],
     "author": "Yazar",
-    "contributors": "Katkıda bulunanlar",
+    "contributors": "Katkida bulunanlar",
     "packagers": "Paketleyiciler",
-    "translators": "Çevirmenler"
+    "translators": "�evirmenler"
   },
   "donationPage": {
-    "title": "Bağış yap",
-    "info": "GravitySend ücretsiz, açık kaynaklı ve reklamsız bir uygulamadır. Eğer uygulamayı beğendiyseniz, bağış yaparak uygulamanın gelişimine katkıda bulunabilirsiniz.",
-    "donate": "Bağışta bulun {amount}",
-    "thanks": "Çok teşekkür ederim!",
-    "restore": "Satın alınanları geri yükle"
+    "title": "Bagis yap",
+    "info": "GravitySend �cretsiz, a�ik kaynakli ve reklamsiz bir uygulamadir. Eger uygulamayi begendiyseniz, bagis yaparak uygulamanin gelisimine katkida bulunabilirsiniz.",
+    "donate": "Bagista bulun {amount}",
+    "thanks": "�ok tesekk�r ederim!",
+    "restore": "Satin alinanlari geri y�kle"
   },
   "changelogPage": {
-    "title": "Değişiklik günlüğü"
+    "title": "Degisiklik g�nl�g�"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
     "@info": "Inherits from the English version"
   },
   "dialogs": {
     "addFile": {
-      "title": "Seçime ekle",
+      "title": "Se�ime ekle",
       "content": "Ne eklemek istiyorsunuz ?"
     },
     "addressInput": {
       "title": "Adresi giriniz",
       "hashtag": "Hashtag",
       "ip": "IP adresi",
-      "recentlyUsed": "Daha önce kullanılmış: "
+      "recentlyUsed": "Daha �nce kullanilmis: "
     },
     "cancelSession": {
       "title": "Dosya transferini iptal et",
-      "content": "Gerçekten dosya transferini iptal etmek istiyor musunuz?"
+      "content": "Ger�ekten dosya transferini iptal etmek istiyor musunuz?"
     },
     "cannotOpenFile": {
-      "title": "Dosya açılamadı",
-      "content": "\"{file}\" dosyası açılamadı. Dosya taşınmış, silinmiş veya ismi değiştirilmiş olabilir mi?"
+      "title": "Dosya a�ilamadi",
+      "content": "\"{file}\" dosyasi a�ilamadi. Dosya tasinmis, silinmis veya ismi degistirilmis olabilir mi?"
     },
     "encryptionDisabledNotice": {
-      "title": "Şifreleme devre dışı bırakıldı",
-      "content": "Artık iletişim şifrelenmemiş HTTP protokolü aracılığıyla gerçekleşiyor. HTTPS protokolünü kullanmak için şifrelemeyi yeniden aktif edin."
+      "title": "Sifreleme devre disi birakildi",
+      "content": "Artik iletisim sifrelenmemis HTTP protokol� araciligiyla ger�eklesiyor. HTTPS protokol�n� kullanmak i�in sifrelemeyi yeniden aktif edin."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteDialog": {
       "title": "Favoriler",
-      "noFavorites": "Henüz favori cihaz yok.",
+      "noFavorites": "Hen�z favori cihaz yok.",
       "addFavorite": "Ekle"
     },
     "favoriteDeleteDialog": {
       "title": "Favorilerden sil",
-      "content": "Favorilerden \"{name}\" öğesini gerçekten silmek istiyor musunuz?"
+      "content": "Favorilerden \"{name}\" �gesini ger�ekten silmek istiyor musunuz?"
     },
     "favoriteEditDialog": {
       "titleAdd": "Favorilere ekle",
-      "titleEdit": "Düzenle",
+      "titleEdit": "D�zenle",
       "name": "Takma ad",
       "auto": "(otomatik)",
       "ip": "IP Adresi",
@@ -329,139 +329,140 @@
     },
     "fileInfo": {
       "title": "Dosya bilgileri",
-      "fileName": "Dosya adı:",
+      "fileName": "Dosya adi:",
       "path": "Yolu:",
       "size": "Boyutu:",
-      "sender": "Gönderen:",
+      "sender": "G�nderen:",
       "time": "Zaman:"
     },
     "fileNameInput": {
-      "title": "Dosya adını giriniz",
+      "title": "Dosya adini giriniz",
       "original": "Orijinal: {original}"
     },
     "historyClearDialog": {
-      "title": "Geçmişi temizle",
-      "content": "Gerçekten tüm geçmişi silmek istiyor musunuz?"
+      "title": "Ge�misi temizle",
+      "content": "Ger�ekten t�m ge�misi silmek istiyor musunuz?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "GravitySend, lokal ağı tarama iznine sahip olmadan başka cihazları bulamıyor. Lütfen bu izni ayarlarda verin.",
+      "description": "GravitySend, lokal agi tarama iznine sahip olmadan baska cihazlari bulamiyor. L�tfen bu izni ayarlarda verin.",
       "gotoSettings": "Ayarlar"
     },
     "messageInput": {
-      "title": "Mesaj yazınız",
-      "multiline": "Çok satırlı mesaj"
+      "title": "Mesaj yaziniz",
+      "multiline": "�ok satirli mesaj"
     },
     "noFiles": {
-      "title": "Herhangi bir dosya seçilmedi",
-      "content": "Lütfen bir dosya seçiniz."
+      "title": "Herhangi bir dosya se�ilmedi",
+      "content": "L�tfen bir dosya se�iniz."
     },
     "noPermission": {
-      "title": "İzin yok",
-      "content": "Gerekli izinleri vermediniz. Lütfen ayarlardan izinleri verin."
+      "title": "Izin yok",
+      "content": "Gerekli izinleri vermediniz. L�tfen ayarlardan izinleri verin."
     },
     "notAvailableOnPlatform": {
-      "title": "Müsait değil",
-      "content": "Bu özellik yalnızca şurada mevcuttur:"
+      "title": "M�sait degil",
+      "content": "Bu �zellik yalnizca surada mevcuttur:"
     },
     "qr": {
       "title": "QR Kod"
     },
     "quickActions": {
-      "title": "Hızlı eylemler",
-      "counter": "Sayaç",
-      "prefix": "Ön ek",
-      "padZero": "Sıfırlar ile doldurun",
-      "sortBeforeCount": "Önceden alfabetik olarak sırala",
+      "title": "Hizli eylemler",
+      "counter": "Saya�",
+      "prefix": "�n ek",
+      "padZero": "Sifirlar ile doldurun",
+      "sortBeforeCount": "�nceden alfabetik olarak sirala",
       "random": "Rastgele"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "Dosya gönderim istekleri otomatik olarak gerçekleşir. Yerel ağınızdaki herkesin size dosya gönderebileceğinin farkında olunuz."
+      "content": "Dosya g�nderim istekleri otomatik olarak ger�eklesir. Yerel aginizdaki herkesin size dosya g�nderebileceginin farkinda olunuz."
     },
     "pin": {
       "title": "PIN girin"
     },
     "sendModeHelp": {
-      "title": "Gönderme Modu",
-      "single": "Dosyaları bir alıcıya gönderir. Seçim, bitmiş dosya aktarımından sonra temizlenir.",
-      "multiple": "Dosyaları birden çok alıcıya gönderir. Seçim temizlenmeyecektir.",
-      "link": "GravitySend yüklü olmayan alıcılar, tarayıcılarındaki bağlantıyı açarak seçilen dosyaları indirebilir."
+      "title": "G�nderme Modu",
+      "single": "Dosyalari bir aliciya g�nderir. Se�im, bitmis dosya aktarimindan sonra temizlenir.",
+      "multiple": "Dosyalari birden �ok aliciya g�nderir. Se�im temizlenmeyecektir.",
+      "link": "GravitySend y�kl� olmayan alicilar, tarayicilarindaki baglantiyi a�arak se�ilen dosyalari indirebilir."
     },
     "zoom": {
       "title": "URL"
     },
     "openFile": {
-      "title": "Dosya Aç",
-      "content": "Alınan dosyayı açmak istiyor musunuz?"
+      "title": "Dosya A�",
+      "content": "Alinan dosyayi a�mak istiyor musunuz?"
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "Favoriler listenizdeki cihazların paylaşım istekleri otomatik olarak kabul edilecektir.",
-        "Uyarı! Şu an, bu tamamen güvenli değildir çünkü favoriler listenizdeki herhangi bir cihazın parmak izine sahip olan hackerlar sınırlama olmadan size dosyalar gönderebilir.",
-        "Ancak, bu seçenek yinede ağdaki tüm kullanıcıların size sınırlandırma olmadan dosya göndermesine izin vermekten daha güvenlidir."
+        "Favoriler listenizdeki cihazlarin paylasim istekleri otomatik olarak kabul edilecektir.",
+        "Uyari! Su an, bu tamamen g�venli degildir ��nk� favoriler listenizdeki herhangi bir cihazin parmak izine sahip olan hackerlar sinirlama olmadan size dosyalar g�nderebilir.",
+        "Ancak, bu se�enek yinede agdaki t�m kullanicilarin size sinirlandirma olmadan dosya g�ndermesine izin vermekten daha g�venlidir."
       ]
     }
   },
   "sanitization": {
-    "empty": "Dosya ismi boş olamaz",
-    "invalid": "Dosya ismi geçersiz karakter bulunduruyor"
+    "empty": "Dosya ismi bos olamaz",
+    "invalid": "Dosya ismi ge�ersiz karakter bulunduruyor"
   },
   "tray": {
-    "@info": "Apple'ın yönergeleri, 'kapat' ifadesi konusunda çok katıdır.",
+    "@info": "Apple'in y�nergeleri, 'kapat' ifadesi konusunda �ok katidir.",
     "open": "@:general.open",
-    "close": "GravitySend'den çık",
-    "closeWindows": "Çıkış"
+    "close": "GravitySend'den �ik",
+    "closeWindows": "�ikis"
   },
   "web": {
     "waiting": "@:sendPage.waiting",
     "enterPin": "PIN girin",
-    "invalidPin": "Geçersiz PIN",
-    "tooManyAttempts": "Çok fazla deneme",
+    "invalidPin": "Ge�ersiz PIN",
+    "tooManyAttempts": "�ok fazla deneme",
     "rejected": "Reddedildi",
     "files": "Dosyalar",
-    "fileName": "Dosya adı",
+    "fileName": "Dosya adi",
     "size": "Boyut"
   },
   "assetPicker": {
     "@info": "Translations for the Media selection tool for Android and Iphone",
     "confirm": "Onay",
-    "cancel": "İptal",
-    "edit": "Düzenle",
+    "cancel": "Iptal",
+    "edit": "D�zenle",
     "gifIndicator": "GIF",
-    "loadFailed": "Yükleme başarısız",
+    "loadFailed": "Y�kleme basarisiz",
     "original": "Orijinal",
-    "preview": "Ön izleme",
-    "select": "Seç",
-    "emptyList": "Boş liste",
-    "unSupportedAssetType": "Desteklenmeyen dosya türü.",
-    "unableToAccessAll": "Cihazdaki tüm dosyalara erişilemiyor",
-    "viewingLimitedAssetsTip": "Yalnızca uygulamanın erişilebilir dosyalarını ve albümlerini görüntüleyin.",
-    "changeAccessibleLimitedAssets": "Erişilebilir dosyaları güncellemek için tıklayın",
-    "accessAllTip": "Uygulama yalnızca cihazdaki bazı dosyalara erişebilir. Sistem ayarlarına gidin ve uygulamanın cihazdaki tüm medyalara erişmesine izin verin.",
-    "goToSystemSettings": "Sistem ayarlarına gidin",
-    "accessLimitedAssets": "Sınırlı Erişimle Devam Et",
-    "accessiblePathName": "Erişilebilir dosyalar",
+    "preview": "�n izleme",
+    "select": "Se�",
+    "emptyList": "Bos liste",
+    "unSupportedAssetType": "Desteklenmeyen dosya t�r�.",
+    "unableToAccessAll": "Cihazdaki t�m dosyalara erisilemiyor",
+    "viewingLimitedAssetsTip": "Yalnizca uygulamanin erisilebilir dosyalarini ve alb�mlerini g�r�nt�leyin.",
+    "changeAccessibleLimitedAssets": "Erisilebilir dosyalari g�ncellemek i�in tiklayin",
+    "accessAllTip": "Uygulama yalnizca cihazdaki bazi dosyalara erisebilir. Sistem ayarlarina gidin ve uygulamanin cihazdaki t�m medyalara erismesine izin verin.",
+    "goToSystemSettings": "Sistem ayarlarina gidin",
+    "accessLimitedAssets": "Sinirli Erisimle Devam Et",
+    "accessiblePathName": "Erisilebilir dosyalar",
     "sTypeAudioLabel": "Ses",
-    "sTypeImageLabel": "Görüntü",
+    "sTypeImageLabel": "G�r�nt�",
     "sTypeVideoLabel": "Video",
-    "sTypeOtherLabel": "Diğer medya",
+    "sTypeOtherLabel": "Diger medya",
     "sActionPlayHint": "oynat",
-    "sActionPreviewHint": "Ön izleme",
-    "sActionSelectHint": "seç",
-    "sActionSwitchPathLabel": "dosya uzantısını değiştir",
+    "sActionPreviewHint": "�n izleme",
+    "sActionSelectHint": "se�",
+    "sActionSwitchPathLabel": "dosya uzantisini degistir",
     "sActionUseCameraHint": "Kamera kullan",
-    "sNameDurationLabel": "süre",
-    "sUnitAssetCountLabel": "sayım"
+    "sNameDurationLabel": "s�re",
+    "sUnitAssetCountLabel": "sayim"
   },
   "networkInterfacesPage": {
-    "title": "Ağ Arayüzleri",
-    "preview": "Önizle",
+    "title": "Ag Aray�zleri",
+    "preview": "�nizle",
     "whitelist": "Beyaz liste",
     "blacklist": "Kara liste",
-    "info": "Varsayılan olarak, GravitySend mevcut olan tüm ağları kullanır. Burada istenmeyen ağları engelleyebilirsiniz. Değişikliklerin uygulanması için sunucuyu yeniden başlatmanız gerekir."
+    "info": "Varsayilan olarak, GravitySend mevcut olan t�m aglari kullanir. Burada istenmeyen aglari engelleyebilirsiniz. Degisikliklerin uygulanmasi i�in sunucuyu yeniden baslatmaniz gerekir."
   }
 }
+
 
 

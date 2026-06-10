@@ -1,19 +1,19 @@
-Ôªø{
-  "locale": "Portugu√™s (Portugal)",
+{
+  "locale": "PortuguÍs (Portugal)",
   "appName": "GravitySend",
   "general": {
     "accept": "Aceitar",
     "accepted": "Aceito",
     "add": "Adicionar",
-    "advanced": "Avan√ßado",
+    "advanced": "AvanÁado",
     "cancel": "Cancelar",
     "close": "Fechar",
     "confirm": "Confirmar",
     "continueStr": "Continuar",
     "copy": "Copiar",
-    "copiedToClipboard": "Copiado para a √Årea de transfer√™ncia",
+    "copiedToClipboard": "Copiado para a ¡rea de transferÍncia",
     "decline": "Rejeitar",
-    "done": "Conclu√≠do",
+    "done": "ConcluÌdo",
     "delete": "Eliminar",
     "edit": "Editar",
     "error": "Erro",
@@ -27,18 +27,18 @@
     "online": "Online",
     "open": "Abrir",
     "queue": "Fila",
-    "quickSave": "Guardar r√°pido",
+    "quickSave": "Guardar r·pido",
     "renamed": "Renomeado",
     "reset": "Repor",
     "restart": "Reiniciar",
-    "settings": "Defini√ß√µes",
+    "settings": "DefiniÁıes",
     "skipped": "Ignorado",
     "start": "Iniciar",
     "stop": "Parar",
     "save": "Guardar",
     "unchanged": "Inalterado",
     "unknown": "Desconhecido",
-    "noItemInClipboard": "Nenhum item na √°rea de transfer√™ncia.",
+    "noItemInClipboard": "Nenhum item na ·rea de transferÍncia.",
     "quickSaveFromFavorites": "Gravar rapidamente dos \"Favoritos\""
   },
   "receiveTab": {
@@ -57,7 +57,7 @@
   "sendTab": {
     "title": "Enviar",
     "selection": {
-      "title": "Sele√ß√£o",
+      "title": "SeleÁ„o",
       "files": "Ficheiros: {files}",
       "size": "Tamanho: {size}"
     },
@@ -66,26 +66,26 @@
       "folder": "Pasta",
       "media": "Media",
       "text": "Texto",
-      "app": "Aplica√ß√£o",
+      "app": "AplicaÁ„o",
       "clipboard": "Colar"
     },
-    "shareIntentInfo": "Tamb√©m pode usar o recurso \"Partilhar\" do seu dispositivo m√≥vel para selecionar ficheiros com mais facilidade.",
-    "nearbyDevices": "Dispositivos pr√≥ximos",
+    "shareIntentInfo": "TambÈm pode usar o recurso \"Partilhar\" do seu dispositivo mÛvel para selecionar ficheiros com mais facilidade.",
+    "nearbyDevices": "Dispositivos prÛximos",
     "thisDevice": "Este dispositivo",
     "scan": "Procurar dispositivos",
     "sendMode": "Modo de envio",
     "sendModes": {
-      "single": "√önico destinat√°rio",
-      "multiple": "V√°rios destinat√°rios",
+      "single": "⁄nico destinat·rio",
+      "multiple": "V·rios destinat·rios",
       "link": "Partilhar via link"
     },
-    "sendModeHelp": "Explica√ß√£o",
+    "sendModeHelp": "ExplicaÁ„o",
     "help": "Certifique-se de que ambos os dispositivos estejam na mesma rede Wi-Fi.",
     "placeItems": "Coloque os itens para partilhar.",
     "manualSending": "Envio manual"
   },
   "settingsTab": {
-    "title": "Defini√ß√µes",
+    "title": "DefiniÁıes",
     "general": {
       "title": "Geral",
       "brightness": "Tema",
@@ -103,22 +103,22 @@
       "languageOptions": {
         "system": "Sistema"
       },
-      "saveWindowPlacement": "Guardar a posi√ß√£o da janela ao fechar",
-      "minimizeToTray": "Minimizar para a √°rea de notifica√ß√£o ao fechar",
-      "launchAtStartup": "Abrir automaticamente ap√≥s iniciar sess√£o",
-      "launchMinimized": "In√≠cio autom√°tico: Abrir minimizado",
-      "animations": "Anima√ß√µes",
-      "saveWindowPlacementWindows": "Gravar posi√ß√£o da janela ao sair",
+      "saveWindowPlacement": "Guardar a posiÁ„o da janela ao fechar",
+      "minimizeToTray": "Minimizar para a ·rea de notificaÁ„o ao fechar",
+      "launchAtStartup": "Abrir automaticamente apÛs iniciar sess„o",
+      "launchMinimized": "InÌcio autom·tico: Abrir minimizado",
+      "animations": "AnimaÁıes",
+      "saveWindowPlacementWindows": "Gravar posiÁ„o da janela ao sair",
       "showInContextMenu": "Mostrar GravitySend no menu de contexto"
     },
     "receive": {
-      "title": "Recep√ß√£o",
+      "title": "RecepÁ„o",
       "quickSave": "@:general.quickSave",
       "autoFinish": "Concluir automaticamente",
       "destination": "Destino",
       "downloads": "(Descargas)",
       "saveToGallery": "Guardar na galeria",
-      "saveToHistory": "Guardar no hist√≥rico",
+      "saveToHistory": "Guardar no histÛrico",
       "quickSaveFromFavorites": "Gravar rapidamente dos \"Favoritos\"",
       "requirePin": "@:webSharePage.requirePin"
     },
@@ -128,18 +128,18 @@
     },
     "network": {
       "title": "Rede",
-      "needRestart": "Reinicie o servidor para aplicar as defini√ß√µes!",
+      "needRestart": "Reinicie o servidor para aplicar as definiÁıes!",
       "server": "Servidor",
       "alias": "Nome do dispositivo",
       "deviceType": "Tipo de dispositivo",
       "deviceModel": "Modelo do dispositivo",
       "port": "Porta",
-      "discoveryTimeout": "Tempo limite de dete√ß√£o",
-      "portWarning": "Pode estar indetect√°vel para outros dispositivos por estar a usar uma porta personalizada. (Padr√£o: {defaultPort})",
-      "encryption": "Encripta√ß√£o",
+      "discoveryTimeout": "Tempo limite de deteÁ„o",
+      "portWarning": "Pode estar indetect·vel para outros dispositivos por estar a usar uma porta personalizada. (Padr„o: {defaultPort})",
+      "encryption": "EncriptaÁ„o",
       "multicastGroup": "Multicast",
-      "multicastGroupWarning": "Pode estar indetect√°vel para outros dispositivos por estar a usar um endere√ßo multicast personalizado. (Padr√£o: {defaultMulticast})",
-      "generateRandomAlias": "Gerar apelido aleat√≥rio",
+      "multicastGroupWarning": "Pode estar indetect·vel para outros dispositivos por estar a usar um endereÁo multicast personalizado. (Padr„o: {defaultMulticast})",
+      "generateRandomAlias": "Gerar apelido aleatÛrio",
       "network": "Rede",
       "networkOptions": {
         "all": "Todos",
@@ -151,47 +151,47 @@
       "title": "Outros",
       "support": "Suporte o GravitySend",
       "donate": "Doar",
-      "privacyPolicy": "Pol√≠tica de Privacidade",
-      "termsOfUse": "Termos de Utiliza√ß√£o"
+      "privacyPolicy": "PolÌtica de Privacidade",
+      "termsOfUse": "Termos de UtilizaÁ„o"
     },
-    "advancedSettings": "Defini√ß√µes avan√ßadas"
+    "advancedSettings": "DefiniÁıes avanÁadas"
   },
   "troubleshootPage": {
     "title": "Diagnosticar problemas",
-    "subTitle": "Esta aplica√ß√£o n√£o est√° a funcionar como esperado? Aqui pode encontrar solu√ß√µes comuns.",
-    "solution": "Solu√ß√£o:",
+    "subTitle": "Esta aplicaÁ„o n„o est· a funcionar como esperado? Aqui pode encontrar soluÁıes comuns.",
+    "solution": "SoluÁ„o:",
     "fixButton": "Corrigir automaticamente",
     "firewall": {
-      "symptom": "Esta aplica√ß√£o pode enviar ficheiros para outros dispositivos, mas outros dispositivos n√£o podem enviar ficheiros para este dispositivo.",
-      "solution": "Provavelmente isto trata-se de um problema da firewall. Pode resolver este problema ao permitir liga√ß√µes recebidas (UDP e TCP) na porta {port}.",
+      "symptom": "Esta aplicaÁ„o pode enviar ficheiros para outros dispositivos, mas outros dispositivos n„o podem enviar ficheiros para este dispositivo.",
+      "solution": "Provavelmente isto trata-se de um problema da firewall. Pode resolver este problema ao permitir ligaÁıes recebidas (UDP e TCP) na porta {port}.",
       "openFirewall": "Abrir a Firewall"
     },
     "noConnection": {
-      "symptom": "Ambos os dispositivos n√£o se detectam nem podem partilhar ficheiros entre si.",
-      "solution": "O problema existe em ambos os lados? Ent√£o precisa de ter a certeza de que os dispositivos est√£o na mesma rede Wi-Fi e possuem a mesma configura√ß√£o (porta, endere√ßo multicast, encripta√ß√£o). A rede Wi-Fi pode n√£o permitir a comunica√ß√£o entre os participantes. Neste caso, esta op√ß√£o deve ser ativada no router."
+      "symptom": "Ambos os dispositivos n„o se detectam nem podem partilhar ficheiros entre si.",
+      "solution": "O problema existe em ambos os lados? Ent„o precisa de ter a certeza de que os dispositivos est„o na mesma rede Wi-Fi e possuem a mesma configuraÁ„o (porta, endereÁo multicast, encriptaÁ„o). A rede Wi-Fi pode n„o permitir a comunicaÁ„o entre os participantes. Neste caso, esta opÁ„o deve ser ativada no router."
     },
     "noDiscovery": {
-      "symptom": "Este dispositivo n√£o consegue descobrir outros dispositivos.",
-      "solution": "Certifique-se de que todos os dispositivos est√£o na mesma rede Wi-Fi e partilham as mesmas configura√ß√µes (porta, endere√ßo multicast, criptografia). Pode tentar digitar o endere√ßo IP do dispositivo de destino manualmente. Se isto funcionar, considere adicionar este dispositivo aos favoritos, assim ele ser√° descoberto automaticamente no futuro."
+      "symptom": "Este dispositivo n„o consegue descobrir outros dispositivos.",
+      "solution": "Certifique-se de que todos os dispositivos est„o na mesma rede Wi-Fi e partilham as mesmas configuraÁıes (porta, endereÁo multicast, criptografia). Pode tentar digitar o endereÁo IP do dispositivo de destino manualmente. Se isto funcionar, considere adicionar este dispositivo aos favoritos, assim ele ser· descoberto automaticamente no futuro."
     }
   },
   "receiveHistoryPage": {
-    "title": "Hist√≥rico",
+    "title": "HistÛrico",
     "openFolder": "Abrir pasta",
-    "deleteHistory": "Eliminar hist√≥rico",
-    "empty": "O hist√≥rico est√° vazio.",
+    "deleteHistory": "Eliminar histÛrico",
+    "empty": "O histÛrico est· vazio.",
     "entryActions": {
       "open": "Abrir ficheiro",
-      "info": "Informa√ß√£o",
-      "deleteFromHistory": "Remover do hist√≥rico",
+      "info": "InformaÁ„o",
+      "deleteFromHistory": "Remover do histÛrico",
       "showInFolder": "Mostrar na pasta"
     }
   },
   "apkPickerPage": {
-    "title": "Aplica√ß√µes (APK)",
-    "excludeSystemApps": "Ocultar aplica√ß√µes do sistema",
-    "excludeAppsWithoutLaunchIntent": "Ocultar aplica√ß√µes n√£o execut√°veis",
-    "apps": "{n} Aplica√ß√µes"
+    "title": "AplicaÁıes (APK)",
+    "excludeSystemApps": "Ocultar aplicaÁıes do sistema",
+    "excludeAppsWithoutLaunchIntent": "Ocultar aplicaÁıes n„o execut·veis",
+    "apps": "{n} AplicaÁıes"
   },
   "selectedFilesPage": {
     "deleteAll": "Remover tudo"
@@ -206,16 +206,16 @@
     "canceled": "O remetente cancelou o pedido."
   },
   "receiveOptionsPage": {
-    "title": "Op√ß√µes",
+    "title": "OpÁıes",
     "destination": "@:settingsTab.receive.destination",
     "appDirectory": "(pasta GravitySend)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "Op√ß√£o desligada automaticamente pois uma pasta est√° a ser transferida."
+    "saveToGalleryOff": "OpÁ„o desligada automaticamente pois uma pasta est· a ser transferida."
   },
   "sendPage": {
-    "waiting": "A aguardar resposta‚Ä¶",
-    "rejected": "O destinat√°rio rejeitou o pedido.",
-    "busy": "O destinat√°rio est√° ocupado com outro pedido de transfer√™ncia.",
+    "waiting": "A aguardar respostaÖ",
+    "rejected": "O destinat·rio rejeitou o pedido.",
+    "busy": "O destinat·rio est· ocupado com outro pedido de transferÍncia.",
     "tooManyAttempts": "@:web.tooManyAttempts"
   },
   "progressPage": {
@@ -227,7 +227,7 @@
         "sending": "Progresso total ({time})",
         "finishedError": "Terminado com erro",
         "canceledSender": "Cancelado pelo remetente",
-        "canceledReceiver": "Cancelado pelo destinat√°rio"
+        "canceledReceiver": "Cancelado pelo destinat·rio"
       },
       "count": "Ficheiros: {curr} / {n}",
       "size": "Tamanho: {curr} / {n}",
@@ -244,8 +244,8 @@
   },
   "webSharePage": {
     "title": "Partilhe via link",
-    "loading": "A iniciar o servidor‚Ä¶",
-    "stopping": "A parar o servidor‚Ä¶",
+    "loading": "A iniciar o servidorÖ",
+    "stopping": "A parar o servidorÖ",
     "error": "Ocorreu um erro enquanto o servidor tentava iniciar.",
     "openLink": {
       "one": "Abrir este link no navegador:",
@@ -255,16 +255,16 @@
     "noRequests": "Nenhum pedido ainda.",
     "encryption": "@:settingsTab.network.encryption",
     "autoAccept": "Aceitar pedidos automaticamente",
-    "encryptionHint": "O GravitySend utiliza um certificado assinado automaticamente. Precisa de aceit√°-lo no navegador.",
+    "encryptionHint": "O GravitySend utiliza um certificado assinado automaticamente. Precisa de aceit·-lo no navegador.",
     "pendingRequests": "Pedidos pendentes: {n}",
     "requirePin": "Solicitar PIN",
-    "pinHint": "O PIN √© \"{pin}\""
+    "pinHint": "O PIN È \"{pin}\""
   },
   "aboutPage": {
     "title": "Acerca do GravitySend",
     "description": [
-      "O GravitySend √© uma aplica√ß√£o gratuita e de c√≥digo aberto que permite partilhar ficheiros e mensagens de forma segura com dispositivos pr√≥ximos atrav√©s da sua rede local, sem a necessidade de uma liga√ß√£o √† Internet.",
-      "Esta aplica√ß√£o est√° dispon√≠vel para Android, iOS, macOS, Windows e Linux. Pode encontrar todas as op√ß√µes para descarregar na p√°gina oficial."
+      "O GravitySend È uma aplicaÁ„o gratuita e de cÛdigo aberto que permite partilhar ficheiros e mensagens de forma segura com dispositivos prÛximos atravÈs da sua rede local, sem a necessidade de uma ligaÁ„o ‡ Internet.",
+      "Esta aplicaÁ„o est· disponÌvel para Android, iOS, macOS, Windows e Linux. Pode encontrar todas as opÁıes para descarregar na p·gina oficial."
     ],
     "author": "Autor",
     "contributors": "Contribuidores",
@@ -273,18 +273,18 @@
   },
   "donationPage": {
     "title": "Doar",
-    "info": "O GravitySend √© um software gratuito, de c√≥digo aberto e sem qualquer an√∫ncio. Se gosta da aplica√ß√£o, considere apoiar o desenvolvimento com um donativo.",
+    "info": "O GravitySend È um software gratuito, de cÛdigo aberto e sem qualquer an˙ncio. Se gosta da aplicaÁ„o, considere apoiar o desenvolvimento com um donativo.",
     "donate": "Doar {amount}",
     "thanks": "Muito obrigado!",
     "restore": "Restaurar compra"
   },
   "changelogPage": {
-    "title": "Hist√≥rico de altera√ß√µes"
+    "title": "HistÛrico de alteraÁıes"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
-    "@info": "Idiomas diferentes podem ter palavras divergentes, estas podem n√£o corresponder 1:1",
+    "@info": "Idiomas diferentes podem ter palavras divergentes, estas podem n„o corresponder 1:1",
     "adjectives": [
-      "Ador√°vel",
+      "Ador·vel",
       "Lindo",
       "Grande",
       "Brilhante",
@@ -294,63 +294,63 @@
       "Giro",
       "Astuto",
       "Determinado",
-      "En√©rgico",
+      "EnÈrgico",
       "Eficiente",
-      "Fant√°stico",
-      "R√°pido",
-      "√ìtimo",
+      "Fant·stico",
+      "R·pido",
+      "”timo",
       "Fresco",
       "Bom",
       "Deslumbrante",
       "Bonito",
       "Gentil",
-      "Ador√°vel",
-      "M√≠stico",
-      "Simp√°tico",
+      "Ador·vel",
+      "MÌstico",
+      "Simp·tico",
       "Paciente",
       "Poderoso",
       "Rico",
       "Secreto",
       "Inteligente",
-      "S√≥lido",
+      "SÛlido",
       "Especial",
-      "Estrat√©gico",
+      "EstratÈgico",
       "Forte",
       "Interessante",
       "Perspicaz",
       "Reluzente",
       "Vigilante",
       "Arrumado",
-      "S√°bio"
+      "S·bio"
     ],
     "fruits": [
-      "Ma√ß√£",
+      "MaÁ„",
       "Abacate",
       "Banana",
       "Mirtilo",
-      "Maracuj√°",
+      "Maracuj·",
       "Ameixa",
       "Amora",
-      "Br√≥colos",
+      "BrÛcolos",
       "Cenoura",
       "Cereja",
-      "C√¥co",
+      "CÙco",
       "Uva",
-      "Lim√£o",
+      "Lim„o",
       "Alface",
       "Manga",
-      "Mel√£o",
+      "Mel„o",
       "Cogumelo",
       "Cebola",
       "Laranja",
       "Papaia",
-      "Mam√£o",
-      "P√™ssego",
-      "P√™ra",
-      "Anan√°s",
+      "Mam„o",
+      "PÍssego",
+      "PÍra",
+      "Anan·s",
       "Abacaxi",
       "Batata",
-      "Ab√≥bora",
+      "AbÛbora",
       "Morango",
       "Tomate"
     ],
@@ -359,33 +359,33 @@
   },
   "dialogs": {
     "addFile": {
-      "title": "Adicionar √† sele√ß√£o",
+      "title": "Adicionar ‡ seleÁ„o",
       "content": "O que quer adicionar?"
     },
     "addressInput": {
-      "title": "Digite o endere√ßo",
+      "title": "Digite o endereÁo",
       "hashtag": "Hashtag",
-      "ip": "Endere√ßo IP",
-      "recentlyUsed": "Rec√©m ligado: "
+      "ip": "EndereÁo IP",
+      "recentlyUsed": "RecÈm ligado: "
     },
     "cancelSession": {
-      "title": "Cancelar transfer√™ncia de ficheiros",
-      "content": "Cancelar a transfer√™ncia de ficheiros?"
+      "title": "Cancelar transferÍncia de ficheiros",
+      "content": "Cancelar a transferÍncia de ficheiros?"
     },
     "cannotOpenFile": {
-      "title": "N√£o foi poss√≠vel abrir o ficheiro",
-      "content": "N√£o foi poss√≠vel abrir \"{file}\". O ficheiro foi movido, renomeado ou eliminado?"
+      "title": "N„o foi possÌvel abrir o ficheiro",
+      "content": "N„o foi possÌvel abrir \"{file}\". O ficheiro foi movido, renomeado ou eliminado?"
     },
     "encryptionDisabledNotice": {
-      "title": "Encripta√ß√£o desativada",
-      "content": "A comunica√ß√£o agora ocorre via protocolo HTTP n√£o encriptado. Para usar HTTPS, ative a encripta√ß√£o novamente."
+      "title": "EncriptaÁ„o desativada",
+      "content": "A comunicaÁ„o agora ocorre via protocolo HTTP n„o encriptado. Para usar HTTPS, ative a encriptaÁ„o novamente."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteDialog": {
       "title": "Favoritos",
-      "noFavorites": "Ainda n√£o tem dispositivos favoritos.",
+      "noFavorites": "Ainda n„o tem dispositivos favoritos.",
       "addFavorite": "Adicionar"
     },
     "favoriteDeleteDialog": {
@@ -397,13 +397,13 @@
       "titleEdit": "Editar",
       "name": "Nome do dispositivo",
       "auto": "(auto)",
-      "ip": "Endere√ßo IP",
+      "ip": "EndereÁo IP",
       "port": "Porta"
     },
     "fileInfo": {
-      "title": "Informa√ß√£o do ficheiro",
+      "title": "InformaÁ„o do ficheiro",
       "fileName": "Nome do ficheiro:",
-      "path": "Localiza√ß√£o:",
+      "path": "LocalizaÁ„o:",
       "size": "Tamanho:",
       "sender": "Remetente:",
       "time": "Data:"
@@ -413,59 +413,59 @@
       "original": "Original: {original}"
     },
     "historyClearDialog": {
-      "title": "Limpar hist√≥rico",
-      "content": "Eliminar todo o hist√≥rico?"
+      "title": "Limpar histÛrico",
+      "content": "Eliminar todo o histÛrico?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "O GravitySend n√£o consegue encontrar outros dispositivos sem ter a permiss√£o para analisar a rede local. Conceda esta permiss√£o nas defini√ß√µes.",
-      "gotoSettings": "Defini√ß√µes"
+      "description": "O GravitySend n„o consegue encontrar outros dispositivos sem ter a permiss„o para analisar a rede local. Conceda esta permiss„o nas definiÁıes.",
+      "gotoSettings": "DefiniÁıes"
     },
     "messageInput": {
       "title": "Digite a mensagem",
-      "multiline": "V√°rias linhas"
+      "multiline": "V·rias linhas"
     },
     "noFiles": {
       "title": "Nenhum ficheiro selecionado",
       "content": "Selecione pelo menos um ficheiro."
     },
     "noPermission": {
-      "title": "Sem permiss√£o",
-      "content": "N√£o concedeu as permiss√µes necess√°rias. Conceda-as nas defini√ß√µes."
+      "title": "Sem permiss„o",
+      "content": "N„o concedeu as permissıes necess·rias. Conceda-as nas definiÁıes."
     },
     "notAvailableOnPlatform": {
-      "title": "Indispon√≠vel",
-      "content": "Esta funcionalidade s√≥ est√° dispon√≠vel no:"
+      "title": "IndisponÌvel",
+      "content": "Esta funcionalidade sÛ est· disponÌvel no:"
     },
     "qr": {
       "title": "QR Code"
     },
     "quickActions": {
-      "title": "A√ß√µes r√°pidas",
+      "title": "AÁıes r·pidas",
       "counter": "Contador",
       "prefix": "Prefixo",
       "padZero": "Preencher com zeros",
-      "sortBeforeCount": "Ordenar previamente por ordem alfab√©tica",
-      "random": "Aleat√≥rio"
+      "sortBeforeCount": "Ordenar previamente por ordem alfabÈtica",
+      "random": "AleatÛrio"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "Pedidos de ficheiros s√£o aceites automaticamente. Tenha em aten√ß√£o que todas as pessoas na rede local podem enviar-lhe ficheiros."
+      "content": "Pedidos de ficheiros s„o aceites automaticamente. Tenha em atenÁ„o que todas as pessoas na rede local podem enviar-lhe ficheiros."
     },
     "sendModeHelp": {
       "title": "Modos de envio",
-      "single": "Envia ficheiros para um destinat√°rio. A sele√ß√£o ser√° apagada ap√≥s a conclus√£o da transfer√™ncia dos ficheiros.",
-      "multiple": "Envia ficheiros para v√°rios destinat√°rios. A sele√ß√£o n√£o ser√° apagada.",
-      "link": "Os destinat√°rios que n√£o t√™m o GravitySend instalado podem descarregar os ficheiros selecionados abrindo o link fornecido no navegador."
+      "single": "Envia ficheiros para um destinat·rio. A seleÁ„o ser· apagada apÛs a conclus„o da transferÍncia dos ficheiros.",
+      "multiple": "Envia ficheiros para v·rios destinat·rios. A seleÁ„o n„o ser· apagada.",
+      "link": "Os destinat·rios que n„o tÍm o GravitySend instalado podem descarregar os ficheiros selecionados abrindo o link fornecido no navegador."
     },
     "zoom": {
       "title": "URL"
     },
     "quickSaveFromFavoritesNotice": {
       "content": [
-        "Requisi√ß√µes de ficheiro agora s√£o aceitas automaticamente de dispositivos da sua lista de favoritos.",
-        "Aten√ß√£o! Atualmente, esta op√ß√£o n√£o √© totalmente segura pois um hacker que saiba a identifica√ß√£o dos seus dispositivos favoritos ainda pode te enviar ficheiros sem restri√ß√µes.",
-        "De qualquer forma, esta op√ß√£o ainda √© mais segura que permitir qualquer dispositivo."
+        "RequisiÁıes de ficheiro agora s„o aceitas automaticamente de dispositivos da sua lista de favoritos.",
+        "AtenÁ„o! Atualmente, esta opÁ„o n„o È totalmente segura pois um hacker que saiba a identificaÁ„o dos seus dispositivos favoritos ainda pode te enviar ficheiros sem restriÁıes.",
+        "De qualquer forma, esta opÁ„o ainda È mais segura que permitir qualquer dispositivo."
       ],
       "title": "Gravar rapidamento dos \"Favoritos\""
     },
@@ -478,8 +478,8 @@
     }
   },
   "sanitization": {
-    "empty": "O nome do ficheiro n√£o pode estar em branco",
-    "invalid": "O nome do ficheiro cont√©m caracteres inv√°lidos"
+    "empty": "O nome do ficheiro n„o pode estar em branco",
+    "invalid": "O nome do ficheiro contÈm caracteres inv·lidos"
   },
   "tray": {
     "@info": "Apple Guidelines are very strict about the 'close' wording.",
@@ -489,12 +489,12 @@
   },
   "web": {
     "waiting": "@:sendPage.waiting",
-    "rejected": "Liga√ß√£o rejeitada",
+    "rejected": "LigaÁ„o rejeitada",
     "files": "Ficheiros",
     "fileName": "Nome do ficheiro",
     "size": "Tamanho",
     "enterPin": "Digite o PIN",
-    "invalidPin": "PIN inv√°lido",
+    "invalidPin": "PIN inv·lido",
     "tooManyAttempts": "Muitas tentativas"
   },
   "assetPicker": {
@@ -505,36 +505,37 @@
     "gifIndicator": "GIF",
     "loadFailed": "Falha ao carregar",
     "original": "Original",
-    "preview": "Pr√©-visualiza√ß√£o",
+    "preview": "PrÈ-visualizaÁ„o",
     "select": "Selecionar",
     "emptyList": "Lista vazia",
-    "unSupportedAssetType": "Este tipo de ficheiro n√£o √© suportado.",
+    "unSupportedAssetType": "Este tipo de ficheiro n„o È suportado.",
     "unableToAccessAll": "Incapaz de aceder todos os ficheiros do dispositivo",
-    "viewingLimitedAssetsTip": "Apenas visualizar ficheiros e √°lbuns acess√≠veis √† aplica√ß√£o.",
-    "changeAccessibleLimitedAssets": "Clique para atualizar os ficheiros acess√≠veis",
-    "accessAllTip": "A aplica√ß√£o s√≥ pode aceder a alguns ficheiros no dispositivo. Aceda √†s defini√ß√µes do sistema e permita que a aplica√ß√£o aceda a todos os ficheiros no dispositivo.",
-    "goToSystemSettings": "Ir para defini√ß√µes do sistema",
+    "viewingLimitedAssetsTip": "Apenas visualizar ficheiros e ·lbuns acessÌveis ‡ aplicaÁ„o.",
+    "changeAccessibleLimitedAssets": "Clique para atualizar os ficheiros acessÌveis",
+    "accessAllTip": "A aplicaÁ„o sÛ pode aceder a alguns ficheiros no dispositivo. Aceda ‡s definiÁıes do sistema e permita que a aplicaÁ„o aceda a todos os ficheiros no dispositivo.",
+    "goToSystemSettings": "Ir para definiÁıes do sistema",
     "accessLimitedAssets": "Continuar com acesso limitado",
-    "accessiblePathName": "Ficheiros acess√≠veis",
-    "sTypeAudioLabel": "√Åudio",
+    "accessiblePathName": "Ficheiros acessÌveis",
+    "sTypeAudioLabel": "¡udio",
     "sTypeImageLabel": "Imagem",
-    "sTypeVideoLabel": "V√≠deo",
+    "sTypeVideoLabel": "VÌdeo",
     "sTypeOtherLabel": "Outros ficheiros",
     "sActionPlayHint": "reproduzir",
-    "sActionPreviewHint": "pr√©-visualizar",
+    "sActionPreviewHint": "prÈ-visualizar",
     "sActionSelectHint": "selecionar",
-    "sActionSwitchPathLabel": "mudar a localiza√ß√£o",
-    "sActionUseCameraHint": "use a c√¢mara",
-    "sNameDurationLabel": "dura√ß√£o",
+    "sActionSwitchPathLabel": "mudar a localizaÁ„o",
+    "sActionUseCameraHint": "use a c‚mara",
+    "sNameDurationLabel": "duraÁ„o",
     "sUnitAssetCountLabel": "total"
   },
   "networkInterfacesPage": {
     "title": "Interfaces de rede",
-    "info": "Por padr√£o, o GravitySend utiliza todas as interfaces de rede dispon√≠veis. Pode excluir as redes indesejadas aqui. √â necess√°rio reiniciar o servidor para aplicar as altera√ß√µes.",
+    "info": "Por padr„o, o GravitySend utiliza todas as interfaces de rede disponÌveis. Pode excluir as redes indesejadas aqui. … necess·rio reiniciar o servidor para aplicar as alteraÁıes.",
     "preview": "Anterior",
     "whitelist": "Lista branca",
     "blacklist": "Lista negra"
   }
 }
+
 
 

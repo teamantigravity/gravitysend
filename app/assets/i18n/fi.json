@@ -1,18 +1,18 @@
-Ôªø{
+{
   "locale": "Finnish",
   "appName": "GravitySend",
   "general": {
-    "accept": "Hyv√§ksy",
-    "accepted": "Hyv√§ksytty",
-    "add": "Lis√§√§",
+    "accept": "Hyv‰ksy",
+    "accepted": "Hyv‰ksytty",
+    "add": "Lis‰‰",
     "advanced": "Edistynyt",
     "cancel": "Peruuta",
     "close": "Sulje",
     "confirm": "Vahvista",
     "continueStr": "Jatka",
     "copy": "Kopioi",
-    "copiedToClipboard": "Kopioitu leikep√∂yd√§lle",
-    "decline": "Hylk√§√§",
+    "copiedToClipboard": "Kopioitu leikepˆyd‰lle",
+    "decline": "Hylk‰‰",
     "done": "Valmis",
     "delete": "Poista",
     "edit": "Muokkaa",
@@ -23,7 +23,7 @@
     "hide": "Piilota",
     "off": "Pois",
     "offline": "Offline",
-    "on": "P√§√§ll√§",
+    "on": "P‰‰ll‰",
     "online": "Online",
     "open": "Avaa",
     "queue": "Jono",
@@ -31,15 +31,15 @@
     "quickSaveFromFavorites": "Pikatallennus suosikeiksi",
     "renamed": "Nimetty uudelleen",
     "reset": "Nollaa",
-    "restart": "K√§ynnist√§ uudelleen",
+    "restart": "K‰ynnist‰ uudelleen",
     "settings": "Asetukset",
     "skipped": "Ohitettu",
     "start": "Aloita",
-    "stop": "Pys√§yt√§",
+    "stop": "Pys‰yt‰",
     "save": "Tallenna",
     "unchanged": "Muuttumaton",
     "unknown": "Tuntematon",
-    "noItemInClipboard": "Leikep√∂yd√§ll√§ ei ole mit√§√§n."
+    "noItemInClipboard": "Leikepˆyd‰ll‰ ei ole mit‰‰n."
   },
   "receiveTab": {
     "title": "Ota vastaan",
@@ -55,7 +55,7 @@
     }
   },
   "sendTab": {
-    "title": "L√§het√§",
+    "title": "L‰het‰",
     "selection": {
       "title": "Valinta",
       "files": "Tiedostot: {files}",
@@ -67,22 +67,22 @@
       "media": "Media",
       "text": "Teksti",
       "app": "Sovellus",
-      "clipboard": "Liit√§"
+      "clipboard": "Liit‰"
     },
-    "shareIntentInfo": "Sin√§ voit my√∂s k√§ytt√§√§ laitteesi \"Jaa\"-toimintoa valitaksesi tiedostoja helpommin.",
-    "nearbyDevices": "L√§hell√§ olevat laitteet",
-    "thisDevice": "T√§m√§ laite",
+    "shareIntentInfo": "Sin‰ voit myˆs k‰ytt‰‰ laitteesi \"Jaa\"-toimintoa valitaksesi tiedostoja helpommin.",
+    "nearbyDevices": "L‰hell‰ olevat laitteet",
+    "thisDevice": "T‰m‰ laite",
     "scan": "Etsi laitteita",
-    "manualSending": "Manuaalinen l√§hetys",
-    "sendMode": "L√§hetystapa",
+    "manualSending": "Manuaalinen l‰hetys",
+    "sendMode": "L‰hetystapa",
     "sendModes": {
       "single": "Yksi vastaanottaja",
       "multiple": "Monta vastaanottajaa",
-      "link": "Jaa linkill√§"
+      "link": "Jaa linkill‰"
     },
     "sendModeHelp": "Selitys",
-    "help": "Varmista, ett√§ haluttu kohde on my√∂s samassa Wi-Fi-verkossa.",
-    "placeItems": "Lis√§√§ tiedostot t√§h√§n, jotta voit l√§hett√§√§ ne."
+    "help": "Varmista, ett‰ haluttu kohde on myˆs samassa Wi-Fi-verkossa.",
+    "placeItems": "Lis‰‰ tiedostot t‰h‰n, jotta voit l‰hett‰‰ ne."
   },
   "settingsTab": {
     "title": "Asetukset",
@@ -90,25 +90,25 @@
       "title": "Yleinen",
       "brightness": "Teema",
       "brightnessOptions": {
-        "system": "J√§rjestelm√§",
+        "system": "J‰rjestelm‰",
         "dark": "Tumma",
         "light": "Vaalea"
       },
-      "color": "V√§ri",
+      "color": "V‰ri",
       "colorOptions": {
-        "system": "J√§rjestelm√§",
+        "system": "J‰rjestelm‰",
         "oled": "OLED"
       },
       "language": "Kieli",
       "languageOptions": {
-        "system": "J√§rjestelm√§"
+        "system": "J‰rjestelm‰"
       },
       "saveWindowPlacement": "Poistu: Tallenna ikkunan sijainti",
-      "saveWindowPlacementWindows": "Tallenna ikkunan sijainti poistumisen j√§lkeen",
+      "saveWindowPlacementWindows": "Tallenna ikkunan sijainti poistumisen j‰lkeen",
       "minimizeToTray": "Poistu: Minimoi ilmoitusalueelle",
-      "launchAtStartup": "Automaattinen k√§ynnistys",
-      "launchMinimized": "Automaattinen k√§ynnistys: K√§ynnist√§ piiilotettuna",
-      "showInContextMenu": "N√§yt√§ GravitySend kontekstivalikossa",
+      "launchAtStartup": "Automaattinen k‰ynnistys",
+      "launchMinimized": "Automaattinen k‰ynnistys: K‰ynnist‰ piiilotettuna",
+      "showInContextMenu": "N‰yt‰ GravitySend kontekstivalikossa",
       "animations": "Animaatiot"
     },
     "receive": {
@@ -120,27 +120,27 @@
       "saveToGallery": "Tallenna media galleriaan",
       "saveToHistory": "Tallenna historiaan",
       "quickSaveFromFavorites": "Automaattinen tallennus suosikeista",
-      "requirePin": "Kiinnit√§"
+      "requirePin": "Kiinnit‰"
     },
     "send": {
-      "title": "L√§hetys",
-      "shareViaLinkAutoAccept": "Jaa linkki: Hyv√§ksy automaattisesti"
+      "title": "L‰hetys",
+      "shareViaLinkAutoAccept": "Jaa linkki: Hyv‰ksy automaattisesti"
     },
     "network": {
       "title": "Verkko",
-      "needRestart": "K√§ynnist√§ GravitySend uudelleen saadaksesi muutokset k√§ytt√∂√∂n!",
+      "needRestart": "K‰ynnist‰ GravitySend uudelleen saadaksesi muutokset k‰yttˆˆn!",
       "server": "Palvelin",
       "alias": "Laitteen nimi",
       "deviceType": "Laitteen tyyppi",
       "deviceModel": "Laitteen malli",
       "port": "Portti",
-      "discoveryTimeout": "Laitteiden etsint√§aika",
-      "useSystemName": "K√§yt√§ j√§rjestelm√§n nime√§",
+      "discoveryTimeout": "Laitteiden etsint‰aika",
+      "useSystemName": "K‰yt‰ j‰rjestelm‰n nime‰",
       "generateRandomAlias": "Luo satunnainen alias",
-      "portWarning": "Sinua ei ehk√§ havaita muiden laitteiden toimesta, koska k√§yt√§t mukautettua porttia. (oletus: {defaultPort})",
+      "portWarning": "Sinua ei ehk‰ havaita muiden laitteiden toimesta, koska k‰yt‰t mukautettua porttia. (oletus: {defaultPort})",
       "encryption": "Salaus",
       "multicastGroup": "Multicast",
-      "multicastGroupWarning": "Sinua ei ehk√§ havaita muiden laitteiden toimesta, koska k√§yt√§t mukautettua multicast-osoitetta. (oletus: {defaultMulticast})",
+      "multicastGroupWarning": "Sinua ei ehk‰ havaita muiden laitteiden toimesta, koska k‰yt‰t mukautettua multicast-osoitetta. (oletus: {defaultMulticast})",
       "networkOptions": {
         "all": "Kaikki",
         "filtered": "Suodatettu"
@@ -151,46 +151,46 @@
       "title": "Muut",
       "support": "Tue GravitySendia",
       "donate": "Lahjoita",
-      "privacyPolicy": "Tietosuojak√§yt√§nt√∂",
-      "termsOfUse": "K√§ytt√∂ehdot"
+      "privacyPolicy": "Tietosuojak‰yt‰ntˆ",
+      "termsOfUse": "K‰yttˆehdot"
     },
     "advancedSettings": "Edistyneet asetukset"
   },
   "troubleshootPage": {
     "title": "Ongelmanratkaisu",
-    "subTitle": "Eik√∂ sovellus toimi odotetusti? T√§√§lt√§ l√∂yd√§t joitain yleisi√§ ratkaisuja.",
+    "subTitle": "Eikˆ sovellus toimi odotetusti? T‰‰lt‰ lˆyd‰t joitain yleisi‰ ratkaisuja.",
     "solution": "Ratkaisu:",
     "fixButton": "Automaattinen korjaus",
     "firewall": {
-      "symptom": "T√§m√§ sovellus voi l√§hett√§√§ tiedostoja muihin laitteisiin, mutta muut laitteet eiv√§t voi l√§hett√§√§ tiedostoja t√§h√§n laitteeseen.",
-      "solution": "T√§m√§ on todenn√§k√∂isesti palomuuriongelma. Voit ratkaista t√§m√§n sallimalla saapuvat yhteydet (UDP ja TCP) porttiin {port}.",
+      "symptom": "T‰m‰ sovellus voi l‰hett‰‰ tiedostoja muihin laitteisiin, mutta muut laitteet eiv‰t voi l‰hett‰‰ tiedostoja t‰h‰n laitteeseen.",
+      "solution": "T‰m‰ on todenn‰kˆisesti palomuuriongelma. Voit ratkaista t‰m‰n sallimalla saapuvat yhteydet (UDP ja TCP) porttiin {port}.",
       "openFirewall": "Avaa palomuuri"
     },
     "noDiscovery": {
-      "symptom": "T√§m√§ laite ei pysty l√∂yt√§m√§√§n muita laitteita.",
-      "solution": "Varmista, ett√§ kaikki laitteet ovat samassa Wi-Fi-verkossa ja jakavat saman kokoonpanon (portti, monil√§hetysosoite, salaus). Voit yritt√§√§ kirjoittaa kohdelaitteen IP-osoitteen manuaalisesti. Jos t√§m√§ toimii, harkitse t√§m√§n laitteen lis√§√§mist√§ suosikkeihin, jotta se voidaan l√∂yt√§√§ automaattisesti tulevaisuudessa."
+      "symptom": "T‰m‰ laite ei pysty lˆyt‰m‰‰n muita laitteita.",
+      "solution": "Varmista, ett‰ kaikki laitteet ovat samassa Wi-Fi-verkossa ja jakavat saman kokoonpanon (portti, monil‰hetysosoite, salaus). Voit yritt‰‰ kirjoittaa kohdelaitteen IP-osoitteen manuaalisesti. Jos t‰m‰ toimii, harkitse t‰m‰n laitteen lis‰‰mist‰ suosikkeihin, jotta se voidaan lˆyt‰‰ automaattisesti tulevaisuudessa."
     },
     "noConnection": {
-      "symptom": "Molemmat laitteet eiv√§t voi l√∂yt√§√§ toisiaan eiv√§tk√§ jakaa tiedostoja.",
-      "solution": "Onko ongelma olemassa molemmin puolin? Jos on, sinun on varmistettava, ett√§ molemmat laitteet ovat samassa Wi-Fi-verkossa ja jakavat saman kokoonpanon (portti, multicast-osoite, salaus). Verkko ei ehk√§ salli viestint√§√§ osallistujien v√§lill√§. T√§ss√§ tapauksessa t√§m√§ vaihtoehto on otettava k√§ytt√∂√∂n reitittimess√§."
+      "symptom": "Molemmat laitteet eiv‰t voi lˆyt‰‰ toisiaan eiv‰tk‰ jakaa tiedostoja.",
+      "solution": "Onko ongelma olemassa molemmin puolin? Jos on, sinun on varmistettava, ett‰ molemmat laitteet ovat samassa Wi-Fi-verkossa ja jakavat saman kokoonpanon (portti, multicast-osoite, salaus). Verkko ei ehk‰ salli viestint‰‰ osallistujien v‰lill‰. T‰ss‰ tapauksessa t‰m‰ vaihtoehto on otettava k‰yttˆˆn reitittimess‰."
     }
   },
   "receiveHistoryPage": {
     "title": "Historia",
     "openFolder": "Avaa kansio",
-    "deleteHistory": "Tyhjenn√§ historia",
-    "empty": "Historia on tyhj√§.",
+    "deleteHistory": "Tyhjenn‰ historia",
+    "empty": "Historia on tyhj‰.",
     "entryActions": {
       "open": "Avaa tiedosto",
-      "showInFolder": "N√§yt√§ kansiossa",
+      "showInFolder": "N‰yt‰ kansiossa",
       "info": "Tiedot",
       "deleteFromHistory": "Poista historiasta"
     }
   },
   "apkPickerPage": {
     "title": "Sovellukset (APK)",
-    "excludeSystemApps": "lukuun ottamatta j√§rjestelm√§sovelluksia",
-    "excludeAppsWithoutLaunchIntent": "lukuun ottamatta sovelluksia, joilla ei ole k√§ynnistysintentiota",
+    "excludeSystemApps": "lukuun ottamatta j‰rjestelm‰sovelluksia",
+    "excludeAppsWithoutLaunchIntent": "lukuun ottamatta sovelluksia, joilla ei ole k‰ynnistysintentiota",
     "apps": "{n} sovellusta"
   },
   "selectedFilesPage": {
@@ -198,35 +198,35 @@
   },
   "receivePage": {
     "subTitle": {
-      "one": "on l√§hett√§m√§ss√§ sinulle tiedostoa",
-      "other": "on l√§hett√§m√§ss√§ sinulle {n} tiedostoa"
+      "one": "on l‰hett‰m‰ss‰ sinulle tiedostoa",
+      "other": "on l‰hett‰m‰ss‰ sinulle {n} tiedostoa"
     },
-    "subTitleMessage": "l√§hetti sinulle viestin:",
-    "subTitleLink": "l√§hetti sinulle linkin:",
-    "canceled": "L√§hett√§j√§ on peruuttanut pyynn√∂n."
+    "subTitleMessage": "l‰hetti sinulle viestin:",
+    "subTitleLink": "l‰hetti sinulle linkin:",
+    "canceled": "L‰hett‰j‰ on peruuttanut pyynnˆn."
   },
   "receiveOptionsPage": {
     "title": "Asetukset",
     "destination": "Vastaanottoasetukset",
     "appDirectory": "(GravitySend-kansio)",
     "saveToGallery": "Tallenna galleriaan",
-    "saveToGalleryOff": "Poistettu k√§yt√∂st√§ automaattisesti, koska l√§hetetyiss√§ tiedostoissa on kansioita."
+    "saveToGalleryOff": "Poistettu k‰ytˆst‰ automaattisesti, koska l‰hetetyiss‰ tiedostoissa on kansioita."
   },
   "sendPage": {
     "waiting": "Odotetaan vastausta...",
-    "rejected": "Vastaanottaja on peruuttanut pyynn√∂n.",
-    "busy": "Vastaanottaja vastaanottaa toista pyynt√∂√§.",
-    "tooManyAttempts": "Liian monta yrityst√§"
+    "rejected": "Vastaanottaja on peruuttanut pyynnˆn.",
+    "busy": "Vastaanottaja vastaanottaa toista pyyntˆ‰.",
+    "tooManyAttempts": "Liian monta yrityst‰"
   },
   "progressPage": {
-    "titleSending": "Tiedostojen l√§hetys",
+    "titleSending": "Tiedostojen l‰hetys",
     "titleReceiving": "Tiedostojen vastaanotto",
     "savedToGallery": "Tallennettu Kuvat-kansioon",
     "total": {
       "title": {
-        "sending": "L√§hetysprosessi ({time})",
-        "finishedError": "P√§√§ttynyt virheell√§",
-        "canceledSender": "L√§hett√§j√§ peruutti",
+        "sending": "L‰hetysprosessi ({time})",
+        "finishedError": "P‰‰ttynyt virheell‰",
+        "canceledSender": "L‰hett‰j‰ peruutti",
         "canceledReceiver": "Vastaanottaja peruutti"
       },
       "count": "Tiedostot: {curr} / {n}",
@@ -238,42 +238,42 @@
       "minutes": "{n}:{ss}",
       "hours": "{h}t {m}m",
       "days": "{d}pv {h}t {m}m",
-      "@hours": "K√§yt√§ 'h' tuntien lyhenteen√§ ja 'm' minuuttien",
-      "@days": "K√§yt√§ 'pv' p√§iville, 'h' tunneille ja 'm' minuuteille"
+      "@hours": "K‰yt‰ 'h' tuntien lyhenteen‰ ja 'm' minuuttien",
+      "@days": "K‰yt‰ 'pv' p‰iville, 'h' tunneille ja 'm' minuuteille"
     }
   },
   "webSharePage": {
     "title": "Jaa linkin kautta",
-    "loading": "K√§ynnistet√§√§n palvelinta‚Ä¶",
-    "stopping": "Pys√§ytet√§√§n palvelinta‚Ä¶",
-    "error": "Palvelimen k√§ynnistyksess√§ tapahtui virhe.",
+    "loading": "K‰ynnistet‰‰n palvelintaÖ",
+    "stopping": "Pys‰ytet‰‰n palvelintaÖ",
+    "error": "Palvelimen k‰ynnistyksess‰ tapahtui virhe.",
     "openLink": {
-      "one": "Avaa t√§m√§ linkki selaimessasi:",
-      "other": "Avaa jokin n√§ist√§ linkeist√§ selaimessasi:"
+      "one": "Avaa t‰m‰ linkki selaimessasi:",
+      "other": "Avaa jokin n‰ist‰ linkeist‰ selaimessasi:"
     },
-    "requests": "Pyynn√∂t",
-    "noRequests": "Ei pyynt√∂j√§ viel√§.",
+    "requests": "Pyynnˆt",
+    "noRequests": "Ei pyyntˆj‰ viel‰.",
     "encryption": "Verkon salaus",
-    "autoAccept": "Hyv√§ksy pyynn√∂t automaattisesti",
+    "autoAccept": "Hyv‰ksy pyynnˆt automaattisesti",
     "requirePin": "Vaadi PIN-koodi",
     "pinHint": "PIN-koodi on \"{pin}\"",
-    "encryptionHint": "GravitySend k√§ytt√§√§ itse allekirjoitettua sertifikaattia. Sinun on hyv√§ksytt√§v√§ se selaimessasi.",
-    "pendingRequests": "Odottavat pyynn√∂t: {n}"
+    "encryptionHint": "GravitySend k‰ytt‰‰ itse allekirjoitettua sertifikaattia. Sinun on hyv‰ksytt‰v‰ se selaimessasi.",
+    "pendingRequests": "Odottavat pyynnˆt: {n}"
   },
   "aboutPage": {
     "title": "Tietoja GravitySendista",
     "description": [
-      "GravitySend on ilmainen, avoimen l√§hdekoodin sovellus, jonka avulla voit turvallisesti jakaa tiedostoja ja l√§hett√§√§ viestej√§ l√§heisten laitteiden kanssa paikallisessa verkossasi ilman internet-yhteytt√§.",
-      "GravitySend on saatavilla Androidille, iOS:lle, Linuxille, macOS:lle ja Windowsille. Kaikki latausvaihtoehdot l√∂ytyv√§t virallisilta kotisivuilta."
+      "GravitySend on ilmainen, avoimen l‰hdekoodin sovellus, jonka avulla voit turvallisesti jakaa tiedostoja ja l‰hett‰‰ viestej‰ l‰heisten laitteiden kanssa paikallisessa verkossasi ilman internet-yhteytt‰.",
+      "GravitySend on saatavilla Androidille, iOS:lle, Linuxille, macOS:lle ja Windowsille. Kaikki latausvaihtoehdot lˆytyv‰t virallisilta kotisivuilta."
     ],
-    "author": "Tekij√§",
+    "author": "Tekij‰",
     "contributors": "Avustajat",
     "packagers": "Pakkaajat",
-    "translators": "K√§√§nt√§j√§t"
+    "translators": "K‰‰nt‰j‰t"
   },
   "donationPage": {
     "title": "Lahjoita",
-    "info": "GravitySend on ilmainen, avoimen l√§hdekoodin sovellus ilman mainoksia. Voit tukea projektia lahjoituksella, jos pid√§t sovelluksesta.",
+    "info": "GravitySend on ilmainen, avoimen l‰hdekoodin sovellus ilman mainoksia. Voit tukea projektia lahjoituksella, jos pid‰t sovelluksesta.",
     "donate": "Lahjoita {amount}",
     "thanks": "Suuret kiitokset!",
     "restore": "Palauta ostos"
@@ -282,40 +282,40 @@
     "title": "Muutosloki"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
-    "@info": "Eri sijainneissa voi olla k√§yt√∂ss√§ eri sanoja. Ne eiv√§t t√§sm√§√§ toisiaan tasantarkkaan.",
+    "@info": "Eri sijainneissa voi olla k‰ytˆss‰ eri sanoja. Ne eiv‰t t‰sm‰‰ toisiaan tasantarkkaan.",
     "adjectives": [
       "Stydi",
-      "J√§m√§",
+      "J‰m‰",
       "Raju",
       "Makee",
       "Siisti",
       "Kummallinen",
       "Hurja",
-      "H√∂risev√§",
+      "Hˆrisev‰",
       "Naurava",
       "Suriseva",
-      "P√∂hel√∂",
-      "H√∂lm√∂",
+      "Pˆhelˆ",
+      "Hˆlmˆ",
       "Spede",
       "Kummallinen",
       "Rampainen",
       "Jonne",
-      "L√∂ssi",
+      "Lˆssi",
       "Kuuli",
       "Aukiva",
       "Lutsi",
       "Wallahi",
       "Pummi",
-      "K√∂yh√§",
-      "Saunassa k√§yv√§",
+      "Kˆyh‰",
+      "Saunassa k‰yv‰",
       "Bulkki",
       "Chilli",
       "Dokkaava",
-      "K√§nni",
+      "K‰nni",
       "Broidi",
       "Kundi",
-      "G√∂nts√§",
-      "Pelleilev√§",
+      "Gˆnts‰",
+      "Pelleilev‰",
       "Haiseva",
       "Hakkeri"
     ],
@@ -324,7 +324,7 @@
       "Banaani",
       "Appelsiini",
       "Mango",
-      "P√§√§ryn√§",
+      "P‰‰ryn‰",
       "Kiivi",
       "Kirsikka",
       "Vadelma",
@@ -336,13 +336,13 @@
       "Mustaherukka",
       "Karhunvatukka",
       "Vesimeloni",
-      "Hedelm√§",
-      "P√§√§ryn√§",
+      "Hedelm‰",
+      "P‰‰ryn‰",
       "Pihlajanmarja",
       "Karpalo",
       "Puolukka",
       "Lakka",
-      "Kuusenkerkk√§",
+      "Kuusenkerkk‰",
       "Kataja",
       "Kuusama",
       "Ananas",
@@ -350,21 +350,21 @@
       "Sitruuna",
       "Lime",
       "Papaija",
-      "Passionhedelm√§",
+      "Passionhedelm‰",
       "Pomelo",
       "Kiinalainen karviainen",
       "Lychee",
       "Taateli",
       "Viikuna",
-      "Ryp√§le"
+      "Ryp‰le"
     ],
     "combination": "{adjective} {fruit}",
     "@combination": "In some languages, the adjective must be last."
   },
   "dialogs": {
     "addFile": {
-      "title": "Lis√§√§ valintaan",
-      "content": "Mit√§ haluat lis√§t√§?"
+      "title": "Lis‰‰ valintaan",
+      "content": "Mit‰ haluat lis‰t‰?"
     },
     "openFile": {
       "title": "Avaa tiedosto",
@@ -374,7 +374,7 @@
       "title": "Anna osoite",
       "hashtag": "Hashtag",
       "ip": "IP-osoite",
-      "recentlyUsed": "√Ñskett√§in k√§ytetty: "
+      "recentlyUsed": "ƒskett‰in k‰ytetty: "
     },
     "cancelSession": {
       "title": "Peruuta tiedostonsiirto",
@@ -382,26 +382,26 @@
     },
     "cannotOpenFile": {
       "title": "Tiedostoa ei voi avata",
-      "content": "Tiedostoa \"{file}\" ei voitu avata. Onko t√§m√§ tiedosto siirretty, nimetty uudelleen tai poistettu?"
+      "content": "Tiedostoa \"{file}\" ei voitu avata. Onko t‰m‰ tiedosto siirretty, nimetty uudelleen tai poistettu?"
     },
     "encryptionDisabledNotice": {
-      "title": "Salaus poistettu k√§yt√∂st√§",
-      "content": "Viestint√§ tapahtuu nyt salaamattoman HTTP-protokollan kautta. Jos haluat k√§ytt√§√§ HTTPS:√§√§, ota salaus uudelleen k√§ytt√∂√∂n."
+      "title": "Salaus poistettu k‰ytˆst‰",
+      "content": "Viestint‰ tapahtuu nyt salaamattoman HTTP-protokollan kautta. Jos haluat k‰ytt‰‰ HTTPS:‰‰, ota salaus uudelleen k‰yttˆˆn."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteDialog": {
       "title": "Suosikit",
-      "noFavorites": "Ei suosikkilaitteita viel√§.",
-      "addFavorite": "Lis√§√§"
+      "noFavorites": "Ei suosikkilaitteita viel‰.",
+      "addFavorite": "Lis‰‰"
     },
     "favoriteDeleteDialog": {
       "title": "Poista suosikeista",
       "content": "Haluatko varmasti poistaa suosikeista \"{name}\"?"
     },
     "favoriteEditDialog": {
-      "titleAdd": "Lis√§√§ suosikkeihin",
+      "titleAdd": "Lis‰‰ suosikkeihin",
       "titleEdit": "Asetukset",
       "name": "Laitteen nimi",
       "auto": "(automaattinen)",
@@ -413,20 +413,20 @@
       "fileName": "Tiedoston nimi:",
       "path": "Polku:",
       "size": "Koko:",
-      "sender": "L√§hett√§j√§:",
+      "sender": "L‰hett‰j‰:",
       "time": "Aika:"
     },
     "fileNameInput": {
       "title": "Anna tiedoston nimi",
-      "original": "Alkuper√§inen: {original}"
+      "original": "Alkuper‰inen: {original}"
     },
     "historyClearDialog": {
-      "title": "Tyhjenn√§ historia",
+      "title": "Tyhjenn‰ historia",
       "content": "Haluatko varmasti poistaa koko historian?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "GravitySend ei l√∂yd√§ muita laitteita ilman lupaa skannata paikallisverkkoa. Anna t√§m√§ lupa asetuksissa.",
+      "description": "GravitySend ei lˆyd‰ muita laitteita ilman lupaa skannata paikallisverkkoa. Anna t‰m‰ lupa asetuksissa.",
       "gotoSettings": "Asetukset"
     },
     "messageInput": {
@@ -435,15 +435,15 @@
     },
     "noFiles": {
       "title": "Ei tiedostoa valittuna",
-      "content": "Valitse v√§hint√§√§n yksi tiedosto."
+      "content": "Valitse v‰hint‰‰n yksi tiedosto."
     },
     "noPermission": {
       "title": "Ei oikeuksia",
-      "content": "Et ole my√∂nt√§nyt tarvittavia oikeuksia. My√∂nn√§ ne asetuksissa."
+      "content": "Et ole myˆnt‰nyt tarvittavia oikeuksia. Myˆnn‰ ne asetuksissa."
     },
     "notAvailableOnPlatform": {
       "title": "Ei saatavilla",
-      "content": "T√§m√§ ominaisuus on saatavilla vain:"
+      "content": "T‰m‰ ominaisuus on saatavilla vain:"
     },
     "qr": {
       "title": "QR-koodi"
@@ -452,29 +452,29 @@
       "title": "Pikatoiminnot",
       "counter": "Laskuri",
       "prefix": "Etuliite",
-      "padZero": "T√§yt√§ nollilla",
-      "sortBeforeCount": "Lajittele aakkosj√§rjestykseen ennen laskentaa",
+      "padZero": "T‰yt‰ nollilla",
+      "sortBeforeCount": "Lajittele aakkosj‰rjestykseen ennen laskentaa",
       "random": "Satunnainen"
     },
     "quickSaveNotice": {
       "title": "Pikatallennus",
-      "content": "Tiedostopyynn√∂t hyv√§ksyt√§√§n automaattisesti. Huomaa, ett√§ kuka tahansa paikallisverkossa voi l√§hett√§√§ sinulle tiedostoja."
+      "content": "Tiedostopyynnˆt hyv‰ksyt‰‰n automaattisesti. Huomaa, ett‰ kuka tahansa paikallisverkossa voi l‰hett‰‰ sinulle tiedostoja."
     },
     "quickSaveFromFavoritesNotice": {
       "content": [
-        "Tiedostopyynn√∂t hyv√§ksyt√§√§n nyt automaattisesti suosikkiluettelossasi olevilta laitteilta.",
-        "Varoitus! T√§ll√§ hetkell√§ t√§m√§ ei ole t√§ysin turvallista, koska hakkeri, jolla on mink√§ tahansa suosikkiluettelosi laitteen sormenj√§lki, voi l√§hett√§√§ sinulle tiedostoja ilman rajoituksia.",
-        "T√§m√§ vaihtoehto on kuitenkin turvallisempi kuin sallia kaikkien paikallisverkon k√§ytt√§jien l√§hett√§√§ sinulle tiedostoja ilman rajoituksia."
+        "Tiedostopyynnˆt hyv‰ksyt‰‰n nyt automaattisesti suosikkiluettelossasi olevilta laitteilta.",
+        "Varoitus! T‰ll‰ hetkell‰ t‰m‰ ei ole t‰ysin turvallista, koska hakkeri, jolla on mink‰ tahansa suosikkiluettelosi laitteen sormenj‰lki, voi l‰hett‰‰ sinulle tiedostoja ilman rajoituksia.",
+        "T‰m‰ vaihtoehto on kuitenkin turvallisempi kuin sallia kaikkien paikallisverkon k‰ytt‰jien l‰hett‰‰ sinulle tiedostoja ilman rajoituksia."
       ],
       "title": "@:general.quickSaveFromFavorites"
     },
     "pin": {
-      "title": "Sy√∂t√§ PIN-koodi"
+      "title": "Syˆt‰ PIN-koodi"
     },
     "sendModeHelp": {
-      "title": "L√§hetystilat",
-      "single": "L√§hett√§√§ tiedostoja yhdelle vastaanottajalle. Valinta tyhjennet√§√§n tiedostonsiirron p√§√§tytty√§.",
-      "multiple": "L√§hett√§√§ tiedostoja useille vastaanottajille. Valinta ei tyhjene.",
+      "title": "L‰hetystilat",
+      "single": "L‰hett‰‰ tiedostoja yhdelle vastaanottajalle. Valinta tyhjennet‰‰n tiedostonsiirron p‰‰tytty‰.",
+      "multiple": "L‰hett‰‰ tiedostoja useille vastaanottajille. Valinta ei tyhjene.",
       "link": "Vastaanottajat, joilla ei ole GravitySendia asennettuna, voivat ladata valitut tiedostot avaamalla linkin selaimessaan."
     },
     "zoom": {
@@ -482,21 +482,21 @@
     }
   },
   "sanitization": {
-    "empty": "Tiedostonimi ei voi olla tyhj√§",
-    "invalid": "Tiedostonimi sis√§lt√§√§ kiellettyj√§ merkkej√§"
+    "empty": "Tiedostonimi ei voi olla tyhj‰",
+    "invalid": "Tiedostonimi sis‰lt‰‰ kiellettyj‰ merkkej‰"
   },
   "tray": {
-    "@info": "Applen ohjeistukset ovat hyvin tiukat 'sulje'-sanan k√§yt√∂st√§.",
+    "@info": "Applen ohjeistukset ovat hyvin tiukat 'sulje'-sanan k‰ytˆst‰.",
     "open": "Avaa",
     "close": "Lopeta GravitySend",
     "closeWindows": "Poistu"
   },
   "web": {
     "waiting": "Odotetaan vastausta...",
-    "enterPin": "Sy√∂t√§ PIN-koodi",
+    "enterPin": "Syˆt‰ PIN-koodi",
     "invalidPin": "Virheellinen PIN-koodi",
-    "tooManyAttempts": "Liian monta yrityst√§",
-    "rejected": "Hyl√§tty",
+    "tooManyAttempts": "Liian monta yrityst‰",
+    "rejected": "Hyl‰tty",
     "files": "Tiedostot",
     "fileName": "Tiedoston nimi",
     "size": "Koko"
@@ -507,20 +507,20 @@
     "cancel": "Peruuta",
     "edit": "Muokkaa",
     "gifIndicator": "GIF",
-    "loadFailed": "Lataus ep√§onnistui",
-    "original": "Alkuper√§inen",
+    "loadFailed": "Lataus ep‰onnistui",
+    "original": "Alkuper‰inen",
     "preview": "Esikatselu",
     "select": "Valitse",
-    "emptyList": "Tyhj√§ lista",
-    "unSupportedAssetType": "Tiedostotyyppi√§ ei tueta.",
-    "unableToAccessAll": "Kaikkien tiedostojen k√§ytt√∂ laitteella ei onnistu",
-    "viewingLimitedAssetsTip": "N√§yt√§ vain sovelluksen k√§ytt√∂√∂n saatavilla olevat tiedostot ja albumit.",
-    "changeAccessibleLimitedAssets": "P√§ivit√§ k√§ytett√§viss√§ olevat tiedostot napsauttamalla",
-    "accessAllTip": "Sovellus p√§√§see k√§siksi vain osaan laitteen tiedostoista. Siirry j√§rjestelm√§asetuksiin ja salli sovelluksen p√§√§sy kaikkiin laitteen mediaan.",
-    "goToSystemSettings": "Siirry j√§rjestelm√§asetuksiin",
-    "accessLimitedAssets": "Jatka rajoitetulla p√§√§syll√§",
-    "accessiblePathName": "K√§ytett√§viss√§ olevat tiedostot",
-    "sTypeAudioLabel": "√Ñ√§ni",
+    "emptyList": "Tyhj‰ lista",
+    "unSupportedAssetType": "Tiedostotyyppi‰ ei tueta.",
+    "unableToAccessAll": "Kaikkien tiedostojen k‰yttˆ laitteella ei onnistu",
+    "viewingLimitedAssetsTip": "N‰yt‰ vain sovelluksen k‰yttˆˆn saatavilla olevat tiedostot ja albumit.",
+    "changeAccessibleLimitedAssets": "P‰ivit‰ k‰ytett‰viss‰ olevat tiedostot napsauttamalla",
+    "accessAllTip": "Sovellus p‰‰see k‰siksi vain osaan laitteen tiedostoista. Siirry j‰rjestelm‰asetuksiin ja salli sovelluksen p‰‰sy kaikkiin laitteen mediaan.",
+    "goToSystemSettings": "Siirry j‰rjestelm‰asetuksiin",
+    "accessLimitedAssets": "Jatka rajoitetulla p‰‰syll‰",
+    "accessiblePathName": "K‰ytett‰viss‰ olevat tiedostot",
+    "sTypeAudioLabel": "ƒ‰ni",
     "sTypeImageLabel": "Kuva",
     "sTypeVideoLabel": "Video",
     "sTypeOtherLabel": "Muut mediat",
@@ -528,17 +528,18 @@
     "sActionPreviewHint": "esikatsele",
     "sActionSelectHint": "valitse",
     "sActionSwitchPathLabel": "vaihda polkua",
-    "sActionUseCameraHint": "k√§yt√§ kameraa",
+    "sActionUseCameraHint": "k‰yt‰ kameraa",
     "sNameDurationLabel": "kesto",
-    "sUnitAssetCountLabel": "m√§√§r√§"
+    "sUnitAssetCountLabel": "m‰‰r‰"
   },
   "networkInterfacesPage": {
-    "title": "Verkkok√§ytt√∂liittym√§t",
-    "info": "Oletuksena GravitySend k√§ytt√§√§ kaikkia saatavilla olevia verkkoliit√§nt√∂j√§. Voit sulkea pois verkkoliit√§nn√§t, joita et halua. Sinun tulee uudelleenk√§ynnist√§√§ GravitySend ottaaksesi muutokset k√§ytt√∂√∂n.",
+    "title": "Verkkok‰yttˆliittym‰t",
+    "info": "Oletuksena GravitySend k‰ytt‰‰ kaikkia saatavilla olevia verkkoliit‰ntˆj‰. Voit sulkea pois verkkoliit‰nn‰t, joita et halua. Sinun tulee uudelleenk‰ynnist‰‰ GravitySend ottaaksesi muutokset k‰yttˆˆn.",
     "preview": "Esikatselu",
     "whitelist": "Sallittujen lista",
     "blacklist": "Estettyjen lista"
   }
 }
+
 
 

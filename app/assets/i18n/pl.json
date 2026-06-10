@@ -1,4 +1,4 @@
-﻿{
+{
   "locale": "Polski",
   "appName": "GravitySend",
   "general": {
@@ -8,32 +8,32 @@
     "advanced": "Zaawansowane",
     "cancel": "Anuluj",
     "close": "Zamknij",
-    "confirm": "Potwierdź",
+    "confirm": "Potwierdz",
     "continueStr": "Dalej",
     "copy": "Kopiuj",
     "copiedToClipboard": "Skopiowane do schowka",
-    "decline": "Odrzuć",
+    "decline": "Odrzuc",
     "done": "Gotowe",
-    "delete": "Usuń",
+    "delete": "Usun",
     "edit": "Edytuj",
-    "error": "Błąd",
-    "example": "Przykład",
+    "error": "Blad",
+    "example": "Przyklad",
     "files": "Pliki",
-    "finished": "Skończone",
+    "finished": "Skonczone",
     "hide": "Schowaj",
-    "off": "Wyłączony",
+    "off": "Wylaczony",
     "offline": "Offline",
-    "on": "Włączony",
+    "on": "Wlaczony",
     "online": "Online",
-    "open": "Otwórz",
+    "open": "Otw�rz",
     "queue": "Kolejka",
     "quickSave": "Szybki zapis",
-    "quickSaveFromFavorites": "Szybki zapis dla „Ulubionych”",
+    "quickSaveFromFavorites": "Szybki zapis dla �Ulubionych�",
     "renamed": "Przemianowany",
     "reset": "Resetowanie",
     "restart": "Restartuj",
     "settings": "Ustawienia",
-    "skipped": "Pominięty",
+    "skipped": "Pominiety",
     "start": "Zacznij",
     "stop": "Zatrzymaj",
     "save": "Zapisz",
@@ -55,11 +55,11 @@
     }
   },
   "sendTab": {
-    "title": "Wyślij",
+    "title": "Wyslij",
     "selection": {
-      "title": "Wybór",
+      "title": "Wyb�r",
       "files": "Pliki: {files}",
-      "size": "Wielkość: {size}"
+      "size": "Wielkosc: {size}"
     },
     "picker": {
       "file": "Plik",
@@ -69,25 +69,25 @@
       "app": "Aplikacja",
       "clipboard": "Wklej"
     },
-    "shareIntentInfo": "Możesz także skorzystać z funkcji „Udostępnij” swojego urządzenia mobilnego, aby łatwiej wybierać pliki.",
-    "nearbyDevices": "Urządzenia w pobliżu",
-    "thisDevice": "To urządzenie",
-    "scan": "Szukaj urządzeń",
-    "manualSending": "Wysyłanie ręczne",
-    "sendMode": "Tryb wysyłania",
+    "shareIntentInfo": "Mozesz takze skorzystac z�funkcji �Udostepnij� swojego urzadzenia mobilnego, aby latwiej wybierac pliki.",
+    "nearbyDevices": "Urzadzenia w�poblizu",
+    "thisDevice": "To urzadzenie",
+    "scan": "Szukaj urzadzen",
+    "manualSending": "Wysylanie reczne",
+    "sendMode": "Tryb wysylania",
     "sendModes": {
       "single": "Pojedynczy odbiorca",
-      "multiple": "Wielu odbiorców",
-      "link": "Udostępnij przez link"
+      "multiple": "Wielu odbiorc�w",
+      "link": "Udostepnij przez link"
     },
-    "sendModeHelp": "Wyjaśnienie",
-    "help": "Upewnij się, że żądany cel również znajduje się w tej samej sieci Wi-Fi.",
-    "placeItems": "Umieść elementy do udostępnienia."
+    "sendModeHelp": "Wyjasnienie",
+    "help": "Upewnij sie, ze zadany cel r�wniez znajduje sie w�tej samej sieci Wi-Fi.",
+    "placeItems": "Umiesc elementy do udostepnienia."
   },
   "settingsTab": {
     "title": "Ustawienia",
     "general": {
-      "title": "Ogólne",
+      "title": "Og�lne",
       "brightness": "Motyw",
       "brightnessOptions": {
         "system": "Systemowy",
@@ -99,16 +99,16 @@
         "system": "Systemowy",
         "oled": "OLED"
       },
-      "language": "Język",
+      "language": "Jezyk",
       "languageOptions": {
         "system": "Systemowy"
       },
-      "saveWindowPlacement": "Zapisz pozycję okna po zakończeniu",
-      "saveWindowPlacementWindows": "Zapisz pozycję okna po zamknięciu",
+      "saveWindowPlacement": "Zapisz pozycje okna po zakonczeniu",
+      "saveWindowPlacementWindows": "Zapisz pozycje okna po zamknieciu",
       "minimizeToTray": "Zminimalizuj do menu ukrytych ikon przy zamykaniu",
       "launchAtStartup": "Autostart po zalogowaniu",
       "launchMinimized": "Autostart: start ukryty",
-      "showInContextMenu": "Pokaż GravitySend w menu kontekstowym",
+      "showInContextMenu": "Pokaz GravitySend w�menu kontekstowym",
       "animations": "Animacje"
     },
     "receive": {
@@ -116,75 +116,75 @@
       "quickSave": "@:general.quickSave",
       "quickSaveFromFavorites": "@:general.quickSaveFromFavorites",
       "requirePin": "@:webSharePage.requirePin",
-      "autoFinish": "Zakończ automatycznie",
+      "autoFinish": "Zakoncz automatycznie",
       "destination": "Miejsce docelowe",
       "downloads": "(Pobrane)",
-      "saveToGallery": "Zapisz media w galerii",
-      "saveToHistory": "Zapisz w historii"
+      "saveToGallery": "Zapisz media w�galerii",
+      "saveToHistory": "Zapisz w�historii"
     },
     "send": {
-      "title": "Wyślij",
-      "shareViaLinkAutoAccept": "Udostępnij przez link: akceptuj automatycznie"
+      "title": "Wyslij",
+      "shareViaLinkAutoAccept": "Udostepnij przez link: akceptuj automatycznie"
     },
     "network": {
-      "title": "Sieć",
-      "needRestart": "Uruchom ponownie serwer, aby zastosować ustawienia!",
+      "title": "Siec",
+      "needRestart": "Uruchom ponownie serwer, aby zastosowac ustawienia!",
       "server": "Serwer",
       "alias": "Alias",
-      "deviceType": "Typ urządzenia",
-      "deviceModel": "Model urządzenia",
+      "deviceType": "Typ urzadzenia",
+      "deviceModel": "Model urzadzenia",
       "port": "Port",
       "discoveryTimeout": "Limit czasu wykrywania",
-      "useSystemName": "Użyj nazwy systemu",
+      "useSystemName": "Uzyj nazwy systemu",
       "generateRandomAlias": "Wygeneruj losowy alias",
-      "portWarning": "Inne urządzenia mogą nie wykryć Twojego urządzenia, ponieważ używasz niestandardowego portu. (domyślnie: {defaultPort})",
+      "portWarning": "Inne urzadzenia moga nie wykryc Twojego urzadzenia, poniewaz uzywasz niestandardowego portu. (domyslnie: {defaultPort})",
       "encryption": "Szyfrowanie",
       "multicastGroup": "Multicast",
-      "multicastGroupWarning": "Inne urządzenia mogą nie wykryć Twojego urządzenia, ponieważ używasz niestandardowego adresu multicast. (domyślnie: {defaultMulticast})",
+      "multicastGroupWarning": "Inne urzadzenia moga nie wykryc Twojego urzadzenia, poniewaz uzywasz niestandardowego adresu multicast. (domyslnie: {defaultMulticast})",
       "networkOptions": {
         "all": "Wszystkie",
         "filtered": "Przefiltrowane"
       },
-      "network": "Sieć"
+      "network": "Siec"
     },
     "other": {
       "title": "Inne",
       "support": "Wesprzyj GravitySend",
-      "donate": "Przekaż darowiznę",
-      "privacyPolicy": "Polityka prywatności",
+      "donate": "Przekaz darowizne",
+      "privacyPolicy": "Polityka prywatnosci",
       "termsOfUse": "Warunki korzystania"
     },
     "advancedSettings": "Zaawansowane ustawienia"
   },
   "troubleshootPage": {
-    "title": "Rozwiązywanie problemów",
-    "subTitle": "Aplikacja nie działa zgodnie z oczekiwaniami? Tutaj znajdziesz powszechne rozwiązania.",
-    "solution": "Rozwiązanie:",
+    "title": "Rozwiazywanie problem�w",
+    "subTitle": "Aplikacja nie dziala zgodnie z�oczekiwaniami? Tutaj znajdziesz powszechne rozwiazania.",
+    "solution": "Rozwiazanie:",
     "fixButton": "Napraw automatycznie",
     "firewall": {
-      "symptom": "Aplikacja może wysyłać pliki do innych urządzeń, ale inne urządzenia nie mogą wysyłać plików do tego urządzenia.",
-      "solution": "Prawdopodobnie jest to problem z zaporą. Możesz go rozwiązać, zezwalając na przychodzące połączenia (UDP i TCP) na porcie {port}.",
-      "openFirewall": "Otwórz zaporę"
+      "symptom": "Aplikacja moze wysylac pliki do innych urzadzen, ale inne urzadzenia nie moga wysylac plik�w do tego urzadzenia.",
+      "solution": "Prawdopodobnie jest to problem z�zapora. Mozesz go rozwiazac, zezwalajac na przychodzace polaczenia (UDP i�TCP) na porcie {port}.",
+      "openFirewall": "Otw�rz zapore"
     },
     "noDiscovery": {
-      "symptom": "To urządzenie nie może wykryć innych urządzeń.",
-      "solution": "Upewnij się, że wszystkie urządzenia są w tej samej sieci Wi-Fi i mają tę samą konfigurację (port, adres multiemisji, szyfrowanie). Możesz spróbować wpisać adres IP urządzenia docelowego ręcznie. Jeśli to zadziała, rozważ dodanie tego urządzenia do ulubionych, aby mogło zostać automatycznie wykryte w przyszłości."
+      "symptom": "To urzadzenie nie moze wykryc innych urzadzen.",
+      "solution": "Upewnij sie, ze wszystkie urzadzenia sa w�tej samej sieci Wi-Fi i�maja te sama konfiguracje (port, adres multiemisji, szyfrowanie). Mozesz spr�bowac wpisac adres IP urzadzenia docelowego recznie. Jesli to zadziala, rozwaz dodanie tego urzadzenia do ulubionych, aby moglo zostac automatycznie wykryte w�przyszlosci."
     },
     "noConnection": {
-      "symptom": "Oba urządzenia nie mogą się nawzajem wykryć ani dzielić się plikami.",
-      "solution": "Problem istnieje po obu stronach? Upewnij się, że oba urządzenia są w tej samej sieci Wi-Fi i mają takie same ustawienia (port, adres multicast, szyfrowanie). Wi-Fi może nie zezwalać na komunikację między uczestnikami z powodu izolacji punktu dostępu (AP). W takim przypadku tę opcję należy wyłączyć w routerze."
+      "symptom": "Oba urzadzenia nie moga sie nawzajem wykryc ani dzielic sie plikami.",
+      "solution": "Problem istnieje po obu stronach? Upewnij sie, ze oba urzadzenia sa w�tej samej sieci Wi-Fi i�maja takie same ustawienia (port, adres multicast, szyfrowanie). Wi-Fi moze nie zezwalac na komunikacje miedzy uczestnikami z�powodu izolacji punktu dostepu (AP). W�takim przypadku te opcje nalezy wylaczyc w�routerze."
     }
   },
   "receiveHistoryPage": {
     "title": "Historia",
-    "openFolder": "Otwórz folder",
-    "deleteHistory": "Usuń historię",
+    "openFolder": "Otw�rz folder",
+    "deleteHistory": "Usun historie",
     "empty": "Historia jest pusta.",
     "entryActions": {
-      "open": "Otwórz plik",
-      "showInFolder": "Pokaż w folderze",
+      "open": "Otw�rz plik",
+      "showInFolder": "Pokaz w�folderze",
       "info": "Informacje",
-      "deleteFromHistory": "Usuń z historii"
+      "deleteFromHistory": "Usun z�historii"
     }
   },
   "apkPickerPage": {
@@ -194,89 +194,89 @@
     "apps": "{n} aplikacje"
   },
   "selectedFilesPage": {
-    "deleteAll": "Usuń wszystko"
+    "deleteAll": "Usun wszystko"
   },
   "receivePage": {
     "subTitle": {
-      "one": "chce wysłać Ci plik",
-      "other": "chce wysłać Ci {n} plików"
+      "one": "chce wyslac Ci plik",
+      "other": "chce wyslac Ci {n} plik�w"
     },
-    "subTitleMessage": "wysłał Ci wiadomość:",
-    "subTitleLink": "wysłał Ci link:",
-    "canceled": "Nadawca anulował żądanie."
+    "subTitleMessage": "wyslal Ci wiadomosc:",
+    "subTitleLink": "wyslal Ci link:",
+    "canceled": "Nadawca anulowal zadanie."
   },
   "receiveOptionsPage": {
     "title": "Opcje",
     "destination": "@:settingsTab.receive.destination",
     "appDirectory": "(Folder GravitySend)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "Wyłączono automatycznie, ponieważ istnieją katalogi."
+    "saveToGalleryOff": "Wylaczono automatycznie, poniewaz istnieja katalogi."
   },
   "sendPage": {
-    "waiting": "Czekanie na odpowiedź…",
-    "rejected": "Odbiorca odrzucił żądanie.",
+    "waiting": "Czekanie na odpowiedz�",
+    "rejected": "Odbiorca odrzucil zadanie.",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "Odbiorca jest zajęty innym żądaniem."
+    "busy": "Odbiorca jest zajety innym zadaniem."
   },
   "progressPage": {
-    "titleSending": "Wysyłanie plików",
-    "titleReceiving": "Odbieranie plików",
-    "savedToGallery": "Zapisane w galerii",
+    "titleSending": "Wysylanie plik�w",
+    "titleReceiving": "Odbieranie plik�w",
+    "savedToGallery": "Zapisane w�galerii",
     "total": {
       "title": {
-        "sending": "Całkowity postęp ({time})",
-        "finishedError": "Zakończono z błędem",
-        "canceledSender": "Anulowane przez nadawcę",
-        "canceledReceiver": "Anulowane przez odbiorcę"
+        "sending": "Calkowity postep ({time})",
+        "finishedError": "Zakonczono z�bledem",
+        "canceledSender": "Anulowane przez nadawce",
+        "canceledReceiver": "Anulowane przez odbiorce"
       },
       "count": "Pliki: {curr} / {n}",
-      "size": "Wielkość: {curr} / {n}",
-      "speed": "Prędkość: {speed}/s"
+      "size": "Wielkosc: {curr} / {n}",
+      "speed": "Predkosc: {speed}/s"
     },
     "remainingTime": {
       "seconds": "{n}:{ss}",
       "minutes": "{n}:{ss}",
       "hours": "{h}h {m}m",
       "days": "{d}d {h}h {m}m",
-      "@hours": "Użyj „h” w przypadku skrótu godzin i „m” w przypadku minut",
-      "@days": "Uży „d” w przypadku dni, „h” w przypadku godzin i „m” w przypadku minut"
+      "@hours": "Uzyj �h� w�przypadku skr�tu godzin i��m� w�przypadku minut",
+      "@days": "Uzy �d� w�przypadku dni, �h� w�przypadku godzin i��m� w�przypadku minut"
     }
   },
   "webSharePage": {
-    "title": "Udostępnij przez link",
-    "loading": "Uruchamianie serwera…",
-    "stopping": "Zatrzymywanie serwera…",
-    "error": "Wystąpił błąd podczas uruchamiania serwera.",
+    "title": "Udostepnij przez link",
+    "loading": "Uruchamianie serwera�",
+    "stopping": "Zatrzymywanie serwera�",
+    "error": "Wystapil blad podczas uruchamiania serwera.",
     "openLink": {
-      "one": "Otwórz ten link w przeglądarce:",
-      "other": "Otwórz jeden z tych linków w przeglądarce:"
+      "one": "Otw�rz ten link w�przegladarce:",
+      "other": "Otw�rz jeden z�tych link�w w�przegladarce:"
     },
-    "requests": "Żądania",
-    "noRequests": "Brak żądań.",
+    "requests": "Zadania",
+    "noRequests": "Brak zadan.",
     "encryption": "@:settingsTab.network.encryption",
-    "autoAccept": "Automatycznie akceptuj żądania",
+    "autoAccept": "Automatycznie akceptuj zadania",
     "requirePin": "Wymagaj kodu PIN",
-    "pinHint": "Kod PIN to „{pin}”",
-    "encryptionHint": "GravitySend używa samopodpisanego certyfikatu. Musisz go zaakceptować w przeglądarce.",
-    "pendingRequests": "Oczekujące żądania: {n}"
+    "pinHint": "Kod PIN to �{pin}�",
+    "encryptionHint": "GravitySend uzywa samopodpisanego certyfikatu. Musisz go zaakceptowac w�przegladarce.",
+    "pendingRequests": "Oczekujace zadania: {n}"
   },
   "aboutPage": {
-    "title": "O GravitySend",
+    "title": "O�GravitySend",
     "description": [
-      "GravitySend jest darmową, otwartoźródłową aplikacją, która pozwala na bezpieczne udostępnianie plików i wiadomości urządzeniom w pobliżu poprzez Twoją sieć lokalną, bez konieczności połączenia z internetem.",
-      "Ta aplikacja jest dostępna na systemach Android, iOS, macOS, Windows i Linux. Możesz znaleźć wszystkie opcje pobierania na oficjalnej stronie głównej."
+      "GravitySend jest darmowa, otwartozr�dlowa aplikacja, kt�ra pozwala na bezpieczne udostepnianie plik�w i�wiadomosci urzadzeniom w�poblizu poprzez Twoja siec lokalna, bez koniecznosci polaczenia z�internetem.",
+      "Ta aplikacja jest dostepna na systemach Android, iOS, macOS, Windows i�Linux. Mozesz znalezc wszystkie opcje pobierania na oficjalnej stronie gl�wnej."
     ],
     "author": "Autor",
-    "contributors": "Współautorzy",
-    "packagers": "Pakujący",
-    "translators": "Tłumacze"
+    "contributors": "Wsp�lautorzy",
+    "packagers": "Pakujacy",
+    "translators": "Tlumacze"
   },
   "donationPage": {
-    "title": "Przekaż darowiznę",
-    "info": "GravitySend jest darmową, otwartoźródłową aplikacją bez żadnych reklam. Jeśli podoba Ci się aplikacja, możesz wesprzeć jej rozwój darowizną.",
-    "donate": "Przekaż {amount}",
-    "thanks": "Bardzo Ci dziękuję!",
-    "restore": "Przywróć zakup"
+    "title": "Przekaz darowizne",
+    "info": "GravitySend jest darmowa, otwartozr�dlowa aplikacja bez zadnych reklam. Jesli podoba Ci sie aplikacja, mozesz wesprzec jej rozw�j darowizna.",
+    "donate": "Przekaz {amount}",
+    "thanks": "Bardzo Ci dziekuje!",
+    "restore": "Przywr�c zakup"
   },
   "changelogPage": {
     "title": "Dziennik zmian"
@@ -287,41 +287,41 @@
   "dialogs": {
     "addFile": {
       "title": "Dodaj do wyboru",
-      "content": "Co chcesz dodać?"
+      "content": "Co chcesz dodac?"
     },
     "openFile": {
-      "title": "Otwórz plik",
-      "content": "Czy chcesz otworzyć odebrany plik?"
+      "title": "Otw�rz plik",
+      "content": "Czy chcesz otworzyc odebrany plik?"
     },
     "addressInput": {
       "title": "Wpisz adres",
       "hashtag": "Hashtag",
       "ip": "Adres IP",
-      "recentlyUsed": "Ostatnio używane: "
+      "recentlyUsed": "Ostatnio uzywane: "
     },
     "cancelSession": {
-      "title": "Anuluj transfer plików",
-      "content": "Czy na pewno chcesz anulować transfer plików?"
+      "title": "Anuluj transfer plik�w",
+      "content": "Czy na pewno chcesz anulowac transfer plik�w?"
     },
     "cannotOpenFile": {
-      "title": "Nie można otworzyć pliku",
-      "content": "Nie można otworzyć „{file}”. Czy ten plik został przeniesiony, zmieniono mu nazwę lub usunięto?"
+      "title": "Nie mozna otworzyc pliku",
+      "content": "Nie mozna otworzyc �{file}�. Czy ten plik zostal przeniesiony, zmieniono mu nazwe lub usunieto?"
     },
     "encryptionDisabledNotice": {
-      "title": "Szyfrowanie wyłączone",
-      "content": "Komunikacja odbywa się teraz za pomocą niezaszyfrowanego protokołu HTTP. Aby korzystać z HTTPS, włącz ponownie szyfrowanie."
+      "title": "Szyfrowanie wylaczone",
+      "content": "Komunikacja odbywa sie teraz za pomoca niezaszyfrowanego protokolu HTTP. Aby korzystac z�HTTPS, wlacz ponownie szyfrowanie."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteDialog": {
       "title": "Ulubione",
-      "noFavorites": "Brak ulubionych urządzeń.",
+      "noFavorites": "Brak ulubionych urzadzen.",
       "addFavorite": "Dodaj"
     },
     "favoriteDeleteDialog": {
-      "title": "Usuń z ulubionych",
-      "content": "Czy na pewno chcesz usunąć z ulubionych „{name}”?"
+      "title": "Usun z�ulubionych",
+      "content": "Czy na pewno chcesz usunac z�ulubionych �{name}�?"
     },
     "favoriteEditDialog": {
       "titleAdd": "Dodaj do ulubionych",
@@ -332,28 +332,28 @@
       "port": "Port"
     },
     "fileInfo": {
-      "title": "Informacje o pliku",
+      "title": "Informacje o�pliku",
       "fileName": "Nazwa pliku:",
-      "path": "Ścieżka:",
+      "path": "Sciezka:",
       "size": "Rozmiar:",
       "sender": "Nadawca:",
       "time": "Czas:"
     },
     "fileNameInput": {
-      "title": "Wpisz nazwę pliku",
+      "title": "Wpisz nazwe pliku",
       "original": "Oryginalny: {original}"
     },
     "historyClearDialog": {
-      "title": "Wyczyść historię",
-      "content": "Czy na pewno chcesz usunąć całą historię?"
+      "title": "Wyczysc historie",
+      "content": "Czy na pewno chcesz usunac cala historie?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "GravitySend nie może znaleźć innych urządzeń bez uprawnienia do skanowania sieci lokalnej. Udziel tego uprawnienia w ustawieniach.",
+      "description": "GravitySend nie moze znalezc innych urzadzen bez uprawnienia do skanowania sieci lokalnej. Udziel tego uprawnienia w�ustawieniach.",
       "gotoSettings": "Ustawienia"
     },
     "messageInput": {
-      "title": "Wpisz wiadomość",
+      "title": "Wpisz wiadomosc",
       "multiline": "Wieloliniowy"
     },
     "noFiles": {
@@ -361,12 +361,12 @@
       "content": "Wybierz jeden plik."
     },
     "noPermission": {
-      "title": "Brak uprawnień",
-      "content": "Nie udzielono wymaganych uprawnień. Udziel ich w ustawieniach."
+      "title": "Brak uprawnien",
+      "content": "Nie udzielono wymaganych uprawnien. Udziel ich w�ustawieniach."
     },
     "notAvailableOnPlatform": {
-      "title": "Niedostępne",
-      "content": "Ta funkcja jest dostępna tylko na:"
+      "title": "Niedostepne",
+      "content": "Ta funkcja jest dostepna tylko na:"
     },
     "qr": {
       "title": "Kod QR"
@@ -376,92 +376,93 @@
       "counter": "Licznik",
       "prefix": "Prefiks",
       "padZero": "Wypchnij zerami",
-      "sortBeforeCount": "Wcześniej posortuj alfabetycznie",
+      "sortBeforeCount": "Wczesniej posortuj alfabetycznie",
       "random": "Losowy"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "Żądania plików są akceptowane automatycznie. Pamiętaj, że każdy w sieci lokalnej może przesyłać Ci pliki."
+      "content": "Zadania plik�w sa akceptowane automatycznie. Pamietaj, ze kazdy w�sieci lokalnej moze przesylac Ci pliki."
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "Żądania plików są teraz akceptowane automatycznie z urządzeń na liście ulubionych.",
-        "Uwaga! Obecnie nie jest to całkowicie bezpieczne, ponieważ haker, który ma odcisk palca dowolnego urządzenia z listy ulubionych, może wysyłać Ci pliki bez ograniczeń.",
-        "Jednak ta opcja jest nadal bezpieczniejsza niż umożliwienie wszystkim użytkownikom w sieci lokalnej wysyłanie plików bez ograniczeń."
+        "Zadania plik�w sa teraz akceptowane automatycznie z�urzadzen na liscie ulubionych.",
+        "Uwaga! Obecnie nie jest to calkowicie bezpieczne, poniewaz haker, kt�ry ma odcisk palca dowolnego urzadzenia z�listy ulubionych, moze wysylac Ci pliki bez ograniczen.",
+        "Jednak ta opcja jest nadal bezpieczniejsza niz umozliwienie wszystkim uzytkownikom w�sieci lokalnej wysylanie plik�w bez ograniczen."
       ]
     },
     "pin": {
       "title": "Wpisz kod PIN"
     },
     "sendModeHelp": {
-      "title": "Tryby wysyłania",
-      "single": "Wysyła pliki do jednego odbiorcy. Wybór zostanie wyczyszczony po zakończonym transferze pliku.",
-      "multiple": "Wysyła pliki do wielu odbiorców. Wybór nie zostanie wyczyszczony.",
-      "link": "Odbiorcy, którzy nie mają zainstalowanego GravitySend, mogą pobrać wybrane pliki, otwierając link w swojej przeglądarce."
+      "title": "Tryby wysylania",
+      "single": "Wysyla pliki do jednego odbiorcy. Wyb�r zostanie wyczyszczony po zakonczonym transferze pliku.",
+      "multiple": "Wysyla pliki do wielu odbiorc�w. Wyb�r nie zostanie wyczyszczony.",
+      "link": "Odbiorcy, kt�rzy nie maja zainstalowanego GravitySend, moga pobrac wybrane pliki, otwierajac link w�swojej przegladarce."
     },
     "zoom": {
       "title": "Adres URL"
     }
   },
   "sanitization": {
-    "empty": "Nazwa pliku nie może być pusta",
-    "invalid": "Nazwa pliku zawiera nieprawidłowe znaki"
+    "empty": "Nazwa pliku nie moze byc pusta",
+    "invalid": "Nazwa pliku zawiera nieprawidlowe znaki"
   },
   "tray": {
-    "@info": "Wytyczne Apple są bardzo surowe, jeśli chodzi o „zamknięte” sformułowanie.",
+    "@info": "Wytyczne Apple sa bardzo surowe, jesli chodzi o��zamkniete� sformulowanie.",
     "open": "@:general.open",
-    "close": "Zakończ GravitySend",
+    "close": "Zakoncz GravitySend",
     "closeWindows": "Zamknij"
   },
   "web": {
     "waiting": "@:sendPage.waiting",
     "enterPin": "Wpisz kod PIN",
-    "invalidPin": "Nieprawidłowy kod PIN",
-    "tooManyAttempts": "Zbyt wiele prób",
+    "invalidPin": "Nieprawidlowy kod PIN",
+    "tooManyAttempts": "Zbyt wiele pr�b",
     "rejected": "Odrzucone",
     "files": "Pliki",
     "fileName": "Nazwa pliku",
     "size": "Rozmiar"
   },
   "assetPicker": {
-    "@info": "Tłumaczenia narzędzia wyboru mediów dla systemów Android i iPhone",
-    "confirm": "Potwierdź",
+    "@info": "Tlumaczenia narzedzia wyboru medi�w dla system�w Android i�iPhone",
+    "confirm": "Potwierdz",
     "cancel": "Anuluj",
     "edit": "Edytuj",
     "gifIndicator": "GIF",
-    "loadFailed": "Nie udało się załadować",
-    "original": "Oryginał",
-    "preview": "Podgląd",
+    "loadFailed": "Nie udalo sie zaladowac",
+    "original": "Oryginal",
+    "preview": "Podglad",
     "select": "Wybierz",
     "emptyList": "Pusta lista",
-    "unSupportedAssetType": "Nieobsługiwany typ pliku.",
-    "unableToAccessAll": "Nie można uzyskać dostępu do wszystkich plików na urządzeniu",
-    "viewingLimitedAssetsTip": "Przeglądaj tylko pliki i albumy dostępne dla aplikacji.",
-    "changeAccessibleLimitedAssets": "Kliknij, aby zaktualizować dostępne pliki",
-    "accessAllTip": "Aplikacja może uzyskać dostęp tylko do niektórych plików na urządzeniu. Przejdź do ustawień systemowych i zezwól aplikacji na dostęp do wszystkich mediów na urządzeniu.",
-    "goToSystemSettings": "Przejdź do ustawień systemowych",
-    "accessLimitedAssets": "Kontynuuj z ograniczonym dostępem",
-    "accessiblePathName": "Dostępne pliki",
+    "unSupportedAssetType": "Nieobslugiwany typ pliku.",
+    "unableToAccessAll": "Nie mozna uzyskac dostepu do wszystkich plik�w na urzadzeniu",
+    "viewingLimitedAssetsTip": "Przegladaj tylko pliki i�albumy dostepne dla aplikacji.",
+    "changeAccessibleLimitedAssets": "Kliknij, aby zaktualizowac dostepne pliki",
+    "accessAllTip": "Aplikacja moze uzyskac dostep tylko do niekt�rych plik�w na urzadzeniu. Przejdz do ustawien systemowych i�zezw�l aplikacji na dostep do wszystkich medi�w na urzadzeniu.",
+    "goToSystemSettings": "Przejdz do ustawien systemowych",
+    "accessLimitedAssets": "Kontynuuj z�ograniczonym dostepem",
+    "accessiblePathName": "Dostepne pliki",
     "sTypeAudioLabel": "Audio",
     "sTypeImageLabel": "Obraz",
     "sTypeVideoLabel": "Wideo",
     "sTypeOtherLabel": "Inne media",
     "sActionPlayHint": "odtwarzaj",
-    "sActionPreviewHint": "podgląd",
+    "sActionPreviewHint": "podglad",
     "sActionSelectHint": "wybierz",
-    "sActionSwitchPathLabel": "zmień ścieżkę",
-    "sActionUseCameraHint": "użyj kamery",
+    "sActionSwitchPathLabel": "zmien sciezke",
+    "sActionUseCameraHint": "uzyj kamery",
     "sNameDurationLabel": "czas trwania",
     "sUnitAssetCountLabel": "liczba"
   },
   "networkInterfacesPage": {
-    "preview": "Podgląd",
-    "whitelist": "Biała lista",
+    "preview": "Podglad",
+    "whitelist": "Biala lista",
     "blacklist": "Czarna lista",
     "title": "Interfejsy sieciowe",
-    "info": "Domyślnie GravitySend używa wszystkich dostępnych interfejsów sieciowych. Możesz tutaj wykluczyć niechciane sieci. Musisz ponownie uruchomić serwer, aby zastosować zmiany."
+    "info": "Domyslnie GravitySend uzywa wszystkich dostepnych interfejs�w sieciowych. Mozesz tutaj wykluczyc niechciane sieci. Musisz ponownie uruchomic serwer, aby zastosowac zmiany."
   }
 }
+
 
 

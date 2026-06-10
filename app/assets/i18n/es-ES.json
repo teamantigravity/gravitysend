@@ -1,10 +1,10 @@
-ï»¿{
-  "locale": "EspaÃ±ol",
+{
+  "locale": "Español",
   "appName": "GravitySend",
   "general": {
     "accept": "Aceptar",
     "accepted": "Aceptado",
-    "add": "AÃ±adir",
+    "add": "Añadir",
     "advanced": "Avanzado",
     "cancel": "Cancelar",
     "close": "Cerrar",
@@ -24,11 +24,11 @@
     "off": "Apagado",
     "offline": "Desconectado",
     "on": "Encendido",
-    "online": "En lÃ­nea",
+    "online": "En línea",
     "open": "Abrir",
     "queue": "Cola",
-    "quickSave": "Guardado rÃ¡pido",
-    "quickSaveFromFavorites": "Guardado rÃ¡pido en \"Favoritos\"",
+    "quickSave": "Guardado rápido",
+    "quickSaveFromFavorites": "Guardado rápido en \"Favoritos\"",
     "renamed": "Renombrado",
     "reset": "Deshacer cambios",
     "restart": "Reiniciar",
@@ -39,7 +39,7 @@
     "save": "Guardar",
     "unchanged": "Sin Cambios",
     "unknown": "Desconocido",
-    "noItemInClipboard": "No hay ningÃºn elemento en el portapapeles."
+    "noItemInClipboard": "No hay ningún elemento en el portapapeles."
   },
   "receiveTab": {
     "title": "Recibir",
@@ -57,9 +57,9 @@
   "sendTab": {
     "title": "Enviar",
     "selection": {
-      "title": "SelecciÃ³n",
+      "title": "Selección",
       "files": "Archivos: {files}",
-      "size": "TamaÃ±o: {size}"
+      "size": "Tamaño: {size}"
     },
     "picker": {
       "file": "Archivo",
@@ -69,19 +69,19 @@
       "app": "App",
       "clipboard": "Pegar"
     },
-    "shareIntentInfo": "TambiÃ©n puedes usar la opciÃ³n \"Compartir\" de tu dispositivo para seleccionar archivos mÃ¡s fÃ¡cilmente.",
+    "shareIntentInfo": "También puedes usar la opción \"Compartir\" de tu dispositivo para seleccionar archivos más fácilmente.",
     "nearbyDevices": "Dispositivos Cercanos",
     "thisDevice": "Este dispositivo",
     "scan": "Buscar dispositivos",
     "manualSending": "Enviar manualmente",
-    "sendMode": "Modo de envÃ­o",
+    "sendMode": "Modo de envío",
     "sendModes": {
       "single": "Solo un destino",
-      "multiple": "MÃºltiples destinos",
+      "multiple": "Múltiples destinos",
       "link": "Compartir enlace"
     },
-    "sendModeHelp": "ExplicaciÃ³n",
-    "help": "Por favor asegÃºrese que el dispositivo de destino estÃ© en la misma red Wi-Fi.",
+    "sendModeHelp": "Explicación",
+    "help": "Por favor asegúrese que el dispositivo de destino esté en la misma red Wi-Fi.",
     "placeItems": "Selecciona elementos para compartir."
   },
   "settingsTab": {
@@ -103,12 +103,12 @@
       "languageOptions": {
         "system": "Sistema"
       },
-      "saveWindowPlacement": "Al salir guardar la ubicaciÃ³n de la ventana",
-      "saveWindowPlacementWindows": "Guardar la posiciÃ³n de la ventana despuÃ©s de salir",
+      "saveWindowPlacement": "Al salir guardar la ubicación de la ventana",
+      "saveWindowPlacementWindows": "Guardar la posición de la ventana después de salir",
       "minimizeToTray": "Cerrar: Minimizar ventana",
-      "launchAtStartup": "Inicio automÃ¡tico",
-      "launchMinimized": "Inicio automÃ¡tico: Iniciar minimizado",
-      "showInContextMenu": "Mostrar GravitySend en el menÃº contextual",
+      "launchAtStartup": "Inicio automático",
+      "launchMinimized": "Inicio automático: Iniciar minimizado",
+      "showInContextMenu": "Mostrar GravitySend en el menú contextual",
       "animations": "Animaciones"
     },
     "receive": {
@@ -119,28 +119,28 @@
       "autoFinish": "Auto finalizar",
       "destination": "Guardar en carpeta",
       "downloads": "(Descargas)",
-      "saveToGallery": "Guardar media en la galerÃ­a",
+      "saveToGallery": "Guardar media en la galería",
       "saveToHistory": "Guardar en el historial"
     },
     "send": {
       "title": "Enviar",
-      "shareViaLinkAutoAccept": "Aceptar automÃ¡ticamente solicitudes en el modo \"Compartir mediante enlace\""
+      "shareViaLinkAutoAccept": "Aceptar automáticamente solicitudes en el modo \"Compartir mediante enlace\""
     },
     "network": {
       "title": "Red",
-      "needRestart": "Â¡Reinicia el servidor para aplicar los ajustes!",
+      "needRestart": "¡Reinicia el servidor para aplicar los ajustes!",
       "server": "Servidor",
       "alias": "Alias",
       "deviceType": "Tipo de dispositivo",
       "deviceModel": "Modelo de dispositivo",
       "port": "Puerto",
-      "discoveryTimeout": "Tiempo de espera para DetecciÃ³n",
+      "discoveryTimeout": "Tiempo de espera para Detección",
       "useSystemName": "Usar el nombre del sistema",
       "generateRandomAlias": "Generar alias aleatorio",
-      "portWarning": "Es posible que no seas visible para otros dispositivos porque estÃ¡s utilizando un puerto personalizado. (Puerto por defecto: {defaultPort})",
-      "encryption": "EncriptaciÃ³n",
+      "portWarning": "Es posible que no seas visible para otros dispositivos porque estás utilizando un puerto personalizado. (Puerto por defecto: {defaultPort})",
+      "encryption": "Encriptación",
       "multicastGroup": "Direccion Multicast",
-      "multicastGroupWarning": "Es posible que no seas visible para otros dispositivos porque estÃ¡s utilizando una direcciÃ³n multicast personalizada. (DirecciÃ³n multicast por defecto: {defaultMulticast})",
+      "multicastGroupWarning": "Es posible que no seas visible para otros dispositivos porque estás utilizando una dirección multicast personalizada. (Dirección multicast por defecto: {defaultMulticast})",
       "network": "Red",
       "networkOptions": {
         "all": "Todo",
@@ -151,39 +151,39 @@
       "title": "Otros",
       "support": "Apoya a GravitySend",
       "donate": "Donar",
-      "privacyPolicy": "PolÃ­tica de privacidad",
+      "privacyPolicy": "Política de privacidad",
       "termsOfUse": "Condiciones de uso"
     },
-    "advancedSettings": "ConfiguraciÃ³n avanzada"
+    "advancedSettings": "Configuración avanzada"
   },
   "troubleshootPage": {
     "title": "Solucionar problemas",
-    "subTitle": "Â¿La aplicaciÃ³n no funciona como deberÃ­a? AquÃ­ puedes encontrar soluciones a problemas comunes.",
-    "solution": "SoluciÃ³n:",
-    "fixButton": "Corregir automÃ¡ticamente",
+    "subTitle": "¿La aplicación no funciona como debería? Aquí puedes encontrar soluciones a problemas comunes.",
+    "solution": "Solución:",
+    "fixButton": "Corregir automáticamente",
     "firewall": {
       "symptom": "Este dispositivo puede enviar archivos a otros, pero otros dispositivos no pueden enviar archivos a este.",
-      "solution": "Lo mÃ¡s probable es que se trate de un problema con el firewall, puedes solucionarlo permitiendo las conexiones entrantes (UDP y TCP) en el puerto {port}.",
+      "solution": "Lo más probable es que se trate de un problema con el firewall, puedes solucionarlo permitiendo las conexiones entrantes (UDP y TCP) en el puerto {port}.",
       "openFirewall": "Abrir Firewall"
     },
     "noDiscovery": {
       "symptom": "Este dispositivo no puede descubrir otros dispositivos.",
-      "solution": "AsegÃºrese que todos los dispositivos estÃ©n en la misma red Wi-Fi y compartan la misma configuraciÃ³n (puerto, direcciÃ³n de multidifusiÃ³n, cifrado). Puede intentar escribir la direcciÃ³n IP del dispositivo de destino manualmente. Si esto funciona, considere agregar este dispositivo a los favoritos para que pueda detectarse automÃ¡ticamente en el futuro."
+      "solution": "Asegúrese que todos los dispositivos estén en la misma red Wi-Fi y compartan la misma configuración (puerto, dirección de multidifusión, cifrado). Puede intentar escribir la dirección IP del dispositivo de destino manualmente. Si esto funciona, considere agregar este dispositivo a los favoritos para que pueda detectarse automáticamente en el futuro."
     },
     "noConnection": {
       "symptom": "Ambos dispositivos no pueden descubrirse ni compartir archivos.",
-      "solution": "Â¿El problema existe en ambos lados? Tienes que asegurarte que los dispositivos estÃ¡n en la misma red Wi-Fi y comparten la misma configuraciÃ³n (puerto, direcciÃ³n multicast, encriptaciÃ³n). Es posible que el Wi-Fi no permita la comunicaciÃ³n entre los dispositivos. En este caso, hay que activar esta opciÃ³n en el router."
+      "solution": "¿El problema existe en ambos lados? Tienes que asegurarte que los dispositivos están en la misma red Wi-Fi y comparten la misma configuración (puerto, dirección multicast, encriptación). Es posible que el Wi-Fi no permita la comunicación entre los dispositivos. En este caso, hay que activar esta opción en el router."
     }
   },
   "receiveHistoryPage": {
     "title": "Historial",
     "openFolder": "Abrir carpeta",
     "deleteHistory": "Borrar historial",
-    "empty": "El historial estÃ¡ vacÃ­o.",
+    "empty": "El historial está vacío.",
     "entryActions": {
       "open": "Abrir archivo",
       "showInFolder": "Mostrar en carpeta",
-      "info": "InformaciÃ³n",
+      "info": "Información",
       "deleteFromHistory": "Borrar del historial"
     }
   },
@@ -203,20 +203,20 @@
     },
     "subTitleMessage": "te ha enviado un mensaje:",
     "subTitleLink": "te ha enviado un enlace:",
-    "canceled": "El remitente ha cancelado la peticiÃ³n."
+    "canceled": "El remitente ha cancelado la petición."
   },
   "receiveOptionsPage": {
     "title": "Opciones",
     "destination": "@:settingsTab.receive.destination",
     "appDirectory": "(Carpeta GravitySend)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "Desactivado automÃ¡ticamente porque hay carpetas."
+    "saveToGalleryOff": "Desactivado automáticamente porque hay carpetas."
   },
   "sendPage": {
-    "waiting": "Esperando respuestaâ€¦",
-    "rejected": "El destino ha rechazado la peticiÃ³n.",
+    "waiting": "Esperando respuesta…",
+    "rejected": "El destino ha rechazado la petición.",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "El destino estÃ¡ ocupado con otra peticiÃ³n."
+    "busy": "El destino está ocupado con otra petición."
   },
   "progressPage": {
     "titleSending": "Enviando archivos",
@@ -230,7 +230,7 @@
         "canceledReceiver": "Cancelado por destino"
       },
       "count": "Archivos: {curr} / {n}",
-      "size": "TamaÃ±o: {curr} / {n}",
+      "size": "Tamaño: {curr} / {n}",
       "speed": "Velocidad: {speed}/s"
     },
     "remainingTime": {
@@ -238,23 +238,23 @@
       "minutes": "{n}:{ss}",
       "hours": "{h}h {m}m",
       "days": "{d}d {h}h {m}m",
-      "@hours": "Usa Â«hÂ» como abreviatura de horas y Â«mÂ» para minutos",
-      "@days": "Usa Â«dÂ» para dÃ­as, Â«hÂ» para horas y Â«mÂ» para minutos"
+      "@hours": "Usa «h» como abreviatura de horas y «m» para minutos",
+      "@days": "Usa «d» para días, «h» para horas y «m» para minutos"
     }
   },
   "webSharePage": {
     "title": "Compartir mediante enlace",
-    "loading": "Iniciando servidorâ€¦",
-    "stopping": "Deteniendo servidorâ€¦",
+    "loading": "Iniciando servidor…",
+    "stopping": "Deteniendo servidor…",
     "error": "Se ha producido un error al iniciar el servidor.",
     "openLink": {
       "one": "Abre este enlace en el navegador:",
       "other": "Abre uno de estos enlaces en el navegador:"
     },
     "requests": "Solicitudes",
-    "noRequests": "AÃºn no hay solicitudes.",
+    "noRequests": "Aún no hay solicitudes.",
     "encryption": "@:settingsTab.network.encryption",
-    "autoAccept": "Aceptar solicitudes automÃ¡ticamente",
+    "autoAccept": "Aceptar solicitudes automáticamente",
     "requirePin": "Requerir PIN",
     "pinHint": "El PIN es \"{pin}\"",
     "encryptionHint": "GravitySend utiliza un certificado autofirmado. Necesitas aceptarlo en el navegador.",
@@ -263,8 +263,8 @@
   "aboutPage": {
     "title": "Sobre GravitySend",
     "description": [
-      "GravitySend es una aplicaciÃ³n libre, de cÃ³digo abierto, que te permite compartir archivos y mensajes de forma segura con dispositivos cercanos a travÃ©s de tu red local sin necesidad de conexiÃ³n a Internet.",
-      "EstÃ¡ disponible para Android, iOS, macOS, Windows y Linux. Puedes encontrar todas las opciones de descarga en la pÃ¡gina web oficial."
+      "GravitySend es una aplicación libre, de código abierto, que te permite compartir archivos y mensajes de forma segura con dispositivos cercanos a través de tu red local sin necesidad de conexión a Internet.",
+      "Está disponible para Android, iOS, macOS, Windows y Linux. Puedes encontrar todas las opciones de descarga en la página web oficial."
     ],
     "author": "Autor",
     "contributors": "Colaboradores",
@@ -273,9 +273,9 @@
   },
   "donationPage": {
     "title": "Donar",
-    "info": "GravitySend es libre, open source y no contiene anuncios. Si te gusta la aplicaciÃ³n puedes ayudar al desarrollo con una donaciÃ³n.",
+    "info": "GravitySend es libre, open source y no contiene anuncios. Si te gusta la aplicación puedes ayudar al desarrollo con una donación.",
     "donate": "Donar {amount}",
-    "thanks": "Â¡Muchas gracias!",
+    "thanks": "¡Muchas gracias!",
     "restore": "Restablecer compra"
   },
   "changelogPage": {
@@ -286,56 +286,56 @@
   },
   "dialogs": {
     "addFile": {
-      "title": "AÃ±adir a selecciÃ³n",
-      "content": "Â¿QuÃ© quieres aÃ±adir?"
+      "title": "Añadir a selección",
+      "content": "¿Qué quieres añadir?"
     },
     "openFile": {
       "title": "Abrir archivo",
-      "content": "Â¿Quieres abrir el archivo recibido?"
+      "content": "¿Quieres abrir el archivo recibido?"
     },
     "addressInput": {
-      "title": "Introducir direcciÃ³n",
+      "title": "Introducir dirección",
       "hashtag": "Etiqueta",
-      "ip": "DirecciÃ³n IP",
+      "ip": "Dirección IP",
       "recentlyUsed": "Usados recientemente: "
     },
     "cancelSession": {
       "title": "Cancelar transferencia de archivos",
-      "content": "Â¿Realmente quieres cancelar la transferencia de archivos?"
+      "content": "¿Realmente quieres cancelar la transferencia de archivos?"
     },
     "cannotOpenFile": {
       "title": "No se puede abrir el archivo",
-      "content": "No se ha podido abrir \"{file}\". Â¿Es posible que el archivo se haya movido, renombrado o eliminado?"
+      "content": "No se ha podido abrir \"{file}\". ¿Es posible que el archivo se haya movido, renombrado o eliminado?"
     },
     "encryptionDisabledNotice": {
-      "title": "EncriptaciÃ³n deshabilitada",
-      "content": "La comunicaciÃ³n ahora tiene lugar mediante un protocolo HTTP sin encriptar. Para usar HTTPS, vuelve a habilitar la encriptaciÃ³n."
+      "title": "Encriptación deshabilitada",
+      "content": "La comunicación ahora tiene lugar mediante un protocolo HTTP sin encriptar. Para usar HTTPS, vuelve a habilitar la encriptación."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteDialog": {
       "title": "Favoritos",
-      "noFavorites": "AÃºn no hay dispositivos favoritos.",
+      "noFavorites": "Aún no hay dispositivos favoritos.",
       "addFavorite": "Agregar"
     },
     "favoriteDeleteDialog": {
       "title": "Eliminar de favoritos",
-      "content": "Â¿Realmente quieres borrar de favoritos \"{name}\"?"
+      "content": "¿Realmente quieres borrar de favoritos \"{name}\"?"
     },
     "favoriteEditDialog": {
       "titleAdd": "Agregar a favoritos",
       "titleEdit": "Ajustes",
       "name": "Alias",
       "auto": "(auto)",
-      "ip": "DirecciÃ³n IP",
+      "ip": "Dirección IP",
       "port": "Puerto"
     },
     "fileInfo": {
-      "title": "InformaciÃ³n del archivo",
+      "title": "Información del archivo",
       "fileName": "Nombre del archivo:",
       "path": "Ruta:",
-      "size": "TamaÃ±o:",
+      "size": "Tamaño:",
       "sender": "Emisor:",
       "time": "Hora:"
     },
@@ -345,7 +345,7 @@
     },
     "historyClearDialog": {
       "title": "Borrar historial",
-      "content": "Â¿Realmente quieres borrar todo el historial?"
+      "content": "¿Realmente quieres borrar todo el historial?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
@@ -354,50 +354,50 @@
     },
     "messageInput": {
       "title": "Escribe un mensaje",
-      "multiline": "Varias lÃ­neas"
+      "multiline": "Varias líneas"
     },
     "noFiles": {
-      "title": "NingÃºn archivo seleccionado",
+      "title": "Ningún archivo seleccionado",
       "content": "Por favor selecciona al menos un archivo."
     },
     "noPermission": {
-      "title": "Sin autorizaciÃ³n",
-      "content": "No has otorgado los permisos necesarios. Por favor, otÃ³rgalos en la configuraciÃ³n."
+      "title": "Sin autorización",
+      "content": "No has otorgado los permisos necesarios. Por favor, otórgalos en la configuración."
     },
     "notAvailableOnPlatform": {
       "title": "No disponible",
-      "content": "Esta caracterÃ­stica solo estÃ¡ disponible en:"
+      "content": "Esta característica solo está disponible en:"
     },
     "qr": {
-      "title": "CÃ³digo QR"
+      "title": "Código QR"
     },
     "quickActions": {
-      "title": "Acciones rÃ¡pidas",
+      "title": "Acciones rápidas",
       "counter": "Contador",
       "prefix": "Prefijo",
       "padZero": "Llenar con ceros",
-      "sortBeforeCount": "Ordenar alfabÃ©ticamente antes",
+      "sortBeforeCount": "Ordenar alfabéticamente antes",
       "random": "Aleatorio"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "Las solicitudes de archivos se aceptan automÃ¡ticamente. Ten en cuenta que cualquiera en la red local podrÃ¡ enviarte archivos."
+      "content": "Las solicitudes de archivos se aceptan automáticamente. Ten en cuenta que cualquiera en la red local podrá enviarte archivos."
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "Se aceptarÃ¡n automÃ¡ticamente los archivos recibidos de los dispositivos incluidos en su lista de favoritos.",
-        "Advertencia: esta opciÃ³n no es completamente segura, cualquiera que conozca la huella digital de sus dispositivos favoritos aÃºn puede enviarle archivos.",
-        "Sin embargo, esta opciÃ³n sigue siendo mÃ¡s segura que permitir que todos los usuarios en la red local te envÃ­en archivos sin restricciÃ³n."
+        "Se aceptarán automáticamente los archivos recibidos de los dispositivos incluidos en su lista de favoritos.",
+        "Advertencia: esta opción no es completamente segura, cualquiera que conozca la huella digital de sus dispositivos favoritos aún puede enviarle archivos.",
+        "Sin embargo, esta opción sigue siendo más segura que permitir que todos los usuarios en la red local te envíen archivos sin restricción."
       ]
     },
     "pin": {
       "title": "Ingresar PIN"
     },
     "sendModeHelp": {
-      "title": "Modos de envÃ­o",
-      "single": "Enviar archivos a un solo destino. La selecciÃ³n se borrarÃ¡ una vez finalizada la transferencia.",
-      "multiple": "Enviar archivos a mÃºltiples destinos. La selecciÃ³n no se borrarÃ¡.",
+      "title": "Modos de envío",
+      "single": "Enviar archivos a un solo destino. La selección se borrará una vez finalizada la transferencia.",
+      "multiple": "Enviar archivos a múltiples destinos. La selección no se borrará.",
       "link": "Los destinatarios que no tengan GravitySend instalado pueden descargar los archivos seleccionados abriendo el enlace en su navegador."
     },
     "zoom": {
@@ -405,11 +405,11 @@
     }
   },
   "sanitization": {
-    "empty": "El nombre del archivo no puede estar vacÃ­o",
-    "invalid": "El nombre del archivo contiene caracteres no vÃ¡lidos"
+    "empty": "El nombre del archivo no puede estar vacío",
+    "invalid": "El nombre del archivo contiene caracteres no válidos"
   },
   "tray": {
-    "@info": "Las directrices de Apple son muy estrictas en cuanto a la expresiÃ³n 'cerrar'.",
+    "@info": "Las directrices de Apple son muy estrictas en cuanto a la expresión 'cerrar'.",
     "open": "@:general.open",
     "close": "Cerrar GravitySend",
     "closeWindows": "Cerrar"
@@ -417,15 +417,15 @@
   "web": {
     "waiting": "@:sendPage.waiting",
     "enterPin": "Ingresar PIN",
-    "invalidPin": "PIN InvÃ¡lido",
+    "invalidPin": "PIN Inválido",
     "tooManyAttempts": "Demasiados intentos",
     "rejected": "Rechazado",
     "files": "Archivos",
     "fileName": "Nombre del archivo",
-    "size": "TamaÃ±o"
+    "size": "Tamaño"
   },
   "assetPicker": {
-    "@info": "Traducciones de la herramienta de selecciÃ³n de medios para Android e iPhone",
+    "@info": "Traducciones de la herramienta de selección de medios para Android e iPhone",
     "confirm": "Confirmar",
     "cancel": "Cancelar",
     "edit": "Editar",
@@ -434,12 +434,12 @@
     "original": "Original",
     "preview": "Vista previa",
     "select": "Seleccionar",
-    "emptyList": "Lista vacÃ­a",
+    "emptyList": "Lista vacía",
     "unSupportedAssetType": "Tipo de archivo no soportado.",
     "unableToAccessAll": "No se puede acceder a todos los archivos del dispositivo",
-    "viewingLimitedAssetsTip": "Ver solo los archivos y Ã¡lbumes accesibles para la aplicaciÃ³n.",
+    "viewingLimitedAssetsTip": "Ver solo los archivos y álbumes accesibles para la aplicación.",
     "changeAccessibleLimitedAssets": "Haga clic para actualizar los archivos accesibles",
-    "accessAllTip": "La aplicaciÃ³n solo puede acceder a algunos archivos del dispositivo. Ve a la configuraciÃ³n del sistema y permite que la aplicaciÃ³n acceda a todos los archivos multimedia del dispositivo.",
+    "accessAllTip": "La aplicación solo puede acceder a algunos archivos del dispositivo. Ve a la configuración del sistema y permite que la aplicación acceda a todos los archivos multimedia del dispositivo.",
     "goToSystemSettings": "Ir a los ajustes del sistema",
     "accessLimitedAssets": "Continuar con acceso limitado",
     "accessiblePathName": "Archivos accesibles",
@@ -451,17 +451,18 @@
     "sActionPreviewHint": "vista previa",
     "sActionSelectHint": "selecccionar",
     "sActionSwitchPathLabel": "cambiar ruta",
-    "sActionUseCameraHint": "usar cÃ¡mara",
-    "sNameDurationLabel": "duraciÃ³n",
+    "sActionUseCameraHint": "usar cámara",
+    "sNameDurationLabel": "duración",
     "sUnitAssetCountLabel": "conteo"
   },
   "networkInterfacesPage": {
     "title": "Interfaces de la red",
-    "info": "De forma predeterminada, GravitySend utiliza todas las interfaces de red disponibles. AquÃ­ puede desactivar las redes no deseadas. Debe reiniciar el servidor para aplicar los cambios.",
+    "info": "De forma predeterminada, GravitySend utiliza todas las interfaces de red disponibles. Aquí puede desactivar las redes no deseadas. Debe reiniciar el servidor para aplicar los cambios.",
     "preview": "Vista previa",
     "whitelist": "Lista blanca",
     "blacklist": "Lista negra"
   }
 }
+
 
 

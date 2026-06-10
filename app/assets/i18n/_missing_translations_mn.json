@@ -1,4 +1,4 @@
-ï»¿{
+{
   "@@info": [
     "Here are translations that exist in <en> but not in <mn>.",
     "After editing this file, you can run 'dart run slang apply --locale=mn' to quickly apply the newly added translations."
@@ -30,8 +30,8 @@
     "tooManyAttempts": "@:web.tooManyAttempts"
   },
   "webSharePage": {
-    "loading": "Starting serverâ€¦",
-    "stopping": "Stopping serverâ€¦",
+    "loading": "Starting server…",
+    "stopping": "Stopping server…",
     "encryption": "@:settingsTab.network.encryption"
   },
   "aboutPage": {
@@ -207,5 +207,6 @@
     "sUnitAssetCountLabel": "count"
   }
 }
+
 
 

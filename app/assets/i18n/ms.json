@@ -1,4 +1,4 @@
-ï»¿{
+{
   "locale": "Bahasa Inggeris",
   "appName": "GravitySend",
   "general": {
@@ -213,7 +213,7 @@
     "saveToGalleryOff": "Dimatikan secara automatik kerana terdapat folder."
   },
   "sendPage": {
-    "waiting": "Menunggu responsâ€¦",
+    "waiting": "Menunggu respons…",
     "rejected": "Penerima telah menolak permintaan.",
     "busy": "Penerima sibuk dengan permintaan lain.",
     "tooManyAttempts": "@:web.tooManyAttempts"
@@ -236,8 +236,8 @@
   },
   "webSharePage": {
     "title": "Kongsi melalui pautan",
-    "loading": "Memulakan pelayanâ€¦",
-    "stopping": "Menghentikan pelayanâ€¦",
+    "loading": "Memulakan pelayan…",
+    "stopping": "Menghentikan pelayan…",
     "error": "Ralat telah berlaku ketika memulakan pelayan.",
     "openLink": {
       "one": "Buka pautan ini dalam pelayar anda:",
@@ -522,5 +522,6 @@
     "blacklist": "Senarai Hitam"
   }
 }
+
 
 

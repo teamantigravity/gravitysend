@@ -1,24 +1,24 @@
-﻿{
-  "locale": "Română",
+{
+  "locale": "Rom�na",
   "appName": "GravitySend",
   "general": {
-    "accept": "Acceptă",
+    "accept": "Accepta",
     "accepted": "Acceptat",
-    "add": "Adaugă",
+    "add": "Adauga",
     "advanced": "Avansat",
     "cancel": "Anulare",
-    "close": "Închide",
-    "confirm": "Confirmă",
-    "continueStr": "Continuă",
-    "copy": "Copiază",
-    "copiedToClipboard": "Copiat în Clipboard",
+    "close": "�nchide",
+    "confirm": "Confirma",
+    "continueStr": "Continua",
+    "copy": "Copiaza",
+    "copiedToClipboard": "Copiat �n Clipboard",
     "decline": "Respinge",
     "done": "Finalizat",
-    "delete": "Șterge",
-    "edit": "Editează",
+    "delete": "?terge",
+    "edit": "Editeaza",
     "error": "Eroare",
     "example": "Exemplu",
-    "files": "Fișiere",
+    "files": "Fi?iere",
     "finished": "Finalizat",
     "hide": "Ascunde",
     "off": "Oprit",
@@ -26,20 +26,20 @@
     "on": "Pornit",
     "online": "Online",
     "open": "Deschide",
-    "queue": "Coadă",
-    "quickSave": "Salvare rapidă",
-    "quickSaveFromFavorites": "Salvare rapidă pentru \"Favorite\"",
+    "queue": "Coada",
+    "quickSave": "Salvare rapida",
+    "quickSaveFromFavorites": "Salvare rapida pentru \"Favorite\"",
     "renamed": "Redenumit",
-    "reset": "Anulează modificările",
+    "reset": "Anuleaza modificarile",
     "restart": "Repornire",
-    "settings": "Setări",
+    "settings": "Setari",
     "skipped": "Omis",
-    "start": "Pornește",
-    "stop": "Oprește",
-    "save": "Salvează",
+    "start": "Porne?te",
+    "stop": "Opre?te",
+    "save": "Salveaza",
     "unchanged": "Neschimbat",
     "unknown": "Necunoscut",
-    "noItemInClipboard": "Fără elemente în clipboard."
+    "noItemInClipboard": "Fara elemente �n clipboard."
   },
   "receiveTab": {
     "title": "Primire",
@@ -57,42 +57,42 @@
   "sendTab": {
     "title": "Trimite",
     "selection": {
-      "title": "Selecție",
-      "files": "Fișiere: {files}",
+      "title": "Selec?ie",
+      "files": "Fi?iere: {files}",
       "size": "Dimensiune: {size}"
     },
     "picker": {
-      "file": "Fișier",
+      "file": "Fi?ier",
       "folder": "Dosar",
       "media": "Media",
       "text": "Text",
-      "app": "Aplicație",
-      "clipboard": "Lipește"
+      "app": "Aplica?ie",
+      "clipboard": "Lipe?te"
     },
-    "shareIntentInfo": "Poți utiliza, de asemenea, funcția „Partajare” a dispozitivului pentru a selecta mai ușor fișierele.",
+    "shareIntentInfo": "Po?i utiliza, de asemenea, func?ia �Partajare� a dispozitivului pentru a selecta mai u?or fi?ierele.",
     "nearbyDevices": "Dispozitive din apropiere",
     "thisDevice": "Acest dispozitiv",
-    "scan": "Caută dispozitive",
-    "manualSending": "Trimitere manuală",
+    "scan": "Cauta dispozitive",
+    "manualSending": "Trimitere manuala",
     "sendMode": "Mod de trimitere",
     "sendModes": {
       "single": "Un singur destinatar",
-      "multiple": "Mai mulți destinatari",
-      "link": "Partajează prin link"
+      "multiple": "Mai mul?i destinatari",
+      "link": "Partajeaza prin link"
     },
-    "sendModeHelp": "Explicație",
-    "help": "Verifică dacă destinația se află în aceeași rețea Wi-Fi.",
-    "placeItems": "Adaugă elemente pentru a partaja."
+    "sendModeHelp": "Explica?ie",
+    "help": "Verifica daca destina?ia se afla �n aceea?i re?ea Wi-Fi.",
+    "placeItems": "Adauga elemente pentru a partaja."
   },
   "settingsTab": {
-    "title": "Setări",
+    "title": "Setari",
     "general": {
       "title": "General",
       "brightness": "Tema",
       "brightnessOptions": {
         "system": "Sistem",
-        "dark": "Întuneric",
-        "light": "Luminoasă"
+        "dark": "�ntuneric",
+        "light": "Luminoasa"
       },
       "color": "Culoare",
       "colorOptions": {
@@ -103,352 +103,352 @@
       "languageOptions": {
         "system": "Sistem"
       },
-      "saveWindowPlacement": "Reține locația ferestrei după ieșire",
-      "saveWindowPlacementWindows": "Salvarea poziției ferestrei după închidere",
-      "minimizeToTray": "Minimizează în Bara de Meniuri/Tray la închidere",
-      "launchAtStartup": "Pornire automată după autentificare",
-      "launchMinimized": "Autopornire: Pornire ascunsă",
-      "showInContextMenu": "Afișează GravitySend în meniul contextual",
-      "animations": "Animații"
+      "saveWindowPlacement": "Re?ine loca?ia ferestrei dupa ie?ire",
+      "saveWindowPlacementWindows": "Salvarea pozi?iei ferestrei dupa �nchidere",
+      "minimizeToTray": "Minimizeaza �n Bara de Meniuri/Tray la �nchidere",
+      "launchAtStartup": "Pornire automata dupa autentificare",
+      "launchMinimized": "Autopornire: Pornire ascunsa",
+      "showInContextMenu": "Afi?eaza GravitySend �n meniul contextual",
+      "animations": "Anima?ii"
     },
     "receive": {
       "title": "Primire",
       "quickSave": "@:general.quickSave",
       "quickSaveFromFavorites": "@:general.quickSaveFromFavorites",
       "requirePin": "@:webSharePage.requirePin",
-      "autoFinish": "Finisare automată",
-      "destination": "Salvează în dosar",
-      "downloads": "(Descărcări)",
-      "saveToGallery": "Salvează media în galerie",
-      "saveToHistory": "Salvează în istoric"
+      "autoFinish": "Finisare automata",
+      "destination": "Salveaza �n dosar",
+      "downloads": "(Descarcari)",
+      "saveToGallery": "Salveaza media �n galerie",
+      "saveToHistory": "Salveaza �n istoric"
     },
     "send": {
       "title": "Trimite",
-      "shareViaLinkAutoAccept": "Acceptă automat cererile în modul „Partajare prin link”"
+      "shareViaLinkAutoAccept": "Accepta automat cererile �n modul �Partajare prin link�"
     },
     "network": {
-      "title": "Rețea",
-      "needRestart": "Repornește serverul pentru a aplica setările!",
+      "title": "Re?ea",
+      "needRestart": "Reporne?te serverul pentru a aplica setarile!",
       "server": "Server",
       "alias": "Nume dispozitiv",
       "deviceType": "Tip dispozitiv",
       "deviceModel": "Model dispozitiv",
       "port": "Port",
       "discoveryTimeout": "Expirare descoperire",
-      "useSystemName": "Folosește numele sistemului",
-      "generateRandomAlias": "Generează alias aleatoriu",
-      "portWarning": "Este posibil să nu fii detectat de alte dispozitive pentru că folosești un port personalizat. (implicit: {defaultPort})",
+      "useSystemName": "Folose?te numele sistemului",
+      "generateRandomAlias": "Genereaza alias aleatoriu",
+      "portWarning": "Este posibil sa nu fii detectat de alte dispozitive pentru ca folose?ti un port personalizat. (implicit: {defaultPort})",
       "encryption": "Criptare",
       "multicastGroup": "Multicast",
-      "multicastGroupWarning": "Este posibil să nu fii detectat de alte dispozitive pentru că folosești o adresă multicast personalizată. (implicit: {defaultMulticast})",
+      "multicastGroupWarning": "Este posibil sa nu fii detectat de alte dispozitive pentru ca folose?ti o adresa multicast personalizata. (implicit: {defaultMulticast})",
       "networkOptions": {
         "all": "Toate",
         "filtered": "Filtrat"
       },
-      "network": "Rețea"
+      "network": "Re?ea"
     },
     "other": {
       "title": "Altele",
-      "support": "Susține GravitySend",
-      "donate": "Donează",
-      "privacyPolicy": "Politica de confidențialitate",
+      "support": "Sus?ine GravitySend",
+      "donate": "Doneaza",
+      "privacyPolicy": "Politica de confiden?ialitate",
       "termsOfUse": "Termeni de utilizare"
     },
-    "advancedSettings": "Setări avansate"
+    "advancedSettings": "Setari avansate"
   },
   "troubleshootPage": {
     "title": "Depanare",
-    "subTitle": "Aplicația nu funcționează așa cum trebuie? Aici poți găsi câteva soluții comune.",
-    "solution": "Soluția:",
-    "fixButton": "Repară automat",
+    "subTitle": "Aplica?ia nu func?ioneaza a?a cum trebuie? Aici po?i gasi c�teva solu?ii comune.",
+    "solution": "Solu?ia:",
+    "fixButton": "Repara automat",
     "firewall": {
-      "symptom": "Această aplicație poate trimite fișiere la alte dispozitive, dar alte dispozitive nu pot trimite fișiere de pe acest dispozitiv.",
-      "solution": "Cel mai probabil problema este de la firewall. Poți rezolva această problemă permițând conexiunile de intrare (UDP și TCP) pe portul {port}.",
+      "symptom": "Aceasta aplica?ie poate trimite fi?iere la alte dispozitive, dar alte dispozitive nu pot trimite fi?iere de pe acest dispozitiv.",
+      "solution": "Cel mai probabil problema este de la firewall. Po?i rezolva aceasta problema permi?�nd conexiunile de intrare (UDP ?i TCP) pe portul {port}.",
       "openFirewall": "Deschide Firewall"
     },
     "noDiscovery": {
       "symptom": "Acest dispozitiv nu poate descoperi alte dispozitive.",
-      "solution": "Asigură-te că toate dispozitivele sunt pe aceeași rețea Wi-Fi și au aceeași configurație (port, adresă de multicast, criptare). Poți încerca să scrii manual adresa IP pe dispozitivul ales. Dacă merge, consideră să adaugi dispozitivul la favorite ca să fie găsit automat în viitor."
+      "solution": "Asigura-te ca toate dispozitivele sunt pe aceea?i re?ea Wi-Fi ?i au aceea?i configura?ie (port, adresa de multicast, criptare). Po?i �ncerca sa scrii manual adresa IP pe dispozitivul ales. Daca merge, considera sa adaugi dispozitivul la favorite ca sa fie gasit automat �n viitor."
     },
     "noConnection": {
-      "symptom": "Ambele dispozitive nu se pot descoperi și nu pot partaja fișiere.",
-      "solution": "Problema există de ambele părți? Dacă da, trebuie să te asiguri că ambele dispozitive se află în aceeași rețea Wi-Fi și au aceeași configurație (port, adresă multicast, criptare). Este posibil ca rețeaua să nu permită comunicarea între participanți. În acest caz, această opțiune trebuie să fie activată pe router."
+      "symptom": "Ambele dispozitive nu se pot descoperi ?i nu pot partaja fi?iere.",
+      "solution": "Problema exista de ambele par?i? Daca da, trebuie sa te asiguri ca ambele dispozitive se afla �n aceea?i re?ea Wi-Fi ?i au aceea?i configura?ie (port, adresa multicast, criptare). Este posibil ca re?eaua sa nu permita comunicarea �ntre participan?i. �n acest caz, aceasta op?iune trebuie sa fie activata pe router."
     }
   },
   "receiveHistoryPage": {
     "title": "Istoric",
     "openFolder": "Deschide dosarul",
-    "deleteHistory": "Șterge istoricul",
+    "deleteHistory": "?terge istoricul",
     "empty": "Istoricul este gol.",
     "entryActions": {
-      "open": "Deschide fișierul",
-      "showInFolder": "Afișează în dosar",
-      "info": "Informații",
-      "deleteFromHistory": "Șterge din istoric"
+      "open": "Deschide fi?ierul",
+      "showInFolder": "Afi?eaza �n dosar",
+      "info": "Informa?ii",
+      "deleteFromHistory": "?terge din istoric"
     }
   },
   "apkPickerPage": {
-    "title": "Aplicații (APK)",
-    "excludeSystemApps": "Exclude aplicațiile de sistem",
-    "excludeAppsWithoutLaunchIntent": "Exclude aplicațiile nelansabile",
-    "apps": "{n} Aplicații"
+    "title": "Aplica?ii (APK)",
+    "excludeSystemApps": "Exclude aplica?iile de sistem",
+    "excludeAppsWithoutLaunchIntent": "Exclude aplica?iile nelansabile",
+    "apps": "{n} Aplica?ii"
   },
   "selectedFilesPage": {
-    "deleteAll": "Șterge tot"
+    "deleteAll": "?terge tot"
   },
   "receivePage": {
     "subTitle": {
-      "one": "vrea să îți trimită un fișier",
-      "other": "vrea să îți trimită {n} fișiere"
+      "one": "vrea sa �?i trimita un fi?ier",
+      "other": "vrea sa �?i trimita {n} fi?iere"
     },
-    "subTitleMessage": "ți-a trimis un mesaj:",
-    "subTitleLink": "ți-a trimis un link:",
+    "subTitleMessage": "?i-a trimis un mesaj:",
+    "subTitleLink": "?i-a trimis un link:",
     "canceled": "Expeditorul a anulat cererea."
   },
   "receiveOptionsPage": {
-    "title": "Opțiuni",
+    "title": "Op?iuni",
     "destination": "@:settingsTab.receive.destination",
     "appDirectory": "(Dosarul GravitySend)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "Dezactivat automat deoarece există foldere."
+    "saveToGalleryOff": "Dezactivat automat deoarece exista foldere."
   },
   "sendPage": {
-    "waiting": "Așteptare răspuns…",
+    "waiting": "A?teptare raspuns�",
     "rejected": "Destinatarul a respins cererea.",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "Destinatarul este ocupat cu o altă cerere."
+    "busy": "Destinatarul este ocupat cu o alta cerere."
   },
   "progressPage": {
-    "titleSending": "Trimitere fișiere",
-    "titleReceiving": "Primire fișiere",
-    "savedToGallery": "Salvat în Galerie",
+    "titleSending": "Trimitere fi?iere",
+    "titleReceiving": "Primire fi?iere",
+    "savedToGallery": "Salvat �n Galerie",
     "total": {
       "title": {
         "sending": "Progres total ({time})",
         "finishedError": "Finalizat cu eroare",
         "canceledSender": "Anulat de expeditor",
-        "canceledReceiver": "Anulat de către destinatar"
+        "canceledReceiver": "Anulat de catre destinatar"
       },
-      "count": "Fișiere: {curr} / {n}",
+      "count": "Fi?iere: {curr} / {n}",
       "size": "Dimensiune: {curr} / {n}",
-      "speed": "Viteză: {speed}/s"
+      "speed": "Viteza: {speed}/s"
     }
   },
   "webSharePage": {
-    "title": "Partajează prin link",
-    "loading": "Pornirea serverului…",
-    "stopping": "Oprirea serverului…",
-    "error": "A apărut o eroare la pornirea serverului.",
+    "title": "Partajeaza prin link",
+    "loading": "Pornirea serverului�",
+    "stopping": "Oprirea serverului�",
+    "error": "A aparut o eroare la pornirea serverului.",
     "openLink": {
-      "one": "Deschide acest link în browserul tău:",
-      "other": "Deschide unul dintre aceste linkuri în browserul tău:"
+      "one": "Deschide acest link �n browserul tau:",
+      "other": "Deschide unul dintre aceste linkuri �n browserul tau:"
     },
     "requests": "Cereri",
-    "noRequests": "Nicio cerere încă.",
+    "noRequests": "Nicio cerere �nca.",
     "encryption": "@:settingsTab.network.encryption",
-    "autoAccept": "Acceptă automat cererile",
-    "requirePin": "Solicită PIN",
+    "autoAccept": "Accepta automat cererile",
+    "requirePin": "Solicita PIN",
     "pinHint": "PIN-ul este \"{pin}\"",
-    "encryptionHint": "GravitySend folosește un certificat auto-semnat. Trebuie să-l accepți în browserul tău.",
-    "pendingRequests": "Cereri în așteptare: {n}"
+    "encryptionHint": "GravitySend folose?te un certificat auto-semnat. Trebuie sa-l accep?i �n browserul tau.",
+    "pendingRequests": "Cereri �n a?teptare: {n}"
   },
   "aboutPage": {
     "title": "Despre GravitySend",
     "description": [
-      "GravitySend este o aplicație gratuită și open-source care îți permite să partajezi în siguranță fișiere și mesaje cu dispozitivele din apropiere prin rețeaua ta locală, fără a avea nevoie de o conexiune la internet.",
-      "Această aplicație este disponibilă pe Android, iOS, macOS, Windows și Linux. Poți găsi toate opțiunile de descărcare pe pagina oficială."
+      "GravitySend este o aplica?ie gratuita ?i premium care �?i permite sa partajezi �n siguran?a fi?iere ?i mesaje cu dispozitivele din apropiere prin re?eaua ta locala, fara a avea nevoie de o conexiune la internet.",
+      "Aceasta aplica?ie este disponibila pe Android, iOS, macOS, Windows ?i Linux. Po?i gasi toate op?iunile de descarcare pe pagina oficiala."
     ],
     "author": "Autor",
     "contributors": "Contribuitori",
     "packagers": "Pachetari",
-    "translators": "Traducători"
+    "translators": "Traducatori"
   },
   "donationPage": {
-    "title": "Donează",
-    "info": "GravitySend este gratuit, open-source și fără reclame. Dacă îți place aplicația, poți susține dezvoltarea cu o donație.",
-    "donate": "Donează {amount}",
-    "thanks": "Îți mulțumim foarte mult!",
-    "restore": "Restabilește achiziția"
+    "title": "Doneaza",
+    "info": "GravitySend este gratuit, premium ?i fara reclame. Daca �?i place aplica?ia, po?i sus?ine dezvoltarea cu o dona?ie.",
+    "donate": "Doneaza {amount}",
+    "thanks": "�?i mul?umim foarte mult!",
+    "restore": "Restabile?te achizi?ia"
   },
   "changelogPage": {
-    "title": "Schimbări"
+    "title": "Schimbari"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
-    "@info": "Diferite localizări pot avea cuvinte diferite, este posibil să nu se potrivească cu 1: 1",
+    "@info": "Diferite localizari pot avea cuvinte diferite, este posibil sa nu se potriveasca cu 1: 1",
     "adjectives": [
-      "Adorabilă",
-      "Frumoasă",
+      "Adorabila",
+      "Frumoasa",
       "Mare",
-      "Strălucitoare",
-      "Curată",
-      "Deșteaptă",
+      "Stralucitoare",
+      "Curata",
+      "De?teapta",
       "Cool",
-      "Drăguță",
-      "Vicleană",
-      "Determinantă",
-      "Energică",
-      "Eficientă",
-      "Fantastică",
+      "Dragu?a",
+      "Vicleana",
+      "Determinanta",
+      "Energica",
+      "Eficienta",
+      "Fantastica",
       "Repede",
       "Bine",
-      "Sănătoasă",
-      "Proaspătă",
-      "Bună",
-      "Superbă",
-      "Grozavă",
-      "Coaptă",
+      "Sanatoasa",
+      "Proaspata",
+      "Buna",
+      "Superba",
+      "Grozava",
+      "Coapta",
       "Fierbinte",
-      "Amabilă",
+      "Amabila",
       "Iubitoare",
-      "Mistică",
-      "îngrijită",
-      "Plăcută",
-      "Răbdătoare",
-      "Frumușică",
-      "Puternică",
-      "Delicioasă",
-      "Secretă",
-      "Inteligentă",
-      "Solidă",
-      "Specială",
-      "Strategică",
-      "Aromată",
-      "Înțeleaptă"
+      "Mistica",
+      "�ngrijita",
+      "Placuta",
+      "Rabdatoare",
+      "Frumu?ica",
+      "Puternica",
+      "Delicioasa",
+      "Secreta",
+      "Inteligenta",
+      "Solida",
+      "Speciala",
+      "Strategica",
+      "Aromata",
+      "�n?eleapta"
     ],
     "fruits": [
-      "Caisă",
+      "Caisa",
       "Gutuie",
-      "Banană",
-      "Mură",
-      "Nucă",
-      "Afină",
-      "Vișină",
-      "Cireașă",
-      "Lămâie",
-      "Salată",
+      "Banana",
+      "Mura",
+      "Nuca",
+      "Afina",
+      "Vi?ina",
+      "Cirea?a",
+      "Lam�ie",
+      "Salata",
       "Fasole",
-      "Conopidă",
-      "Ciupercă",
-      "Ceapă",
-      "Portocală",
-      "Piersică",
-      "Pară",
-      "Varză",
-      "Mazăre",
-      "Prună",
+      "Conopida",
+      "Ciuperca",
+      "Ceapa",
+      "Portocala",
+      "Piersica",
+      "Para",
+      "Varza",
+      "Mazare",
+      "Pruna",
       "Rodie",
-      "Zmeură",
-      "Căpșună",
-      "Roșie"
+      "Zmeura",
+      "Cap?una",
+      "Ro?ie"
     ],
     "combination": "{fruit} {adjective}",
     "@combination": "In some languages, the adjective must be last."
   },
   "dialogs": {
     "addFile": {
-      "title": "Adaugă la selecție",
-      "content": "Ce vrei să adaugi?"
+      "title": "Adauga la selec?ie",
+      "content": "Ce vrei sa adaugi?"
     },
     "openFile": {
-      "title": "Deschide fișierul",
-      "content": "Vrei să deschizi fișierul primit?"
+      "title": "Deschide fi?ierul",
+      "content": "Vrei sa deschizi fi?ierul primit?"
     },
     "addressInput": {
       "title": "Introdu adresa",
       "hashtag": "Hashtag",
-      "ip": "Adresă IP",
+      "ip": "Adresa IP",
       "recentlyUsed": "Folosit recent: "
     },
     "cancelSession": {
-      "title": "Anulează trimiterea fișierelor",
-      "content": "Chiar vrei să anulezi transferul fișierelor?"
+      "title": "Anuleaza trimiterea fi?ierelor",
+      "content": "Chiar vrei sa anulezi transferul fi?ierelor?"
     },
     "cannotOpenFile": {
-      "title": "Nu se poate deschide fișierul",
-      "content": "Nu s-a putut deschide \\\"{file}\\\". A fost mutat, redenumit sau șters?"
+      "title": "Nu se poate deschide fi?ierul",
+      "content": "Nu s-a putut deschide \\\"{file}\\\". A fost mutat, redenumit sau ?ters?"
     },
     "encryptionDisabledNotice": {
-      "title": "Criptare dezactivată",
-      "content": "Comunicarea are loc acum prin protocolul HTTP necriptat. Pentru a folosi HTTPS, activează din nou criptarea."
+      "title": "Criptare dezactivata",
+      "content": "Comunicarea are loc acum prin protocolul HTTP necriptat. Pentru a folosi HTTPS, activeaza din nou criptarea."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteDialog": {
       "title": "Favorite",
-      "noFavorites": "Încă nu sunt dispozitive favorite.",
-      "addFavorite": "Adaugă"
+      "noFavorites": "�nca nu sunt dispozitive favorite.",
+      "addFavorite": "Adauga"
     },
     "favoriteDeleteDialog": {
-      "title": "Șterge din favorite",
-      "content": "Sigur vrei să ștergi din favorite \"{name}\"?"
+      "title": "?terge din favorite",
+      "content": "Sigur vrei sa ?tergi din favorite \"{name}\"?"
     },
     "favoriteEditDialog": {
-      "titleAdd": "Adaugă la favorite",
-      "titleEdit": "Setări",
+      "titleAdd": "Adauga la favorite",
+      "titleEdit": "Setari",
       "name": "Numele dispozitivului",
       "auto": "(auto)",
-      "ip": "Adresă IP",
+      "ip": "Adresa IP",
       "port": "Port"
     },
     "fileInfo": {
-      "title": "Informații despre fișier",
-      "fileName": "Numele fișierului:",
+      "title": "Informa?ii despre fi?ier",
+      "fileName": "Numele fi?ierului:",
       "path": "Calea:",
       "size": "Dimensiune:",
       "sender": "Expeditor:",
       "time": "Timp:"
     },
     "fileNameInput": {
-      "title": "Introdu numele fișierului",
+      "title": "Introdu numele fi?ierului",
       "original": "Original: {original}"
     },
     "historyClearDialog": {
-      "title": "Golește istoricul",
-      "content": "Sigur vrei să golești întregul istoric?"
+      "title": "Gole?te istoricul",
+      "content": "Sigur vrei sa gole?ti �ntregul istoric?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "GravitySend nu poate găsi alte dispozitive fără permisiunea de a scana rețeaua locală. Acordă această permisiune în setări.",
-      "gotoSettings": "Setări"
+      "description": "GravitySend nu poate gasi alte dispozitive fara permisiunea de a scana re?eaua locala. Acorda aceasta permisiune �n setari.",
+      "gotoSettings": "Setari"
     },
     "messageInput": {
       "title": "Scrie un mesaj",
       "multiline": "Multi-linie"
     },
     "noFiles": {
-      "title": "Niciun fișier selectat",
-      "content": "Selectează cel puțin un fișier."
+      "title": "Niciun fi?ier selectat",
+      "content": "Selecteaza cel pu?in un fi?ier."
     },
     "noPermission": {
-      "title": "Fără permisiune",
-      "content": "Nu ai acordat permisiunile necesare. Acordă-le în setări."
+      "title": "Fara permisiune",
+      "content": "Nu ai acordat permisiunile necesare. Acorda-le �n setari."
     },
     "notAvailableOnPlatform": {
       "title": "Nu este disponibil",
-      "content": "Această funcție este disponibilă doar pe:"
+      "content": "Aceasta func?ie este disponibila doar pe:"
     },
     "qr": {
       "title": "Cod QR"
     },
     "quickActions": {
-      "title": "Acțiuni rapide",
+      "title": "Ac?iuni rapide",
       "counter": "Contor",
       "prefix": "Prefix",
-      "padZero": "Completează cu zerouri",
-      "sortBeforeCount": "Sortează alfabetic înainte",
+      "padZero": "Completeaza cu zerouri",
+      "sortBeforeCount": "Sorteaza alfabetic �nainte",
       "random": "Aleatoriu"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "Cererile de fișiere sunt acceptate automat. Fii atent oricine din rețeaua locală îți poate trimite fișiere."
+      "content": "Cererile de fi?iere sunt acceptate automat. Fii atent oricine din re?eaua locala �?i poate trimite fi?iere."
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "Cererile de fișiere sunt acum acceptate automat de la dispozitivele din lista dispozitivelor favorite.",
-        "Atenție! În prezent, aceasta nu este complet securizată, deoarece un hacker care are amprente pe oricare dintre dispozitivele din lista ta de favorite poate trimite fișiere fără restricții.",
-        "Oricum ar fi, această opțiune este mult mai sigură decât să permiți utilizatorilor din rețeaua locală să trimită fișiere fără restricții."
+        "Cererile de fi?iere sunt acum acceptate automat de la dispozitivele din lista dispozitivelor favorite.",
+        "Aten?ie! �n prezent, aceasta nu este complet securizata, deoarece un hacker care are amprente pe oricare dintre dispozitivele din lista ta de favorite poate trimite fi?iere fara restric?ii.",
+        "Oricum ar fi, aceasta op?iune este mult mai sigura dec�t sa permi?i utilizatorilor din re?eaua locala sa trimita fi?iere fara restric?ii."
       ]
     },
     "pin": {
@@ -456,72 +456,73 @@
     },
     "sendModeHelp": {
       "title": "Moduri de trimitere",
-      "single": "Trimite fișiere unui singur destinatar. Selecția va fi golită după ce transferul este finalizat.",
-      "multiple": "Trimite fișiere la mai mulți destinatari. Selecția nu va fi ștearsă după transferul de fișiere terminate.",
-      "link": "Destinatarii care nu au GravitySend instalat pot descărca fișierele selectate prin deschiderea linkului în browserul lor."
+      "single": "Trimite fi?iere unui singur destinatar. Selec?ia va fi golita dupa ce transferul este finalizat.",
+      "multiple": "Trimite fi?iere la mai mul?i destinatari. Selec?ia nu va fi ?tearsa dupa transferul de fi?iere terminate.",
+      "link": "Destinatarii care nu au GravitySend instalat pot descarca fi?ierele selectate prin deschiderea linkului �n browserul lor."
     },
     "zoom": {
       "title": "URL"
     }
   },
   "sanitization": {
-    "empty": "Numele fișierului nu poate fi gol",
-    "invalid": "Numele fișierului conține caractere greșite"
+    "empty": "Numele fi?ierului nu poate fi gol",
+    "invalid": "Numele fi?ierului con?ine caractere gre?ite"
   },
   "tray": {
     "@info": "Apple Guidelines are very strict about the 'close' wording.",
     "open": "@:general.open",
-    "close": "Închide GravitySend",
-    "closeWindows": "Ieșire"
+    "close": "�nchide GravitySend",
+    "closeWindows": "Ie?ire"
   },
   "web": {
     "waiting": "@:sendPage.waiting",
     "enterPin": "Introdu codul PIN",
-    "invalidPin": "Codul PIN introdus este greșit",
-    "tooManyAttempts": "Prea multe încercări",
+    "invalidPin": "Codul PIN introdus este gre?it",
+    "tooManyAttempts": "Prea multe �ncercari",
     "rejected": "Respins",
-    "files": "Fișiere",
-    "fileName": "Numele fișierului",
+    "files": "Fi?iere",
+    "fileName": "Numele fi?ierului",
     "size": "Dimensiune"
   },
   "assetPicker": {
-    "@info": "Traduceri pentru instrumentul de selecție media pentru Android și iPhone",
-    "confirm": "Confirmă",
-    "cancel": "Anulează",
-    "edit": "Editează",
+    "@info": "Traduceri pentru instrumentul de selec?ie media pentru Android ?i iPhone",
+    "confirm": "Confirma",
+    "cancel": "Anuleaza",
+    "edit": "Editeaza",
     "gifIndicator": "GIF",
-    "loadFailed": "Eroare la încărcare",
+    "loadFailed": "Eroare la �ncarcare",
     "original": "Original",
     "preview": "Previzualizare",
-    "select": "Selectează",
-    "emptyList": "Listă goală",
-    "unSupportedAssetType": "Tip de fișier neacceptat.",
-    "unableToAccessAll": "Nu se pot accesa toate fișierele de pe dispozitiv",
-    "viewingLimitedAssetsTip": "Aplicația poate vizualiza doar fișiere și albume la care are acces.",
-    "changeAccessibleLimitedAssets": "Apasă pentru a actualiza fișierele accesibile",
-    "accessAllTip": "Aplicația are acces doar la unele fișiere de pe dispozitiv. Accesează setările de sistem și permite aplicației să acceseze toate fișierele media de pe dispozitiv.",
-    "goToSystemSettings": "Accesează setările sistemului",
-    "accessLimitedAssets": "Continuă cu acces limitat",
-    "accessiblePathName": "Fișiere accesibile",
+    "select": "Selecteaza",
+    "emptyList": "Lista goala",
+    "unSupportedAssetType": "Tip de fi?ier neacceptat.",
+    "unableToAccessAll": "Nu se pot accesa toate fi?ierele de pe dispozitiv",
+    "viewingLimitedAssetsTip": "Aplica?ia poate vizualiza doar fi?iere ?i albume la care are acces.",
+    "changeAccessibleLimitedAssets": "Apasa pentru a actualiza fi?ierele accesibile",
+    "accessAllTip": "Aplica?ia are acces doar la unele fi?iere de pe dispozitiv. Acceseaza setarile de sistem ?i permite aplica?iei sa acceseze toate fi?ierele media de pe dispozitiv.",
+    "goToSystemSettings": "Acceseaza setarile sistemului",
+    "accessLimitedAssets": "Continua cu acces limitat",
+    "accessiblePathName": "Fi?iere accesibile",
     "sTypeAudioLabel": "Audio",
     "sTypeImageLabel": "Imagini",
     "sTypeVideoLabel": "Video",
-    "sTypeOtherLabel": "Alte fișiere media",
+    "sTypeOtherLabel": "Alte fi?iere media",
     "sActionPlayHint": "redare",
     "sActionPreviewHint": "previzualizare",
-    "sActionSelectHint": "selectează",
-    "sActionSwitchPathLabel": "schimbă calea",
-    "sActionUseCameraHint": "folosește camera",
-    "sNameDurationLabel": "durată",
+    "sActionSelectHint": "selecteaza",
+    "sActionSwitchPathLabel": "schimba calea",
+    "sActionUseCameraHint": "folose?te camera",
+    "sNameDurationLabel": "durata",
     "sUnitAssetCountLabel": "cantitate"
   },
   "networkInterfacesPage": {
-    "title": "Interfețe de rețea",
-    "info": "În mod implicit, GravitySend folosește toate interfețele de rețea disponibile. Poți exclude rețelele nedorite aici. Trebuie să repornești serverul pentru a aplica modificările.",
+    "title": "Interfe?e de re?ea",
+    "info": "�n mod implicit, GravitySend folose?te toate interfe?ele de re?ea disponibile. Po?i exclude re?elele nedorite aici. Trebuie sa reporne?ti serverul pentru a aplica modificarile.",
     "preview": "Previzualizare",
-    "whitelist": "Lista albă",
-    "blacklist": "Lista neagră"
+    "whitelist": "Lista alba",
+    "blacklist": "Lista neagra"
   }
 }
+
 
 

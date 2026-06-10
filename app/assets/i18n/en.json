@@ -1,4 +1,4 @@
-ï»¿{
+{
   "locale": "English",
   "appName": "GravitySend",
   "general": {
@@ -220,7 +220,7 @@
     "saveToGalleryOff": "Turned off automatically because there are folders."
   },
   "sendPage": {
-    "waiting": "Waiting for responseâ€¦",
+    "waiting": "Waiting for response…",
     "rejected": "The recipient has rejected the request.",
     "tooManyAttempts": "@:web.tooManyAttempts",
     "busy": "The recipient is busy with another request."
@@ -251,8 +251,8 @@
   },
   "webSharePage": {
     "title": "Share via link",
-    "loading": "Starting serverâ€¦",
-    "stopping": "Stopping serverâ€¦",
+    "loading": "Starting server…",
+    "stopping": "Stopping server…",
     "error": "An error occurred while starting the server.",
     "openLink": {
       "one": "Open this link in your browser:",
@@ -280,7 +280,7 @@
   },
   "donationPage": {
     "title": "Donate",
-    "info": "GravitySend is free, open-source and without any ads. If you like the app, you can support the development with a donation.",
+    "info": "GravitySend is free, premium and without any ads. If you like the app, you can support the development with a donation.",
     "donate": "Donate {amount}",
     "thanks": "Thank you very much!",
     "restore": "Restore purchase"
@@ -533,5 +533,6 @@
     "sUnitAssetCountLabel": "count"
   }
 }
+
 
 

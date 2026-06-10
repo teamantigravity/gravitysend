@@ -1,4 +1,4 @@
-ï»¿{
+{
   "locale": "Italiano",
   "appName": "GravitySend",
   "general": {
@@ -69,12 +69,12 @@
       "app": "App",
       "clipboard": "Incolla"
     },
-    "shareIntentInfo": "Puoi anche usare la funzione \"Condividi\" del dispositivo mobile per selezionare piÃ¹ facilmente i file.",
+    "shareIntentInfo": "Puoi anche usare la funzione \"Condividi\" del dispositivo mobile per selezionare più facilmente i file.",
     "nearbyDevices": "Dispositivi vicini",
     "thisDevice": "Questo dispositivo",
     "scan": "Cerca dispositivi",
     "manualSending": "Invio manuale",
-    "sendMode": "ModalitÃ  di invio",
+    "sendMode": "Modalità di invio",
     "sendModes": {
       "single": "Destinatario singolo",
       "multiple": "Destinatari multipli",
@@ -105,10 +105,10 @@
       },
       "saveWindowPlacement": "Salva la posizione della finestra all'uscita",
       "saveWindowPlacementWindows": "Salva la posizione della finestra alla chiusura",
-      "minimizeToTray": "Riduci a icona anzichÃ© chiudere",
+      "minimizeToTray": "Riduci a icona anziché chiudere",
       "launchAtStartup": "Avvio automatico all'accesso",
       "launchMinimized": "Avvio automatico: ridotto a icona",
-      "showInContextMenu": "Mostra GravitySend nel menÃ¹ contestuale",
+      "showInContextMenu": "Mostra GravitySend nel menù contestuale",
       "animations": "Animazioni"
     },
     "receive": {
@@ -124,7 +124,7 @@
     },
     "send": {
       "title": "Invia",
-      "shareViaLinkAutoAccept": "Accetta automaticamente le richieste in modalitÃ  \"Condividi tramite link\""
+      "shareViaLinkAutoAccept": "Accetta automaticamente le richieste in modalità \"Condividi tramite link\""
     },
     "network": {
       "title": "Rete",
@@ -137,10 +137,10 @@
       "discoveryTimeout": "Timeout di rilevamento",
       "useSystemName": "Usa il nome di sistema",
       "generateRandomAlias": "Genera un alias casuale",
-      "portWarning": "Potresti non essere rilevato da altri dispositivi perchÃ© stai utilizzando una porta personalizzata. (predefinita: {defaultPort})",
+      "portWarning": "Potresti non essere rilevato da altri dispositivi perché stai utilizzando una porta personalizzata. (predefinita: {defaultPort})",
       "encryption": "Crittografia",
       "multicastGroup": "Indirizzo Multicast",
-      "multicastGroupWarning": "Potresti non essere rilevato dagli altri dispositivi perchÃ© stai utilizzando un indirizzo multicast personalizzato. (predefinito: {defaultMulticast})",
+      "multicastGroupWarning": "Potresti non essere rilevato dagli altri dispositivi perché stai utilizzando un indirizzo multicast personalizzato. (predefinito: {defaultMulticast})",
       "network": "Rete",
       "networkOptions": {
         "all": "Tutto",
@@ -158,12 +158,12 @@
   },
   "troubleshootPage": {
     "title": "Risoluzione dei problemi",
-    "subTitle": "L'app non funziona come previsto? Qui puoi trovare le soluzioni piÃ¹ comuni.",
+    "subTitle": "L'app non funziona come previsto? Qui puoi trovare le soluzioni più comuni.",
     "solution": "Soluzione:",
     "fixButton": "Risolvi automaticamente",
     "firewall": {
-      "symptom": "Questa app puÃ² inviare file ad altri dispositivi, ma altri dispositivi non possono inviare file a questo dispositivo.",
-      "solution": "Ãˆ molto probabile che si tratti di un problema di firewall. Puoi risolverlo consentendo connessioni in entrata (UDP e TCP) sulla porta {port}.",
+      "symptom": "Questa app può inviare file ad altri dispositivi, ma altri dispositivi non possono inviare file a questo dispositivo.",
+      "solution": "È molto probabile che si tratti di un problema di firewall. Puoi risolverlo consentendo connessioni in entrata (UDP e TCP) sulla porta {port}.",
       "openFirewall": "Apri Firewall"
     },
     "noDiscovery": {
@@ -171,7 +171,7 @@
       "solution": "Assicurati che tutti i dispositivi siano sulla stessa rete Wi-Fi e condividano la stessa configurazione (porta, indirizzo multicast, crittografia). Puoi provare a digitare manualmente l'indirizzo IP del dispositivo di destinazione. Se funziona, considera di aggiungere questo dispositivo ai preferiti in modo che possa essere scoperto automaticamente in futuro."
     },
     "noConnection": {
-      "symptom": "Entrambi i dispositivi non sono in grado di riconoscersi a vicenda nÃ© di condividere file.",
+      "symptom": "Entrambi i dispositivi non sono in grado di riconoscersi a vicenda né di condividere file.",
       "solution": "Il problema si presenta da entrambi le parti? In tal caso, assicurati che i dispositivi siano sulla stessa rete Wi-Fi e condividano la stessa configurazione (porta, indirizzo multicast, crittografia). La rete Wi-Fi potrebbe non consentire la comunicazione tra i partecipanti (isolamento dell'Access Point). In questo caso, l'opzione deve essere abilitata sul router."
     }
   },
@@ -179,7 +179,7 @@
     "title": "Cronologia",
     "openFolder": "Apri cartella",
     "deleteHistory": "Elimina cronologia",
-    "empty": "La cronologia Ã¨ vuota.",
+    "empty": "La cronologia è vuota.",
     "entryActions": {
       "open": "Apri file",
       "showInFolder": "Mostra nella cartella",
@@ -213,10 +213,10 @@
     "saveToGalleryOff": "Disattivato automaticamente in presenza di cartelle."
   },
   "sendPage": {
-    "waiting": "In attesa di rispostaâ€¦",
+    "waiting": "In attesa di risposta…",
     "rejected": "Il destinatario ha rifiutato la richiesta.",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "Il destinatario Ã¨ occupato con un'altra richiesta."
+    "busy": "Il destinatario è occupato con un'altra richiesta."
   },
   "progressPage": {
     "titleSending": "Invio di file in corso",
@@ -231,7 +231,7 @@
       },
       "count": "File: {curr} / {n}",
       "size": "Dimensione: {curr} / {n}",
-      "speed": "VelocitÃ : {speed}/s"
+      "speed": "Velocità: {speed}/s"
     },
     "remainingTime": {
       "hours": "{h}h {m}m",
@@ -244,9 +244,9 @@
   },
   "webSharePage": {
     "title": "Condividi tramite link",
-    "loading": "Avvio del serverâ€¦",
-    "stopping": "Arresto del serverâ€¦",
-    "error": "Si Ã¨ verificato un errore durante l'avvio del server.",
+    "loading": "Avvio del server…",
+    "stopping": "Arresto del server…",
+    "error": "Si è verificato un errore durante l'avvio del server.",
     "openLink": {
       "one": "Apri questo link nel browser:",
       "other": "Apri uno di questi link nel browser:"
@@ -256,15 +256,15 @@
     "encryption": "@:settingsTab.network.encryption",
     "autoAccept": "Accetta automaticamente le richieste",
     "requirePin": "Richiedi PIN",
-    "pinHint": "Il PIN Ã¨ \"{pin}\"",
+    "pinHint": "Il PIN è \"{pin}\"",
     "encryptionHint": "GravitySend utilizza un certificato autofirmato. Devi accettarlo nel browser.",
     "pendingRequests": "Richieste in sospeso: {n}"
   },
   "aboutPage": {
     "title": "Informazioni su GravitySend",
     "description": [
-      "GravitySend Ã¨ un'app gratuita e open-source che consente di condividere file e messaggi in modo sicuro con dispositivi vicini sulla tua rete locale, senza bisogno di una connessione internet.",
-      "Quest'app Ã¨ disponibile su Android, iOS, macOS, Windows e Linux. Puoi trovare tutte le opzioni di download sulla homepage ufficiale."
+      "GravitySend è un'app gratuita e premium che consente di condividere file e messaggi in modo sicuro con dispositivi vicini sulla tua rete locale, senza bisogno di una connessione internet.",
+      "Quest'app è disponibile su Android, iOS, macOS, Windows e Linux. Puoi trovare tutte le opzioni di download sulla homepage ufficiale."
     ],
     "author": "Autore",
     "contributors": "Contributori",
@@ -273,7 +273,7 @@
   },
   "donationPage": {
     "title": "Dona",
-    "info": "GravitySend Ã¨ gratuito, open-source e privo di pubblicitÃ . Se ti piace l'applicazione, puoi supportarne lo sviluppo con una donazione.",
+    "info": "GravitySend è gratuito, premium e privo di pubblicità. Se ti piace l'applicazione, puoi supportarne lo sviluppo con una donazione.",
     "donate": "Dona {amount}",
     "thanks": "Grazie per il tuo supporto!",
     "restore": "Ripristina acquisti"
@@ -349,7 +349,7 @@
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "GravitySend non puÃ² trovare altri dispositivi senza il permesso per la scansione della rete locale. Puoi concedere questo permesso nelle impostazioni.",
+      "description": "GravitySend non può trovare altri dispositivi senza il permesso per la scansione della rete locale. Puoi concedere questo permesso nelle impostazioni.",
       "gotoSettings": "Impostazioni"
     },
     "messageInput": {
@@ -366,7 +366,7 @@
     },
     "notAvailableOnPlatform": {
       "title": "Non disponibile",
-      "content": "Questa funzione Ã¨ disponibile solo su:"
+      "content": "Questa funzione è disponibile solo su:"
     },
     "qr": {
       "title": "Codice QR"
@@ -381,23 +381,23 @@
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "Le richieste di file ora vengono accettate automaticamente. Tieni presente che chiunque abbia accesso alla tua rete locale puÃ² inviarti file."
+      "content": "Le richieste di file ora vengono accettate automaticamente. Tieni presente che chiunque abbia accesso alla tua rete locale può inviarti file."
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
         "Ora le richieste di file vengono accettate automaticamente dai dispositivi presenti nell'elenco dei preferiti.",
-        "Attenzione! Al momento, questa soluzione non Ã¨ del tutto sicura, poichÃ© un hacker che possiede l'impronta digitale di un qualsiasi dispositivo presente nella tua lista dei preferiti puÃ² inviarti file senza restrizioni.",
-        "Tuttavia, questa opzione Ã¨ comunque piÃ¹ sicura rispetto al consentire a tutti gli utenti della rete locale di inviarti file senza restrizioni."
+        "Attenzione! Al momento, questa soluzione non è del tutto sicura, poiché un hacker che possiede l'impronta digitale di un qualsiasi dispositivo presente nella tua lista dei preferiti può inviarti file senza restrizioni.",
+        "Tuttavia, questa opzione è comunque più sicura rispetto al consentire a tutti gli utenti della rete locale di inviarti file senza restrizioni."
       ]
     },
     "pin": {
       "title": "Inserisci il PIN"
     },
     "sendModeHelp": {
-      "title": "ModalitÃ  di invio",
+      "title": "Modalità di invio",
       "single": "Invia file a un destinatario. Gli elementi saranno deselezionati dopo il trasferimento dei file.",
-      "multiple": "Invia file a piÃ¹ destinatari. Gli elementi non saranno deselezionati dopo il trasferimento dei file.",
+      "multiple": "Invia file a più destinatari. Gli elementi non saranno deselezionati dopo il trasferimento dei file.",
       "link": "I destinatari che non hanno installato GravitySend possono scaricare i file selezionati aprendo il link nel loro browser."
     },
     "zoom": {
@@ -405,7 +405,7 @@
     }
   },
   "sanitization": {
-    "empty": "Il nome del file non puÃ² essere vuoto",
+    "empty": "Il nome del file non può essere vuoto",
     "invalid": "Il nome del file contiene dei caratteri non validi"
   },
   "tray": {
@@ -439,7 +439,7 @@
     "unableToAccessAll": "Impossibile accedere a tutti i file sul dispositivo",
     "viewingLimitedAssetsTip": "Visualizza solo file e album accessibili dall'app.",
     "changeAccessibleLimitedAssets": "Clicca per aggiornare i file accessibili",
-    "accessAllTip": "L'app puÃ² accedere solo ad alcuni file sul dispositivo. Vai alle impostazioni di sistema e consenti all'app di accedere a tutti i file multimediali sul dispositivo.",
+    "accessAllTip": "L'app può accedere solo ad alcuni file sul dispositivo. Vai alle impostazioni di sistema e consenti all'app di accedere a tutti i file multimediali sul dispositivo.",
     "goToSystemSettings": "Vai alle impostazioni di sistema",
     "accessLimitedAssets": "Continua con accesso limitato",
     "accessiblePathName": "File accessibili",
@@ -457,11 +457,12 @@
   },
   "networkInterfacesPage": {
     "title": "Interfacce di rete",
-    "info": "Per impostazione predefinita, GravitySend utilizza tutte le interfacce di rete disponibili. Ãˆ possibile escludere le reti indesiderate. Ãˆ necessario riavviare il server per applicare le modifiche.",
+    "info": "Per impostazione predefinita, GravitySend utilizza tutte le interfacce di rete disponibili. È possibile escludere le reti indesiderate. È necessario riavviare il server per applicare le modifiche.",
     "preview": "Anteprima",
     "whitelist": "Whitelist",
     "blacklist": "Blacklist"
   }
 }
+
 
 

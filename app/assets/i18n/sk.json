@@ -1,537 +1,538 @@
-ï»¿{
-  "locale": "SlovenÄina",
+{
+  "locale": "Slovencina",
   "appName": "GravitySend",
   "general": {
-    "accept": "PrijaÅ¥",
-    "accepted": "PrijatÃ©",
-    "add": "PridaÅ¥",
-    "advanced": "PokroÄilÃ©",
-    "cancel": "ZruÅ¡iÅ¥",
-    "close": "ZavrieÅ¥",
-    "confirm": "PotvrdiÅ¥",
-    "continueStr": "PokraÄovaÅ¥",
-    "copy": "KopÃ­rovaÅ¥",
-    "copiedToClipboard": "SkopÃ­rovanÃ© do schrÃ¡nky",
-    "decline": "OdmietnuÅ¥",
+    "accept": "Prijat",
+    "accepted": "Prijaté",
+    "add": "Pridat",
+    "advanced": "Pokrocilé",
+    "cancel": "Zrušit",
+    "close": "Zavriet",
+    "confirm": "Potvrdit",
+    "continueStr": "Pokracovat",
+    "copy": "Kopírovat",
+    "copiedToClipboard": "Skopírované do schránky",
+    "decline": "Odmietnut",
     "done": "Hotovo",
-    "delete": "OdstrÃ¡niÅ¥",
-    "edit": "UpraviÅ¥",
+    "delete": "Odstránit",
+    "edit": "Upravit",
     "error": "Chyba",
-    "example": "PrÃ­klad",
-    "files": "SÃºbory",
-    "finished": "DokonÄenÃ©",
-    "hide": "SkryÅ¥",
-    "off": "VypnutÃ©",
+    "example": "Príklad",
+    "files": "Súbory",
+    "finished": "Dokoncené",
+    "hide": "Skryt",
+    "off": "Vypnuté",
     "offline": "Offline",
-    "on": "ZapnutÃ©",
+    "on": "Zapnuté",
     "online": "Online",
-    "open": "OtvoriÅ¥",
+    "open": "Otvorit",
     "queue": "Fronta",
-    "quickSave": "RÃ½chle uloÅ¾enie",
-    "quickSaveFromFavorites": "RÃ½chle uloÅ¾enie pre \"ObÄ¾ÃºbenÃ©\"",
-    "renamed": "PremenovanÃ½",
-    "reset": "VrÃ¡tiÅ¥ spÃ¤Å¥ zmeny",
-    "restart": "ReÅ¡tartovaÅ¥",
+    "quickSave": "Rıchle uloenie",
+    "quickSaveFromFavorites": "Rıchle uloenie pre \"Oblúbené\"",
+    "renamed": "Premenovanı",
+    "reset": "Vrátit spät zmeny",
+    "restart": "Reštartovat",
     "settings": "Nastavenia",
-    "skipped": "PreskoÄenÃ©",
-    "start": "SpustiÅ¥",
-    "stop": "ZastaviÅ¥",
-    "save": "UloÅ¾iÅ¥",
-    "unchanged": "NezmenenÃ©",
-    "unknown": "NeznÃ¡me",
-    "noItemInClipboard": "Å½iadne poloÅ¾ky v schrÃ¡nke."
+    "skipped": "Preskocené",
+    "start": "Spustit",
+    "stop": "Zastavit",
+    "save": "Uloit",
+    "unchanged": "Nezmenené",
+    "unknown": "Neznáme",
+    "noItemInClipboard": "iadne poloky v schránke."
   },
   "receiveTab": {
-    "title": "PrijaÅ¥",
+    "title": "Prijat",
     "infoBox": {
       "ip": "IP:",
       "port": "Port:",
-      "alias": "NÃ¡zov zariadenia:"
+      "alias": "Názov zariadenia:"
     },
     "quickSave": {
       "off": "@:general.off",
-      "favorites": "ObÄ¾ÃºbenÃ©",
+      "favorites": "Oblúbené",
       "on": "@:general.on"
     }
   },
   "sendTab": {
-    "title": "OdoslaÅ¥",
+    "title": "Odoslat",
     "selection": {
-      "title": "VÃ½ber",
-      "files": "SÃºbory: {files}",
-      "size": "VeÄ¾kosÅ¥: {size}"
+      "title": "Vıber",
+      "files": "Súbory: {files}",
+      "size": "Velkost: {size}"
     },
     "picker": {
-      "file": "SÃºbor",
-      "folder": "PrieÄinok",
-      "media": "MÃ©diÃ¡",
+      "file": "Súbor",
+      "folder": "Priecinok",
+      "media": "Médiá",
       "text": "Text",
-      "app": "AplikÃ¡cia",
-      "clipboard": "VloÅ¾iÅ¥"
+      "app": "Aplikácia",
+      "clipboard": "Vloit"
     },
-    "shareIntentInfo": "Na jednoduchÅ¡Ã­ vÃ½ber sÃºborov mÃ´Å¾ete pouÅ¾iÅ¥ aj funkciu \"ZdieÄ¾aÅ¥\" vÃ¡Å¡ho mobilnÃ©ho zariadenia.",
-    "nearbyDevices": "Zariadenia v blÃ­zkosti",
+    "shareIntentInfo": "Na jednoduchší vıber súborov môete pouit aj funkciu \"Zdielat\" vášho mobilného zariadenia.",
+    "nearbyDevices": "Zariadenia v blízkosti",
     "thisDevice": "Toto zariadenie",
-    "scan": "VyhÄ¾adaÅ¥ zariadenia",
-    "manualSending": "ManuÃ¡lne odoslanie",
-    "sendMode": "ReÅ¾im odosielania",
+    "scan": "Vyhladat zariadenia",
+    "manualSending": "Manuálne odoslanie",
+    "sendMode": "Reim odosielania",
     "sendModes": {
-      "single": "Jeden prÃ­jemca",
-      "multiple": "ViacerÃ­ prÃ­jemcovia",
-      "link": "ZdieÄ¾aÅ¥ cez odkaz"
+      "single": "Jeden príjemca",
+      "multiple": "Viacerí príjemcovia",
+      "link": "Zdielat cez odkaz"
     },
     "sendModeHelp": "Vysvetlenie",
-    "help": "Uistite sa, Å¾e je poÅ¾adovanÃ© zariadenie v rovnakej Wi-Fi sieti.",
-    "placeItems": "Umiestnite poloÅ¾ky na zdieÄ¾anie."
+    "help": "Uistite sa, e je poadované zariadenie v rovnakej Wi-Fi sieti.",
+    "placeItems": "Umiestnite poloky na zdielanie."
   },
   "settingsTab": {
     "title": "Nastavenia",
     "general": {
-      "title": "VÅ¡eobecnÃ©",
-      "brightness": "TÃ©ma",
+      "title": "Všeobecné",
+      "brightness": "Téma",
       "brightnessOptions": {
-        "system": "SystÃ©movÃ¡",
-        "dark": "TmavÃ¡",
-        "light": "SvetlÃ¡"
+        "system": "Systémová",
+        "dark": "Tmavá",
+        "light": "Svetlá"
       },
       "color": "Farba",
       "colorOptions": {
-        "system": "SystÃ©movÃ¡",
+        "system": "Systémová",
         "oled": "OLED"
       },
       "language": "Jazyk",
       "languageOptions": {
-        "system": "SystÃ©movÃ½"
+        "system": "Systémovı"
       },
-      "saveWindowPlacement": "UloÅ¾iÅ¥ polohu okna po ukonÄenÃ­",
-      "saveWindowPlacementWindows": "UloÅ¾iÅ¥ polohu okna po ukonÄenÃ­",
-      "minimizeToTray": "MinimalizovaÅ¥ na systÃ©movÃ½ panel/panel ponuky pri zatvorenÃ­",
-      "launchAtStartup": "AutoÅ¡tart po prihlÃ¡senÃ­",
-      "launchMinimized": "AutoÅ¡tart: SpustiÅ¥ skrytÃ©",
-      "showInContextMenu": "ZobraziÅ¥ GravitySend v kontextovej ponuke",
-      "animations": "AnimÃ¡cie"
+      "saveWindowPlacement": "Uloit polohu okna po ukoncení",
+      "saveWindowPlacementWindows": "Uloit polohu okna po ukoncení",
+      "minimizeToTray": "Minimalizovat na systémovı panel/panel ponuky pri zatvorení",
+      "launchAtStartup": "Autoštart po prihlásení",
+      "launchMinimized": "Autoštart: Spustit skryté",
+      "showInContextMenu": "Zobrazit GravitySend v kontextovej ponuke",
+      "animations": "Animácie"
     },
     "receive": {
-      "title": "PrijaÅ¥",
+      "title": "Prijat",
       "quickSave": "@:general.quickSave",
       "quickSaveFromFavorites": "@:general.quickSaveFromFavorites",
       "requirePin": "@:webSharePage.requirePin",
-      "autoFinish": "AutomatickÃ© dokonÄenie",
-      "destination": "UloÅ¾iÅ¥ do prieÄinka",
-      "downloads": "(StiahnutÃ©)",
-      "saveToGallery": "UloÅ¾iÅ¥ mÃ©diÃ¡ do galÃ©rie",
-      "saveToHistory": "UloÅ¾iÅ¥ do histÃ³rie"
+      "autoFinish": "Automatické dokoncenie",
+      "destination": "Uloit do priecinka",
+      "downloads": "(Stiahnuté)",
+      "saveToGallery": "Uloit médiá do galérie",
+      "saveToHistory": "Uloit do histórie"
     },
     "send": {
-      "title": "OdoslaÅ¥",
-      "shareViaLinkAutoAccept": "Automaticky prijÃ­maÅ¥ Å¾iadosti v reÅ¾ime \"ZdieÄ¾aÅ¥ cez odkaz\""
+      "title": "Odoslat",
+      "shareViaLinkAutoAccept": "Automaticky prijímat iadosti v reime \"Zdielat cez odkaz\""
     },
     "network": {
-      "title": "SieÅ¥",
-      "needRestart": "Ak chcete pouÅ¾iÅ¥ nastavenia, reÅ¡tartujte server!",
+      "title": "Siet",
+      "needRestart": "Ak chcete pouit nastavenia, reštartujte server!",
       "server": "Server",
-      "alias": "NÃ¡zov zariadenia",
+      "alias": "Názov zariadenia",
       "deviceType": "Typ zariadenia",
       "deviceModel": "Model zariadenia",
       "port": "Port",
-      "discoveryTimeout": "ÄŒasovÃ½ limit hÄ¾adania",
-      "useSystemName": "PouÅ¾iÅ¥ systÃ©movÃ© meno",
-      "generateRandomAlias": "GenerovaÅ¥ nÃ¡hodnÃº prezÃ½vku",
-      "portWarning": "InÃ© zariadenia vÃ¡s nemusia rozpoznaÅ¥, pretoÅ¾e pouÅ¾Ã­vate vlastnÃ½ port. (predvolenÃ©: {defaultPort})",
-      "encryption": "Å ifrovanie",
+      "discoveryTimeout": "Casovı limit hladania",
+      "useSystemName": "Pouit systémové meno",
+      "generateRandomAlias": "Generovat náhodnú prezıvku",
+      "portWarning": "Iné zariadenia vás nemusia rozpoznat, pretoe pouívate vlastnı port. (predvolené: {defaultPort})",
+      "encryption": "Šifrovanie",
       "multicastGroup": "Multicast adresa",
-      "multicastGroupWarning": "InÃ© zariadenia vÃ¡s nemusia rozpoznaÅ¥, pretoÅ¾e pouÅ¾Ã­vate vlastnÃº multicast adresu. (predvolenÃ©: {defaultMulticast})",
-      "network": "SieÅ¥",
+      "multicastGroupWarning": "Iné zariadenia vás nemusia rozpoznat, pretoe pouívate vlastnú multicast adresu. (predvolené: {defaultMulticast})",
+      "network": "Siet",
       "networkOptions": {
-        "all": "VÅ¡etky",
-        "filtered": "FiltrovanÃ©"
+        "all": "Všetky",
+        "filtered": "Filtrované"
       }
     },
     "other": {
-      "title": "InÃ©",
+      "title": "Iné",
       "support": "Podporte GravitySend",
-      "donate": "DarovaÅ¥",
-      "privacyPolicy": "ZÃ¡sady ochrany osobnÃ½ch Ãºdajov",
-      "termsOfUse": "Podmienky pouÅ¾Ã­vania"
+      "donate": "Darovat",
+      "privacyPolicy": "Zásady ochrany osobnıch údajov",
+      "termsOfUse": "Podmienky pouívania"
     },
-    "advancedSettings": "PokroÄilÃ© nastavenia"
+    "advancedSettings": "Pokrocilé nastavenia"
   },
   "troubleshootPage": {
-    "title": "RieÅ¡enie problÃ©mov",
-    "subTitle": "AplikÃ¡cia nefunguje podÄ¾a oÄakÃ¡vania? Tu nÃ¡jdete niektorÃ© beÅ¾nÃ© rieÅ¡enia problÃ©mov.",
-    "solution": "RieÅ¡enie:",
-    "fixButton": "OpraviÅ¥ automaticky",
+    "title": "Riešenie problémov",
+    "subTitle": "Aplikácia nefunguje podla ocakávania? Tu nájdete niektoré bené riešenia problémov.",
+    "solution": "Riešenie:",
+    "fixButton": "Opravit automaticky",
     "firewall": {
-      "symptom": "Toto zariadenie mÃ´Å¾e odosielaÅ¥ sÃºbory do inÃ½ch zariadenÃ­, ale inÃ© zariadenia nemÃ´Å¾u odosielaÅ¥ sÃºbory do tohto zariadenia.",
-      "solution": "S najvÃ¤ÄÅ¡ou pravdepodobnosÅ¥ou ide o problÃ©m brÃ¡ny firewall. MÃ´Å¾ete to vyrieÅ¡iÅ¥ povolenÃ­m prichÃ¡dzajÃºcich spojenÃ­ (UDP a TCP) na porte {port}.",
-      "openFirewall": "OtvoriÅ¥ firewall"
+      "symptom": "Toto zariadenie môe odosielat súbory do inıch zariadení, ale iné zariadenia nemôu odosielat súbory do tohto zariadenia.",
+      "solution": "S najväcšou pravdepodobnostou ide o problém brány firewall. Môete to vyriešit povolením prichádzajúcich spojení (UDP a TCP) na porte {port}.",
+      "openFirewall": "Otvorit firewall"
     },
     "noDiscovery": {
-      "symptom": "Toto zariadenie nemÃ´Å¾e nÃ¡jsÅ¥ inÃ© zariadenia.",
-      "solution": "Uistite sa, Å¾e sÃº vÅ¡etky zariadenia v rovnakej Wi-Fi sieti a zdieÄ¾ajÃº rovnakÃº konfigurÃ¡ciu (port, multicast adresa, Å¡ifrovanie). MÃ´Å¾ete sa pokÃºsiÅ¥ zadaÅ¥ IP adresu cieÄ¾ovÃ©ho zariadenia ruÄne. Ak to funguje, zvÃ¡Å¾te pridanie tohto zariadenia do obÄ¾ÃºbenÃ½ch poloÅ¾iek, aby mohlo byÅ¥ v budÃºcnosti automaticky nÃ¡jdenÃ©."
+      "symptom": "Toto zariadenie nemôe nájst iné zariadenia.",
+      "solution": "Uistite sa, e sú všetky zariadenia v rovnakej Wi-Fi sieti a zdielajú rovnakú konfiguráciu (port, multicast adresa, šifrovanie). Môete sa pokúsit zadat IP adresu cielového zariadenia rucne. Ak to funguje, zváte pridanie tohto zariadenia do oblúbenıch poloiek, aby mohlo byt v budúcnosti automaticky nájdené."
     },
     "noConnection": {
-      "symptom": "Obe zariadenia sa nedokÃ¡Å¾u navzÃ¡jom nÃ¡jsÅ¥ ani nemÃ´Å¾u zdieÄ¾aÅ¥ sÃºbory.",
-      "solution": "Existuje problÃ©m na oboch stranÃ¡ch? Ak Ã¡no, musÃ­te sa uistiÅ¥, Å¾e sÃº obe zariadenia v rovnakej Wi-Fi sieti a majÃº rovnakÃº konfigurÃ¡ciu (port, multicastovÃº adresu, Å¡ifrovanie). SieÅ¥ Wi-Fi nemusÃ­ umoÅ¾ÅˆovaÅ¥ komunikÃ¡ciu medzi ÃºÄastnÃ­kmi (izolÃ¡cia prÃ­stupovÃ©ho bodu). V takom prÃ­pade musÃ­ byÅ¥ tÃ¡to moÅ¾nosÅ¥ povolenÃ¡ na smerovaÄi."
+      "symptom": "Obe zariadenia sa nedokáu navzájom nájst ani nemôu zdielat súbory.",
+      "solution": "Existuje problém na oboch stranách? Ak áno, musíte sa uistit, e sú obe zariadenia v rovnakej Wi-Fi sieti a majú rovnakú konfiguráciu (port, multicastovú adresu, šifrovanie). Siet Wi-Fi nemusí umonovat komunikáciu medzi úcastníkmi (izolácia prístupového bodu). V takom prípade musí byt táto monost povolená na smerovaci."
     }
   },
   "receiveHistoryPage": {
-    "title": "HistÃ³ria",
-    "openFolder": "OtvoriÅ¥ prieÄinok",
-    "deleteHistory": "OdstrÃ¡niÅ¥ histÃ³riu",
-    "empty": "HistÃ³ria je prÃ¡zdna.",
+    "title": "História",
+    "openFolder": "Otvorit priecinok",
+    "deleteHistory": "Odstránit históriu",
+    "empty": "História je prázdna.",
     "entryActions": {
-      "open": "OtvoriÅ¥ sÃºbor",
-      "showInFolder": "ZobraziÅ¥ v prieÄinku",
-      "info": "InformÃ¡cie",
-      "deleteFromHistory": "VymazaÅ¥ z histÃ³rie"
+      "open": "Otvorit súbor",
+      "showInFolder": "Zobrazit v priecinku",
+      "info": "Informácie",
+      "deleteFromHistory": "Vymazat z histórie"
     }
   },
   "apkPickerPage": {
-    "title": "AplikÃ¡cie (APK)",
-    "excludeSystemApps": "VylÃºÄiÅ¥ systÃ©movÃ© aplikÃ¡cie",
-    "excludeAppsWithoutLaunchIntent": "VylÃºÄiÅ¥ nespustiteÄ¾nÃ© aplikÃ¡cie",
-    "apps": "{n} AplikÃ¡cie"
+    "title": "Aplikácie (APK)",
+    "excludeSystemApps": "Vylúcit systémové aplikácie",
+    "excludeAppsWithoutLaunchIntent": "Vylúcit nespustitelné aplikácie",
+    "apps": "{n} Aplikácie"
   },
   "selectedFilesPage": {
-    "deleteAll": "VymazaÅ¥ vÅ¡etky"
+    "deleteAll": "Vymazat všetky"
   },
   "receivePage": {
     "subTitle": {
-      "one": "vÃ¡m chce poslaÅ¥ sÃºbor",
-      "other": "vÃ¡m chce poslaÅ¥ {n} sÃºborov"
+      "one": "vám chce poslat súbor",
+      "other": "vám chce poslat {n} súborov"
     },
-    "subTitleMessage": "vÃ¡m poslal sprÃ¡vu:",
-    "subTitleLink": "vÃ¡m poslal odkaz:",
-    "canceled": "OdosielateÄ¾ zruÅ¡il Å¾iadosÅ¥."
+    "subTitleMessage": "vám poslal správu:",
+    "subTitleLink": "vám poslal odkaz:",
+    "canceled": "Odosielatel zrušil iadost."
   },
   "receiveOptionsPage": {
-    "title": "MoÅ¾nosti",
+    "title": "Monosti",
     "destination": "@:settingsTab.receive.destination",
-    "appDirectory": "(PrieÄinok GravitySend)",
+    "appDirectory": "(Priecinok GravitySend)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "Automaticky vypnutÃ©, pretoÅ¾e existujÃº prieÄinky."
+    "saveToGalleryOff": "Automaticky vypnuté, pretoe existujú priecinky."
   },
   "sendPage": {
-    "waiting": "ÄŒakÃ¡ sa na odpoveÄâ€¦",
-    "rejected": "PrÃ­jemca zamietol Å¾iadosÅ¥.",
+    "waiting": "Caká sa na odpoved…",
+    "rejected": "Príjemca zamietol iadost.",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "PrÃ­jemca je zaneprÃ¡zdnenÃ½ inou Å¾iadosÅ¥ou."
+    "busy": "Príjemca je zaneprázdnenı inou iadostou."
   },
   "progressPage": {
-    "titleSending": "Odosielanie sÃºborov",
-    "titleReceiving": "PrijÃ­manie sÃºborov",
-    "savedToGallery": "UloÅ¾enÃ© vo FotkÃ¡ch",
+    "titleSending": "Odosielanie súborov",
+    "titleReceiving": "Prijímanie súborov",
+    "savedToGallery": "Uloené vo Fotkách",
     "total": {
       "title": {
-        "sending": "CelkovÃ½ priebeh ({time})",
-        "finishedError": "DokonÄenÃ© s chybou",
-        "canceledSender": "ZruÅ¡enÃ© odosielateÄ¾om",
-        "canceledReceiver": "ZruÅ¡enÃ© prÃ­jemcom"
+        "sending": "Celkovı priebeh ({time})",
+        "finishedError": "Dokoncené s chybou",
+        "canceledSender": "Zrušené odosielatelom",
+        "canceledReceiver": "Zrušené príjemcom"
       },
-      "count": "SÃºbory: {curr} / {n}",
-      "size": "VeÄ¾kosÅ¥: {curr} / {n}",
-      "speed": "RÃ½chlosÅ¥: {speed}/s"
+      "count": "Súbory: {curr} / {n}",
+      "size": "Velkost: {curr} / {n}",
+      "speed": "Rıchlost: {speed}/s"
     },
     "remainingTime": {
       "seconds": "{n}:{ss}",
       "minutes": "{n}:{ss}",
       "hours": "{h}h {m}m",
       "days": "{d}d {h}h {m}m",
-      "@hours": "PouÅ¾iÅ¥ â€hâ€œ pre skratku hodÃ­n a â€mâ€œ pre minÃºty",
-      "@days": "PouÅ¾iÅ¥ â€dâ€œ pre dni, â€hâ€œ pre hodiny a â€mâ€œ pre minÃºty"
+      "@hours": "Pouit „h“ pre skratku hodín a „m“ pre minúty",
+      "@days": "Pouit „d“ pre dni, „h“ pre hodiny a „m“ pre minúty"
     }
   },
   "webSharePage": {
-    "title": "ZdieÄ¾aÅ¥ cez odkaz",
-    "loading": "SpÃºÅ¡Å¥a sa serverâ€¦",
-    "stopping": "Zastavuje sa serverâ€¦",
-    "error": "Pri spÃºÅ¡Å¥anÃ­ servera sa vyskytla chyba.",
+    "title": "Zdielat cez odkaz",
+    "loading": "Spúšta sa server…",
+    "stopping": "Zastavuje sa server…",
+    "error": "Pri spúštaní servera sa vyskytla chyba.",
     "openLink": {
-      "one": "Otvorte tento odkaz vo svojom prehliadaÄi:",
-      "other": "Otvorte jeden z tÃ½chto odkazov vo svojom prehliadaÄi:"
+      "one": "Otvorte tento odkaz vo svojom prehliadaci:",
+      "other": "Otvorte jeden z tıchto odkazov vo svojom prehliadaci:"
     },
-    "requests": "Å½iadosti",
-    "noRequests": "ZatiaÄ¾ Å¾iadne Å¾iadosti.",
+    "requests": "iadosti",
+    "noRequests": "Zatial iadne iadosti.",
     "encryption": "@:settingsTab.network.encryption",
-    "autoAccept": "Automaticky prijÃ­maÅ¥ Å¾iadosti",
-    "requirePin": "VyÅ¾adovaÅ¥ PIN",
+    "autoAccept": "Automaticky prijímat iadosti",
+    "requirePin": "Vyadovat PIN",
     "pinHint": "PIN je \"{pin}\"",
-    "encryptionHint": "GravitySend pouÅ¾Ã­va certifikÃ¡t s vlastnÃ½m podpisom. MusÃ­te ho prijaÅ¥ vo svojom prehliadaÄi.",
-    "pendingRequests": "NespracovanÃ© Å¾iadosti: {n}"
+    "encryptionHint": "GravitySend pouíva certifikát s vlastnım podpisom. Musíte ho prijat vo svojom prehliadaci.",
+    "pendingRequests": "Nespracované iadosti: {n}"
   },
   "aboutPage": {
-    "title": "O aplikÃ¡cii GravitySend",
+    "title": "O aplikácii GravitySend",
     "description": [
-      "GravitySend je bezplatnÃ¡ aplikÃ¡cia s otvorenÃ½m zdrojovÃ½m kÃ³dom, ktorÃ¡ vÃ¡m umoÅ¾Åˆuje bezpeÄne zdieÄ¾aÅ¥ sÃºbory a sprÃ¡vy so zariadeniami v okolÃ­ cez vaÅ¡u lokÃ¡lnu sieÅ¥ bez potreby pripojenia k internetu.",
-      "TÃ¡to aplikÃ¡cia je dostupnÃ¡ pre Android, iOS, macOS, Windows a Linux. VÅ¡etky moÅ¾nosti stiahnutia nÃ¡jdete na oficiÃ¡lnej domovskej strÃ¡nke."
+      "GravitySend je bezplatná aplikácia s otvorenım zdrojovım kódom, ktorá vám umonuje bezpecne zdielat súbory a správy so zariadeniami v okolí cez vašu lokálnu siet bez potreby pripojenia k internetu.",
+      "Táto aplikácia je dostupná pre Android, iOS, macOS, Windows a Linux. Všetky monosti stiahnutia nájdete na oficiálnej domovskej stránke."
     ],
     "author": "Autor",
     "contributors": "Prispievatelia",
-    "packagers": "Zostavovatelia balÃ­kov",
+    "packagers": "Zostavovatelia balíkov",
     "translators": "Prekladatelia"
   },
   "donationPage": {
-    "title": "DarovaÅ¥",
-    "info": "GravitySend je bezplatnÃ½, s otvorenÃ½m kÃ³dom a bez reklÃ¡m. Ak sa vÃ¡m aplikÃ¡cia pÃ¡Äi, mÃ´Å¾ete jej vÃ½voj podporiÅ¥ darom.",
-    "donate": "DarovaÅ¥ {amount}",
-    "thanks": "Äakujeme veÄ¾mi pekne!",
-    "restore": "ObnoviÅ¥ nÃ¡kup"
+    "title": "Darovat",
+    "info": "GravitySend je bezplatnı, s otvorenım kódom a bez reklám. Ak sa vám aplikácia páci, môete jej vıvoj podporit darom.",
+    "donate": "Darovat {amount}",
+    "thanks": "Dakujeme velmi pekne!",
+    "restore": "Obnovit nákup"
   },
   "changelogPage": {
     "title": "Zoznam zmien"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
-    "@info": "RÃ´zne miestne nastavenia mÃ´Å¾u maÅ¥ rÃ´zne slovÃ¡, nemusia sa presne zhodovaÅ¥",
+    "@info": "Rôzne miestne nastavenia môu mat rôzne slová, nemusia sa presne zhodovat",
     "adjectives": [
-      "RozkoÅ¡nÃ¡",
-      "KrÃ¡sna",
-      "VeÄ¾kÃ¡",
-      "Ä½ahkÃ¡",
-      "OkÃºzÄ¾ujÃºca",
-      "Å ikovnÃ¡",
-      "PohodovÃ¡",
-      "RoztomilÃ¡",
-      "PrefÃ­kanÃ¡",
-      "OdhodlanÃ¡",
-      "EnergickÃ¡",
-      "EfektÃ­vna",
-      "FantastickÃ¡",
-      "RÃ½chla",
-      "FajnÃ¡",
-      "ÄŒerstvÃ¡",
-      "DobrÃ¡",
-      "NÃ¡dhernÃ¡",
-      "SkvelÃ¡",
-      "SympatickÃ¡",
-      "HorÃºca",
-      "MilÃ¡",
-      "ZvodnÃ¡",
-      "MystickÃ¡",
-      "ÄŒistÃ¡",
-      "ÃšhÄ¾adnÃ¡",
-      "TrpezlivÃ¡",
-      "PeknÃ¡",
-      "VÃ½konnÃ¡",
-      "BohatÃ¡",
-      "TajomnÃ¡",
-      "InteligentnÃ¡",
-      "PÃ´vabnÃ¡",
-      "Å peciÃ¡lna",
-      "StrategickÃ¡",
-      "SilnÃ¡",
-      "VÃ¡Å¡nivÃ¡",
-      "MÃºdra"
+      "Rozkošná",
+      "Krásna",
+      "Velká",
+      "Lahká",
+      "Okúzlujúca",
+      "Šikovná",
+      "Pohodová",
+      "Roztomilá",
+      "Prefíkaná",
+      "Odhodlaná",
+      "Energická",
+      "Efektívna",
+      "Fantastická",
+      "Rıchla",
+      "Fajná",
+      "Cerstvá",
+      "Dobrá",
+      "Nádherná",
+      "Skvelá",
+      "Sympatická",
+      "Horúca",
+      "Milá",
+      "Zvodná",
+      "Mystická",
+      "Cistá",
+      "Úhladná",
+      "Trpezlivá",
+      "Pekná",
+      "Vıkonná",
+      "Bohatá",
+      "Tajomná",
+      "Inteligentná",
+      "Pôvabná",
+      "Špeciálna",
+      "Strategická",
+      "Silná",
+      "Vášnivá",
+      "Múdra"
     ],
     "fruits": [
-      "hruÅ¡ka",
-      "viÅ¡Åˆa",
-      "ÄereÅ¡Åˆa",
-      "broskyÅˆa",
+      "hruška",
+      "višna",
+      "cerešna",
+      "broskyna",
       "slivka",
-      "marhuÄ¾a",
+      "marhula",
       "ringlota",
-      "ÄuÄoriedka",
+      "cucoriedka",
       "brusnica",
-      "rÃ­bezÄ¾a",
+      "ríbezla",
       "malina",
       "jahoda",
-      "moruÅ¡a",
-      "mandarÃ­nka",
+      "moruša",
+      "mandarínka",
       "marakuja",
-      "datÄ¾a",
+      "datla",
       "dula",
       "figa",
       "limetka",
-      "papÃ¡ja",
+      "papája",
       "tekvica",
-      "akÃ©bia",
+      "akébia",
       "brokolica",
-      "cibuÄ¾a",
+      "cibula",
       "kapusta",
       "paradajka"
     ],
     "combination": "{adjective} {fruit}",
-    "@combination": "V niektorÃ½ch jazykoch musÃ­ byÅ¥ prÃ­davnÃ© meno poslednÃ©."
+    "@combination": "V niektorıch jazykoch musí byt prídavné meno posledné."
   },
   "dialogs": {
     "addFile": {
-      "title": "PridaÅ¥ do vÃ½beru",
-      "content": "ÄŒo chcete pridaÅ¥?"
+      "title": "Pridat do vıberu",
+      "content": "Co chcete pridat?"
     },
     "openFile": {
-      "title": "OtvoriÅ¥ sÃºbor",
-      "content": "Chcete otvoriÅ¥ prijatÃ½ sÃºbor?"
+      "title": "Otvorit súbor",
+      "content": "Chcete otvorit prijatı súbor?"
     },
     "addressInput": {
       "title": "Zadajte adresu",
       "hashtag": "Hashtag",
       "ip": "IP adresa",
-      "recentlyUsed": "NedÃ¡vno pouÅ¾itÃ©: "
+      "recentlyUsed": "Nedávno pouité: "
     },
     "cancelSession": {
-      "title": "ZruÅ¡iÅ¥ prenos sÃºborov",
-      "content": "Naozaj chcete zruÅ¡iÅ¥ prenos sÃºborov?"
+      "title": "Zrušit prenos súborov",
+      "content": "Naozaj chcete zrušit prenos súborov?"
     },
     "cannotOpenFile": {
-      "title": "Nie je moÅ¾nÃ© otvoriÅ¥ sÃºbor",
-      "content": "Nepodarilo sa otvoriÅ¥ sÃºbor \"{file}\". Bol tento sÃºbor presunutÃ½, premenovanÃ½ alebo odstrÃ¡nenÃ½?"
+      "title": "Nie je moné otvorit súbor",
+      "content": "Nepodarilo sa otvorit súbor \"{file}\". Bol tento súbor presunutı, premenovanı alebo odstránenı?"
     },
     "encryptionDisabledNotice": {
-      "title": "Å ifrovanie je vypnutÃ©",
-      "content": "KomunikÃ¡cia teraz prebieha cez neÅ¡ifrovanÃ½ protokol HTTP. Ak chcete pouÅ¾iÅ¥ protokol HTTPS, opÃ¤Å¥ povoÄ¾te Å¡ifrovanie."
+      "title": "Šifrovanie je vypnuté",
+      "content": "Komunikácia teraz prebieha cez nešifrovanı protokol HTTP. Ak chcete pouit protokol HTTPS, opät povolte šifrovanie."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteDialog": {
-      "title": "ObÄ¾ÃºbenÃ©",
-      "noFavorites": "ZatiaÄ¾ Å¾iadne obÄ¾ÃºbenÃ© zariadenia.",
-      "addFavorite": "PridaÅ¥"
+      "title": "Oblúbené",
+      "noFavorites": "Zatial iadne oblúbené zariadenia.",
+      "addFavorite": "Pridat"
     },
     "favoriteDeleteDialog": {
-      "title": "OdstrÃ¡niÅ¥ z obÄ¾ÃºbenÃ½ch",
-      "content": "Naozaj chcete odstrÃ¡niÅ¥ \"{name}\" z obÄ¾ÃºbenÃ½ch?"
+      "title": "Odstránit z oblúbenıch",
+      "content": "Naozaj chcete odstránit \"{name}\" z oblúbenıch?"
     },
     "favoriteEditDialog": {
-      "titleAdd": "PridaÅ¥ k obÄ¾ÃºbenÃ½m",
+      "titleAdd": "Pridat k oblúbenım",
       "titleEdit": "Nastavenia",
-      "name": "NÃ¡zov zariadenia",
+      "name": "Názov zariadenia",
       "auto": "(automaticky)",
       "ip": "IP adresa",
       "port": "Port"
     },
     "fileInfo": {
-      "title": "InformÃ¡cie o sÃºbore",
-      "fileName": "NÃ¡zov sÃºboru:",
+      "title": "Informácie o súbore",
+      "fileName": "Názov súboru:",
       "path": "Cesta:",
-      "size": "VeÄ¾kosÅ¥:",
-      "sender": "OdosielateÄ¾:",
-      "time": "ÄŒas:"
+      "size": "Velkost:",
+      "sender": "Odosielatel:",
+      "time": "Cas:"
     },
     "fileNameInput": {
-      "title": "Zadajte nÃ¡zov sÃºboru",
-      "original": "OriginÃ¡l: {original}"
+      "title": "Zadajte názov súboru",
+      "original": "Originál: {original}"
     },
     "historyClearDialog": {
-      "title": "VymazaÅ¥ histÃ³riu",
-      "content": "Naozaj chcete vymazaÅ¥ celÃº histÃ³riu?"
+      "title": "Vymazat históriu",
+      "content": "Naozaj chcete vymazat celú históriu?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "GravitySend nemÃ´Å¾e nÃ¡jsÅ¥ inÃ© zariadenia bez povolenia na prehÄ¾adanie lokÃ¡lnej siete. PovoÄ¾te prosÃ­m toto povolenie v nastaveniach.",
+      "description": "GravitySend nemôe nájst iné zariadenia bez povolenia na prehladanie lokálnej siete. Povolte prosím toto povolenie v nastaveniach.",
       "gotoSettings": "Nastavenia"
     },
     "messageInput": {
-      "title": "NapÃ­Å¡te sprÃ¡vu",
-      "multiline": "ViacriadkovÃ¡"
+      "title": "Napíšte správu",
+      "multiline": "Viacriadková"
     },
     "noFiles": {
-      "title": "Nie sÃº vybratÃ© Å¾iadne sÃºbory",
-      "content": "Vyberte prosÃ­m aspoÅˆ jeden sÃºbor."
+      "title": "Nie sú vybraté iadne súbory",
+      "content": "Vyberte prosím aspon jeden súbor."
     },
     "noPermission": {
-      "title": "Å½iadne povolenie",
-      "content": "Neudelili ste potrebnÃ© povolenia. UdeÄ¾te ich prosÃ­m v nastaveniach."
+      "title": "iadne povolenie",
+      "content": "Neudelili ste potrebné povolenia. Udelte ich prosím v nastaveniach."
     },
     "notAvailableOnPlatform": {
-      "title": "Nie je k dispozÃ­cii",
-      "content": "TÃ¡to funkcia je dostupnÃ¡ iba na:"
+      "title": "Nie je k dispozícii",
+      "content": "Táto funkcia je dostupná iba na:"
     },
     "qr": {
-      "title": "QR kÃ³d"
+      "title": "QR kód"
     },
     "quickActions": {
-      "title": "RÃ½chle akcie",
-      "counter": "PoÄÃ­tadlo",
+      "title": "Rıchle akcie",
+      "counter": "Pocítadlo",
       "prefix": "Predpona",
-      "padZero": "VyplniÅ¥ s nulami",
-      "sortBeforeCount": "Vopred zoradiÅ¥ podÄ¾a abecedy (A-Z)",
-      "random": "NÃ¡hodne"
+      "padZero": "Vyplnit s nulami",
+      "sortBeforeCount": "Vopred zoradit podla abecedy (A-Z)",
+      "random": "Náhodne"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "Å½iadosti o sÃºbor sÃº automaticky akceptovanÃ©. Uvedomte si, Å¾e kaÅ¾dÃ½ v miestnej sieti vÃ¡m mÃ´Å¾e posielaÅ¥ sÃºbory."
+      "content": "iadosti o súbor sú automaticky akceptované. Uvedomte si, e kadı v miestnej sieti vám môe posielat súbory."
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "Å½iadosti o sÃºbory sa teraz automaticky prijÃ­majÃº zo zariadenÃ­ vo vaÅ¡om zozname obÄ¾ÃºbenÃ½ch.",
-        "Varovanie! V sÃºÄasnosti to nie je Ãºplne bezpeÄnÃ©, pretoÅ¾e hacker, ktorÃ½ mÃ¡ odtlaÄok prsta akÃ©hokoÄ¾vek zariadenia zo zoznamu obÄ¾ÃºbenÃ½ch, vÃ¡m mÃ´Å¾e posielaÅ¥ sÃºbory bez obmedzenia.",
-        "TÃ¡to moÅ¾nosÅ¥ je vÅ¡ak stÃ¡le bezpeÄnejÅ¡ia ako povoliÅ¥ vÅ¡etkÃ½m pouÅ¾Ã­vateÄ¾om v miestnej sieti posielaÅ¥ sÃºbory bez obmedzenia."
+        "iadosti o súbory sa teraz automaticky prijímajú zo zariadení vo vašom zozname oblúbenıch.",
+        "Varovanie! V súcasnosti to nie je úplne bezpecné, pretoe hacker, ktorı má odtlacok prsta akéhokolvek zariadenia zo zoznamu oblúbenıch, vám môe posielat súbory bez obmedzenia.",
+        "Táto monost je však stále bezpecnejšia ako povolit všetkım pouívatelom v miestnej sieti posielat súbory bez obmedzenia."
       ]
     },
     "pin": {
       "title": "Zadajte PIN"
     },
     "sendModeHelp": {
-      "title": "ReÅ¾imy odosielania",
-      "single": "OdoÅ¡le sÃºbory jednÃ©mu prÃ­jemcovi. VÃ½ber sa vymaÅ¾e po dokonÄenÃ­ prenosu sÃºborov.",
-      "multiple": "Posiela sÃºbory viacerÃ½m prÃ­jemcom. VÃ½ber sa vymaÅ¾e po dokonÄenÃ­ prenosu sÃºborov.",
-      "link": "PrÃ­jemcovia, ktorÃ­ nemajÃº nainÅ¡talovanÃ½ GravitySend, si mÃ´Å¾u stiahnuÅ¥ vybranÃ© sÃºbory otvorenÃ­m odkazu vo svojom prehliadaÄi."
+      "title": "Reimy odosielania",
+      "single": "Odošle súbory jednému príjemcovi. Vıber sa vymae po dokoncení prenosu súborov.",
+      "multiple": "Posiela súbory viacerım príjemcom. Vıber sa vymae po dokoncení prenosu súborov.",
+      "link": "Príjemcovia, ktorí nemajú nainštalovanı GravitySend, si môu stiahnut vybrané súbory otvorením odkazu vo svojom prehliadaci."
     },
     "zoom": {
       "title": "URL"
     }
   },
   "sanitization": {
-    "empty": "NÃ¡zov sÃºboru nemÃ´Å¾e byÅ¥ prÃ¡zdny",
-    "invalid": "NÃ¡zov sÃºboru obsahuje neplatnÃ© znaky"
+    "empty": "Názov súboru nemôe byt prázdny",
+    "invalid": "Názov súboru obsahuje neplatné znaky"
   },
   "tray": {
-    "@info": "Pokyny spoloÄnosti Apple sÃº veÄ¾mi prÃ­sne, pokiaÄ¾ ide o vÃ½raz \"blÃ­zke\".",
+    "@info": "Pokyny spolocnosti Apple sú velmi prísne, pokial ide o vıraz \"blízke\".",
     "open": "@:general.open",
-    "close": "UkonÄiÅ¥ GravitySend",
-    "closeWindows": "UkonÄiÅ¥"
+    "close": "Ukoncit GravitySend",
+    "closeWindows": "Ukoncit"
   },
   "web": {
     "waiting": "@:sendPage.waiting",
     "enterPin": "Zadajte PIN",
-    "invalidPin": "NeplatnÃ½ PIN kÃ³d",
-    "tooManyAttempts": "PrÃ­liÅ¡ veÄ¾a pokusov",
-    "rejected": "OdmietnutÃ©",
-    "files": "SÃºbory",
-    "fileName": "NÃ¡zov sÃºboru",
-    "size": "VeÄ¾kosÅ¥"
+    "invalidPin": "Neplatnı PIN kód",
+    "tooManyAttempts": "Príliš vela pokusov",
+    "rejected": "Odmietnuté",
+    "files": "Súbory",
+    "fileName": "Názov súboru",
+    "size": "Velkost"
   },
   "assetPicker": {
-    "@info": "Preklady pre nÃ¡stroj na vÃ½ber mÃ©diÃ­ pre Android a iPhone",
-    "confirm": "PotvrdiÅ¥",
-    "cancel": "ZruÅ¡iÅ¥",
-    "edit": "UpraviÅ¥",
+    "@info": "Preklady pre nástroj na vıber médií pre Android a iPhone",
+    "confirm": "Potvrdit",
+    "cancel": "Zrušit",
+    "edit": "Upravit",
     "gifIndicator": "GIF",
-    "loadFailed": "NaÄÃ­tanie zlyhalo",
-    "original": "PÃ´vod",
-    "preview": "UkÃ¡Å¾ka",
-    "select": "VybraÅ¥",
-    "emptyList": "PrÃ¡zdny zoznam",
-    "unSupportedAssetType": "NepodporovanÃ½ typ sÃºboru.",
-    "unableToAccessAll": "Nie je moÅ¾nÃ© zÃ­skaÅ¥ prÃ­stup ku vÅ¡etkÃ½m sÃºborom v zariadenÃ­",
-    "viewingLimitedAssetsTip": "ZobraziÅ¥ iba sÃºbory a albumy, ktorÃ© mÃ¡ aplikÃ¡cia prÃ­stupnÃ©.",
-    "changeAccessibleLimitedAssets": "KliknutÃ­m aktualizujete prÃ­stupnÃ© sÃºbory",
-    "accessAllTip": "AplikÃ¡cia mÃ¡ prÃ­stup iba k niektorÃ½m sÃºborom v zariadenÃ­. Prejdite do systÃ©movÃ½ch nastavenÃ­ a povoÄ¾te aplikÃ¡cii prÃ­stup ku vÅ¡etkÃ½m mÃ©diÃ¡m v zariadenÃ­.",
-    "goToSystemSettings": "Prejdite do nastavenÃ­ systÃ©mu",
-    "accessLimitedAssets": "PokraÄovaÅ¥ s obmedzenÃ½m prÃ­stupom",
-    "accessiblePathName": "PrÃ­stupnÃ© sÃºbory",
+    "loadFailed": "Nacítanie zlyhalo",
+    "original": "Pôvod",
+    "preview": "Ukáka",
+    "select": "Vybrat",
+    "emptyList": "Prázdny zoznam",
+    "unSupportedAssetType": "Nepodporovanı typ súboru.",
+    "unableToAccessAll": "Nie je moné získat prístup ku všetkım súborom v zariadení",
+    "viewingLimitedAssetsTip": "Zobrazit iba súbory a albumy, ktoré má aplikácia prístupné.",
+    "changeAccessibleLimitedAssets": "Kliknutím aktualizujete prístupné súbory",
+    "accessAllTip": "Aplikácia má prístup iba k niektorım súborom v zariadení. Prejdite do systémovıch nastavení a povolte aplikácii prístup ku všetkım médiám v zariadení.",
+    "goToSystemSettings": "Prejdite do nastavení systému",
+    "accessLimitedAssets": "Pokracovat s obmedzenım prístupom",
+    "accessiblePathName": "Prístupné súbory",
     "sTypeAudioLabel": "Zvuk",
-    "sTypeImageLabel": "ObrÃ¡zok",
+    "sTypeImageLabel": "Obrázok",
     "sTypeVideoLabel": "Video",
-    "sTypeOtherLabel": "InÃ© mÃ©diÃ¡",
-    "sActionPlayHint": "prehraÅ¥",
-    "sActionPreviewHint": "nÃ¡hÄ¾ad",
-    "sActionSelectHint": "vyberaÅ¥",
-    "sActionSwitchPathLabel": "zmeniÅ¥ cestu",
-    "sActionUseCameraHint": "pouÅ¾iÅ¥ fotoaparÃ¡t",
+    "sTypeOtherLabel": "Iné médiá",
+    "sActionPlayHint": "prehrat",
+    "sActionPreviewHint": "náhlad",
+    "sActionSelectHint": "vyberat",
+    "sActionSwitchPathLabel": "zmenit cestu",
+    "sActionUseCameraHint": "pouit fotoaparát",
     "sNameDurationLabel": "trvanie",
-    "sUnitAssetCountLabel": "poÄet"
+    "sUnitAssetCountLabel": "pocet"
   },
   "networkInterfacesPage": {
-    "info": "V predvolenom nastavenÃ­ GravitySend pouÅ¾Ã­va vÅ¡etky dostupnÃ© sieÅ¥ovÃ© rozhrania. NeÅ¾iaduce siete tu mÃ´Å¾ete vylÃºÄiÅ¥. Na uplatnenie zmien je potrebnÃ© reÅ¡tartovaÅ¥ server.",
-    "preview": "NÃ¡hÄ¾ad",
-    "blacklist": "Zoznam zakÃ¡zanÃ½ch",
-    "title": "SieÅ¥ovÃ© rozhrania",
-    "whitelist": "Zoznam povolenÃ½ch"
+    "info": "V predvolenom nastavení GravitySend pouíva všetky dostupné sietové rozhrania. Neiaduce siete tu môete vylúcit. Na uplatnenie zmien je potrebné reštartovat server.",
+    "preview": "Náhlad",
+    "blacklist": "Zoznam zakázanıch",
+    "title": "Sietové rozhrania",
+    "whitelist": "Zoznam povolenıch"
   }
 }
+
 
 

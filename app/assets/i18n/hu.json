@@ -1,24 +1,24 @@
-ï»¿{
+{
   "locale": "Magyar",
   "appName": "GravitySend",
   "general": {
     "accept": "Elfogad",
     "accepted": "Elfogadva",
-    "add": "HozzÃ¡ad",
-    "advanced": "HaladÃ³",
-    "cancel": "MÃ©gse",
-    "close": "BezÃ¡r",
-    "confirm": "MegerÅ‘sÃ­t",
+    "add": "Hozzáad",
+    "advanced": "Haladó",
+    "cancel": "Mégse",
+    "close": "Bezár",
+    "confirm": "Megerosít",
     "continueStr": "Folytat",
-    "copy": "MÃ¡sol",
-    "copiedToClipboard": "MÃ¡solva a vÃ¡gÃ³lapra",
-    "decline": "ElutasÃ­t",
-    "done": "KÃ©sz",
-    "delete": "TÃ¶rÃ¶l",
+    "copy": "Másol",
+    "copiedToClipboard": "Másolva a vágólapra",
+    "decline": "Elutasít",
+    "done": "Kész",
+    "delete": "Töröl",
     "edit": "Szerkeszt",
     "error": "Hiba",
-    "example": "PÃ©lda",
-    "files": "FÃ¡jlok",
+    "example": "Példa",
+    "files": "Fájlok",
     "finished": "Befejezve",
     "hide": "Elrejt",
     "off": "Ki",
@@ -26,27 +26,27 @@
     "on": "Be",
     "online": "Online",
     "open": "Megnyit",
-    "queue": "VÃ¡rÃ³sor",
-    "quickSave": "Autom. mentÃ©s",
-    "quickSaveFromFavorites": "Gyors mentÃ©s a \"Kedvencek\"-hez",
-    "renamed": "Ãtnevezve",
+    "queue": "Várósor",
+    "quickSave": "Autom. mentés",
+    "quickSaveFromFavorites": "Gyors mentés a \"Kedvencek\"-hez",
+    "renamed": "Átnevezve",
     "reset": "Reset",
-    "restart": "ÃšjraindÃ­t",
-    "settings": "BeÃ¡llÃ­tÃ¡sok",
+    "restart": "Újraindít",
+    "settings": "Beállítások",
     "skipped": "Kihagyva",
     "start": "Start",
     "stop": "Stop",
     "save": "Ment",
-    "unchanged": "VÃ¡ltozatlan",
+    "unchanged": "Változatlan",
     "unknown": "Ismeretlen",
-    "noItemInClipboard": "Nincs semmi a vÃ¡gÃ³lapon."
+    "noItemInClipboard": "Nincs semmi a vágólapon."
   },
   "receiveTab": {
-    "title": "FogadÃ¡s",
+    "title": "Fogadás",
     "infoBox": {
       "ip": "IP:",
       "port": "Port:",
-      "alias": "ÃlnÃ©v:"
+      "alias": "Álnév:"
     },
     "quickSave": {
       "off": "@:general.off",
@@ -55,46 +55,46 @@
     }
   },
   "sendTab": {
-    "title": "KÃ¼ldÃ©s",
+    "title": "Küldés",
     "selection": {
-      "title": "KivÃ¡lasztÃ¡s",
-      "files": "FÃ¡jl(ok): {files}",
-      "size": "MÃ©ret: {size}"
+      "title": "Kiválasztás",
+      "files": "Fájl(ok): {files}",
+      "size": "Méret: {size}"
     },
     "picker": {
-      "file": "FÃ¡jl",
+      "file": "Fájl",
       "folder": "Mappa",
-      "media": "MÃ©dia",
-      "text": "SzÃ¶veg",
+      "media": "Média",
+      "text": "Szöveg",
       "app": "App",
-      "clipboard": "BeillesztÃ©s"
+      "clipboard": "Beillesztés"
     },
-    "shareIntentInfo": "A fÃ¡jlok kÃ¶nnyebb kivÃ¡lasztÃ¡sÃ¡hoz hasznÃ¡lhatja mobileszkÃ¶ze \"MegosztÃ¡s\" funkciÃ³jÃ¡t is.",
-    "nearbyDevices": "KÃ¶zeli eszkÃ¶zÃ¶k",
-    "thisDevice": "Ez az eszkÃ¶z",
-    "scan": "Keressen eszkÃ¶zÃ¶ket",
-    "manualSending": "ManuÃ¡lis kÃ¼ldÃ©s",
-    "sendMode": "KÃ¼ldÃ©si mÃ³d",
+    "shareIntentInfo": "A fájlok könnyebb kiválasztásához használhatja mobileszköze \"Megosztás\" funkcióját is.",
+    "nearbyDevices": "Közeli eszközök",
+    "thisDevice": "Ez az eszköz",
+    "scan": "Keressen eszközöket",
+    "manualSending": "Manuális küldés",
+    "sendMode": "Küldési mód",
     "sendModes": {
-      "single": "Egyetlen cÃ­mzett",
-      "multiple": "TÃ¶bb cÃ­mzett",
-      "link": "MegosztÃ¡s linkben"
+      "single": "Egyetlen címzett",
+      "multiple": "Több címzett",
+      "link": "Megosztás linkben"
     },
-    "sendModeHelp": "MagyarÃ¡zat",
-    "help": "GyÅ‘zÅ‘djÃ¶n meg arrÃ³l, hogy a kÃ­vÃ¡nt eszkÃ¶z is ugyanazon a wifi hÃ¡lÃ³zaton van.",
-    "placeItems": "Helyezze el a megosztandÃ³ elemeket."
+    "sendModeHelp": "Magyarázat",
+    "help": "Gyozodjön meg arról, hogy a kívánt eszköz is ugyanazon a wifi hálózaton van.",
+    "placeItems": "Helyezze el a megosztandó elemeket."
   },
   "settingsTab": {
-    "title": "BeÃ¡llÃ­tÃ¡sok",
+    "title": "Beállítások",
     "general": {
-      "title": "ÃltalÃ¡nos",
-      "brightness": "FÃ©nyerÅ‘",
+      "title": "Általános",
+      "brightness": "Fényero",
       "brightnessOptions": {
         "system": "Rendszer",
-        "dark": "SÃ¶tÃ©t",
-        "light": "VilÃ¡gos"
+        "dark": "Sötét",
+        "light": "Világos"
       },
-      "color": "SzÃ­nek",
+      "color": "Színek",
       "colorOptions": {
         "system": "Rendszer",
         "oled": "OLED"
@@ -103,365 +103,366 @@
       "languageOptions": {
         "system": "Rendszer"
       },
-      "saveWindowPlacement": "KilÃ©pÃ©s: Ablak pozÃ­ciÃ³ mentÃ©se",
-      "saveWindowPlacementWindows": "Az ablak pozÃ­ciÃ³jÃ¡nak mentÃ©se kilÃ©pÃ©s utÃ¡n",
-      "minimizeToTray": "KilÃ©pÃ©s: MinimalizÃ¡lja a tÃ¡lcÃ¡ra",
-      "launchAtStartup": "Auto. indÃ­tÃ¡s bejelentkezÃ©s utÃ¡n",
-      "launchMinimized": "Auto. indÃ­tÃ¡s: Kis mÃ©retben",
-      "showInContextMenu": "A GravitySend megjelenÃ­tÃ©se a helyi menÃ¼ben",
-      "animations": "AnimÃ¡ciÃ³k"
+      "saveWindowPlacement": "Kilépés: Ablak pozíció mentése",
+      "saveWindowPlacementWindows": "Az ablak pozíciójának mentése kilépés után",
+      "minimizeToTray": "Kilépés: Minimalizálja a tálcára",
+      "launchAtStartup": "Auto. indítás bejelentkezés után",
+      "launchMinimized": "Auto. indítás: Kis méretben",
+      "showInContextMenu": "A GravitySend megjelenítése a helyi menüben",
+      "animations": "Animációk"
     },
     "receive": {
-      "title": "FogadÃ¡s",
+      "title": "Fogadás",
       "quickSave": "@:general.quickSave",
       "quickSaveFromFavorites": "@:general.quickSaveFromFavorites",
       "requirePin": "@:webSharePage.requirePin",
-      "autoFinish": "Autom. befejezÃ©s",
-      "destination": "MentÃ©s helye",
-      "downloads": "(LetÃ¶ltÃ©sek)",
-      "saveToGallery": "MÃ©dia mentÃ©se a galÃ©riÃ¡ba",
-      "saveToHistory": "MentÃ©s az elÅ‘zmÃ©nyek kÃ¶zÃ©"
+      "autoFinish": "Autom. befejezés",
+      "destination": "Mentés helye",
+      "downloads": "(Letöltések)",
+      "saveToGallery": "Média mentése a galériába",
+      "saveToHistory": "Mentés az elozmények közé"
     },
     "send": {
-      "title": "KÃ¼ld",
-      "shareViaLinkAutoAccept": "MegosztÃ¡s linken keresztÃ¼l: Auto. elfogadÃ¡s"
+      "title": "Küld",
+      "shareViaLinkAutoAccept": "Megosztás linken keresztül: Auto. elfogadás"
     },
     "network": {
-      "title": "HÃ¡lÃ³zat",
-      "needRestart": "A beÃ¡llÃ­tÃ¡sok alkalmazÃ¡sÃ¡hoz indÃ­tsa Ãºjra a szervert!",
+      "title": "Hálózat",
+      "needRestart": "A beállítások alkalmazásához indítsa újra a szervert!",
       "server": "Szerver",
-      "alias": "ÃlnÃ©v",
-      "deviceType": "EszkÃ¶z tÃ­pusa",
-      "deviceModel": "EszkÃ¶z modell",
+      "alias": "Álnév",
+      "deviceType": "Eszköz típusa",
+      "deviceModel": "Eszköz modell",
       "port": "Port",
-      "discoveryTimeout": "FelfedezÃ©si idÅ‘tÃºllÃ©pÃ©s",
-      "useSystemName": "RendszernÃ©v hasznÃ¡lata",
-      "generateRandomAlias": "VÃ©letlenszerÅ± Ã¡lnÃ©v generÃ¡lÃ¡s",
-      "portWarning": "ElÅ‘fordulhat, hogy mÃ¡s eszkÃ¶zÃ¶k nem Ã©szlelik eszkÃ¶zÃ©t, mert egyÃ©ni portot hasznÃ¡l. (alapÃ©rtelmezett: {defaultPort})",
-      "encryption": "TitkosÃ­tÃ¡s",
+      "discoveryTimeout": "Felfedezési idotúllépés",
+      "useSystemName": "Rendszernév használata",
+      "generateRandomAlias": "Véletlenszeru álnév generálás",
+      "portWarning": "Elofordulhat, hogy más eszközök nem észlelik eszközét, mert egyéni portot használ. (alapértelmezett: {defaultPort})",
+      "encryption": "Titkosítás",
       "multicastGroup": "Multicast",
-      "multicastGroupWarning": "ElÅ‘fordulhat, hogy mÃ¡s eszkÃ¶zÃ¶k nem Ã©szlelik eszkÃ¶zÃ©t, mert egyÃ©ni multicast cÃ­met hasznÃ¡l. (alapÃ©rtÃ©k: {defaultMulticast})",
-      "network": "HÃ¡lÃ³zat",
+      "multicastGroupWarning": "Elofordulhat, hogy más eszközök nem észlelik eszközét, mert egyéni multicast címet használ. (alapérték: {defaultMulticast})",
+      "network": "Hálózat",
       "networkOptions": {
         "all": "Mindegyik",
-        "filtered": "SzÅ±rt"
+        "filtered": "Szurt"
       }
     },
     "other": {
-      "title": "EgyÃ©b",
-      "support": "GravitySend tÃ¡mogatÃ¡s",
-      "donate": "AdomÃ¡ny",
-      "privacyPolicy": "AdatvÃ©delmi irÃ¡nyelvek",
-      "termsOfUse": "HasznÃ¡lati feltÃ©telek"
+      "title": "Egyéb",
+      "support": "GravitySend támogatás",
+      "donate": "Adomány",
+      "privacyPolicy": "Adatvédelmi irányelvek",
+      "termsOfUse": "Használati feltételek"
     },
-    "advancedSettings": "HaladÃ³ beÃ¡llÃ­tÃ¡sok"
+    "advancedSettings": "Haladó beállítások"
   },
   "troubleshootPage": {
-    "title": "HibaelhÃ¡rÃ­tÃ¡s",
-    "subTitle": "Az alkalmazÃ¡s nem a vÃ¡rt mÃ³don mÅ±kÃ¶dik? Itt talÃ¡lhat Ã¡ltalÃ¡nos megoldÃ¡sokat.",
-    "solution": "MegoldÃ¡s:",
-    "fixButton": "Autom. javÃ­tÃ¡s",
+    "title": "Hibaelhárítás",
+    "subTitle": "Az alkalmazás nem a várt módon muködik? Itt találhat általános megoldásokat.",
+    "solution": "Megoldás:",
+    "fixButton": "Autom. javítás",
     "firewall": {
-      "symptom": "Ez az alkalmazÃ¡s kÃ©pes fÃ¡jlokat kÃ¼ldeni mÃ¡s eszkÃ¶zÃ¶kre, de mÃ¡s eszkÃ¶zÃ¶k nem kÃ¼ldhetnek fÃ¡jlokat erre az eszkÃ¶zre.",
-      "solution": "Ez valÃ³szÃ­nÅ±leg tÅ±zfal problÃ©ma. Ezt Ãºgy oldhatja meg, hogy engedÃ©lyezi a bejÃ¶vÅ‘ kapcsolatokat (UDP Ã©s TCP) a {port} porton.",
-      "openFirewall": "TÅ±zfal megnyitÃ¡s"
+      "symptom": "Ez az alkalmazás képes fájlokat küldeni más eszközökre, de más eszközök nem küldhetnek fájlokat erre az eszközre.",
+      "solution": "Ez valószínuleg tuzfal probléma. Ezt úgy oldhatja meg, hogy engedélyezi a bejövo kapcsolatokat (UDP és TCP) a {port} porton.",
+      "openFirewall": "Tuzfal megnyitás"
     },
     "noDiscovery": {
-      "symptom": "Ez az eszkÃ¶z nem tud mÃ¡s eszkÃ¶zÃ¶ket felismerni.",
-      "solution": "GyÅ‘zÅ‘djÃ¶n meg rÃ³la, hogy minden eszkÃ¶z ugyanabban a Wi-Fi hÃ¡lÃ³zatban van, Ã©s ugyanaz a konfigurÃ¡ciÃ³ (port, multicast cÃ­m, titkosÃ­tÃ¡s). MegprÃ³bÃ¡lhatja manuÃ¡lisan beÃ­rni a cÃ©leszkÃ¶z IP-cÃ­mÃ©t. Ha ez mÅ±kÃ¶dik, fontolja meg az eszkÃ¶z hozzÃ¡adÃ¡sÃ¡t a kedvencekhez, hogy a jÃ¶vÅ‘ben automatikusan fel lehessen fedezni."
+      "symptom": "Ez az eszköz nem tud más eszközöket felismerni.",
+      "solution": "Gyozodjön meg róla, hogy minden eszköz ugyanabban a Wi-Fi hálózatban van, és ugyanaz a konfiguráció (port, multicast cím, titkosítás). Megpróbálhatja manuálisan beírni a céleszköz IP-címét. Ha ez muködik, fontolja meg az eszköz hozzáadását a kedvencekhez, hogy a jövoben automatikusan fel lehessen fedezni."
     },
     "noConnection": {
-      "symptom": "A kÃ©t eszkÃ¶z nem tudja felismerni egymÃ¡st, Ã©s nem tud fÃ¡jlokat megosztani.",
-      "solution": "A problÃ©ma mindkÃ©t oldalon lÃ©tezik? Akkor meg kell gyÅ‘zÅ‘dnie arrÃ³l, hogy mindkÃ©t eszkÃ¶z ugyanabban a wifi hÃ¡lÃ³zatban van, Ã©s ugyanazt a konfigurÃ¡ciÃ³t hasznÃ¡lja (port, multicast cÃ­m, titkosÃ­tÃ¡s). ElÅ‘fordulhat, hogy a Wifi nem teszi lehetÅ‘vÃ© a rÃ©sztvevÅ‘k kÃ¶zÃ¶tti kommunikÃ¡ciÃ³t. Ebben az esetben ezt az opciÃ³t engedÃ©lyezni kell a routeren.."
+      "symptom": "A két eszköz nem tudja felismerni egymást, és nem tud fájlokat megosztani.",
+      "solution": "A probléma mindkét oldalon létezik? Akkor meg kell gyozodnie arról, hogy mindkét eszköz ugyanabban a wifi hálózatban van, és ugyanazt a konfigurációt használja (port, multicast cím, titkosítás). Elofordulhat, hogy a Wifi nem teszi lehetové a résztvevok közötti kommunikációt. Ebben az esetben ezt az opciót engedélyezni kell a routeren.."
     }
   },
   "receiveHistoryPage": {
-    "title": "ElÅ‘zmÃ©ny",
-    "openFolder": "Mappa megnyitÃ¡sa",
-    "deleteHistory": "ElÅ‘zmÃ©ny tÃ¶rlÃ©se",
-    "empty": "MÃ©g nincs elÅ‘zmÃ©ny.",
+    "title": "Elozmény",
+    "openFolder": "Mappa megnyitása",
+    "deleteHistory": "Elozmény törlése",
+    "empty": "Még nincs elozmény.",
     "entryActions": {
-      "open": "FÃ¡jl megnyitÃ¡s",
-      "showInFolder": "MegjelenÃ­tÃ©s a mappÃ¡ban",
-      "info": "InformÃ¡ciÃ³",
-      "deleteFromHistory": "TÃ¶rlÃ©s az elÅ‘zmÃ©nybÅ‘l"
+      "open": "Fájl megnyitás",
+      "showInFolder": "Megjelenítés a mappában",
+      "info": "Információ",
+      "deleteFromHistory": "Törlés az elozménybol"
     }
   },
   "apkPickerPage": {
     "title": "Appok (APK)",
-    "excludeSystemApps": "RendszeralkalmazÃ¡sok kizÃ¡rÃ¡sa",
-    "excludeAppsWithoutLaunchIntent": "A nem indÃ­thatÃ³ alkalmazÃ¡sok kizÃ¡rÃ¡sa",
+    "excludeSystemApps": "Rendszeralkalmazások kizárása",
+    "excludeAppsWithoutLaunchIntent": "A nem indítható alkalmazások kizárása",
     "apps": "{n} app"
   },
   "selectedFilesPage": {
-    "deleteAll": "Ã–sszes tÃ¶rlÃ©se"
+    "deleteAll": "Összes törlése"
   },
   "receivePage": {
     "subTitle": {
-      "one": "fÃ¡jlt szeretne kÃ¼ldeni",
-      "other": "{n} fÃ¡jlt szeretne kÃ¼ldeni"
+      "one": "fájlt szeretne küldeni",
+      "other": "{n} fájlt szeretne küldeni"
     },
-    "subTitleMessage": "Ã¼zenetet kÃ¼ldÃ¶tt:",
-    "subTitleLink": "Linket kÃ¼ldÃ¶tt:",
-    "canceled": "A kÃ¼ldÅ‘ visszavonta a kÃ©rÃ©st."
+    "subTitleMessage": "üzenetet küldött:",
+    "subTitleLink": "Linket küldött:",
+    "canceled": "A küldo visszavonta a kérést."
   },
   "receiveOptionsPage": {
-    "title": "OpciÃ³k",
+    "title": "Opciók",
     "destination": "@:settingsTab.receive.destination",
     "appDirectory": "(GravitySend mappa)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "Automatikusan kikapcsol, mert vannak kÃ¶nyvtÃ¡rak."
+    "saveToGalleryOff": "Automatikusan kikapcsol, mert vannak könyvtárak."
   },
   "sendPage": {
-    "waiting": "VÃ¡laszra vÃ¡rvaâ€¦",
-    "rejected": "A fogadÃ³ elutasÃ­totta a kÃ©relmet.",
+    "waiting": "Válaszra várva…",
+    "rejected": "A fogadó elutasította a kérelmet.",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "A fogadÃ³ mÃ¡s kÃ©rÃ©ssel van elfoglalva."
+    "busy": "A fogadó más kéréssel van elfoglalva."
   },
   "progressPage": {
-    "titleSending": "FÃ¡jlok kÃ¼ldÃ©se",
-    "titleReceiving": "FÃ¡jlok fogadÃ¡sa",
-    "savedToGallery": "Mentve a GalÃ©riÃ¡ba",
+    "titleSending": "Fájlok küldése",
+    "titleReceiving": "Fájlok fogadása",
+    "savedToGallery": "Mentve a Galériába",
     "total": {
       "title": {
         "sending": "Teljes folyamat ({time})",
-        "finishedError": "HibÃ¡val befejezve",
-        "canceledSender": "A kÃ¼ldÅ‘ tÃ¶rÃ¶lte",
-        "canceledReceiver": "A fogadÃ³ tÃ¶rÃ¶lte"
+        "finishedError": "Hibával befejezve",
+        "canceledSender": "A küldo törölte",
+        "canceledReceiver": "A fogadó törölte"
       },
-      "count": "FÃ¡jl: {curr} / {n}",
-      "size": "MÃ©ret: {curr} / {n}",
-      "speed": "SebessÃ©g: {speed}/s"
+      "count": "Fájl: {curr} / {n}",
+      "size": "Méret: {curr} / {n}",
+      "speed": "Sebesség: {speed}/s"
     },
     "remainingTime": {
       "seconds": "{n}:{ss}",
       "minutes": "{n}:{ss}",
       "hours": "{h}h {m}m",
       "days": "{d}d {h}h {m}m",
-      "@hours": "Az Ã³rÃ¡k rÃ¶vidÃ­tÃ©sÃ©hez hasznÃ¡lja a 'h' betÅ±t, a percekhez pedig az 'm' betÅ±t",
-      "@days": "A naphoz  a 'd', az Ã³rÃ¡hoz a 'h', a percekhez az 'm' betÅ±t hasznÃ¡lja"
+      "@hours": "Az órák rövidítéséhez használja a 'h' betut, a percekhez pedig az 'm' betut",
+      "@days": "A naphoz  a 'd', az órához a 'h', a percekhez az 'm' betut használja"
     }
   },
   "webSharePage": {
-    "title": "MegosztÃ¡s linkben",
-    "loading": "Szerver indÃ­tÃ¡saâ€¦",
-    "stopping": "Szerver leÃ¡llÃ­tÃ¡saâ€¦",
-    "error": "Hiba tÃ¶rtÃ©nt a szerver indÃ­tÃ¡sakor.",
+    "title": "Megosztás linkben",
+    "loading": "Szerver indítása…",
+    "stopping": "Szerver leállítása…",
+    "error": "Hiba történt a szerver indításakor.",
     "openLink": {
-      "one": "Nyissa meg ezt a hivatkozÃ¡st bÃ¶ngÃ©szÅ‘ben:",
-      "other": "Nyissa meg a linkek egyikÃ©t a bÃ¶ngÃ©szÅ‘ben:"
+      "one": "Nyissa meg ezt a hivatkozást böngészoben:",
+      "other": "Nyissa meg a linkek egyikét a böngészoben:"
     },
-    "requests": "KÃ©rÃ©sek",
-    "noRequests": "MÃ©g nincsenek kÃ©rÃ©sek.",
+    "requests": "Kérések",
+    "noRequests": "Még nincsenek kérések.",
     "encryption": "@:settingsTab.network.encryption",
-    "autoAccept": "KÃ©rÃ©sek automatikus elfogadÃ¡sa",
-    "requirePin": "PIN kÃ³d megkÃ¶vetelÃ©se",
-    "pinHint": "A PIN kÃ³d \"{pin}\"",
-    "encryptionHint": "A GravitySend a sajÃ¡t alÃ¡Ã­rt tanÃºsÃ­tvÃ¡nyt hasznÃ¡lja. A bÃ¶ngÃ©szÅ‘ben kell elfogadnod.",
-    "pendingRequests": "FÃ¼ggÅ‘ben lÃ©vÅ‘ kÃ©rÃ©sek: {n}"
+    "autoAccept": "Kérések automatikus elfogadása",
+    "requirePin": "PIN kód megkövetelése",
+    "pinHint": "A PIN kód \"{pin}\"",
+    "encryptionHint": "A GravitySend a saját aláírt tanúsítványt használja. A böngészoben kell elfogadnod.",
+    "pendingRequests": "Függoben lévo kérések: {n}"
   },
   "aboutPage": {
     "title": "A GravitySend",
     "description": [
-      "A GravitySend egy ingyenes, nyÃ­lt forrÃ¡skÃ³dÃº alkalmazÃ¡s, amely lehetÅ‘vÃ© teszi a fÃ¡jlok Ã©s Ã¼zenetek biztonsÃ¡gos megosztÃ¡sÃ¡t a kÃ¶zeli eszkÃ¶zÃ¶kkel a helyi hÃ¡lÃ³zaton keresztÃ¼l, internet kapcsolat nÃ©lkÃ¼l.",
-      "Ez az alkalmazÃ¡s Android, iOS, macOS, Windows Ã©s Linux rendszereken Ã©rhetÅ‘ el. Az Ã¶sszes letÃ¶ltÃ©si lehetÅ‘sÃ©get megtalÃ¡lja a hivatalos honlapon."
+      "A GravitySend egy ingyenes, nyílt forráskódú alkalmazás, amely lehetové teszi a fájlok és üzenetek biztonságos megosztását a közeli eszközökkel a helyi hálózaton keresztül, internet kapcsolat nélkül.",
+      "Ez az alkalmazás Android, iOS, macOS, Windows és Linux rendszereken érheto el. Az összes letöltési lehetoséget megtalálja a hivatalos honlapon."
     ],
-    "author": "SzerzÅ‘",
-    "contributors": "KÃ¶zremÅ±kÃ¶dÅ‘k",
-    "packagers": "CsomagolÃ³k",
-    "translators": "FordÃ­tÃ³k"
+    "author": "Szerzo",
+    "contributors": "Közremuködok",
+    "packagers": "Csomagolók",
+    "translators": "Fordítók"
   },
   "donationPage": {
-    "title": "AdomÃ¡ny",
-    "info": "A GravitySend ingyenes, nyÃ­lt forrÃ¡skÃ³dÃº Ã©s hirdetÃ©sek nÃ©lkÃ¼li. Ha megtetszett az alkalmazÃ¡s, adomÃ¡nyÃ¡val tÃ¡mogathatja a fejlesztÃ©st.",
-    "donate": "AdomÃ¡ny {amount}",
-    "thanks": "KÃ¶szÃ¶nÃ¶m szÃ©pen!",
-    "restore": "VÃ¡sÃ¡rlÃ¡s visszaÃ¡llÃ­tÃ¡sa"
+    "title": "Adomány",
+    "info": "A GravitySend ingyenes, nyílt forráskódú és hirdetések nélküli. Ha megtetszett az alkalmazás, adományával támogathatja a fejlesztést.",
+    "donate": "Adomány {amount}",
+    "thanks": "Köszönöm szépen!",
+    "restore": "Vásárlás visszaállítása"
   },
   "changelogPage": {
-    "title": "VÃ¡ltozÃ¡snaplÃ³"
+    "title": "Változásnapló"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
-    "@info": "Az angol vÃ¡ltozatbÃ³l Ã¶rÃ¶kÃ¶lve"
+    "@info": "Az angol változatból örökölve"
   },
   "dialogs": {
     "addFile": {
-      "title": "HozzÃ¡adÃ¡s a kijelÃ¶lÃ©shez",
-      "content": "Mit szeretne hozzÃ¡fÅ±zni?"
+      "title": "Hozzáadás a kijelöléshez",
+      "content": "Mit szeretne hozzáfuzni?"
     },
     "openFile": {
-      "title": "FÃ¡jl megnyitÃ¡s",
-      "content": "Meg akarja nyitni a fogadott fÃ¡jlt?"
+      "title": "Fájl megnyitás",
+      "content": "Meg akarja nyitni a fogadott fájlt?"
     },
     "addressInput": {
-      "title": "Adja meg a cÃ­met",
+      "title": "Adja meg a címet",
       "hashtag": "Hashtag",
-      "ip": "IP cÃ­m",
-      "recentlyUsed": "NemrÃ©g hasznÃ¡lt: "
+      "ip": "IP cím",
+      "recentlyUsed": "Nemrég használt: "
     },
     "cancelSession": {
-      "title": "FÃ¡jlÃ¡tvitel megszakÃ­tÃ¡sa",
-      "content": "ValÃ³ban meg akarja szakÃ­tani a fÃ¡jlÃ¡tvitelt?"
+      "title": "Fájlátvitel megszakítása",
+      "content": "Valóban meg akarja szakítani a fájlátvitelt?"
     },
     "cannotOpenFile": {
-      "title": "A fÃ¡jl nem nyithatÃ³ meg",
-      "content": "Nem sikerÃ¼lt megnyitni a(z) \"{file}\" fÃ¡jlt. A fÃ¡jlt Ã¡thelyeztÃ©k, Ã¡tneveztÃ©k vagy tÃ¶rÃ¶ltÃ©k?"
+      "title": "A fájl nem nyitható meg",
+      "content": "Nem sikerült megnyitni a(z) \"{file}\" fájlt. A fájlt áthelyezték, átnevezték vagy törölték?"
     },
     "encryptionDisabledNotice": {
-      "title": "A titkosÃ­tÃ¡s letiltva",
-      "content": "A kommunikÃ¡ciÃ³ most a titkosÃ­tatlan HTTP protokollon keresztÃ¼l tÃ¶rtÃ©nik. A HTTPS hasznÃ¡latÃ¡hoz engedÃ©lyezze Ãºjra a titkosÃ­tÃ¡st."
+      "title": "A titkosítás letiltva",
+      "content": "A kommunikáció most a titkosítatlan HTTP protokollon keresztül történik. A HTTPS használatához engedélyezze újra a titkosítást."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteDialog": {
       "title": "Kedvencek",
-      "noFavorites": "Nincsenek mÃ©g kedvenc eszkÃ¶zÃ¶k.",
-      "addFavorite": "HozzÃ¡adÃ¡s"
+      "noFavorites": "Nincsenek még kedvenc eszközök.",
+      "addFavorite": "Hozzáadás"
     },
     "favoriteDeleteDialog": {
-      "title": "TÃ¶rlÃ©s a kedvencek kÃ¶zÃ¼l",
-      "content": "TÃ©nyleg tÃ¶rÃ¶lni szeretnÃ©d a \"{name}\" a kedvencek kÃ¶zÃ¼l?"
+      "title": "Törlés a kedvencek közül",
+      "content": "Tényleg törölni szeretnéd a \"{name}\" a kedvencek közül?"
     },
     "favoriteEditDialog": {
-      "titleAdd": "HozzÃ¡adÃ¡s a kedvencekhez",
-      "titleEdit": "BeÃ¡llÃ­tÃ¡s",
-      "name": "ÃlnÃ©v",
+      "titleAdd": "Hozzáadás a kedvencekhez",
+      "titleEdit": "Beállítás",
+      "name": "Álnév",
       "auto": "(auto)",
-      "ip": "IP cÃ­m",
+      "ip": "IP cím",
       "port": "Port"
     },
     "fileInfo": {
-      "title": "FÃ¡jl informÃ¡ciÃ³",
-      "fileName": "FÃ¡jl neve:",
-      "path": "Ãštvonal:",
-      "size": "MÃ©ret:",
-      "sender": "KÃ¼ldÅ‘:",
-      "time": "IdÅ‘:"
+      "title": "Fájl információ",
+      "fileName": "Fájl neve:",
+      "path": "Útvonal:",
+      "size": "Méret:",
+      "sender": "Küldo:",
+      "time": "Ido:"
     },
     "fileNameInput": {
-      "title": "Ãrja be a fÃ¡jl nevÃ©t",
+      "title": "Írja be a fájl nevét",
       "original": "Eredeti: {original}"
     },
     "historyClearDialog": {
-      "title": "TÃ¶rÃ¶lje az elÅ‘zmÃ©nyt",
-      "content": "Biztosan tÃ¶rÃ¶lni szeretnÃ© a teljes elÅ‘zmÃ©nyt?"
+      "title": "Törölje az elozményt",
+      "content": "Biztosan törölni szeretné a teljes elozményt?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "A GravitySend nem talÃ¡lhat mÃ¡s eszkÃ¶zÃ¶ket a helyi hÃ¡lÃ³zat vizsgÃ¡latÃ¡ra vonatkozÃ³ engedÃ©ly nÃ©lkÃ¼l. Adja meg ezt az engedÃ©lyt a beÃ¡llÃ­tÃ¡sokban.",
-      "gotoSettings": "BeÃ¡llÃ­tÃ¡sok"
+      "description": "A GravitySend nem találhat más eszközöket a helyi hálózat vizsgálatára vonatkozó engedély nélkül. Adja meg ezt az engedélyt a beállításokban.",
+      "gotoSettings": "Beállítások"
     },
     "messageInput": {
-      "title": "Ãrja be az Ã¼zenetÃ©t",
-      "multiline": "TÃ¶bb soros"
+      "title": "Írja be az üzenetét",
+      "multiline": "Több soros"
     },
     "noFiles": {
-      "title": "Nincs fÃ¡jl kivÃ¡lasztva",
-      "content": "KÃ©rjÃ¼k vÃ¡lasszon legalÃ¡bb egy fÃ¡jlt."
+      "title": "Nincs fájl kiválasztva",
+      "content": "Kérjük válasszon legalább egy fájlt."
     },
     "noPermission": {
-      "title": "Nem engedÃ©lyezett",
-      "content": "Nem adtÃ¡l megfelelÅ‘ engedÃ©lyeket. KÃ©rlek engedÃ©lyezd Å‘ket a beÃ¡llÃ­tÃ¡sokban."
+      "title": "Nem engedélyezett",
+      "content": "Nem adtál megfelelo engedélyeket. Kérlek engedélyezd oket a beállításokban."
     },
     "notAvailableOnPlatform": {
-      "title": "Nem Ã©rhetÅ‘ el",
-      "content": "Ez a funkciÃ³ csak itt Ã©rhetÅ‘ el:"
+      "title": "Nem érheto el",
+      "content": "Ez a funkció csak itt érheto el:"
     },
     "qr": {
-      "title": "QR-kÃ³d"
+      "title": "QR-kód"
     },
     "quickActions": {
-      "title": "Gyors mÅ±veletek",
-      "counter": "SzÃ¡mlÃ¡lÃ³",
-      "prefix": "ElÅ‘tag",
-      "padZero": "KitÃ¶ltÃ©s nullÃ¡kkal",
-      "sortBeforeCount": "ElÅ‘zetesen rendezze Ã¡bÃ©cÃ© sorrendbe",
-      "random": "VÃ©letlen"
+      "title": "Gyors muveletek",
+      "counter": "Számláló",
+      "prefix": "Elotag",
+      "padZero": "Kitöltés nullákkal",
+      "sortBeforeCount": "Elozetesen rendezze ábécé sorrendbe",
+      "random": "Véletlen"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "A fÃ¡jlkÃ©rÃ©sek autom. elfogadÃ¡sra kerÃ¼lnek. Ãœgyeljen arra, hogy a helyi hÃ¡lÃ³zaton mindenki kÃ¼ldhet Ã–nnek fÃ¡jlokat."
+      "content": "A fájlkérések autom. elfogadásra kerülnek. Ügyeljen arra, hogy a helyi hálózaton mindenki küldhet Önnek fájlokat."
     },
     "quickSaveFromFavoritesNotice": {
       "title": "@:general.quickSaveFromFavorites",
       "content": [
-        "A fÃ¡jlkÃ©rÃ©sek auto. elfogadÃ¡sa mostantÃ³l a kedvencek listÃ¡jÃ¡n szereplÅ‘ eszkÃ¶zÃ¶krÅ‘l.",
-        "FigyelmeztetÃ©s: Ez jelenleg nem teljesen biztonsÃ¡gos, mert egy hacker, aki ismeri a kedvenc eszkÃ¶zeinek ujjlenyomatÃ¡t, mÃ©g mindig kÃ¼ldhet fÃ¡jlokat.",
-        "Ez a lehetÅ‘sÃ©g azonban mÃ©g mindig biztonsÃ¡gosabb, mint bÃ¡rmely eszkÃ¶z engedÃ©lyezÃ©se."
+        "A fájlkérések auto. elfogadása mostantól a kedvencek listáján szereplo eszközökrol.",
+        "Figyelmeztetés: Ez jelenleg nem teljesen biztonságos, mert egy hacker, aki ismeri a kedvenc eszközeinek ujjlenyomatát, még mindig küldhet fájlokat.",
+        "Ez a lehetoség azonban még mindig biztonságosabb, mint bármely eszköz engedélyezése."
       ]
     },
     "pin": {
-      "title": "PIN kÃ³d megadÃ¡sa"
+      "title": "PIN kód megadása"
     },
     "sendModeHelp": {
-      "title": "KÃ¼ldÃ©si mÃ³dok",
-      "single": "FÃ¡jlokat kÃ¼ld egy cÃ­mzettnek. Az Ã¡tvitel befejezÃ©se utÃ¡n a kijelÃ¶lÃ©s tÃ¶rlÅ‘dik.",
-      "multiple": "FÃ¡jlokat kÃ¼ld tÃ¶bb cÃ­mzettnek. A kijelÃ¶lÃ©s nem tÃ¶rlÅ‘dik.",
-      "link": "Azok a cÃ­mzettek, akiknÃ©l nincs telepÃ­tve a GravitySend, letÃ¶lthetik a kivÃ¡lasztott fÃ¡jlokat a hivatkozÃ¡s megnyitÃ¡sÃ¡val a bÃ¶ngÃ©szÅ‘jÃ¼kben."
+      "title": "Küldési módok",
+      "single": "Fájlokat küld egy címzettnek. Az átvitel befejezése után a kijelölés törlodik.",
+      "multiple": "Fájlokat küld több címzettnek. A kijelölés nem törlodik.",
+      "link": "Azok a címzettek, akiknél nincs telepítve a GravitySend, letölthetik a kiválasztott fájlokat a hivatkozás megnyitásával a böngészojükben."
     },
     "zoom": {
       "title": "URL"
     }
   },
   "sanitization": {
-    "empty": "A fÃ¡jlnÃ©v nem lehet Ã¼res",
-    "invalid": "A fÃ¡jlnÃ©v Ã©rvÃ©nytelen karaktereket tartalmaz"
+    "empty": "A fájlnév nem lehet üres",
+    "invalid": "A fájlnév érvénytelen karaktereket tartalmaz"
   },
   "tray": {
-    "@info": "Az Apple irÃ¡nyelvei nagyon szigorÃºak a 'kÃ¶zeli' megfogalmazÃ¡ssal kapcsolatban.",
+    "@info": "Az Apple irányelvei nagyon szigorúak a 'közeli' megfogalmazással kapcsolatban.",
     "open": "@:general.open",
-    "close": "KilÃ©pÃ©s",
-    "closeWindows": "KilÃ©pÃ©s"
+    "close": "Kilépés",
+    "closeWindows": "Kilépés"
   },
   "web": {
     "waiting": "@:sendPage.waiting",
-    "enterPin": "PIN kÃ³d megadÃ¡sa",
-    "invalidPin": "Ã‰rvÃ©nytelen a PIN",
-    "tooManyAttempts": "TÃºl sok kÃ­sÃ©rlet",
-    "rejected": "ElutasÃ­tva",
-    "files": "FÃ¡jl",
-    "fileName": "FÃ¡jlnÃ©v",
-    "size": "MÃ©ret"
+    "enterPin": "PIN kód megadása",
+    "invalidPin": "Érvénytelen a PIN",
+    "tooManyAttempts": "Túl sok kísérlet",
+    "rejected": "Elutasítva",
+    "files": "Fájl",
+    "fileName": "Fájlnév",
+    "size": "Méret"
   },
   "assetPicker": {
-    "@info": "FordÃ­tÃ¡sok a mÃ©diavÃ¡lasztÃ³ eszkÃ¶zhÃ¶z Androidra Ã©s iPhone-ra",
-    "confirm": "MegerÅ‘sÃ­t",
-    "cancel": "MÃ©gse",
+    "@info": "Fordítások a médiaválasztó eszközhöz Androidra és iPhone-ra",
+    "confirm": "Megerosít",
+    "cancel": "Mégse",
     "edit": "Szerkeszt",
     "gifIndicator": "GIF",
-    "loadFailed": "A betÃ¶ltÃ©s sikertelen",
+    "loadFailed": "A betöltés sikertelen",
     "original": "Eredeti",
-    "preview": "ElÅ‘nÃ©zet",
-    "select": "VÃ¡lasszon",
-    "emptyList": "Ãœres lista",
-    "unSupportedAssetType": "Nem tÃ¡mogatott fÃ¡jl tÃ­pus.",
-    "unableToAccessAll": "Nem lehet hozzÃ¡fÃ©rni az eszkÃ¶zÃ¶n lÃ©vÅ‘ Ã¶sszes fÃ¡jlhoz",
-    "viewingLimitedAssetsTip": "Csak az app Ã¡ltal elÃ©rhetÅ‘ fÃ¡jlok Ã©s albumok megtekintÃ©se.",
-    "changeAccessibleLimitedAssets": "Koppintson az elÃ©rhetÅ‘ fÃ¡jlok frissÃ­tÃ©sÃ©hez",
-    "accessAllTip": "Az alkalmazÃ¡s csak nÃ©hÃ¡ny fÃ¡jlhoz fÃ©rhet hozzÃ¡ az eszkÃ¶zÃ¶n. Nyissa meg a rendszerbeÃ¡llÃ­tÃ¡sokat Ã©s engedÃ©lyezze az alkalmazÃ¡s szÃ¡mÃ¡ra, hogy hozzÃ¡fÃ©rjen az eszkÃ¶zÃ¶n lÃ©vÅ‘ Ã¶sszes mÃ©diafÃ¡jlhoz.",
-    "goToSystemSettings": "LÃ©pjen a rendszer beÃ¡llÃ­tÃ¡saihoz",
-    "accessLimitedAssets": "Folytassa korlÃ¡tozott hozzÃ¡fÃ©rÃ©ssel",
-    "accessiblePathName": "ElÃ©rhetÅ‘ fÃ¡jlok",
-    "sTypeAudioLabel": "AudiÃ³",
-    "sTypeImageLabel": "KÃ©p",
-    "sTypeVideoLabel": "VideÃ³",
-    "sTypeOtherLabel": "EgyÃ©b mÃ©dia",
-    "sActionPlayHint": "lejÃ¡tszÃ¡s",
-    "sActionPreviewHint": "elÅ‘nÃ©zet",
-    "sActionSelectHint": "vÃ¡lasztÃ¡s",
-    "sActionSwitchPathLabel": "Ãºtvonal mÃ³dosÃ­tÃ¡s",
-    "sActionUseCameraHint": "hasznÃ¡ljon kamerÃ¡t",
-    "sNameDurationLabel": "idÅ‘tartam",
-    "sUnitAssetCountLabel": "szÃ¡mol"
+    "preview": "Elonézet",
+    "select": "Válasszon",
+    "emptyList": "Üres lista",
+    "unSupportedAssetType": "Nem támogatott fájl típus.",
+    "unableToAccessAll": "Nem lehet hozzáférni az eszközön lévo összes fájlhoz",
+    "viewingLimitedAssetsTip": "Csak az app által elérheto fájlok és albumok megtekintése.",
+    "changeAccessibleLimitedAssets": "Koppintson az elérheto fájlok frissítéséhez",
+    "accessAllTip": "Az alkalmazás csak néhány fájlhoz férhet hozzá az eszközön. Nyissa meg a rendszerbeállításokat és engedélyezze az alkalmazás számára, hogy hozzáférjen az eszközön lévo összes médiafájlhoz.",
+    "goToSystemSettings": "Lépjen a rendszer beállításaihoz",
+    "accessLimitedAssets": "Folytassa korlátozott hozzáféréssel",
+    "accessiblePathName": "Elérheto fájlok",
+    "sTypeAudioLabel": "Audió",
+    "sTypeImageLabel": "Kép",
+    "sTypeVideoLabel": "Videó",
+    "sTypeOtherLabel": "Egyéb média",
+    "sActionPlayHint": "lejátszás",
+    "sActionPreviewHint": "elonézet",
+    "sActionSelectHint": "választás",
+    "sActionSwitchPathLabel": "útvonal módosítás",
+    "sActionUseCameraHint": "használjon kamerát",
+    "sNameDurationLabel": "idotartam",
+    "sUnitAssetCountLabel": "számol"
   },
   "networkInterfacesPage": {
-    "title": "HÃ¡lÃ³zati interfÃ©szek",
-    "info": "AlapÃ©rtelmezÃ©skÃ©nt a GravitySend az Ã¶sszes rendelkezÃ©sre Ã¡llÃ³ hÃ¡lÃ³zati interfÃ©szt hasznÃ¡lja. Itt kizÃ¡rhatja a nem kÃ­vÃ¡nt hÃ¡lÃ³zatokat. A mÃ³dosÃ­tÃ¡sok alkalmazÃ¡sÃ¡hoz Ãºjra kell indÃ­tania a kiszolgÃ¡lÃ³t.",
-    "preview": "ElÅ‘nÃ©zet",
-    "whitelist": "FehÃ©rlista",
-    "blacklist": "TiltÃ³lista"
+    "title": "Hálózati interfészek",
+    "info": "Alapértelmezésként a GravitySend az összes rendelkezésre álló hálózati interfészt használja. Itt kizárhatja a nem kívánt hálózatokat. A módosítások alkalmazásához újra kell indítania a kiszolgálót.",
+    "preview": "Elonézet",
+    "whitelist": "Fehérlista",
+    "blacklist": "Tiltólista"
   }
 }
+
 
 

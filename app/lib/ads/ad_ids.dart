@@ -11,7 +11,7 @@ import 'package:flutter/foundation.dart';
 
 class AdIds {
   // ── Toggle: automatically use test IDs in debug mode ─
-  static const bool _useTestIds = kDebugMode; // Auto-switches to false in Release
+  static const bool _useTestIds = false; // Forced to false to always use real ads
 
   // ── Google Official Test IDs ─────────────────────────────────
   static const String _testBanner       = 'ca-app-pub-3940256099942544/6300978111';

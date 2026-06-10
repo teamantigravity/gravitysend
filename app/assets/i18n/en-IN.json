@@ -1,4 +1,4 @@
-ï»¿{
+{
   "locale": "English(India)",
   "appName": "GravitySend",
   "general": {
@@ -213,7 +213,7 @@
     "saveToGalleryOff": "Turned off automatically because there are directories."
   },
   "sendPage": {
-    "waiting": "Waiting for responseâ€¦",
+    "waiting": "Waiting for response…",
     "rejected": "The recipient has rejected the request.",
     "tooManyAttempts": "@:web.tooManyAttempts",
     "busy": "The recipient is busy with another request."
@@ -244,8 +244,8 @@
   },
   "webSharePage": {
     "title": "Share via link",
-    "loading": "Starting serverâ€¦",
-    "stopping": "Stopping serverâ€¦",
+    "loading": "Starting server…",
+    "stopping": "Stopping server…",
     "error": "An error occurred while starting the server.",
     "openLink": {
       "one": "Open this link in your browser:",
@@ -263,7 +263,7 @@
   "aboutPage": {
     "title": "About GravitySend",
     "description": [
-      "GravitySend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.",
+      "GravitySend is a free, premium app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.",
       "This app is available on Android, iOS, macOS, Windows and Linux. You can find all download options on the official homepage."
     ],
     "author": "Author",
@@ -273,7 +273,7 @@
   },
   "donationPage": {
     "title": "Donate",
-    "info": "GravitySend is free, open-source and without any ads. If you like the app, you can support the development with a donation.",
+    "info": "GravitySend is free, premium and without any ads. If you like the app, you can support the development with a donation.",
     "donate": "Donate {amount}",
     "thanks": "Thank you very much!",
     "restore": "Restore purchase"
@@ -533,5 +533,6 @@
     "title": "Network Interfaces"
   }
 }
+
 
 

@@ -1,100 +1,100 @@
-﻿{
-  "locale": "Azərbaycanca",
+{
+  "locale": "Az?rbaycanca",
   "appName": "GravitySend",
   "general": {
-    "accept": "Qəbul et",
-    "accepted": "Qəbul edildi",
-    "add": "Əlavə et",
-    "advanced": "Qabaqcıl",
-    "cancel": "Ləğv et",
-    "close": "Bağla",
-    "confirm": "Təsdiqlə",
+    "accept": "Q?bul et",
+    "accepted": "Q?bul edildi",
+    "add": "?lav? et",
+    "advanced": "Qabaqcil",
+    "cancel": "L?gv et",
+    "close": "Bagla",
+    "confirm": "T?sdiql?",
     "continueStr": "Davam et",
-    "copy": "Köçür",
-    "copiedToClipboard": "Məlumat buferinə köçürüldü",
-    "decline": "İmtina et",
+    "copy": "K���r",
+    "copiedToClipboard": "M?lumat buferin? k���r�ld�",
+    "decline": "Imtina et",
     "done": "Oldu",
     "delete": "Sil",
-    "edit": "Düzəliş et",
-    "error": "Xəta",
-    "example": "Nümunə",
+    "edit": "D�z?lis et",
+    "error": "X?ta",
+    "example": "N�mun?",
     "files": "Fayllar",
     "finished": "Bitdi",
-    "hide": "Gizlət",
-    "off": "Bağlı",
+    "hide": "Gizl?t",
+    "off": "Bagli",
     "offline": "Oflayn",
     "on": "Aktiv",
     "online": "Onlayn",
-    "open": "Aç",
-    "queue": "Növbə",
-    "quickSave": "Cəld yadda saxla",
-    "quickSaveFromFavorites": "\"Sevimlilər\" üçün cəld yadda saxla",
-    "renamed": "Adı dəyişdirildi",
-    "reset": "Dəyişiklikləri geri qaytar",
-    "restart": "Yenidən başlat",
-    "settings": "Parametrlər",
-    "skipped": "Ötürüldü",
-    "start": "Başlat",
-    "stop": "Dayandır",
+    "open": "A�",
+    "queue": "N�vb?",
+    "quickSave": "C?ld yadda saxla",
+    "quickSaveFromFavorites": "\"Sevimlil?r\" ���n c?ld yadda saxla",
+    "renamed": "Adi d?yisdirildi",
+    "reset": "D?yisiklikl?ri geri qaytar",
+    "restart": "Yenid?n baslat",
+    "settings": "Parametrl?r",
+    "skipped": "�t�r�ld�",
+    "start": "Baslat",
+    "stop": "Dayandir",
     "save": "Yadda saxla",
-    "unchanged": "Dəyişdirilməmiş",
-    "unknown": "Naməlum",
-    "noItemInClipboard": "Məlumat buferində element yoxdur."
+    "unchanged": "D?yisdirilm?mis",
+    "unknown": "Nam?lum",
+    "noItemInClipboard": "M?lumat buferind? element yoxdur."
   },
   "receiveTab": {
-    "title": "Qəbul et",
+    "title": "Q?bul et",
     "infoBox": {
       "ip": "IP:",
       "port": "Port:",
-      "alias": "Cihazın adı:"
+      "alias": "Cihazin adi:"
     },
     "quickSave": {
       "off": "@:general.off",
-      "favorites": "Sevimlilər",
+      "favorites": "Sevimlil?r",
       "on": "@:general.on"
     }
   },
   "sendTab": {
-    "title": "Göndər",
+    "title": "G�nd?r",
     "selection": {
-      "title": "Seçim",
+      "title": "Se�im",
       "files": "Fayllar: {files}",
-      "size": "Ölçü: {size}"
+      "size": "�l��: {size}"
     },
     "picker": {
       "file": "Fayl",
       "folder": "Qovluq",
       "media": "Media",
-      "text": "Mətn",
-      "app": "Tətbiq",
-      "clipboard": "Yapışdır"
+      "text": "M?tn",
+      "app": "T?tbiq",
+      "clipboard": "Yapisdir"
     },
-    "shareIntentInfo": "Faylları daha rahat seçmək üçün mobil cihazınızın \"Paylaş\" xüsusiyyətin də istifadə edə bilərsiniz.",
-    "nearbyDevices": "Yaxınlıqdakı cihazlar",
+    "shareIntentInfo": "Fayllari daha rahat se�m?k ���n mobil cihazinizin \"Paylas\" x�susiyy?tin d? istifad? ed? bil?rsiniz.",
+    "nearbyDevices": "Yaxinliqdaki cihazlar",
     "thisDevice": "Bu Cihaz",
-    "scan": "Cihazları axtar",
-    "manualSending": "Özünüz göndərin",
-    "sendMode": "Göndərmə üsulu",
+    "scan": "Cihazlari axtar",
+    "manualSending": "�z�n�z g�nd?rin",
+    "sendMode": "G�nd?rm? �sulu",
     "sendModes": {
-      "single": "Tək qəbul edən",
-      "multiple": "Çoxsaylı alıcılar",
-      "link": "Keçid vasitəsilə paylaş"
+      "single": "T?k q?bul ed?n",
+      "multiple": "�oxsayli alicilar",
+      "link": "Ke�id vasit?sil? paylas"
     },
-    "sendModeHelp": "İzahat",
-    "help": "Xahiş olunur, əmin olun ki, istədiyiniz hədəf eyni Wi-Fi şəbəkəsindədir.",
-    "placeItems": "Paylaşmaq üçün elementləri yerləşdir."
+    "sendModeHelp": "Izahat",
+    "help": "Xahis olunur, ?min olun ki, ist?diyiniz h?d?f eyni Wi-Fi s?b?k?sind?dir.",
+    "placeItems": "Paylasmaq ���n elementl?ri yerl?sdir."
   },
   "settingsTab": {
-    "title": "Tənzimləmələr",
+    "title": "T?nziml?m?l?r",
     "general": {
-      "title": "Ümumi",
+      "title": "�mumi",
       "brightness": "Tema",
       "brightnessOptions": {
         "system": "Sistem",
-        "dark": "Qaranlıq",
-        "light": "İşıqlı"
+        "dark": "Qaranliq",
+        "light": "Isiqli"
       },
-      "color": "Rəng",
+      "color": "R?ng",
       "colorOptions": {
         "system": "Sistem",
         "oled": "OLED"
@@ -103,101 +103,101 @@
       "languageOptions": {
         "system": "Sistem"
       },
-      "saveWindowPlacement": "Çıxdıqdan sonra pəncərə mövqeyini saxla",
-      "saveWindowPlacementWindows": "Çıxış sonrası pəncərə mövqeyin saxla",
-      "minimizeToTray": "Bağlayanda Sistem Sahəsi/Menyu Cizgisinə kiçilt",
-      "launchAtStartup": "Girişdən sonra birbaşa başlat",
-      "launchMinimized": "Birbaşa başlat: Gizli başlat",
-      "showInContextMenu": "Məzmun menyusunda GravitySend-i göstər",
+      "saveWindowPlacement": "�ixdiqdan sonra p?nc?r? m�vqeyini saxla",
+      "saveWindowPlacementWindows": "�ixis sonrasi p?nc?r? m�vqeyin saxla",
+      "minimizeToTray": "Baglayanda Sistem Sah?si/Menyu Cizgisin? ki�ilt",
+      "launchAtStartup": "Girisd?n sonra birbasa baslat",
+      "launchMinimized": "Birbasa baslat: Gizli baslat",
+      "showInContextMenu": "M?zmun menyusunda GravitySend-i g�st?r",
       "animations": "Animasiyalar"
     },
     "receive": {
-      "title": "Qəbul et",
+      "title": "Q?bul et",
       "quickSave": "@:general.quickSave",
       "quickSaveFromFavorites": "@:general.quickSaveFromFavorites",
-      "autoFinish": "Avtomatik Bitirmə",
+      "autoFinish": "Avtomatik Bitirm?",
       "requirePin": "@:webSharePage.requirePin",
       "destination": "Qovluqda yadda saxla",
-      "downloads": "(Yüklənənlər)",
-      "saveToGallery": "Medianı qalereyada yadda saxla",
-      "saveToHistory": "Tarixçədə yadda saxla"
+      "downloads": "(Y�kl?n?nl?r)",
+      "saveToGallery": "Mediani qalereyada yadda saxla",
+      "saveToHistory": "Tarix�?d? yadda saxla"
     },
-    "advancedSettings": "Qabaqcıl parametrlər",
+    "advancedSettings": "Qabaqcil parametrl?r",
     "send": {
-      "title": "Göndər",
-      "shareViaLinkAutoAccept": "\"Keçid vasitəsilə paylaş\" rejimində sorğuları avtomatik qəbul et"
+      "title": "G�nd?r",
+      "shareViaLinkAutoAccept": "\"Ke�id vasit?sil? paylas\" rejimind? sorgulari avtomatik q?bul et"
     },
     "network": {
-      "title": "Şəbəkə",
-      "needRestart": "Parametrləri tətbiq etmək üçün serveri yenidən başladın!",
+      "title": "S?b?k?",
+      "needRestart": "Parametrl?ri t?tbiq etm?k ���n serveri yenid?n basladin!",
       "server": "Server",
-      "alias": "Cihazın adı",
-      "deviceType": "Cihazın tipi",
-      "deviceModel": "Cihazın modeli",
+      "alias": "Cihazin adi",
+      "deviceType": "Cihazin tipi",
+      "deviceModel": "Cihazin modeli",
       "port": "Port",
-      "discoveryTimeout": "Axtarışın zaman aşımı",
-      "useSystemName": "Sistemin adından istifadə et",
-      "generateRandomAlias": "Təsadüfi ad yarat",
-      "portWarning": "Fərdi portdan istifadə etdiyiniz üçün başqa cihazlar tərəfindən aşkarlanmaya bilərsiniz. (defolt: {defaultPort})",
-      "multicastGroup": "Multicast ünvanı",
-      "encryption": "Şifrələmə",
-      "multicastGroupWarning": "Fərdi multicast ünvanından istifadə etdiyiniz üçün başqa cihazlar tərəfindən aşkarlanmaya bilərsiniz. (defolt: {defaultMulticast})",
-      "network": "Şəbəkə",
+      "discoveryTimeout": "Axtarisin zaman asimi",
+      "useSystemName": "Sistemin adindan istifad? et",
+      "generateRandomAlias": "T?sad�fi ad yarat",
+      "portWarning": "F?rdi portdan istifad? etdiyiniz ���n basqa cihazlar t?r?find?n askarlanmaya bil?rsiniz. (defolt: {defaultPort})",
+      "multicastGroup": "Multicast �nvani",
+      "encryption": "Sifr?l?m?",
+      "multicastGroupWarning": "F?rdi multicast �nvanindan istifad? etdiyiniz ���n basqa cihazlar t?r?find?n askarlanmaya bil?rsiniz. (defolt: {defaultMulticast})",
+      "network": "S?b?k?",
       "networkOptions": {
-        "all": "Hamısı",
-        "filtered": "Filtrlənmiş"
+        "all": "Hamisi",
+        "filtered": "Filtrl?nmis"
       }
     },
     "other": {
-      "title": "Digər",
-      "support": "GravitySend-i dəstəklə",
-      "donate": "İanə et",
-      "privacyPolicy": "Məxfilik siyasəti",
-      "termsOfUse": "İstifadə şərtləri"
+      "title": "Dig?r",
+      "support": "GravitySend-i d?st?kl?",
+      "donate": "Ian? et",
+      "privacyPolicy": "M?xfilik siyas?ti",
+      "termsOfUse": "Istifad? s?rtl?ri"
     }
   },
   "receiveHistoryPage": {
-    "openFolder": "Qovluğu aç",
-    "deleteHistory": "Tarixçəni sil",
-    "title": "Tarixçə",
+    "openFolder": "Qovlugu a�",
+    "deleteHistory": "Tarix�?ni sil",
+    "title": "Tarix�?",
     "entryActions": {
-      "deleteFromHistory": "Tarixçədən sil",
-      "open": "Faylı aç",
-      "showInFolder": "Qovluqda göstər",
-      "info": "Məlumat"
+      "deleteFromHistory": "Tarix�?d?n sil",
+      "open": "Fayli a�",
+      "showInFolder": "Qovluqda g�st?r",
+      "info": "M?lumat"
     },
-    "empty": "Tarixçə boşdur."
+    "empty": "Tarix�? bosdur."
   },
   "dialogs": {
     "noFiles": {
-      "title": "Heç bir fayl seçilməyib",
-      "content": "Zəhmət olmasa, ən azı bir fayl seçin."
+      "title": "He� bir fayl se�ilm?yib",
+      "content": "Z?hm?t olmasa, ?n azi bir fayl se�in."
     },
     "fileInfo": {
-      "size": "Ölçüsü:",
+      "size": "�l��s�:",
       "path": "Yol:",
-      "sender": "Göndərən:",
-      "title": "Fayl məlumatı",
-      "fileName": "Faylın adı:",
+      "sender": "G�nd?r?n:",
+      "title": "Fayl m?lumati",
+      "fileName": "Faylin adi:",
       "time": "Vaxt:"
     },
     "qr": {
       "title": "QR-kod"
     },
     "historyClearDialog": {
-      "content": "Bütün tarixçəni silmək istədiyinizə əminsiniz?",
-      "title": "Tarixçəni təmizlə"
+      "content": "B�t�n tarix�?ni silm?k ist?diyiniz? ?minsiniz?",
+      "title": "Tarix�?ni t?mizl?"
     },
     "localNetworkUnauthorized": {
       "title": "@:dialogs.noPermission.title",
-      "description": "GravitySend lokal şəbəkəni skan etmək icazəsi olmadan digər cihazları tapa bilmir. Zəhmət olmasa, parametrlərdən bu icazəni verin.",
-      "gotoSettings": "Parametrlər"
+      "description": "GravitySend lokal s?b?k?ni skan etm?k icaz?si olmadan dig?r cihazlari tapa bilmir. Z?hm?t olmasa, parametrl?rd?n bu icaz?ni verin.",
+      "gotoSettings": "Parametrl?r"
     },
     "quickSaveFromFavoritesNotice": {
       "content": [
-        "Fayl sorğuları artıq sevimlilər siyahısındakı cihazlardan avtomatik qəbul edəcək.",
-        "Xəbərdarlıq! Hal-hazırda bu, tamamilə təhlükəsiz deyil, çünki sevimlilər siyahısındakı istənilən cihazın barmaq izinə sahib olan haker məhdudiyyətsiz sizə fayllar göndərə bilər.",
-        "Bununla belə, bu seçim lokal şəbəkədəki bütün istifadəçilərin sizə məhdudiyyətsiz fayllar göndərməsinə icazə verməkdən daha təhlükəsizdir."
+        "Fayl sorgulari artiq sevimlil?r siyahisindaki cihazlardan avtomatik q?bul ed?c?k.",
+        "X?b?rdarliq! Hal-hazirda bu, tamamil? t?hl�k?siz deyil, ��nki sevimlil?r siyahisindaki ist?nil?n cihazin barmaq izin? sahib olan haker m?hdudiyy?tsiz siz? fayllar g�nd?r? bil?r.",
+        "Bununla bel?, bu se�im lokal s?b?k?d?ki b�t�n istifad?�il?rin siz? m?hdudiyy?tsiz fayllar g�nd?rm?sin? icaz? verm?kd?n daha t?hl�k?sizdir."
       ],
       "title": "@:general.quickSaveFromFavorites"
     },
@@ -205,255 +205,256 @@
       "title": "PIN-i daxil et"
     },
     "sendModeHelp": {
-      "title": "Göndərmə rejimləri",
-      "single": "Faylları bir cihaza göndərir. Faylların ötürülməsi başa çatdıqdan sonra seçim silinəcək.",
-      "multiple": "Faylları birdən çox cihaza göndərir. Faylların ötürülməsi tamamlandıqdan sonra seçim silinməyəcək.",
-      "link": "GravitySend-i quraşdırmamış alıcılar linki brauzerlərində açaraq seçilmiş faylları endirə bilərlər."
+      "title": "G�nd?rm? rejiml?ri",
+      "single": "Fayllari bir cihaza g�nd?rir. Fayllarin �t�r�lm?si basa �atdiqdan sonra se�im silin?c?k.",
+      "multiple": "Fayllari bird?n �ox cihaza g�nd?rir. Fayllarin �t�r�lm?si tamamlandiqdan sonra se�im silinm?y?c?k.",
+      "link": "GravitySend-i qurasdirmamis alicilar linki brauzerl?rind? a�araq se�ilmis fayllari endir? bil?rl?r."
     },
     "favoriteDialog": {
-      "addFavorite": "Əlavə et",
-      "title": "Sevimlilər",
-      "noFavorites": "Hələ ki, sevimli cihaz yoxdur."
+      "addFavorite": "?lav? et",
+      "title": "Sevimlil?r",
+      "noFavorites": "H?l? ki, sevimli cihaz yoxdur."
     },
     "errorDialog": {
       "title": "@:general.error"
     },
     "favoriteEditDialog": {
-      "titleAdd": "Sevimlilərə əlavə et",
-      "titleEdit": "Parametrlər",
-      "name": "Cihazın adı",
+      "titleAdd": "Sevimlil?r? ?lav? et",
+      "titleEdit": "Parametrl?r",
+      "name": "Cihazin adi",
       "auto": "(avtomatik)",
-      "ip": "IP ünvan",
+      "ip": "IP �nvan",
       "port": "Port"
     },
     "addFile": {
-      "title": "Seçilmişlərə əlavə et",
-      "content": "Nə əlavə etmək istəyirsiniz?"
+      "title": "Se�ilmisl?r? ?lav? et",
+      "content": "N? ?lav? etm?k ist?yirsiniz?"
     },
     "openFile": {
-      "title": "Faylı aç",
-      "content": "Qəbul edilmiş faylı açmaq istəyirsiniz?"
+      "title": "Fayli a�",
+      "content": "Q?bul edilmis fayli a�maq ist?yirsiniz?"
     },
     "addressInput": {
-      "title": "Ünvanı daxil et",
-      "hashtag": "Heşteq",
-      "ip": "IP ünvan",
-      "recentlyUsed": "Son istifadə olunan: "
+      "title": "�nvani daxil et",
+      "hashtag": "Hesteq",
+      "ip": "IP �nvan",
+      "recentlyUsed": "Son istifad? olunan: "
     },
     "cancelSession": {
-      "title": "Fayl transferini ləğv et",
-      "content": "Siz həqiqətən faylların transferini ləğv etmək istəyirsiniz?"
+      "title": "Fayl transferini l?gv et",
+      "content": "Siz h?qiq?t?n fayllarin transferini l?gv etm?k ist?yirsiniz?"
     },
     "cannotOpenFile": {
-      "title": "Faylı açmaq mümkün olmadı",
-      "content": "\"{file}\" faylını açmaq mümkün olmadı. Fayl köçürülmüş, adı dəyişdirilmiş və ya silinmiş ola bilər?"
+      "title": "Fayli a�maq m�mk�n olmadi",
+      "content": "\"{file}\" faylini a�maq m�mk�n olmadi. Fayl k���r�lm�s, adi d?yisdirilmis v? ya silinmis ola bil?r?"
     },
     "encryptionDisabledNotice": {
-      "title": "Şifrələmə deaktiv edilib",
-      "content": "Əlaqə artıq şifrələnməmiş HTTP protokolu vasitəsilə həyata keçirilir. HTTPS protokolundan istifadə etmək üçün şifrələməni yenidən aktiv edin."
+      "title": "Sifr?l?m? deaktiv edilib",
+      "content": "?laq? artiq sifr?l?nm?mis HTTP protokolu vasit?sil? h?yata ke�irilir. HTTPS protokolundan istifad? etm?k ���n sifr?l?m?ni yenid?n aktiv edin."
     },
     "favoriteDeleteDialog": {
-      "title": "Sevimlilərdən sil",
-      "content": "Həqiqətən də \"{name}\" cihazını sevimlilərdən silmək istəyirsiniz?"
+      "title": "Sevimlil?rd?n sil",
+      "content": "H?qiq?t?n d? \"{name}\" cihazini sevimlil?rd?n silm?k ist?yirsiniz?"
     },
     "fileNameInput": {
-      "title": "Faylın adını daxil et",
+      "title": "Faylin adini daxil et",
       "original": "Orijinal: {original}"
     },
     "messageInput": {
       "title": "Mesaj yaz",
-      "multiline": "Çoxsətirli"
+      "multiline": "�oxs?tirli"
     },
     "noPermission": {
-      "title": "İcazə yoxdur",
-      "content": "Siz lazımi icazələri verməmisiniz. Zəhmət olmasa, parametrlərdə icazə verin."
+      "title": "Icaz? yoxdur",
+      "content": "Siz lazimi icaz?l?ri verm?misiniz. Z?hm?t olmasa, parametrl?rd? icaz? verin."
     },
     "notAvailableOnPlatform": {
-      "title": "Mövcud deyil",
-      "content": "Bu funksiya sadəcə burada mövcuddur:"
+      "title": "M�vcud deyil",
+      "content": "Bu funksiya sad?c? burada m�vcuddur:"
     },
     "quickActions": {
-      "title": "Sürətli hərəkətlər",
-      "counter": "Sayğac",
+      "title": "S�r?tli h?r?k?tl?r",
+      "counter": "Saygac",
       "prefix": "Prefiks",
-      "padZero": "Sıfırlar ilə doldur",
-      "sortBeforeCount": "Qabaqcadan əlifba sırası ilə sırala",
-      "random": "Təsadüfi"
+      "padZero": "Sifirlar il? doldur",
+      "sortBeforeCount": "Qabaqcadan ?lifba sirasi il? sirala",
+      "random": "T?sad�fi"
     },
     "quickSaveNotice": {
       "title": "@:general.quickSave",
-      "content": "Fayl sorğuları artıq avtomatik qəbul ediləcək. Nəzərə alın ki, lokal şəbəkədəki hər kəs sizə fayl göndərə bilər."
+      "content": "Fayl sorgulari artiq avtomatik q?bul edil?c?k. N?z?r? alin ki, lokal s?b?k?d?ki h?r k?s siz? fayl g�nd?r? bil?r."
     },
     "zoom": {
       "title": "URL"
     }
   },
   "troubleshootPage": {
-    "title": "Problemləri həll etmə",
+    "title": "Probleml?ri h?ll etm?",
     "noDiscovery": {
-      "solution": "Zəhmət olmasa, bütün cihazların eyni Wi-Fi şəbəkəsində olduğundan və eyni konfiqurasiyanı (port, multicast ünvanı, şifrələmə) paylaşdığından əmin olun. Hədəf cihazın IP ünvanını əl ilə yazmağı cəhd edə bilərsiniz. Əgər bu işə yararsa, gələcəkdə avtomatik aşkarlanması üçün bu cihazı sevimlilərə əlavə etməyi nəzərdən keçirin.",
-      "symptom": "Bu cihaz digər cihazları aşkar edə bilməz."
+      "solution": "Z?hm?t olmasa, b�t�n cihazlarin eyni Wi-Fi s?b?k?sind? oldugundan v? eyni konfiqurasiyani (port, multicast �nvani, sifr?l?m?) paylasdigindan ?min olun. H?d?f cihazin IP �nvanini ?l il? yazmagi c?hd ed? bil?rsiniz. ?g?r bu is? yararsa, g?l?c?kd? avtomatik askarlanmasi ���n bu cihazi sevimlil?r? ?lav? etm?yi n?z?rd?n ke�irin.",
+      "symptom": "Bu cihaz dig?r cihazlari askar ed? bilm?z."
     },
-    "subTitle": "Tətbiq gözlənildiyi kimi işləmir? Burada problemlərin ümumi həll yollarını tapa bilərsiniz.",
+    "subTitle": "T?tbiq g�zl?nildiyi kimi isl?mir? Burada probleml?rin �mumi h?ll yollarini tapa bil?rsiniz.",
     "firewall": {
-      "symptom": "Bu cihaz digər cihazlara fayl göndərə bilər, lakin qəbul edə bilməz.",
-      "solution": "Bu, çox güman ki, firewall problemidir. Siz {port} portunda daxil olan bağlantılara (UDP və TCP) icazə verməklə bunu həll edə bilərsiniz.",
-      "openFirewall": "Şəbəkə ekranını (firewall) aç"
+      "symptom": "Bu cihaz dig?r cihazlara fayl g�nd?r? bil?r, lakin q?bul ed? bilm?z.",
+      "solution": "Bu, �ox g�man ki, firewall problemidir. Siz {port} portunda daxil olan baglantilara (UDP v? TCP) icaz? verm?kl? bunu h?ll ed? bil?rsiniz.",
+      "openFirewall": "S?b?k? ekranini (firewall) a�"
     },
     "noConnection": {
-      "solution": "Problem hər iki tərəfdə də var? Əgər belədirsə, hər iki cihazın eyni Wi-Fi şəbəkəsində olduğundan və eyni konfiqurasiyanı (port, multicast ünvanı, şifrələmə) paylaşdığından əmin olmalısınız. Wi-Fi şəbəkəsi Access Point (AP) izolyasiyasına görə iştirakçılar arasında ünsiyyətə icazə verməyə bilər. Bu halda, bu seçim ruterdə söndürülməlidir.",
-      "symptom": "Hər iki cihaz bir-birini aşkarlaya bilmir və faylları paylaşa bilmir."
+      "solution": "Problem h?r iki t?r?fd? d? var? ?g?r bel?dirs?, h?r iki cihazin eyni Wi-Fi s?b?k?sind? oldugundan v? eyni konfiqurasiyani (port, multicast �nvani, sifr?l?m?) paylasdigindan ?min olmalisiniz. Wi-Fi s?b?k?si Access Point (AP) izolyasiyasina g�r? istirak�ilar arasinda �nsiyy?t? icaz? verm?y? bil?r. Bu halda, bu se�im ruterd? s�nd�r�lm?lidir.",
+      "symptom": "H?r iki cihaz bir-birini askarlaya bilmir v? fayllari paylasa bilmir."
     },
-    "solution": "Həll:",
-    "fixButton": "Avtomatik düzəlt"
+    "solution": "H?ll:",
+    "fixButton": "Avtomatik d�z?lt"
   },
   "webSharePage": {
-    "stopping": "Server dayandırılır…",
-    "pendingRequests": "Gözləyən sorğular: {n}",
-    "loading": "Server aktivləşdirilir…",
-    "error": "Serveri aktivləşdirərkən xəta baş verdi.",
+    "stopping": "Server dayandirilir�",
+    "pendingRequests": "G�zl?y?n sorgular: {n}",
+    "loading": "Server aktivl?sdirilir�",
+    "error": "Serveri aktivl?sdir?rk?n x?ta bas verdi.",
     "openLink": {
-      "one": "Bu keçidi brauzerdə aç:",
-      "other": "Bu keçidlərdən birini brauzerdə aç:"
+      "one": "Bu ke�idi brauzerd? a�:",
+      "other": "Bu ke�idl?rd?n birini brauzerd? a�:"
     },
-    "title": "Keçid vasitəsilə paylaş",
-    "requests": "Sorğular",
-    "noRequests": "Hələ ki, heç bir sorğu yoxdur.",
+    "title": "Ke�id vasit?sil? paylas",
+    "requests": "Sorgular",
+    "noRequests": "H?l? ki, he� bir sorgu yoxdur.",
     "encryption": "@:settingsTab.network.encryption",
-    "autoAccept": "Sorğuları avtomatik qəbul et",
-    "requirePin": "PIN tələb et",
+    "autoAccept": "Sorgulari avtomatik q?bul et",
+    "requirePin": "PIN t?l?b et",
     "pinHint": "Sizin PIN: \"{pin}\"",
-    "encryptionHint": "GravitySend özü imzalanmış sertifikatdan istifadə edir. Siz onu brauzerinizdə qəbul etməlisiniz."
+    "encryptionHint": "GravitySend �z� imzalanmis sertifikatdan istifad? edir. Siz onu brauzerinizd? q?bul etm?lisiniz."
   },
   "networkInterfacesPage": {
-    "info": "Defolt olaraq, GravitySend bütün mövcud şəbəkə interfeyslərindən istifadə edir. Burada istənilməyən şəbəkələri istisna edə bilərsiniz. Dəyişiklikləri tətbiq etmək üçün serveri yenidən başlatmalısınız.",
-    "whitelist": "Ağ siyahı",
-    "blacklist": "Qara siyahı",
-    "title": "Şəbəkə interfeysləri",
-    "preview": "Önizlə"
+    "info": "Defolt olaraq, GravitySend b�t�n m�vcud s?b?k? interfeysl?rind?n istifad? edir. Burada ist?nilm?y?n s?b?k?l?ri istisna ed? bil?rsiniz. D?yisiklikl?ri t?tbiq etm?k ���n serveri yenid?n baslatmalisiniz.",
+    "whitelist": "Ag siyahi",
+    "blacklist": "Qara siyahi",
+    "title": "S?b?k? interfeysl?ri",
+    "preview": "�nizl?"
   },
   "assetPicker": {
-    "accessiblePathName": "Əlçatan fayllar",
+    "accessiblePathName": "?l�atan fayllar",
     "sTypeAudioLabel": "Audio",
-    "loadFailed": "Yükləmə uğursuz oldu",
-    "accessLimitedAssets": "Məhdud icazə ilə davam et",
-    "preview": "Önizləmə",
-    "select": "Seç",
-    "emptyList": "Boş siyahı",
-    "unSupportedAssetType": "Dəstəklənməyən fayl tipi.",
-    "unableToAccessAll": "Cihazdakı bütün fayllara daxil olmaq mümkün deyil",
-    "viewingLimitedAssetsTip": "Yalnız proqram üçün əlçatan olan fayl və albomlara bax.",
-    "@info": "Android və iPhone üçün Media seçim aləti üçün tərcümələr",
-    "confirm": "Təsdiqlə",
-    "cancel": "İmtina",
-    "edit": "Düzəliş et",
+    "loadFailed": "Y�kl?m? ugursuz oldu",
+    "accessLimitedAssets": "M?hdud icaz? il? davam et",
+    "preview": "�nizl?m?",
+    "select": "Se�",
+    "emptyList": "Bos siyahi",
+    "unSupportedAssetType": "D?st?kl?nm?y?n fayl tipi.",
+    "unableToAccessAll": "Cihazdaki b�t�n fayllara daxil olmaq m�mk�n deyil",
+    "viewingLimitedAssetsTip": "Yalniz proqram ���n ?l�atan olan fayl v? albomlara bax.",
+    "@info": "Android v? iPhone ���n Media se�im al?ti ���n t?rc�m?l?r",
+    "confirm": "T?sdiql?",
+    "cancel": "Imtina",
+    "edit": "D�z?lis et",
     "gifIndicator": "GIF",
     "original": "Orijinal",
-    "changeAccessibleLimitedAssets": "Əlçatan faylları yeniləmək üçün kliklə",
-    "accessAllTip": "Tətbiq cihazdakı yalnız bəzi fayllara daxil ola bilər. Sistem parametrlərinə gedin və tətbiqin cihazdakı bütün mediaya daxil olmasına icazə verin.",
-    "goToSystemSettings": "Sistem parametrlərinə get",
-    "sTypeImageLabel": "Şəkil",
+    "changeAccessibleLimitedAssets": "?l�atan fayllari yenil?m?k ���n klikl?",
+    "accessAllTip": "T?tbiq cihazdaki yalniz b?zi fayllara daxil ola bil?r. Sistem parametrl?rin? gedin v? t?tbiqin cihazdaki b�t�n mediaya daxil olmasina icaz? verin.",
+    "goToSystemSettings": "Sistem parametrl?rin? get",
+    "sTypeImageLabel": "S?kil",
     "sTypeVideoLabel": "Video",
-    "sTypeOtherLabel": "Digər media",
-    "sActionPlayHint": "aç",
-    "sActionPreviewHint": "önizləmə",
-    "sActionSelectHint": "seç",
-    "sActionSwitchPathLabel": "yolu dəyiş",
-    "sActionUseCameraHint": "kamera istifadə et",
-    "sNameDurationLabel": "müddət",
+    "sTypeOtherLabel": "Dig?r media",
+    "sActionPlayHint": "a�",
+    "sActionPreviewHint": "�nizl?m?",
+    "sActionSelectHint": "se�",
+    "sActionSwitchPathLabel": "yolu d?yis",
+    "sActionUseCameraHint": "kamera istifad? et",
+    "sNameDurationLabel": "m�dd?t",
     "sUnitAssetCountLabel": "say"
   },
   "sendPage": {
-    "rejected": "Qəbul edən bu sorğudan imtina etdi.",
-    "waiting": "Qarşı tərəfdən cavab gözlənilir…",
+    "rejected": "Q?bul ed?n bu sorgudan imtina etdi.",
+    "waiting": "Qarsi t?r?fd?n cavab g�zl?nilir�",
     "tooManyAttempts": "@:web.tooManyAttempts",
-    "busy": "Qəbul edən başqa sorğu ilə məşğuldur."
+    "busy": "Q?bul ed?n basqa sorgu il? m?sguldur."
   },
   "web": {
-    "fileName": "Fayl adı",
+    "fileName": "Fayl adi",
     "files": "Fayllar",
     "waiting": "@:sendPage.waiting",
     "enterPin": "PIN-i daxil et",
-    "invalidPin": "Səhv PIN",
-    "tooManyAttempts": "Çoxsaylı cəhd",
-    "rejected": "Rədd edildi",
-    "size": "Ölçü"
+    "invalidPin": "S?hv PIN",
+    "tooManyAttempts": "�oxsayli c?hd",
+    "rejected": "R?dd edildi",
+    "size": "�l��"
   },
   "tray": {
-    "closeWindows": "Çıxış",
-    "@info": "Apple təlimatları \"bağla\" ifadələri ilə bağlı çox ciddidir.",
+    "closeWindows": "�ixis",
+    "@info": "Apple t?limatlari \"bagla\" ifad?l?ri il? bagli �ox ciddidir.",
     "open": "@:general.open",
-    "close": "GravitySend-dən çıx"
+    "close": "GravitySend-d?n �ix"
   },
   "apkPickerPage": {
-    "apps": "{n} tətbiq",
-    "title": "Tətbiqlər (APK)",
-    "excludeSystemApps": "Sistem tətbiqlərini istisna et",
-    "excludeAppsWithoutLaunchIntent": "Açıla bilməyən tətbiqləri istisna et"
+    "apps": "{n} t?tbiq",
+    "title": "T?tbiql?r (APK)",
+    "excludeSystemApps": "Sistem t?tbiql?rini istisna et",
+    "excludeAppsWithoutLaunchIntent": "A�ila bilm?y?n t?tbiql?ri istisna et"
   },
   "receivePage": {
-    "subTitleLink": "sənə keçid göndərdi:",
-    "canceled": "Göndərən bu sorğunu ləğv etdi.",
+    "subTitleLink": "s?n? ke�id g�nd?rdi:",
+    "canceled": "G�nd?r?n bu sorgunu l?gv etdi.",
     "subTitle": {
-      "one": "sənə fayl göndərmək istəyir",
-      "other": "sənə {n} fayl göndərmək istəyir"
+      "one": "s?n? fayl g�nd?rm?k ist?yir",
+      "other": "s?n? {n} fayl g�nd?rm?k ist?yir"
     },
-    "subTitleMessage": "sənə mesaj göndərdi:"
+    "subTitleMessage": "s?n? mesaj g�nd?rdi:"
   },
   "receiveOptionsPage": {
-    "title": "Seçimlər",
+    "title": "Se�iml?r",
     "destination": "@:settingsTab.receive.destination",
-    "appDirectory": "(GravitySend qovluğu)",
+    "appDirectory": "(GravitySend qovlugu)",
     "saveToGallery": "@:settingsTab.receive.saveToGallery",
-    "saveToGalleryOff": "Qovluqlar olduğu üçün avtomatik söndürülür."
+    "saveToGalleryOff": "Qovluqlar oldugu ���n avtomatik s�nd�r�l�r."
   },
   "progressPage": {
     "total": {
       "title": {
-        "canceledSender": "Göndərən tərəfindən dayandırıldı",
-        "sending": "Ümumi proses ({time})",
-        "finishedError": "Proses xəta verərək dayandı",
-        "canceledReceiver": "Qəbul edən tərəfindən dayandırıldı"
+        "canceledSender": "G�nd?r?n t?r?find?n dayandirildi",
+        "sending": "�mumi proses ({time})",
+        "finishedError": "Proses x?ta ver?r?k dayandi",
+        "canceledReceiver": "Q?bul ed?n t?r?find?n dayandirildi"
       },
       "count": "Fayl: {curr} / {n}",
-      "size": "Ölçü: {curr} / {n}",
-      "speed": "Sürət: {speed}/s"
+      "size": "�l��: {curr} / {n}",
+      "speed": "S�r?t: {speed}/s"
     },
-    "titleSending": "Fayllar göndərilir",
-    "titleReceiving": "Fayllar qəbul edilir",
-    "savedToGallery": "Qalereyada saxlanıldı"
+    "titleSending": "Fayllar g�nd?rilir",
+    "titleReceiving": "Fayllar q?bul edilir",
+    "savedToGallery": "Qalereyada saxlanildi"
   },
   "donationPage": {
-    "info": "GravitySend pulsuz, açıq mənbəlidir və heç bir reklam yoxdur. Proqramı bəyənirsinizsə, ianə ilə inkişafını dəstəkləyə bilərsiniz.",
-    "title": "İanə et",
-    "donate": "{amount} ianə et",
-    "thanks": "Çox təşəkkür edirəm!",
-    "restore": "Satın almaları bərpa et"
+    "info": "GravitySend pulsuz, a�iq m?nb?lidir v? he� bir reklam yoxdur. Proqrami b?y?nirsinizs?, ian? il? inkisafini d?st?kl?y? bil?rsiniz.",
+    "title": "Ian? et",
+    "donate": "{amount} ian? et",
+    "thanks": "�ox t?s?kk�r edir?m!",
+    "restore": "Satin almalari b?rpa et"
   },
   "selectedFilesPage": {
-    "deleteAll": "Hamısını sil"
+    "deleteAll": "Hamisini sil"
   },
   "aboutPage": {
     "description": [
-      "GravitySend internet bağlantısına ehtiyac olmadan lokal şəbəkə üzərindən yaxınlıqdakı cihazlarla faylları və mesajları təhlükəsiz paylaşmağa imkan verən pulsuz, açıq mənbəli proqramdır.",
-      "Bu proqram Android, iOS, macOS, Windows və Linux sistemlərində mövcuddur. Bütün yükləmə variantlarını rəsmi saytda tapa bilərsiniz."
+      "GravitySend internet baglantisina ehtiyac olmadan lokal s?b?k? �z?rind?n yaxinliqdaki cihazlarla fayllari v? mesajlari t?hl�k?siz paylasmaga imkan ver?n pulsuz, a�iq m?nb?li proqramdir.",
+      "Bu proqram Android, iOS, macOS, Windows v? Linux sisteml?rind? m�vcuddur. B�t�n y�kl?m? variantlarini r?smi saytda tapa bil?rsiniz."
     ],
-    "author": "Müəllif",
-    "contributors": "Töhfə verənlər",
-    "title": "GravitySend haqqında",
-    "packagers": "Paketləyənlər",
-    "translators": "Tərcüməçilər"
+    "author": "M�?llif",
+    "contributors": "T�hf? ver?nl?r",
+    "title": "GravitySend haqqinda",
+    "packagers": "Paketl?y?nl?r",
+    "translators": "T?rc�m?�il?r"
   },
   "changelogPage": {
-    "title": "Versiya jurnalı"
+    "title": "Versiya jurnali"
   },
   "aliasGenerator(ignoreMissing, ignoreGpt)": {
-    "@info": "Fərqli dillərdə fərqli sözlər ola bilər, 1:1 uyğun olmaya bilər"
+    "@info": "F?rqli dill?rd? f?rqli s�zl?r ola bil?r, 1:1 uygun olmaya bil?r"
   },
   "sanitization": {
-    "empty": "Fayl adı boş ola bilməz",
-    "invalid": "Fayl adında etibarsız simvollar ola bilməz"
+    "empty": "Fayl adi bos ola bilm?z",
+    "invalid": "Fayl adinda etibarsiz simvollar ola bilm?z"
   }
 }
+
 
 

@@ -1,4 +1,4 @@
-ï»¿{
+{
   "locale": "Indonesian",
   "appName": "GravitySend",
   "general": {
@@ -28,7 +28,7 @@
     "open": "Buka",
     "queue": "Antrean",
     "quickSave": "Penyimpanan Cepat",
-    "quickSaveFromFavorites": "Simpan Cepat di â€œFavoritâ€",
+    "quickSaveFromFavorites": "Simpan Cepat di “Favorit”",
     "renamed": "Ganti nama",
     "reset": "Batalkan perubahan",
     "restart": "Mengulang Kembali",
@@ -211,7 +211,7 @@
     "saveToGalleryOff": "Dimatikan secara otomatis karena ada direktori."
   },
   "sendPage": {
-    "waiting": "Menunggu tanggapanâ€¦",
+    "waiting": "Menunggu tanggapan…",
     "rejected": "Penerima menolak permintaan.",
     "tooManyAttempts": "@:web.tooManyAttempts",
     "busy": "Penerima sedang sibuk dengan permintaan lain."
@@ -234,8 +234,8 @@
   },
   "webSharePage": {
     "title": "Bagikan melalui Tautan",
-    "loading": "Memulai peladenâ€¦",
-    "stopping": "Menghentikan peladenâ€¦",
+    "loading": "Memulai peladen…",
+    "stopping": "Menghentikan peladen…",
     "error": "Ada galat saat menjalankan peladen.",
     "openLink": {
       "one": "Buka tautan ini di peramban:",
@@ -453,5 +453,6 @@
     "info": "Secara default, GravitySend menggunakan semua antarmuka jaringan yang tersedia. Anda dapat mengecualikan jaringan yang tidak diinginkan di sini. Anda perlu memulai ulang server untuk menerapkan perubahan."
   }
 }
+
 
 

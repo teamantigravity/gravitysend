@@ -1,4 +1,4 @@
-ï»¿{
+{
   "locale": "Nederlands",
   "appName": "GravitySend",
   "general": {
@@ -10,7 +10,7 @@
     "close": "Sluiten",
     "confirm": "Bevestigen",
     "continueStr": "Doorgaan",
-    "copy": "KopiÃ«ren",
+    "copy": "Kopiëren",
     "copiedToClipboard": "Gekopieerd naar klembord",
     "decline": "Weigeren",
     "done": "Gereed",
@@ -76,7 +76,7 @@
     "manualSending": "Handmatig verzenden",
     "sendMode": "Verzendmodus",
     "sendModes": {
-      "single": "EÃ©n ontvanger",
+      "single": "Eén ontvanger",
       "multiple": "Meerdere ontvangers",
       "link": "Delen via link"
     },
@@ -103,7 +103,7 @@
       "languageOptions": {
         "system": "Systeem"
       },
-      "saveWindowPlacement": "Vensterpositie na beÃ«indigen opslaan",
+      "saveWindowPlacement": "Vensterpositie na beëindigen opslaan",
       "saveWindowPlacementWindows": "Vensterpositie na afsluiten opslaan",
       "minimizeToTray": "Sluiten: minimaliseren naar systeemvak/menubalk",
       "launchAtStartup": "Automatisch starten na aanmelden",
@@ -213,7 +213,7 @@
     "saveToGalleryOff": "Automatisch uitgezet omdat er mappen bij zitten."
   },
   "sendPage": {
-    "waiting": "Wachten op antwoordâ€¦",
+    "waiting": "Wachten op antwoord…",
     "rejected": "De ontvanger heeft het verzoek geweigerd.",
     "tooManyAttempts": "@:web.tooManyAttempts",
     "busy": "De ontvanger is bezig met een ander verzoek."
@@ -244,8 +244,8 @@
   },
   "webSharePage": {
     "title": "Delen via link",
-    "loading": "Server startenâ€¦",
-    "stopping": "Server stoppenâ€¦",
+    "loading": "Server starten…",
+    "stopping": "Server stoppen…",
     "error": "Er is een fout opgetreden bij het starten van de server.",
     "openLink": {
       "one": "Open deze link in je browser:",
@@ -264,7 +264,7 @@
     "title": "Over GravitySend",
     "description": [
       "GravitySend is een gratis en opensource app waarmee je veilig bestanden en berichten met apparaten op je lokale netwerk kunt delen, zonder internetverbinding.",
-      "De app is beschikbaar voor Android, iOS, macOS, Windows en Linux. Je vindt alle downloadopties op de officiÃ«le website."
+      "De app is beschikbaar voor Android, iOS, macOS, Windows en Linux. Je vindt alle downloadopties op de officiële website."
     ],
     "author": "Auteur",
     "contributors": "Bijdragers",
@@ -358,7 +358,7 @@
     },
     "noFiles": {
       "title": "Geen bestanden geselecteerd",
-      "content": "Selecteer ten minste Ã©Ã©n bestand."
+      "content": "Selecteer ten minste één bestand."
     },
     "noPermission": {
       "title": "Geen rechten",
@@ -396,9 +396,9 @@
     },
     "sendModeHelp": {
       "title": "Verzendmodi",
-      "single": "Bestanden naar Ã©Ã©n ontvanger verzenden. De selectie wordt na de bestandsoverdracht gewist.",
+      "single": "Bestanden naar één ontvanger verzenden. De selectie wordt na de bestandsoverdracht gewist.",
       "multiple": "Bestanden naar meerdere ontvangers verzenden. De selectie blijft na de bestandsoverdracht behouden.",
-      "link": "Ontvangers die GravitySend niet hebben geÃ¯nstalleerd kunnen de bestanden downloaden door de link in hun browser te openen."
+      "link": "Ontvangers die GravitySend niet hebben geïnstalleerd kunnen de bestanden downloaden door de link in hun browser te openen."
     },
     "zoom": {
       "title": "URL"
@@ -463,5 +463,6 @@
     "blacklist": "Blacklist"
   }
 }
+
 
 

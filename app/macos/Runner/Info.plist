@@ -9,7 +9,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-    <string>GravitySend</string>
+    <string>Gravity Send</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIconFile</key>
@@ -147,7 +147,7 @@
             <key>NSMessage</key>
             <string>handleSendTextService</string>
             <key>NSPortName</key>
-            <string>GravitySend</string>
+            <string>Gravity Send</string>
             <key>NSSendTypes</key>
             <array>
                 <string>public.plain-text</string>
@@ -156,3 +156,4 @@
     </array>
 </dict>
 </plist>
+

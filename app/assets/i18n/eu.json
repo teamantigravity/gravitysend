@@ -1,4 +1,4 @@
-ï»¿{
+{
   "locale": "Euskara",
   "appName": "GravitySend",
   "general": {
@@ -39,7 +39,7 @@
     "unchanged": "Aldaketarik gabe",
     "unknown": "Ezezaguna",
     "noItemInClipboard": "Arbela hutsik dago.",
-    "quickSaveFromFavorites": "â€œGogokoetanâ€ gorde"
+    "quickSaveFromFavorites": "“Gogokoetan” gorde"
   },
   "receiveTab": {
     "title": "Eskuratu",
@@ -145,7 +145,7 @@
     "advancedSettings": "Ezarpen aurreratuak",
     "send": {
       "title": "Bidali",
-      "shareViaLinkAutoAccept": "Eskaerak automatikoki onartu â€œURL bidez partekatuâ€ moduan"
+      "shareViaLinkAutoAccept": "Eskaerak automatikoki onartu “URL bidez partekatu” moduan"
     },
     "other": {
       "title": "Besteak",
@@ -268,7 +268,7 @@
     },
     "cancelSession": {
       "title": "Bertan behera utzi fitxategi bidalketa",
-      "content": "Â¿Benetan nahi duzu bertan behera utzi fitxategi bidalketa?"
+      "content": "¿Benetan nahi duzu bertan behera utzi fitxategi bidalketa?"
     },
     "cannotOpenFile": {
       "title": "Ezin da fitxategia ireki",
@@ -403,5 +403,6 @@
     "title": "Sare interfazeak"
   }
 }
+
 
 

@@ -20,7 +20,7 @@
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
 
     <application
-        android:label="GravitySend"
+        android:label="Gravity Send"
         android:name="${applicationName}"
         android:usesCleartextTraffic="true"
         android:banner="@drawable/banner"
@@ -75,8 +75,8 @@
         <!-- Quick tile to launch the app -->
         <service
             android:name=".QuickTileService"
-            android:icon="@mipmap/ic_launcher_quicktile_foreground"
-            android:label="GravitySend"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Gravity Send"
             android:process=":quick_tile_service"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
             android:exported="true"
@@ -93,3 +93,4 @@
             android:value="2" />
     </application>
 </manifest>
+
