@@ -21,7 +21,8 @@ import 'package:routerino/routerino.dart';
 
 Future<void> main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
-  await AdManager.init();
+  // Initialize AdMob in the background
+  AdManager.init();
 
   // Restore ad-free status on app launch (for returning users)
   InAppPurchase.instance.purchaseStream.listen((purchases) {

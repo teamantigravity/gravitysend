@@ -35,20 +35,7 @@ class _UpgradePageState extends State<UpgradePage> {
     }
     final response = await _iap.queryProductDetails({kRemoveAdsProductId});
     if (response.productDetails.isEmpty) {
-      // Hot swap for local development if ID is not found
-      if (mounted) {
-        setState(() {
-          _product = ProductDetails(
-            id: kRemoveAdsProductId,
-            title: 'GravitySend Pro',
-            description: 'One-time purchase to remove ads.',
-            price: '\$1.99',
-            rawPrice: 1.99,
-            currencyCode: 'USD',
-          );
-          _loading = false;
-        });
-      }
+      if (mounted) setState(() { _loading = false; _error = 'Store unavailable or product not found'; });
       return;
     }
     if (mounted) setState(() { _product = response.productDetails.first; _loading = false; });
@@ -83,14 +70,11 @@ class _UpgradePageState extends State<UpgradePage> {
         purchaseParam: PurchaseParam(productDetails: _product!),
       );
     } catch (e) {
-      // Hot swap simulated purchase if store fails
-      await Future.delayed(const Duration(seconds: 1));
-      unawaited(AdManager.setAdFree(true));
       if (mounted) {
+        setState(() => _purchasing = false);
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Ads removed. Thank you! (Mock) ⚡')),
+          SnackBar(content: Text('Purchase failed: $e')),
         );
-        Navigator.of(context).pop();
       }
     }
   }
