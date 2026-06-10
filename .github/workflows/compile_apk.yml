@@ -20,7 +20,7 @@ on:
           - both
 
 env:
-  FLUTTER_VERSION: "3.38.10"
+  FLUTTER_VERSION: "3.44.0"
   RUST_VERSION: "1.93.1"
   # NDK version must match Flutter's embedded NDK for this Flutter version
   NDK_VERSION: "r27c"
