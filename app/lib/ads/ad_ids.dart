@@ -7,9 +7,11 @@
 //   Banner:        ca-app-pub-4989086156410627/9751767477  (GS_Android_Banner)
 //   Interstitial:  ca-app-pub-4989086156410627/9509598049  (GS_Android_Interstitial)
 
+import 'package:flutter/foundation.dart';
+
 class AdIds {
-  // ── Toggle: set true during local development to use test IDs safely ─
-  static const bool _useTestIds = false; // PRODUCTION: false
+  // ── Toggle: automatically use test IDs in debug mode ─
+  static const bool _useTestIds = kDebugMode; // Auto-switches to false in Release
 
   // ── Google Official Test IDs ─────────────────────────────────
   static const String _testBanner       = 'ca-app-pub-3940256099942544/6300978111';
