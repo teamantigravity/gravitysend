@@ -4,6 +4,9 @@ name: Compile APK
 # Trigger manually from GitHub Actions tab → "Run workflow"
 # ─────────────────────────────────────────────────────────────────────────────
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       build_type:
