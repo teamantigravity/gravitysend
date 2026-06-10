@@ -1,1 +1,1 @@
-part of 'about_page.dart'; const _translators = <String, List<String>>{};
+part of 'about_page.dart'; const _translators = <AppLocale, List<String>>{};
