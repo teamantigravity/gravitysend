@@ -1,33 +1,72 @@
 name: Compile APK
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Trigger manually from GitHub Actions tab → "Run workflow"
+# ─────────────────────────────────────────────────────────────────────────────
 on:
-  workflow_dispatch: # Manually trigger from the GitHub Actions tab
+  workflow_dispatch:
+    inputs:
+      build_type:
+        description: 'Build type'
+        required: true
+        default: 'debug'
+        type: choice
+        options:
+          - debug
+          - release
+          - both
 
 env:
   FLUTTER_VERSION: "3.38.10"
   RUST_VERSION: "1.93.1"
+  # NDK version must match Flutter's embedded NDK for this Flutter version
+  NDK_VERSION: "r27c"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SECRETS REQUIRED FOR RELEASE BUILDS:
+#   ANDROID_KEY_STORE       — base64-encoded .jks keystore file
+#   ANDROID_KEY_PROPERTIES  — base64-encoded key.properties file
+#
+# How to generate:
+#   PowerShell:
+#     [Convert]::ToBase64String([IO.File]::ReadAllBytes("your-keystore.jks")) | clip
+#     [Convert]::ToBase64String([IO.File]::ReadAllBytes("key.properties")) | clip
+#   Linux/macOS:
+#     base64 -w 0 your-keystore.jks | xclip
+#
+# key.properties format:
+#   storePassword=YOUR_STORE_PASSWORD
+#   keyPassword=YOUR_KEY_PASSWORD
+#   keyAlias=YOUR_KEY_ALIAS
+#   storeFile=../../../secrets/android-keystore.jks
+# ─────────────────────────────────────────────────────────────────────────────
 
 jobs:
-  build_debug_apk:
-    name: Build Android Debug APK
+  # ── Shared setup step ───────────────────────────────────────────────────────
+  build:
+    name: Build Android APK (${{ github.event.inputs.build_type }})
     runs-on: ubuntu-24.04
 
     steps:
+      # ── Checkout ─────────────────────────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # ── Java ─────────────────────────────────────────────────────────────────
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
 
+      # ── Android NDK ──────────────────────────────────────────────────────────
       - name: Setup Android NDK
         uses: nttld/setup-ndk@v1
         id: setup-ndk
         with:
-          ndk-version: r27c
+          ndk-version: ${{ env.NDK_VERSION }}
 
+      # ── Flutter ──────────────────────────────────────────────────────────────
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -35,140 +74,112 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Install Rust Toolchain
+      # ── Rust ─────────────────────────────────────────────────────────────────
+      - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@master
         with:
           toolchain: ${{ env.RUST_VERSION }}
           targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android,i686-linux-android
 
-      - name: Cache Rust build artifacts
+      # ── Rust cache (dramatically speeds up 2nd+ builds) ──────────────────────
+      - name: Cache Rust/Cargo artifacts
         uses: actions/cache@v4
         with:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-            app/rust/.cargo
-            app/target
-          key: ${{ runner.os }}-cargo-${{ env.RUST_VERSION }}-${{ hashFiles('**/Cargo.lock') }}
+            app/rust/target
+          key: ${{ runner.os }}-cargo-${{ env.RUST_VERSION }}-${{ hashFiles('app/rust/Cargo.lock', 'app/Cargo.lock') }}
           restore-keys: |
             ${{ runner.os }}-cargo-${{ env.RUST_VERSION }}-
 
-      - name: Decode key.properties (if secret exists)
-        if: ${{ env.ANDROID_KEY_PROPERTIES != '' }}
-        env:
-          ANDROID_KEY_PROPERTIES: ${{ secrets.ANDROID_KEY_PROPERTIES }}
-        run: echo "$ANDROID_KEY_PROPERTIES" | base64 -d > app/android/key.properties
-
-      - name: Decode android-keystore.jks (if secret exists)
-        if: ${{ env.ANDROID_KEY_STORE != '' }}
+      # ── Signing: decode secrets only if present ───────────────────────────────
+      - name: Decode keystore (release only)
+        id: signing
         env:
           ANDROID_KEY_STORE: ${{ secrets.ANDROID_KEY_STORE }}
+          ANDROID_KEY_PROPERTIES: ${{ secrets.ANDROID_KEY_PROPERTIES }}
         run: |
-          mkdir -p secrets
-          echo "$ANDROID_KEY_STORE" | base64 -d > secrets/android-keystore.jks
+          if [ -n "$ANDROID_KEY_STORE" ] && [ -n "$ANDROID_KEY_PROPERTIES" ]; then
+            mkdir -p secrets
+            echo "$ANDROID_KEY_STORE" | base64 -d > secrets/android-keystore.jks
+            echo "$ANDROID_KEY_PROPERTIES" | base64 -d > app/android/key.properties
+            echo "signed=true" >> $GITHUB_OUTPUT
+            echo "✅ Keystore decoded — release will be signed"
+          else
+            echo "signed=false" >> $GITHUB_OUTPUT
+            echo "⚠️  No keystore secrets — release APK will use debug signing"
+            echo "    Add ANDROID_KEY_STORE and ANDROID_KEY_PROPERTIES secrets to enable release signing"
+          fi
 
-      - name: Fetch Flutter dependencies
+      # ── Flutter pub get ───────────────────────────────────────────────────────
+      - name: Flutter pub get
         working-directory: app
         run: flutter pub get
 
+      # ── Build Debug APK ───────────────────────────────────────────────────────
       - name: Build Debug APK
+        if: ${{ github.event.inputs.build_type == 'debug' || github.event.inputs.build_type == 'both' }}
         working-directory: app
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
         run: flutter build apk --debug --verbose
 
+      # ── Upload Debug APK ─────────────────────────────────────────────────────
       - name: Upload Debug APK
+        if: ${{ github.event.inputs.build_type == 'debug' || github.event.inputs.build_type == 'both' }}
         uses: actions/upload-artifact@v4
         with:
-          name: gravitysend-debug-apk-${{ github.run_number }}
+          name: gravitysend-debug-apk
           path: app/build/app/outputs/flutter-apk/app-debug.apk
           retention-days: 30
 
-  build_release_aab:
-    name: Build Android Release AAB (Play Store)
-    runs-on: ubuntu-24.04
-    # Only runs if signing secrets are set
-    if: ${{ vars.BUILD_RELEASE == 'true' || github.event_name == 'workflow_dispatch' }}
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Setup Android NDK
-        uses: nttld/setup-ndk@v1
-        id: setup-ndk
-        with:
-          ndk-version: r27c
-
-      - name: Install Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
-          channel: 'stable'
-          cache: true
-
-      - name: Install Rust Toolchain
-        uses: dtolnay/rust-toolchain@master
-        with:
-          toolchain: ${{ env.RUST_VERSION }}
-          targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android,i686-linux-android
-
-      - name: Cache Rust build artifacts
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            app/rust/.cargo
-            app/target
-          key: ${{ runner.os }}-cargo-release-${{ env.RUST_VERSION }}-${{ hashFiles('**/Cargo.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-cargo-${{ env.RUST_VERSION }}-
-
-      - name: Decode key.properties
-        env:
-          ANDROID_KEY_PROPERTIES: ${{ secrets.ANDROID_KEY_PROPERTIES }}
-        run: echo "$ANDROID_KEY_PROPERTIES" | base64 -d > app/android/key.properties
-
-      - name: Decode android-keystore.jks
-        env:
-          ANDROID_KEY_STORE: ${{ secrets.ANDROID_KEY_STORE }}
-        run: |
-          mkdir -p secrets
-          echo "$ANDROID_KEY_STORE" | base64 -d > secrets/android-keystore.jks
-
-      - name: Fetch Flutter dependencies
-        working-directory: app
-        run: flutter pub get
-
+      # ── Build Release APKs (split per ABI) ───────────────────────────────────
       - name: Build Release APKs (split per ABI)
+        if: ${{ github.event.inputs.build_type == 'release' || github.event.inputs.build_type == 'both' }}
         working-directory: app
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
         run: flutter build apk --release --split-per-abi
 
+      # ── Build App Bundle (required for Play Store) ────────────────────────────
       - name: Build App Bundle (AAB)
+        if: ${{ github.event.inputs.build_type == 'release' || github.event.inputs.build_type == 'both' }}
         working-directory: app
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
         run: flutter build appbundle --release
 
+      # ── Upload Release APKs ───────────────────────────────────────────────────
       - name: Upload Release APKs
+        if: ${{ github.event.inputs.build_type == 'release' || github.event.inputs.build_type == 'both' }}
         uses: actions/upload-artifact@v4
         with:
-          name: gravitysend-release-apks-${{ github.run_number }}
-          path: app/build/app/outputs/flutter-apk/app-*-release.apk
+          name: gravitysend-release-apks
+          path: |
+            app/build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
+            app/build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk
+            app/build/app/outputs/flutter-apk/app-x86_64-release.apk
           retention-days: 30
 
-      - name: Upload App Bundle (AAB)
+      # ── Upload AAB ────────────────────────────────────────────────────────────
+      - name: Upload App Bundle (AAB for Play Store)
+        if: ${{ github.event.inputs.build_type == 'release' || github.event.inputs.build_type == 'both' }}
         uses: actions/upload-artifact@v4
         with:
-          name: gravitysend-release-aab-${{ github.run_number }}
+          name: gravitysend-release-aab
           path: app/build/app/outputs/bundle/release/app-release.aab
           retention-days: 30
+
+      # ── Build summary ─────────────────────────────────────────────────────────
+      - name: Print build summary
+        if: always()
+        run: |
+          echo "## Build Summary" >> $GITHUB_STEP_SUMMARY
+          echo "| Item | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+          echo "| Flutter | ${{ env.FLUTTER_VERSION }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Rust | ${{ env.RUST_VERSION }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| NDK | ${{ env.NDK_VERSION }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Signed | ${{ steps.signing.outputs.signed }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Build type | ${{ github.event.inputs.build_type }} |" >> $GITHUB_STEP_SUMMARY

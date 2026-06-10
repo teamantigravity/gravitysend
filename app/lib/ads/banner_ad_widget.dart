@@ -1,11 +1,16 @@
 import 'dart:async';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:gravitysend_app/ads/ad_manager.dart';
 
-/// Drop-in banner widget. Shows nothing if user is ad-free or on desktop.
-/// Usage: just add `const BannerAdWidget()` at the bottom of any Scaffold.
+/// Drop-in banner widget.
+/// - Shows nothing if the user is ad-free
+/// - Shows nothing on desktop/web (google_mobile_ads is Android/iOS only)
+/// - Shows nothing while the ad is loading (no layout shift)
+///
+/// Usage — add at the bottom of any Scaffold body column:
 ///
 ///   Scaffold(
 ///     body: Column(children: [
@@ -15,7 +20,9 @@ import 'package:gravitysend_app/ads/ad_manager.dart';
 ///   )
 class BannerAdWidget extends StatefulWidget {
   const BannerAdWidget({super.key});
-  @override State<BannerAdWidget> createState() => _BannerAdWidgetState();
+
+  @override
+  State<BannerAdWidget> createState() => _BannerAdWidgetState();
 }
 
 class _BannerAdWidgetState extends State<BannerAdWidget> {
@@ -25,23 +32,31 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
   @override
   void initState() {
     super.initState();
+
+    // Only attempt to load on supported platforms
+    if (defaultTargetPlatform != TargetPlatform.android &&
+        defaultTargetPlatform != TargetPlatform.iOS) {
+      return;
+    }
+
     _ad = AdManager.createBanner(
       listener: BannerAdListener(
         onAdLoaded: (_) {
           if (mounted) setState(() => _loaded = true);
         },
-        onAdFailedToLoad: (ad, _) {
-          unawaited(ad.dispose());
+        onAdFailedToLoad: (ad, error) {
+          ad.dispose(); // dispose() is void
           if (mounted) setState(() => _ad = null);
         },
       ),
     );
-    unawaited(_ad?.load());
+    // load() returns Future<void> — fire-and-forget is intentional here
+    _ad?.load();
   }
 
   @override
   void dispose() {
-    unawaited(_ad?.dispose());
+    _ad?.dispose(); // dispose() is void
     super.dispose();
   }
 

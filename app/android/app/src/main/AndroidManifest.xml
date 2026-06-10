@@ -28,11 +28,10 @@
         android:requestLegacyExternalStorage="true"
     >
 
-        <!-- GravitySend AdMob App ID — get from admob.google.com -->
+        <!-- GravitySend AdMob App ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
-        <!-- ↑ Replace with your real App ID before production build ↑ -->
+            android:value="ca-app-pub-4989086156410627~9173182974"/>
 
         <!-- localsend: prevent multiple instances by android:launchMode="singleTask" -->
         <activity

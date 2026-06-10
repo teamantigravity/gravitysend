@@ -1,25 +1,27 @@
 // ── GravitySend Ad IDs ─────────────────────────────────────────
-// Replace TEST IDs with your real IDs from admob.google.com
-// before building the production APK.
+// Real IDs are active. Test IDs can be re-enabled by setting
+// _useTestIds = true during development.
 //
-// How to get real IDs:
-//   admob.google.com → Apps → Add app → Get App ID
-//   admob.google.com → Ad units → Create ad unit → Get Ad Unit ID
+// Real IDs sourced from admob.google.com:
+//   App ID:        ca-app-pub-4989086156410627~9173182974
+//   Banner:        ca-app-pub-4989086156410627/9751767477  (GS_Android_Banner)
+//   Interstitial:  ca-app-pub-4989086156410627/9509598049  (GS_Android_Interstitial)
 
 class AdIds {
-  // ── Test IDs (safe to use during development) ────────────────
-  static const bool _useTestIds = true; // ← set false before prod build
+  // ── Toggle: set true during local development to use test IDs safely ─
+  static const bool _useTestIds = false; // PRODUCTION: false
 
+  // ── Google Official Test IDs ─────────────────────────────────
   static const String _testBanner       = 'ca-app-pub-3940256099942544/6300978111';
   static const String _testInterstitial = 'ca-app-pub-3940256099942544/1033173712';
   static const String _testAppId        = 'ca-app-pub-3940256099942544~3347511713';
 
-  // ── Your Real IDs — fill these in ────────────────────────────
+  // ── Production IDs (from admob.google.com) ───────────────────
   static const String _realAppId        = 'ca-app-pub-4989086156410627~9173182974';
   static const String _realBanner       = 'ca-app-pub-4989086156410627/9751767477';
   static const String _realInterstitial = 'ca-app-pub-4989086156410627/9509598049';
 
-  // ── Active IDs (switch automatically) ────────────────────────
+  // ── Active IDs — switches automatically based on _useTestIds ─
   static String get appId        => _useTestIds ? _testAppId        : _realAppId;
   static String get banner       => _useTestIds ? _testBanner       : _realBanner;
   static String get interstitial => _useTestIds ? _testInterstitial : _realInterstitial;
