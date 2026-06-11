@@ -14,6 +14,8 @@ env:
 jobs:
   build:
     runs-on: macos-latest
+    permissions:
+      issues: write
 
     steps:
       - name: Checkout repository
@@ -42,7 +44,20 @@ jobs:
 
       - name: Build macOS with auto-versioning
         working-directory: app
-        run: flutter build macos --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
+        run: |
+          set -o pipefail
+          flutter build macos --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }} > build_log.txt 2>&1
+
+      - name: Create Issue on Failure
+        if: failure()
+        working-directory: app
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LOG_CONTENT=$(tail -n 200 build_log.txt)
+          gh issue create --title "macOS Build Failed" --body "\`\`\`text
+          $LOG_CONTENT
+          \`\`\`"
 
       - name: Package macOS Build
         working-directory: app

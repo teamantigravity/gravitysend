@@ -14,6 +14,8 @@ env:
 jobs:
   build:
     runs-on: windows-latest
+    permissions:
+      issues: write
 
     steps:
       - name: Checkout repository
@@ -37,7 +39,18 @@ jobs:
 
       - name: Build Windows with auto-versioning
         working-directory: app
-        run: flutter build windows --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
+        run: |
+          flutter build windows --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }} > build_log.txt 2>&1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Create Issue on Failure
+        if: failure()
+        working-directory: app
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $log = Get-Content build_log.txt -Tail 200 -Raw
+          gh issue create --title "Windows Build Failed" --body "\`\`\`text`n$log`n\`\`\`"
 
       - name: Package Windows Build
         working-directory: app
