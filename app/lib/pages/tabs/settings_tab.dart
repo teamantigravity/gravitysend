@@ -521,7 +521,7 @@ class SettingsTab extends StatelessWidget {
                         buttonLabel: t.general.open,
                         onTap: () async {
                           await launchUrl(
-                            Uri.parse('https://gravitysend.com/privacy'),
+                            Uri.parse('https://teamantigravity.vercel.app/privacy/gravitysend.html'),
                             mode: LaunchMode.externalApplication,
                           );
                         },
