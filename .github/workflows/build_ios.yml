@@ -52,16 +52,12 @@ jobs:
           set -o pipefail
           flutter build ios --release --no-codesign --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }} > build_log.txt 2>&1
 
-      - name: Create Issue on Failure
+      - name: Upload Error Log
         if: failure()
-        working-directory: app
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          LOG_CONTENT=$(tail -n 200 build_log.txt)
-          gh issue create --title "iOS Build Failed" --body "\`\`\`text
-          $LOG_CONTENT
-          \`\`\`"
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-build-log
+          path: app/build_log.txt
 
       - name: Package iOS Build
         working-directory: app

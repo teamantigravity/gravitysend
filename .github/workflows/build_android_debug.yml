@@ -63,7 +63,16 @@ jobs:
         working-directory: app
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
-        run: flutter build apk --debug --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
+        run: |
+          set -o pipefail
+          flutter build apk --debug --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }} > build_log.txt 2>&1
+
+      - name: Upload Error Log
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-debug-build-log
+          path: app/build_log.txt
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4

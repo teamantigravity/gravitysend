@@ -47,14 +47,12 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-      - name: Create Issue on Failure
+      - name: Upload Error Log
         if: failure()
-        working-directory: app
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          $log = Get-Content build_log.txt -Tail 200 -Raw
-          gh issue create --title "Windows Build Failed" --body "\`\`\`text`n$log`n\`\`\`"
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-build-log
+          path: app/build_log.txt
 
       - name: Package Windows Build
         working-directory: app
