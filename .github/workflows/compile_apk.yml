@@ -118,8 +118,8 @@ jobs:
           ANDROID_KEY_PROPERTIES: ${{ secrets.ANDROID_KEY_PROPERTIES }}
         run: |
           if [ -n "$ANDROID_KEY_STORE" ] && [ -n "$ANDROID_KEY_PROPERTIES" ]; then
-            mkdir -p secrets
-            echo "$ANDROID_KEY_STORE" | base64 -d > secrets/android-keystore.jks
+            mkdir -p app/android
+            echo "$ANDROID_KEY_STORE" | base64 -d > app/android/gravitysend.jks
             echo "$ANDROID_KEY_PROPERTIES" | base64 -d > app/android/key.properties
             echo "signed=true" >> $GITHUB_OUTPUT
             echo "✅ Keystore decoded — release will be signed"

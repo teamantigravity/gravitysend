@@ -92,8 +92,8 @@ jobs:
           KEY_PROPS: ${{ secrets.ANDROID_KEY_PROPERTIES }}
         run: |
           if [ -n "$KEY_STORE" ] && [ -n "$KEY_PROPS" ]; then
-            mkdir -p secrets
-            echo "$KEY_STORE" | base64 -d > secrets/android-keystore.jks
+            mkdir -p app/android
+            echo "$KEY_STORE" | base64 -d > app/android/gravitysend.jks
             echo "$KEY_PROPS" | base64 -d > app/android/key.properties
             echo "signed=true" >> $GITHUB_OUTPUT
             echo "✅ Release will be signed"
@@ -341,7 +341,7 @@ jobs:
             | `GravitySend-*-linux-x86_64.deb` | Debian/Ubuntu installer |
 
             ---
-            🔒 Privacy Policy: https://gravitysend.com/privacy
+            🔒 Privacy Policy: https://teamantigravity.vercel.app/privacy/gravitysend.html
             📂 Open Source: Built on [LocalSend](https://github.com/localsend/localsend) (Apache-2.0)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
