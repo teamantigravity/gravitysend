@@ -50,6 +50,10 @@ class AboutPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
+          const Text('Original Project', style: TextStyle(fontWeight: FontWeight.bold)),
+          const Text('Based on LocalSend, originally developed by Tien Do Nam.'),
+          const Text('Licensed under the Apache License 2.0.'),
+          const SizedBox(height: 20),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
