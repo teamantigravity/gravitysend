@@ -45,6 +45,7 @@ jobs:
         run: |
           flutter build windows --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }} > build_log.txt 2>&1
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Create Issue on Failure
         if: failure()
