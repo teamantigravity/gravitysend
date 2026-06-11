@@ -93,8 +93,8 @@ jobs:
         run: |
           if [ -n "$KEY_STORE" ] && [ -n "$KEY_PROPS" ]; then
             mkdir -p app/android
-            echo "$KEY_STORE" | base64 -d > app/android/gravitysend.jks
-            echo "$KEY_PROPS" | base64 -d > app/android/key.properties
+            echo "$KEY_STORE" | base64 --decode --ignore-garbage > app/android/gravitysend.jks
+            echo "$KEY_PROPS" | base64 --decode --ignore-garbage > app/android/key.properties
             echo "signed=true" >> $GITHUB_OUTPUT
             echo "✅ Release will be signed"
           else
