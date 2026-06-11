@@ -42,11 +42,15 @@ jobs:
         working-directory: app
         run: flutter pub get
 
+      - name: Disable Swift Package Manager
+        working-directory: app
+        run: flutter config --no-enable-swift-package-manager
+
       - name: Build iOS (No Codesign) with auto-versioning
         working-directory: app
         run: |
           set -o pipefail
-          flutter build ios --release --no-codesign --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }} > build_log.txt 2>&1
+          flutter build ios --release --no-codesign --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
 
       - name: Create Issue on Failure
         if: failure()

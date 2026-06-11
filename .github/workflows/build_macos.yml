@@ -42,11 +42,15 @@ jobs:
         working-directory: app
         run: flutter pub get
 
+      - name: Disable Swift Package Manager
+        working-directory: app
+        run: flutter config --no-enable-swift-package-manager
+
       - name: Build macOS with auto-versioning
         working-directory: app
         run: |
           set -o pipefail
-          flutter build macos --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }} > build_log.txt 2>&1
+          flutter build macos --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
 
       - name: Create Issue on Failure
         if: failure()
