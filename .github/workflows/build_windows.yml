@@ -35,9 +35,9 @@ jobs:
         working-directory: app
         run: flutter pub get
 
-      - name: Build Windows
+      - name: Build Windows with auto-versioning
         working-directory: app
-        run: flutter build windows --release
+        run: flutter build windows --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
 
       - name: Package Windows Build
         working-directory: app

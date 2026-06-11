@@ -40,9 +40,9 @@ jobs:
         working-directory: app
         run: flutter pub get
 
-      - name: Build Linux
+      - name: Build Linux with auto-versioning
         working-directory: app
-        run: flutter build linux --release
+        run: flutter build linux --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
 
       - name: Package Linux Build
         working-directory: app
@@ -54,4 +54,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: linux-build
-          path: gravitysend-linux.tar.gz
+          path: app/gravitysend-linux.tar.gz

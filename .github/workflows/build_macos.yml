@@ -31,13 +31,18 @@ jobs:
           toolchain: ${{ env.RUST_VERSION }}
           targets: aarch64-apple-darwin,x86_64-apple-darwin
 
+      - name: Symlink Rust for Xcode
+        run: |
+          sudo ln -s ~/.cargo/bin/cargo /usr/local/bin/cargo
+          sudo ln -s ~/.cargo/bin/rustc /usr/local/bin/rustc
+
       - name: Dependencies
         working-directory: app
         run: flutter pub get
 
-      - name: Build macOS
+      - name: Build macOS with auto-versioning
         working-directory: app
-        run: flutter build macos --release
+        run: flutter build macos --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
 
       - name: Package macOS Build
         working-directory: app
