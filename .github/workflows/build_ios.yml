@@ -1,0 +1,45 @@
+name: Build iOS
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  FLUTTER_VERSION: "3.44.0"
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: 'stable'
+
+      - name: Dependencies
+        working-directory: app
+        run: flutter pub get
+
+      - name: Build iOS (No Codesign)
+        working-directory: app
+        run: flutter build ios --release --no-codesign
+
+      - name: Package iOS Build
+        working-directory: app
+        run: |
+          cd build/ios/iphoneos
+          zip -r ../../../../gravitysend-ios.zip Runner.app
+
+      - name: Upload iOS Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-build
+          path: gravitysend-ios.zip

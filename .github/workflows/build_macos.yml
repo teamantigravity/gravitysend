@@ -1,0 +1,45 @@
+name: Build macOS
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  FLUTTER_VERSION: "3.44.0"
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: 'stable'
+
+      - name: Dependencies
+        working-directory: app
+        run: flutter pub get
+
+      - name: Build macOS
+        working-directory: app
+        run: flutter build macos --release
+
+      - name: Package macOS Build
+        working-directory: app
+        run: |
+          cd build/macos/Build/Products/Release
+          zip -r ../../../../../gravitysend-macos.zip GravitySend.app
+
+      - name: Upload macOS Build
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-build
+          path: gravitysend-macos.zip
