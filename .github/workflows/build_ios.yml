@@ -9,6 +9,7 @@ on:
 
 env:
   FLUTTER_VERSION: "3.44.0"
+  RUST_VERSION: "1.93.1"
 
 jobs:
   build:
@@ -23,6 +24,12 @@ jobs:
         with:
           flutter-version: ${{ env.FLUTTER_VERSION }}
           channel: 'stable'
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ env.RUST_VERSION }}
+          targets: aarch64-apple-ios,x86_64-apple-ios,aarch64-apple-ios-sim
 
       - name: Dependencies
         working-directory: app
