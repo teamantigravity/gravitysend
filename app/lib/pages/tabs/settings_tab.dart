@@ -9,7 +9,7 @@ import 'package:gravitysend_app/config/theme.dart';
 import 'package:gravitysend_app/gen/strings.g.dart';
 import 'package:gravitysend_app/model/persistence/color_mode.dart';
 import 'package:gravitysend_app/pages/about/about_page.dart';
-import 'package:gravitysend_app/pages/changelog_page.dart';
+
 import 'package:gravitysend_app/pages/donation/donation_page.dart';
 import 'package:gravitysend_app/pages/upgrade_page.dart';
 import 'package:gravitysend_app/pages/language_page.dart';
@@ -569,18 +569,6 @@ class SettingsTab extends StatelessWidget {
                   Text(
                     '© ${DateTime.now().year} Team Antigravity',
                     textAlign: TextAlign.center,
-                  ),
-                  Center(
-                    child: TextButton.icon(
-                      style: TextButton.styleFrom(
-                        foregroundColor: Theme.of(context).colorScheme.onSurface,
-                      ),
-                      onPressed: () async {
-                        await context.push(() => const ChangelogPage());
-                      },
-                      icon: const Icon(Icons.history),
-                      label: Text(t.changelogPage.title),
-                    ),
                   ),
                   const SizedBox(height: 80),
                 ],

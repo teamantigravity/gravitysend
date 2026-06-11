@@ -3,7 +3,7 @@ description: Send files to nearby devices — fast, private, no cloud.
 homepage: https://gravitysend.com
 publish_to: "none"
 
-version: 1.17.0+58
+version: 1.0.0+1
 
 environment:
   flutter: ^3.25.0
@@ -120,7 +120,7 @@ flutter:
   assets:
     - assets/img/
     - assets/web/
-    - assets/CHANGELOG.md
+
 
 flutter_gen:
   line_length: 150
