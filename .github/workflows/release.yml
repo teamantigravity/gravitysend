@@ -91,10 +91,13 @@ jobs:
           KEY_STORE: ${{ secrets.ANDROID_KEY_STORE }}
           KEY_PROPS: ${{ secrets.ANDROID_KEY_PROPERTIES }}
         run: |
-          if [ -n "$KEY_STORE" ] && [ -n "$KEY_PROPS" ]; then
+          if [ -n "$KEY_STORE" ]; then
             mkdir -p app/android
             echo "$KEY_STORE" | base64 --decode --ignore-garbage > app/android/gravitysend.jks
-            echo "$KEY_PROPS" | base64 --decode --ignore-garbage > app/android/key.properties
+            echo "storePassword=gravitysend123" > app/android/key.properties
+            echo "keyPassword=gravitysend123" >> app/android/key.properties
+            echo "keyAlias=gravitysend" >> app/android/key.properties
+            echo "storeFile=../gravitysend.jks" >> app/android/key.properties
             echo "signed=true" >> $GITHUB_OUTPUT
             echo "✅ Release will be signed"
           else
