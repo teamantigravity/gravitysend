@@ -33,6 +33,9 @@ jobs:
           toolchain: ${{ env.RUST_VERSION }}
           targets: aarch64-apple-ios,x86_64-apple-ios,aarch64-apple-ios-sim
 
+      - name: Add iOS Rust targets explicitly
+        run: rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
+
       - name: Symlink Rust for Xcode
         run: |
           sudo ln -s ~/.cargo/bin/cargo /usr/local/bin/cargo
