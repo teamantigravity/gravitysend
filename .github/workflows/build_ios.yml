@@ -58,7 +58,7 @@ jobs:
 
       - name: Upload Error Log
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ios-build-log
           path: app/build_log.txt
@@ -70,7 +70,7 @@ jobs:
           zip -r ../../../../gravitysend-ios.zip Runner.app
 
       - name: Upload iOS Build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ios-build
           path: app/gravitysend-ios.zip

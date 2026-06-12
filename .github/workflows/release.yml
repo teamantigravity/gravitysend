@@ -131,7 +131,7 @@ jobs:
           cp app/build/app/outputs/bundle/release/app-release.aab           dist/android/GravitySend-$V-android-playstore.aab
 
       - name: Upload Android artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: android
           path: dist/android/
@@ -199,7 +199,7 @@ jobs:
           mv dist/windows/GravitySend-Windows-Setup.exe dist/windows/GravitySend-$V-windows-x64.exe
 
       - name: Upload Windows Installer
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: windows
           path: dist/windows/GravitySend-*-windows-x64.exe
@@ -280,7 +280,7 @@ jobs:
           fi
 
       - name: Upload Linux artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: linux-x64
           path: dist/linux/

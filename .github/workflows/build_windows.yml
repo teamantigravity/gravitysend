@@ -52,7 +52,7 @@ jobs:
 
       - name: Upload Error Log
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: windows-build-log
           path: app/build_log.txt
@@ -71,7 +71,7 @@ jobs:
           Move-Item dist\windows\GravitySend-Windows-Setup.exe dist\windows\GravitySend-1.0.${{ github.run_number }}-windows-x64.exe
 
       - name: Upload Windows Installer
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: windows-installer
           path: dist/windows/GravitySend-*-windows-x64.exe

@@ -55,7 +55,7 @@ jobs:
 
       - name: Upload Error Log
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: macos-build-log
           path: app/build_log.txt
@@ -67,7 +67,7 @@ jobs:
           zip -r ../../../../../gravitysend-macos.zip GravitySend.app
 
       - name: Upload macOS Build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: macos-build
           path: app/gravitysend-macos.zip
