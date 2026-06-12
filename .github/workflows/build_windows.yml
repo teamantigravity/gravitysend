@@ -60,9 +60,9 @@ jobs:
       - name: Copy Visual C++ runtime DLLs
         working-directory: app
         run: |
-          Copy-Item ../scripts/windows/x64/msvcp140.dll    build/windows/x64/runner/Release/
-          Copy-Item ../scripts/windows/x64/vcruntime140.dll build/windows/x64/runner/Release/
-          Copy-Item ../scripts/windows/x64/vcruntime140_1.dll build/windows/x64/runner/Release/
+          Copy-Item "C:\Windows\System32\msvcp140.dll" build/windows/x64/runner/Release/
+          Copy-Item "C:\Windows\System32\vcruntime140.dll" build/windows/x64/runner/Release/
+          Copy-Item "C:\Windows\System32\vcruntime140_1.dll" build/windows/x64/runner/Release/
 
       - name: Package Windows Installer
         run: |
