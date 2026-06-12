@@ -46,7 +46,7 @@ jobs:
       - name: Build Windows with auto-versioning
         working-directory: app
         run: |
-          flutter build windows --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }} > build_log.txt 2>&1
+          flutter build windows --release -v --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }} > build_log.txt 2>&1
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
