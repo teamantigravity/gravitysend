@@ -241,7 +241,7 @@ class ReceiveHistoryPage extends StatelessWidget {
               ],
             ),
           ),
-          const BannerAdWidget(),
+          BannerAdWidget(),
         ],
       ),
     );
