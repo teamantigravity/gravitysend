@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:common/model/device.dart';
 import 'package:common/model/session_status.dart';
 import 'package:flutter/material.dart';
+import 'package:gravitysend_app/ads/banner_ad_widget.dart';
 import 'package:gravitysend_app/config/theme.dart';
 import 'package:gravitysend_app/gen/strings.g.dart';
 import 'package:gravitysend_app/model/persistence/receive_history_entry.dart';
