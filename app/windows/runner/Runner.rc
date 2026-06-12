@@ -92,9 +92,9 @@ BEGIN
             VALUE "CompanyName", "Team Antigravity" "\0"
             VALUE "FileDescription", "Gravity Send" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "localsend_app" "\0"
+            VALUE "InternalName", "gravitysend" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022-2024 Team Antigravity. All rights reserved." "\0"
-            VALUE "OriginalFilename", "localsend_app.exe" "\0"
+            VALUE "OriginalFilename", "gravitysend.exe" "\0"
             VALUE "ProductName", "Gravity Send" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
