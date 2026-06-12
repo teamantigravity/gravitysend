@@ -40,6 +40,9 @@ jobs:
         working-directory: app
         run: flutter pub get
 
+      - name: Unhide AppData for cargokit symlinks
+        run: attrib -H "$env:USERPROFILE\AppData"
+
       - name: Build Windows with auto-versioning
         working-directory: app
         run: |
