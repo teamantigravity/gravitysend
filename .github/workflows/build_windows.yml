@@ -57,14 +57,22 @@ jobs:
           name: windows-build-log
           path: app/build_log.txt
 
+      - name: Copy Visual C++ runtime DLLs
+        working-directory: app
+        run: |
+          Copy-Item ../scripts/windows/x64/msvcp140.dll    build/windows/x64/runner/Release/
+          Copy-Item ../scripts/windows/x64/vcruntime140.dll build/windows/x64/runner/Release/
+          Copy-Item ../scripts/windows/x64/vcruntime140_1.dll build/windows/x64/runner/Release/
+
       - name: Package Windows Installer
         shell: bash
         run: |
           mkdir -p dist/windows
-          "/c/Program Files (x86)/Inno Setup 6/ISCC.exe" scripts/compile_windows_exe-inno.iss
+          "/c/Program Files (x86)/Inno Setup 6/ISCC.exe" /DMyAppVersion="1.0.${{ github.run_number }}" scripts/compile_windows_exe-inno.iss
+          mv dist/windows/GravitySend-Windows-Setup.exe dist/windows/GravitySend-1.0.${{ github.run_number }}-windows-x64.exe
 
-      - name: Upload Windows Build
+      - name: Upload Windows Installer
         uses: actions/upload-artifact@v4
         with:
           name: windows-installer
-          path: dist/windows/GravitySend-Windows-Setup.exe
+          path: dist/windows/GravitySend-*-windows-x64.exe

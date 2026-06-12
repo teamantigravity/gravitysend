@@ -28,10 +28,16 @@ class BannerAdWidget extends StatefulWidget {
 class _BannerAdWidgetState extends State<BannerAdWidget> {
   BannerAd? _ad;
   bool _loaded = false;
+  int _retryAttempts = 0;
 
   @override
   void initState() {
     super.initState();
+    _loadAd();
+  }
+
+  void _loadAd() {
+    if (!mounted) return;
 
     // Only attempt to load on supported platforms
     if (defaultTargetPlatform != TargetPlatform.android &&
@@ -39,18 +45,34 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
       return;
     }
 
+    _ad?.dispose();
     _ad = AdManager.createBanner(
       listener: BannerAdListener(
         onAdLoaded: (_) {
-          if (mounted) setState(() => _loaded = true);
+          _retryAttempts = 0;
+          if (mounted) {
+            setState(() {
+              _loaded = true;
+            });
+          }
         },
         onAdFailedToLoad: (ad, error) {
-          ad.dispose(); // dispose() is void
-          if (mounted) setState(() => _ad = null);
+          ad.dispose();
+          if (mounted) {
+            setState(() {
+              _ad = null;
+              _loaded = false;
+            });
+            _retryAttempts++;
+            if (_retryAttempts < 5) {
+              Future.delayed(Duration(seconds: 10 * _retryAttempts), () {
+                _loadAd();
+              });
+            }
+          }
         },
       ),
     );
-    // load() returns Future<void> — fire-and-forget is intentional here
     _ad?.load();
   }
 

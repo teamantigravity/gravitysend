@@ -25,16 +25,22 @@ Future<void> main(List<String> args) async {
   AdManager.init();
 
   // Restore ad-free status on app launch (for returning users)
-  InAppPurchase.instance.purchaseStream.listen((purchases) {
-    for (final p in purchases) {
-      if (p.productID == 'gravitysend_remove_ads' &&
-          (p.status == PurchaseStatus.purchased ||
-              p.status == PurchaseStatus.restored)) {
-        AdManager.setAdFree(true);
-        InAppPurchase.instance.completePurchase(p);
-      }
-    }
-  });
+  if (defaultTargetPlatform == TargetPlatform.android ||
+      defaultTargetPlatform == TargetPlatform.iOS ||
+      defaultTargetPlatform == TargetPlatform.macOS) {
+    try {
+      InAppPurchase.instance.purchaseStream.listen((purchases) {
+        for (final p in purchases) {
+          if (p.productID == 'gravitysend_remove_ads' &&
+              (p.status == PurchaseStatus.purchased ||
+                  p.status == PurchaseStatus.restored)) {
+            AdManager.setAdFree(true);
+            InAppPurchase.instance.completePurchase(p);
+          }
+        }
+      });
+    } catch (_) {}
+  }
 
   final RefenaContainer container;
   try {

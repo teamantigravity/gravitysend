@@ -19,6 +19,7 @@ class AdManager {
   static bool _initialized = false;
   static bool _adFree = false;
   static InterstitialAd? _interstitialAd;
+  static int _interstitialRetryAttempts = 0;
 
   // ── Init ─────────────────────────────────────────────────────
   static Future<void> init() async {
@@ -81,13 +82,14 @@ class AdManager {
 
   // ── Interstitial ──────────────────────────────────────────────
   static void _preloadInterstitial() {
-    if (!_adsSupported || !_initialized || _adFree) return;
+    if (!_adsSupported || !_initialized || _adFree || _interstitialAd != null) return;
     InterstitialAd.load(
       adUnitId: AdIds.interstitial,
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ad) {
           _interstitialAd = ad;
+          _interstitialRetryAttempts = 0;
           _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
             onAdDismissedFullScreenContent: (ad) {
               ad.dispose(); // void — no unawaited needed
@@ -97,10 +99,20 @@ class AdManager {
             onAdFailedToShowFullScreenContent: (ad, _) {
               ad.dispose(); // void
               _interstitialAd = null;
+              _preloadInterstitial(); // pre-load next one immediately if show failed
             },
           );
         },
-        onAdFailedToLoad: (_) => _interstitialAd = null,
+        onAdFailedToLoad: (_) {
+          _interstitialAd = null;
+          _interstitialRetryAttempts++;
+          if (_interstitialRetryAttempts < 6) {
+            final seconds = 1 << _interstitialRetryAttempts;
+            Future.delayed(Duration(seconds: seconds), () {
+              _preloadInterstitial();
+            });
+          }
+        },
       ),
     );
   }

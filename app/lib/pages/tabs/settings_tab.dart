@@ -494,7 +494,7 @@ class SettingsTab extends StatelessWidget {
                     title: t.settingsTab.other.title,
                     padding: const EdgeInsets.only(bottom: 0),
                     children: [
-                      if (!AdManager.isAdFree)
+                      if (checkPlatform([TargetPlatform.android, TargetPlatform.iOS]) && !AdManager.isAdFree)
                         _ButtonEntry(
                           label: 'Remove Ads',
                           buttonLabel: t.general.open,

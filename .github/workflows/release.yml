@@ -190,19 +190,19 @@ jobs:
           Copy-Item ../scripts/windows/x64/vcruntime140.dll build/windows/x64/runner/Release/
           Copy-Item ../scripts/windows/x64/vcruntime140_1.dll build/windows/x64/runner/Release/
 
-      - name: Create ZIP
-        working-directory: app
+      - name: Package Windows Installer
+        shell: bash
         run: |
-          $V = "${{ needs.version.outputs.version }}"
-          Compress-Archive `
-            -Path build/windows/x64/runner/Release/* `
-            -DestinationPath "GravitySend-$V-windows-x64.zip"
+          mkdir -p dist/windows
+          V="${{ needs.version.outputs.version }}"
+          "/c/Program Files (x86)/Inno Setup 6/ISCC.exe" /DMyAppVersion="$V" scripts/compile_windows_exe-inno.iss
+          mv dist/windows/GravitySend-Windows-Setup.exe dist/windows/GravitySend-$V-windows-x64.exe
 
-      - name: Upload Windows ZIP
+      - name: Upload Windows Installer
         uses: actions/upload-artifact@v4
         with:
           name: windows
-          path: app/GravitySend-*-windows-x64.zip
+          path: dist/windows/GravitySend-*-windows-x64.exe
           retention-days: 7
 
   # ── Linux x86_64: tar.gz + .deb ──────────────────────────────────────────────
@@ -335,7 +335,7 @@ jobs:
             ### 🪟 Windows
             | File | Notes |
             |---|---|
-            | `GravitySend-*-windows-x64.zip` | Extract and run `gravitysend_app.exe` |
+            | `GravitySend-*-windows-x64.exe` | Windows Installer |
 
             ### 🐧 Linux
             | File | Notes |
