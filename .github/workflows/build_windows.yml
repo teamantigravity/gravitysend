@@ -57,12 +57,14 @@ jobs:
           name: windows-build-log
           path: app/build_log.txt
 
-      - name: Package Windows Build
-        working-directory: app
-        run: Compress-Archive -Path build\windows\x64\runner\Release\* -DestinationPath gravitysend-windows.zip
+      - name: Package Windows Installer
+        shell: bash
+        run: |
+          mkdir -p dist/windows
+          "/c/Program Files (x86)/Inno Setup 6/ISCC.exe" scripts/compile_windows_exe-inno.iss
 
       - name: Upload Windows Build
         uses: actions/upload-artifact@v4
         with:
-          name: windows-build
-          path: app/gravitysend-windows.zip
+          name: windows-installer
+          path: dist/windows/GravitySend-Windows-Setup.exe
