@@ -78,8 +78,6 @@ install(TARGETS ${BINARY_NAME} RUNTIME DESTINATION "${CMAKE_INSTALL_PREFIX}"
 
 install(FILES
   "${BINARY_NAME}.exe.manifest"
-  "localsend_msix_helper.msix"
-  "install_msix_helper.ps1"
   DESTINATION "${CMAKE_INSTALL_PREFIX}"
   COMPONENT Runtime)
 
