@@ -191,12 +191,11 @@ jobs:
           Copy-Item "C:\Windows\System32\vcruntime140_1.dll" build/windows/x64/runner/Release/
 
       - name: Package Windows Installer
-        shell: bash
         run: |
-          mkdir -p dist/windows
-          V="${{ needs.version.outputs.version }}"
-          "/c/Program Files (x86)/Inno Setup 6/ISCC.exe" /DMyAppVersion="$V" scripts/compile_windows_exe-inno.iss
-          mv dist/windows/GravitySend-Windows-Setup.exe dist/windows/GravitySend-$V-windows-x64.exe
+          New-Item -ItemType Directory -Force -Path dist\windows
+          $V = "${{ needs.version.outputs.version }}"
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" "/DMyAppVersion=$V" scripts\compile_windows_exe-inno.iss
+          Move-Item dist\windows\GravitySend-Windows-Setup.exe dist\windows\GravitySend-$V-windows-x64.exe
 
       - name: Upload Windows Installer
         uses: actions/upload-artifact@v4
@@ -263,10 +262,7 @@ jobs:
           V=${{ needs.version.outputs.version }}
           mkdir -p dist/macos
           cd app/build/macos/Build/Products/Release
-          create-dmg \
-            --volname "GravitySend" \
-            "GravitySend.dmg" \
-            "GravitySend.app"
+          hdiutil create -volname "GravitySend" -srcfolder "GravitySend.app" -ov -format UDZO "GravitySend.dmg"
           cp GravitySend.dmg ../../../../../dist/macos/GravitySend-$V-macos-universal.dmg
 
       - name: Upload macOS artifacts
