@@ -205,6 +205,83 @@ jobs:
           path: dist/windows/GravitySend-*-windows-x64.exe
           retention-days: 7
 
+  # ── macOS: DMG ───────────────────────────────────────────────────────────────
+  macos:
+    name: macOS (DMG)
+    needs: version
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Flutter ${{ env.FLUTTER_VERSION }}
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: 'stable'
+          cache: true
+
+      - name: Install Rust ${{ env.RUST_VERSION }}
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ env.RUST_VERSION }}
+          targets: aarch64-apple-darwin,x86_64-apple-darwin
+
+      - name: Symlink Rust for Xcode
+        run: |
+          sudo ln -s ~/.cargo/bin/cargo /usr/local/bin/cargo
+          sudo ln -s ~/.cargo/bin/rustc /usr/local/bin/rustc
+          sudo ln -s ~/.cargo/bin/rustup /usr/local/bin/rustup
+
+      - name: Cache Cargo (macOS)
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: macos-cargo-${{ env.RUST_VERSION }}-${{ hashFiles('app/rust/Cargo.lock', 'app/Cargo.lock') }}
+          restore-keys: macos-cargo-${{ env.RUST_VERSION }}-
+
+      - name: Dependencies
+        working-directory: app
+        run: flutter pub get
+
+      - name: Disable Swift Package Manager
+        working-directory: app
+        run: flutter config --no-enable-swift-package-manager
+
+      - name: Build macOS
+        working-directory: app
+        run: flutter build macos --release
+
+      - name: Install create-dmg
+        run: brew install create-dmg
+
+      - name: Create DMG
+        run: |
+          V=${{ needs.version.outputs.version }}
+          mkdir -p dist/macos
+          cd app/build/macos/Build/Products/Release
+          create-dmg \
+            --volname "GravitySend" \
+            --window-pos 200 120 \
+            --window-size 800 400 \
+            --icon-size 100 \
+            --icon "GravitySend.app" 200 190 \
+            --hide-extension "GravitySend.app" \
+            --app-drop-link 600 190 \
+            "GravitySend.dmg" \
+            "GravitySend.app/"
+          cp GravitySend.dmg ../../../../../dist/macos/GravitySend-$V-macos-universal.dmg
+
+      - name: Upload macOS artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos
+          path: dist/macos/
+          retention-days: 7
+
   # ── Linux x86_64: tar.gz + .deb ──────────────────────────────────────────────
   linux-x64:
     name: Linux x86_64 (tar.gz + deb)
@@ -293,6 +370,7 @@ jobs:
       - version
       - android
       - windows
+      - macos
       - linux-x64
     runs-on: ubuntu-24.04
     permissions:
@@ -336,6 +414,11 @@ jobs:
             | File | Notes |
             |---|---|
             | `GravitySend-*-windows-x64.exe` | Windows Installer |
+
+            ### 🍏 macOS
+            | File | Notes |
+            |---|---|
+            | `GravitySend-*-macos-universal.dmg` | macOS Installer |
 
             ### 🐧 Linux
             | File | Notes |
