@@ -5,8 +5,8 @@ name: Release
 # ─────────────────────────────────────────────────────────────────────────────
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches:
+      - main
   workflow_dispatch:
 
 env:
@@ -392,13 +392,15 @@ jobs:
       - name: Create GitHub Release (draft)
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ needs.version.outputs.version }}
-          name: "GravitySend v${{ needs.version.outputs.version }}"
-          draft: true
+          tag_name: nightly
+          name: "Nightly Build"
+          draft: false
+          prerelease: true
           generate_release_notes: true
           files: release-assets/**/*
           body: |
-            ## GravitySend v${{ needs.version.outputs.version }}
+            ## GravitySend Nightly Build
+            This release is automatically updated with the latest successful build artifacts.
 
             > **Send files. No cloud. No limits.**
 
