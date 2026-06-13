@@ -1,8 +1,0 @@
-<svg xmlns=""http://www.w3.org/2000/svg"" viewBox=""0 0 24 24"" width=""400"" height=""400"">
-    <!-- G shape with a dynamic cut -->
-    <path fill=""white"" d=""M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10h-2c0 4.41-3.59 8-8 8s-8-3.59-8-8 3.59-8 8-8c2.25 0 4.28.93 5.73 2.42l1.42-1.42C17.7 3.11 15.02 2 12 2z""/>
-    <!-- The middle bar of the G -->
-    <path fill=""white"" d=""M12 11h9v2h-9z""/>
-    <!-- A sleek lightning bolt in the center -->
-    <path fill=""white"" d=""M10 7l-4 6h4v6l6-8h-4z""/>
-</svg>
