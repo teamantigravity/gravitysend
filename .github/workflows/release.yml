@@ -392,14 +392,14 @@ jobs:
       - name: Create GitHub Release (draft)
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: nightly
-          name: "Nightly Build"
+          tag_name: latest-successful-build
+          name: "Latest Successful Build"
           draft: false
           prerelease: true
           generate_release_notes: true
           files: release-assets/**/*
           body: |
-            ## GravitySend Nightly Build
+            ## Latest Successful Build
             This release is automatically updated with the latest successful build artifacts.
 
             > **Send files. No cloud. No limits.**
