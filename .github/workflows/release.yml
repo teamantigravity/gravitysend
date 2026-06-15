@@ -113,13 +113,13 @@ jobs:
         working-directory: app
         env:
           ANDROID_NDK_HOME: ${{ steps.ndk.outputs.ndk-path }}
-        run: flutter build apk --release --split-per-abi
+        run: flutter build apk --release --obfuscate --split-debug-info=symbols --split-per-abi
 
       - name: Build App Bundle (AAB)
         working-directory: app
         env:
           ANDROID_NDK_HOME: ${{ steps.ndk.outputs.ndk-path }}
-        run: flutter build appbundle --release
+        run: flutter build appbundle --release --obfuscate --split-debug-info=symbols
 
       - name: Rename artifacts
         run: |
@@ -176,7 +176,7 @@ jobs:
 
       - name: Build Windows
         working-directory: app
-        run: flutter build windows --release
+        run: flutter build windows --release --obfuscate --split-debug-info=symbols
 
       - name: Create settings.json
         working-directory: app
@@ -251,7 +251,7 @@ jobs:
 
       - name: Build macOS
         working-directory: app
-        run: flutter build macos --release
+        run: flutter build macos --release --obfuscate --split-debug-info=symbols
 
       - name: Create DMG
         run: |
@@ -311,7 +311,7 @@ jobs:
 
       - name: Build Linux
         working-directory: app
-        run: flutter build linux --release
+        run: flutter build linux --release --obfuscate --split-debug-info=symbols
 
       - name: Create tar.gz
         run: |
