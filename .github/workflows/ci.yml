@@ -74,6 +74,10 @@ jobs:
         working-directory: app/rust_builder/cargokit/build_tool
         run: flutter pub get
 
+      - name: Generate strings (app)
+        working-directory: app
+        run: dart run slang
+
       - name: Analyze (app)
         working-directory: app
         run: flutter analyze
