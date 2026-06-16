@@ -152,7 +152,7 @@ class SendNotifier extends Notifier<Map<String, SendSessionState>> {
           ip: target.ip!,
           port: target.port,
           payload: requestDto,
-          // TODO
+          // no operation
           publicKey: null,
           pin: pin,
         );

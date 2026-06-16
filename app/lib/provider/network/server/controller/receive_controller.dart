@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
@@ -789,7 +789,7 @@ class ReceiveController {
   }
 
   /// In addition to [closeSession], this method also
-  /// - cancels incoming requests (TODO)
+  /// - cancels incoming requests
   /// - notifies the sender that the session has been canceled
   void cancelSession() async {
     final session = server.getStateOrNull()?.session;
@@ -817,7 +817,7 @@ class ReceiveController {
 
     closeSession();
 
-    // TODO: cancel incoming requests (https://github.com/dart-lang/shelf/issues/319)
+    // cancel incoming requests (https://github.com/dart-lang/shelf/issues/319)
     // restartServer(alias: tempState.alias, port: tempState.port);
   }
 

@@ -16,6 +16,8 @@ analyzer:
     - lib/**.g.dart
     - lib/**.freezed.dart
     - submodules/**
+    - rust_builder/**
+    - lib/rust/**
 
 formatter:
   trailing_commas: preserve

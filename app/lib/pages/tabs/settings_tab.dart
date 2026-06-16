@@ -1,20 +1,21 @@
 import 'dart:io';
 import 'dart:ui';
+
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:common/constants.dart';
 import 'package:common/model/device.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:gravitysend_app/ads/ad_manager.dart';
 import 'package:gravitysend_app/config/theme.dart';
 import 'package:gravitysend_app/gen/strings.g.dart';
 import 'package:gravitysend_app/model/persistence/color_mode.dart';
 import 'package:gravitysend_app/pages/about/about_page.dart';
-
 import 'package:gravitysend_app/pages/donation/donation_page.dart';
-import 'package:gravitysend_app/pages/upgrade_page.dart';
 import 'package:gravitysend_app/pages/language_page.dart';
 import 'package:gravitysend_app/pages/settings/network_interfaces_page.dart';
 import 'package:gravitysend_app/pages/tabs/settings_tab_controller.dart';
+import 'package:gravitysend_app/pages/upgrade_page.dart';
 import 'package:gravitysend_app/provider/settings_provider.dart';
 import 'package:gravitysend_app/provider/version_provider.dart';
 import 'package:gravitysend_app/util/alias_generator.dart';
@@ -22,7 +23,6 @@ import 'package:gravitysend_app/util/device_type_ext.dart';
 import 'package:gravitysend_app/util/native/macos_channel.dart';
 import 'package:gravitysend_app/util/native/pick_directory_path.dart';
 import 'package:gravitysend_app/util/native/platform_check.dart';
-import 'package:gravitysend_app/ads/ad_manager.dart';
 import 'package:gravitysend_app/widget/custom_dropdown_button.dart';
 import 'package:gravitysend_app/widget/dialogs/encryption_disabled_notice.dart';
 import 'package:gravitysend_app/widget/dialogs/pin_dialog.dart';

@@ -1,5 +1,3 @@
-﻿import 'package:gravitysend_app/util/native/platform_check.dart';
-import 'package:gravitysend_app/util/native/cross_file_converters.dart';
 import 'dart:io';
 
 import 'package:bitsdojo_window/bitsdojo_window.dart';
@@ -14,6 +12,8 @@ import 'package:gravitysend_app/pages/tabs/receive_tab.dart';
 import 'package:gravitysend_app/pages/tabs/send_tab.dart';
 import 'package:gravitysend_app/pages/tabs/settings_tab.dart';
 import 'package:gravitysend_app/provider/selection/selected_sending_files_provider.dart';
+import 'package:gravitysend_app/util/native/cross_file_converters.dart';
+import 'package:gravitysend_app/util/native/platform_check.dart';
 import 'package:gravitysend_app/widget/responsive_builder.dart';
 import 'package:refena_flutter/refena_flutter.dart';
 

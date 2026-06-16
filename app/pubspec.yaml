@@ -13,7 +13,6 @@ dependencies:
   basic_utils: 5.7.0
   bitsdojo_window: ^0.1.6
   collection: ^1.17.2 # allow newer versions, so it can compile with newer Flutter versions
-  google_mobile_ads: ^5.1.0
   common:
     path: ../common
   connectivity_plus: 6.1.0
@@ -35,6 +34,7 @@ dependencies:
   freezed_annotation: 3.1.0
   gal: ^2.3.2
   glob: ^2.1.2
+  google_mobile_ads: ^5.1.0
   image: 4.5.4
   image_picker: 1.1.2
   in_app_purchase: ^3.2.0

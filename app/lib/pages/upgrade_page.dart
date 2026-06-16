@@ -86,7 +86,7 @@ class _UpgradePageState extends State<UpgradePage> {
   }
 
   @override
-  void dispose() { _sub?.cancel(); super.dispose(); }
+  void dispose() { unawaited(_sub?.cancel()); super.dispose(); }
 
   @override
   Widget build(BuildContext context) {

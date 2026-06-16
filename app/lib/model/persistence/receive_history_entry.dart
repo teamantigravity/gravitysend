@@ -1,7 +1,7 @@
-﻿import 'package:common/model/file_type.dart';
+import 'package:common/model/file_type.dart';
 import 'package:dart_mappable/dart_mappable.dart';
-import 'package:intl/intl.dart';
 import 'package:gravitysend_app/gen/strings.g.dart';
+import 'package:intl/intl.dart';
 
 part 'receive_history_entry.mapper.dart';
 

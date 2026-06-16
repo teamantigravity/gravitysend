@@ -7,7 +7,6 @@
 //   Banner:        ca-app-pub-4989086156410627/9751767477  (GS_Android_Banner)
 //   Interstitial:  ca-app-pub-4989086156410627/9509598049  (GS_Android_Interstitial)
 
-import 'package:flutter/foundation.dart';
 
 class AdIds {
   // ── Toggle: automatically use test IDs in debug mode ─

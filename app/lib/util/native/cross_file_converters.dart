@@ -1,13 +1,12 @@
-﻿import 'package:gravitysend_app/util/native/cross_file_converters.dart';
 import 'dart:io';
 
 import 'package:common/model/file_type.dart';
 import 'package:device_apps/device_apps.dart';
 import 'package:flutter/foundation.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:gravitysend_app/model/cross_file.dart';
 import 'package:gravitysend_app/util/file_path_helper.dart';
 import 'package:gravitysend_app/util/native/channel/android_channel.dart' as android_channel;
+import 'package:image_picker/image_picker.dart';
 import 'package:share_handler/share_handler.dart';
 import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 

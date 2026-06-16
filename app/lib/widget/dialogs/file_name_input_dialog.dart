@@ -1,10 +1,10 @@
-﻿import 'dart:io';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:legalize/legalize.dart';
 import 'package:gravitysend_app/config/theme.dart';
 import 'package:gravitysend_app/gen/strings.g.dart';
 import 'package:gravitysend_app/util/file_path_helper.dart';
+import 'package:legalize/legalize.dart';
 import 'package:routerino/routerino.dart';
 
 class FileNameInputDialog extends StatefulWidget {

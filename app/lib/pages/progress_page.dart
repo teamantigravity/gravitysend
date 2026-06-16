@@ -224,7 +224,7 @@ class _ProgressPageState extends State<ProgressPage> with Refena {
       _lastStatus = status;
       if (status == SessionStatus.finished) {
         AdManager.showInterstitialAfterTransfer();
-        _maybeAskForReview();
+        unawaited(_maybeAskForReview());
       }
       // ignore: discarded_futures
       TaskbarHelper.visualizeStatus(status);

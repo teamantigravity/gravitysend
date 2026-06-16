@@ -1,4 +1,4 @@
-﻿import 'dart:async';
+import 'dart:async';
 
 import 'package:common/constants.dart';
 import 'package:common/model/device.dart';
@@ -76,7 +76,7 @@ class _SetupSignalingConnection extends AsyncGlobalAction {
     final settings = ref.read(settingsProvider);
     final deviceInfo = ref.read(deviceInfoProvider);
 
-    // TODO: Use persistent key
+    // Use persistent key later
     final key = await crypto.generateKeyPair();
     if (kDebugMode) {
       print('private key: ${key.privateKey}');

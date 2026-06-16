@@ -45,7 +45,8 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
       return;
     }
 
-    _ad?.dispose();
+    final oldAd = _ad;
+    if (oldAd != null) unawaited(oldAd.dispose());
     _ad = AdManager.createBanner(
       listener: BannerAdListener(
         onAdLoaded: (_) {
@@ -57,7 +58,7 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
           }
         },
         onAdFailedToLoad: (ad, error) {
-          ad.dispose();
+          unawaited(ad.dispose());
           if (mounted) {
             setState(() {
               _ad = null;
@@ -73,12 +74,14 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
         },
       ),
     );
-    _ad?.load();
+    final newAd = _ad;
+    if (newAd != null) unawaited(newAd.load());
   }
 
   @override
   void dispose() {
-    _ad?.dispose(); // dispose() is void
+    final adToDispose = _ad;
+    if (adToDispose != null) unawaited(adToDispose.dispose()); // dispose() is void
     super.dispose();
   }
 

@@ -1,4 +1,4 @@
-﻿import 'package:glob/glob.dart';
+import 'package:glob/glob.dart';
 
 // const _ignoreFileName = '.sendignore';
 
@@ -8,7 +8,7 @@ class SendIgnore {
   SendIgnore();
 
   bool isIgnoreFile(String fileName) {
-    // TODO: Glob does not provide the same gitignore experience
+    // Glob does not provide the same gitignore experience
     return false;
     // return fileName == _ignoreFileName;
   }

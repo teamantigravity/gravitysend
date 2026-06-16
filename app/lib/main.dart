@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:common/isolate.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +25,7 @@ import 'package:routerino/routerino.dart';
 Future<void> main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
   // Initialize AdMob in the background
-  AdManager.init();
+  unawaited(AdManager.init());
 
   // Restore ad-free status on app launch (for returning users)
   if (defaultTargetPlatform == TargetPlatform.android ||
@@ -35,8 +37,8 @@ Future<void> main(List<String> args) async {
           if (p.productID == 'gravitysend_remove_ads' &&
               (p.status == PurchaseStatus.purchased ||
                   p.status == PurchaseStatus.restored)) {
-            AdManager.setAdFree(true);
-            InAppPurchase.instance.completePurchase(p);
+            unawaited(AdManager.setAdFree(true));
+            unawaited(InAppPurchase.instance.completePurchase(p));
           }
         }
       });

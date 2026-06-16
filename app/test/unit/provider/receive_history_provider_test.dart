@@ -1,7 +1,7 @@
 import 'package:common/model/file_type.dart';
-import 'package:intl/date_symbol_data_local.dart';
 import 'package:gravitysend_app/model/persistence/receive_history_entry.dart';
 import 'package:gravitysend_app/provider/receive_history_provider.dart';
+import 'package:intl/date_symbol_data_local.dart';
 import 'package:mockito/mockito.dart';
 import 'package:refena_flutter/refena_flutter.dart';
 import 'package:test/test.dart';

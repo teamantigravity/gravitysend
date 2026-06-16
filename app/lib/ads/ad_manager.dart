@@ -38,7 +38,7 @@ class AdManager {
             // 'YOUR_DEVICE_ID', 
           ],
         );
-        MobileAds.instance.updateRequestConfiguration(requestConfiguration);
+        unawaited(MobileAds.instance.updateRequestConfiguration(requestConfiguration));
       }
 
       final prefs = await SharedPreferences.getInstance();
@@ -60,8 +60,8 @@ class AdManager {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('gravitysend_ad_free', value);
     if (value) {
-      _interstitialAd?.dispose(); // dispose() is void, no unawaited needed
-      _interstitialAd = null;
+      final ad = _interstitialAd;
+      if (ad != null) unawaited(ad.dispose());
     }
   }
 
@@ -83,7 +83,7 @@ class AdManager {
   // ── Interstitial ──────────────────────────────────────────────
   static void _preloadInterstitial() {
     if (!_adsSupported || !_initialized || _adFree || _interstitialAd != null) return;
-    InterstitialAd.load(
+    unawaited(InterstitialAd.load(
       adUnitId: AdIds.interstitial,
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
@@ -92,12 +92,12 @@ class AdManager {
           _interstitialRetryAttempts = 0;
           _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
             onAdDismissedFullScreenContent: (ad) {
-              ad.dispose(); // void — no unawaited needed
+              unawaited(ad.dispose()); // void — no unawaited needed
               _interstitialAd = null;
               _preloadInterstitial(); // pre-load next one immediately
             },
             onAdFailedToShowFullScreenContent: (ad, _) {
-              ad.dispose(); // void
+              unawaited(ad.dispose()); // void
               _interstitialAd = null;
               _preloadInterstitial(); // pre-load next one immediately if show failed
             },
@@ -114,13 +114,13 @@ class AdManager {
           }
         },
       ),
-    );
+    ));
   }
 
   /// Call this AFTER a file transfer completes successfully.
   /// Shows a full-screen ad once, then silently reloads the next.
   static void showInterstitialAfterTransfer() {
     if (!_adsSupported || !_initialized || _adFree || _interstitialAd == null) return;
-    _interstitialAd!.show(); // returns Future<void> but fire-and-forget is fine here
+    unawaited(_interstitialAd!.show()); // returns Future<void> but fire-and-forget is fine here
   }
 }

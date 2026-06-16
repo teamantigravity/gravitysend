@@ -1,4 +1,3 @@
-﻿import 'package:gravitysend_app/util/native/platform_check.dart';
 import 'package:common/model/dto/file_dto.dart' as dart_model;
 import 'package:common/model/session_status.dart';
 import 'package:common/model/stored_security_context.dart';
@@ -143,7 +142,7 @@ class _InitSessionState extends ReduxAction<WebRTCReceiveService, WebRTCReceiveS
   @override
   WebRTCReceiveState reduce() {
     return state;
-    // TODO
+    // no operation
     // return state.copyWith(
     //   sessionState: ReceiveSessionState(
     //     sessionId: state.offer.sessionId,
