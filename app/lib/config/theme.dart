@@ -55,11 +55,15 @@ ThemeData getTheme(ColorMode colorMode, Brightness brightness, DynamicColors? dy
   return ThemeData(
     colorScheme: colorScheme,
     useMaterial3: true,
+    cardTheme: const CardThemeData(elevation: 0),
+    dialogTheme: const DialogThemeData(elevation: 0),
+    appBarTheme: const AppBarTheme(elevation: 0),
     navigationBarTheme: colorScheme.brightness == Brightness.dark
         ? NavigationBarThemeData(
             iconTheme: WidgetStateProperty.all(const IconThemeData(color: Colors.white)),
+            elevation: 0,
           )
-        : null,
+        : const NavigationBarThemeData(elevation: 0),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: colorScheme.secondaryContainer,
@@ -176,11 +180,15 @@ ThemeData _getYaruTheme(Brightness brightness) {
   InputDecorationThemeData;
 
   return baseTheme.copyWith(
+    cardTheme: const CardThemeData(elevation: 0),
+    dialogTheme: const DialogThemeData(elevation: 0),
+    appBarTheme: const AppBarTheme(elevation: 0),
     navigationBarTheme: colorScheme.brightness == Brightness.dark
         ? NavigationBarThemeData(
             iconTheme: WidgetStateProperty.all(const IconThemeData(color: Colors.white)),
+            elevation: 0,
           )
-        : null,
+        : const NavigationBarThemeData(elevation: 0),
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: colorScheme.secondaryContainer,

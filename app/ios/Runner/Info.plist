@@ -48,10 +48,13 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
-
 	<!-- Flag to skip question by Appstore -->
 	<key>ITSAppUsesNonExemptEncryption</key>
     <false/>
+
+    <!-- Google Mobile Ads -->
+    <key>GADApplicationIdentifier</key>
+    <string>ca-app-pub-4989086156410627~2590891937</string>
 
 	<key>CFBundleLocalizations</key>
 	<array>

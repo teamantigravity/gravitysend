@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:desktop_drop/desktop_drop.dart';
 import 'package:flutter/material.dart';
+import 'package:gravitysend_app/ads/ad_manager.dart';
 import 'package:gravitysend_app/ads/banner_ad_widget.dart';
 import 'package:gravitysend_app/config/init.dart';
 import 'package:gravitysend_app/config/theme.dart';
@@ -114,7 +115,10 @@ class _HomePageState extends State<HomePage> with Refena {
                           children: [
                             NavigationRail(
                               selectedIndex: vm.currentTab.index,
-                              onDestinationSelected: (index) => vm.changeTab(HomeTab.values[index]),
+                              onDestinationSelected: (index) {
+                                AdManager.showInterstitialAdhoc();
+                                vm.changeTab(HomeTab.values[index]);
+                              },
                               extended: sizingInformation.isDesktop,
                               backgroundColor: Theme.of(context).cardColorWithElevation,
                               leading: sizingInformation.isDesktop
@@ -193,7 +197,10 @@ class _HomePageState extends State<HomePage> with Refena {
             bottomNavigationBar: sizingInformation.isMobile
                 ? NavigationBar(
                     selectedIndex: vm.currentTab.index,
-                    onDestinationSelected: (index) => vm.changeTab(HomeTab.values[index]),
+                    onDestinationSelected: (index) {
+                      AdManager.showInterstitialAdhoc();
+                      vm.changeTab(HomeTab.values[index]);
+                    },
                     destinations: HomeTab.values.map((tab) {
                       return NavigationDestination(icon: Icon(tab.icon), label: tab.label);
                     }).toList(),

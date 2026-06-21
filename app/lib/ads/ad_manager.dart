@@ -117,10 +117,25 @@ class AdManager {
     ));
   }
 
+  static int _adhocEventCounter = 0;
+
   /// Call this AFTER a file transfer completes successfully.
   /// Shows a full-screen ad once, then silently reloads the next.
   static void showInterstitialAfterTransfer() {
     if (!_adsSupported || !_initialized || _adFree || _interstitialAd == null) return;
     unawaited(_interstitialAd!.show()); // returns Future<void> but fire-and-forget is fine here
+  }
+
+  /// Call this on frequent actions (like tab switches or settings opening).
+  /// It will only show the ad every Nth time to avoid spamming the user.
+  static void showInterstitialAdhoc() {
+    if (!_adsSupported || !_initialized || _adFree || _interstitialAd == null) return;
+    
+    _adhocEventCounter++;
+    // Show interstitial every 4 adhoc events (e.g. tab switches)
+    if (_adhocEventCounter >= 4) {
+      _adhocEventCounter = 0;
+      unawaited(_interstitialAd!.show());
+    }
   }
 }
