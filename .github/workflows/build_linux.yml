@@ -53,7 +53,7 @@ jobs:
 
       - name: Build Linux with auto-versioning
         working-directory: app
-        run: flutter build linux --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
+        run: flutter build linux --release
 
       - name: Package Linux Build
         working-directory: app

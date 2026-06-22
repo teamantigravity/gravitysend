@@ -88,7 +88,7 @@ jobs:
         working-directory: app
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
-        run: flutter build appbundle --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }}
+        run: flutter build appbundle --release
 
       - name: Upload AAB
         uses: actions/upload-artifact@v4

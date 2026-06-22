@@ -51,7 +51,7 @@ jobs:
         working-directory: app
         run: |
           set -o pipefail
-          flutter build macos --release --build-name=1.0.${{ github.run_number }} --build-number=${{ github.run_number }} > build_log.txt 2>&1
+          flutter build macos --release > build_log.txt 2>&1
 
       - name: Upload Error Log
         if: failure()
