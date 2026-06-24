@@ -56,8 +56,10 @@ jobs:
 
       - name: Pre-build Rust for iOS (to avoid race conditions)
         run: |
-          rustup toolchain install ${{ env.RUST_VERSION }}-x86_64-apple-darwin --target aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
-          rustup toolchain install ${{ env.RUST_VERSION }}-aarch64-apple-darwin --target aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
+          rustup toolchain install ${{ env.RUST_VERSION }}-x86_64-apple-darwin
+          rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim --toolchain ${{ env.RUST_VERSION }}-x86_64-apple-darwin
+          rustup toolchain install ${{ env.RUST_VERSION }}-aarch64-apple-darwin
+          rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim --toolchain ${{ env.RUST_VERSION }}-aarch64-apple-darwin
           rustup default ${{ env.RUST_VERSION }}-aarch64-apple-darwin
 
       - name: Build iOS (No Codesign) 

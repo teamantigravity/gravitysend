@@ -43,7 +43,7 @@ jobs:
       - name: Unhide AppData for cargokit symlinks
         run: attrib -H "$env:USERPROFILE\AppData"
 
-      - name: Build Windows with auto-versioning
+      - name: Build Windows 
         working-directory: app
         run: |
           flutter build windows --release -v > build_log.txt 2>&1
@@ -72,7 +72,7 @@ jobs:
           cd app
           dart run msix:create
           cd ..
-          Move-Item app\build\windows\x64\runner\Release\GravitySend.msix dist\windows\GravitySend-windows-x64.msix
+          Move-Item app\build\windows\x64\runner\Release\gravitysend_app.msix dist\windows\GravitySend-windows-x64.msix
 
       - name: Upload Windows Packages
         uses: actions/upload-artifact@v4
