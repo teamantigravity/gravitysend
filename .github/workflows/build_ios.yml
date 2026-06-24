@@ -55,9 +55,10 @@ jobs:
         run: cargo fetch
 
       - name: Pre-build Rust for iOS (to avoid race conditions)
-        working-directory: app
         run: |
-          rustup show
+          rustup toolchain install ${{ env.RUST_VERSION }}-x86_64-apple-darwin --target aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
+          rustup toolchain install ${{ env.RUST_VERSION }}-aarch64-apple-darwin --target aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
+          rustup default ${{ env.RUST_VERSION }}-aarch64-apple-darwin
 
       - name: Build iOS (No Codesign) 
         working-directory: app
