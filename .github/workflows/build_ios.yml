@@ -50,7 +50,11 @@ jobs:
         working-directory: app
         run: flutter config --no-enable-swift-package-manager
 
-      - name: Build iOS (No Codesign) with auto-versioning
+      - name: Pre-fetch Rust dependencies
+        working-directory: app/rust
+        run: cargo fetch
+
+      - name: Build iOS (No Codesign) 
         working-directory: app
         run: |
           set -o pipefail
