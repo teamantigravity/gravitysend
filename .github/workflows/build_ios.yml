@@ -56,15 +56,13 @@ jobs:
 
       - name: Pre-build Rust for iOS (to avoid race conditions)
         run: |
-          rustup toolchain install ${{ env.RUST_VERSION }}-x86_64-apple-darwin --force-non-host
-          rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim --toolchain ${{ env.RUST_VERSION }}-x86_64-apple-darwin
-          rustup toolchain install ${{ env.RUST_VERSION }}-aarch64-apple-darwin
-          rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim --toolchain ${{ env.RUST_VERSION }}-aarch64-apple-darwin
-          rustup default ${{ env.RUST_VERSION }}-aarch64-apple-darwin
+          rustup toolchain install ${{ env.RUST_VERSION }}
+          rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim --toolchain ${{ env.RUST_VERSION }}
 
       - name: Build iOS (No Codesign) 
         working-directory: app
         run: |
+          export RUSTUP_TOOLCHAIN=${{ env.RUST_VERSION }}
           set -o pipefail
           flutter build ios --release --no-codesign > build_log.txt 2>&1
 
