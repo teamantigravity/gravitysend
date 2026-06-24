@@ -152,4 +152,5 @@ msix_config:
   msix_version: 1.0.10.0
   logo_path: assets\img\app_icon.png
   capabilities: internetClient, localSystemNetwork, internetClientServer
+  build_windows: false
 
