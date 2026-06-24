@@ -55,10 +55,9 @@ jobs:
         run: cargo fetch
 
       - name: Pre-build Rust for iOS (to avoid race conditions)
-        working-directory: app/rust
+        working-directory: app
         run: |
-          cargo build --target aarch64-apple-ios --release || true
-          cargo build --target aarch64-apple-ios-sim --release || true
+          rustup show
 
       - name: Build iOS (No Codesign) 
         working-directory: app
