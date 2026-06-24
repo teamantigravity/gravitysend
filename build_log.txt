@@ -89,66 +89,45 @@ Got dependencies!
 1 package is discontinued.
 82 packages have newer versions incompatible with dependency constraints.
 Try `flutter pub outdated` for more information.
-Running Gradle task 'assembleDebug'...                          
-WARNING: Your Android app project: app located at: /home/runner/work/gravitysend/gravitysend/app/android/app/build.gradle
-applies the Kotlin Gradle Plugin, which will cause build failures in future versions of Flutter. 
-Please migrate your app to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers
+The following plugins do not support Swift Package Manager for ios:
+  - wakelock_plus
+  - uri_content
+  - system_settings_2
+  - share_handler_ios
+  - rust_lib_localsend_app
+  - rhttp
+  - pasteboard
+  - open_filex
+  - google_mobile_ads
+  - file_picker
+This will become an error in a future version of Flutter. Please contact the plugin maintainers to request Swift Package Manager adoption.
+The following plugins do not support Swift Package Manager for macos:
+  - screen_retriever_macos
+  - wakelock_plus
+  - uri_content
+  - tray_manager
+  - rust_lib_localsend_app
+  - rhttp
+  - pasteboard
+  - open_dir_macos
+  - desktop_drop
+  - bitsdojo_window_macos
+This will become an error in a future version of Flutter. Please contact the plugin maintainers to request Swift Package Manager adoption.
+Warning: Building for device with codesigning disabled. You will have to manually codesign before deploying to device.
+Building com.gravitysend.app for device (ios-release)...
+Updating minimum iOS deployment target to 13.0.
+Upgrading project.pbxproj
+Upgrading AppFrameworkInfo.plist
+Upgrading Podfile
+To ensure your app continues to launch on upcoming iOS versions, UIScene lifecycle support will soon be required. Please see https://flutter.dev/to/uiscene-migration for the migration guide.
 
-WARNING: Your app uses the following plugins that apply Kotlin Gradle Plugin (KGP): desktop_drop, device_info_plus, dynamic_color, in_app_review, network_info_plus, package_info_plus, pasteboard, photo_manager, saf_stream, share_handler_android, system_settings_2, uri_content, wakelock_plus
-Future versions of Flutter will fail to build if your app uses plugins that apply KGP.
+Running pod install...                                             13.3s
+Running Xcode build...                                          
+Xcode build done.                                           15.2s
+Failed to build iOS app
+Error (Xcode): component download failed for rust-std-aarch64-apple-ios: could not rename 'downloaded' file from '/Users/runner/.rustup/downloads/fb529ae57924e91cf318307ceeb6bd233a7b8cc898fe699cfaabb9aca7b2794b.partial' to '/Users/runner/.rustup/downloads/fb529ae57924e91cf318307ceeb6bd233a7b8cc898fe699cfaabb9aca7b2794b': No such file or directory (os error 2): No such file or directory (os error 2)
+/Users/runner/work/gravitysend/gravitysend/app/ios/Pods/SEVERE:0:0
 
-Please check the changelogs of these plugins and upgrade to a version that supports Built-in Kotlin.
-If no such version exists, report the issue to the plugin. If necessary, here is a guide on filing 
-an issue against a plugin: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-app-developers#report-incompatible-kotlin-gradle-plugin-usage-to-plugin-authors
+Uncategorized (Xcode): Command SwiftCompile failed with a nonzero exit code
 
-If you are a plugin author, please migrate your plugin to Built-in Kotlin using this guide: https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
-warning: [options] source value 8 is obsolete and will be removed in a future release
-warning: [options] target value 8 is obsolete and will be removed in a future release
-warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-Note: /home/runner/.pub-cache/git/device_apps-5dc7956d938541254d2e175766b3b84ea38bb85b/android/src/main/java/fr/g123k/deviceapps/DeviceAppsPlugin.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-3 warnings
-warning: [options] source value 8 is obsolete and will be removed in a future release
-warning: [options] target value 8 is obsolete and will be removed in a future release
-warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-3 warnings
-warning: [options] source value 8 is obsolete and will be removed in a future release
-warning: [options] target value 8 is obsolete and will be removed in a future release
-warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-3 warnings
-warning: [options] source value 8 is obsolete and will be removed in a future release
-warning: [options] target value 8 is obsolete and will be removed in a future release
-warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-3 warnings
-warning: [options] source value 8 is obsolete and will be removed in a future release
-warning: [options] target value 8 is obsolete and will be removed in a future release
-warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-3 warnings
-warning: [options] source value 8 is obsolete and will be removed in a future release
-warning: [options] target value 8 is obsolete and will be removed in a future release
-warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-3 warnings
-warning: [options] source value 8 is obsolete and will be removed in a future release
-warning: [options] target value 8 is obsolete and will be removed in a future release
-warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-Note: Some input files use or override a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-3 warnings
-e: file:///home/runner/work/gravitysend/gravitysend/app/android/app/src/main/kotlin/com/gravitysend/app/QuickTileService.kt:41:52 Unresolved reference 'ic_launcher_quicktile_foreground'.
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':app:compileDebugKotlin'.
-> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
-   > Compilation error. See log for more details
-
-* Try:
-> Run with --stacktrace option to get the stack trace.
-> Run with --info or --debug option to get more log output.
-> Run with --scan to get full insights.
-> Get more help at https://help.gradle.org.
-
-BUILD FAILED in 5m 15s
-Running Gradle task 'assembleDebug'...                            316.5s
-Gradle task assembleDebug failed with exit code 1
+Encountered error while building for device.

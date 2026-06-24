@@ -64,14 +64,20 @@ jobs:
           Copy-Item "C:\Windows\System32\vcruntime140.dll" build/windows/x64/runner/Release/
           Copy-Item "C:\Windows\System32\vcruntime140_1.dll" build/windows/x64/runner/Release/
 
-      - name: Package Windows Installer
+      - name: Package Windows Installer and MSIX
         run: |
           New-Item -ItemType Directory -Force -Path dist\windows
-          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" "/DMyAppVersion=1.0.${{ github.run_number }}" scripts\compile_windows_exe-inno.iss
-          Move-Item dist\windows\GravitySend-Windows-Setup.exe dist\windows\GravitySend-1.0.${{ github.run_number }}-windows-x64.exe
+          & "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" scripts\compile_windows_exe-inno.iss
+          Move-Item dist\windows\GravitySend-Windows-Setup.exe dist\windows\GravitySend-windows-x64.exe
+          cd app
+          dart run msix:create
+          cd ..
+          Move-Item app\build\windows\x64\runner\Release\GravitySend.msix dist\windows\GravitySend-windows-x64.msix
 
-      - name: Upload Windows Installer
+      - name: Upload Windows Packages
         uses: actions/upload-artifact@v4
         with:
-          name: windows-installer
-          path: dist/windows/GravitySend-*-windows-x64.exe
+          name: windows-packages
+          path: |
+            dist/windows/GravitySend-windows-x64.exe
+            dist/windows/GravitySend-windows-x64.msix

@@ -143,3 +143,12 @@ flutter_launcher_icons:
   macos:
     generate: true
     image_path: "assets/img/app_icon.png"
+
+msix_config:
+  display_name: GravitySend
+  publisher_display_name: GravitySend Team
+  identity_name: GravitySend.App
+  msix_version: 1.0.10.0
+  logo_path: assets\img\app_icon.png
+  capabilities: internetClient, localSystemNetwork, internetClientServer
+
