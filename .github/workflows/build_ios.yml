@@ -9,7 +9,9 @@ on:
 
 env:
   FLUTTER_VERSION: "3.44.0"
-  RUST_VERSION: "1.93.1"
+  # Make rustup downloads resilient against transient registry/CDN hiccups.
+  RUSTUP_MAX_RETRIES: "10"
+  CARGO_NET_RETRY: "10"
 
 jobs:
   build:
@@ -27,20 +29,39 @@ jobs:
           flutter-version: ${{ env.FLUTTER_VERSION }}
           channel: 'stable'
 
-      - name: Install Rust toolchain
-        uses: dtolnay/rust-toolchain@master
+      # cargokit (flutter_rust_bridge) compiles the Rust lib via
+      # `rustup run stable cargo build --target aarch64-apple-ios`, so the iOS
+      # std component must already exist for the *stable* toolchain. dtolnay
+      # installs stable + the iOS targets here.
+      - name: Install Rust (stable) with iOS targets
+        uses: dtolnay/rust-toolchain@stable
         with:
-          toolchain: ${{ env.RUST_VERSION }}
           targets: aarch64-apple-ios,x86_64-apple-ios,aarch64-apple-ios-sim
 
-      - name: Add iOS Rust targets explicitly
-        run: rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
+      # Provision the iOS std up-front for every toolchain the build may touch
+      # so the Xcode build phase never runs a `rustup target add` itself. That
+      # build-time download raced across cargokit's parallel script invocations
+      # and failed with:
+      #   component download failed for rust-std-aarch64-apple-ios:
+      #   could not rename 'downloaded' file ... No such file or directory
+      - name: Pre-install iOS std (stable + pinned 1.93.1)
+        run: |
+          rustup set auto-self-update disable
+          # stable is what cargokit uses — this MUST succeed.
+          rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
+          # The repo also pins 1.93.1 via app/rust-toolchain.toml; provision it
+          # too (best-effort) so a bare cargo call in app/rust can't trigger a
+          # racing build-time download either.
+          rustup toolchain install 1.93.1 --profile minimal || true
+          rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim --toolchain 1.93.1 || true
+          echo "Installed stable iOS targets:"
+          rustup target list --toolchain stable --installed | grep apple-ios || true
 
       - name: Symlink Rust for Xcode
         run: |
-          sudo ln -s ~/.cargo/bin/cargo /usr/local/bin/cargo
-          sudo ln -s ~/.cargo/bin/rustc /usr/local/bin/rustc
-          sudo ln -s ~/.cargo/bin/rustup /usr/local/bin/rustup
+          sudo ln -sf ~/.cargo/bin/cargo /usr/local/bin/cargo
+          sudo ln -sf ~/.cargo/bin/rustc /usr/local/bin/rustc
+          sudo ln -sf ~/.cargo/bin/rustup /usr/local/bin/rustup
 
       - name: Dependencies
         working-directory: app
@@ -54,17 +75,15 @@ jobs:
         working-directory: app/rust
         run: cargo fetch
 
-      - name: Pre-build Rust for iOS (to avoid race conditions)
-        run: |
-          rustup toolchain install ${{ env.RUST_VERSION }}
-          rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim --toolchain ${{ env.RUST_VERSION }}
-
-      - name: Build iOS (No Codesign) 
+      - name: Build iOS (No Codesign)
         working-directory: app
         run: |
-          export RUSTUP_TOOLCHAIN=${{ env.RUST_VERSION }}
           set -o pipefail
           flutter build ios --release --no-codesign > build_log.txt 2>&1
+
+      - name: Show tail of build log on failure
+        if: failure()
+        run: tail -n 120 app/build_log.txt || true
 
       - name: Upload Error Log
         if: failure()
