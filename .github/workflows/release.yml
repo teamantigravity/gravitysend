@@ -198,7 +198,7 @@ jobs:
           cd app
           dart run msix:create
           cd ..
-          Move-Item app\build\windows\x64\runner\Release\GravitySend.msix dist\windows\GravitySend-windows-x64.msix
+          Move-Item app\build\windows\x64\runner\Release\gravitysend_app.msix dist\windows\GravitySend-windows-x64.msix
 
 
       - name: Upload Windows Installer
