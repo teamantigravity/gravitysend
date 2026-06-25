@@ -351,6 +351,86 @@ jobs:
           path: dist/linux/
           retention-days: 7
 
+  # ── iOS ────────────────────────────────────────────────────────────────────────
+  ios:
+    name: iOS (IPA / ZIP)
+    needs: version
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Flutter ${{ env.FLUTTER_VERSION }}
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: 'stable'
+          cache: true
+
+      - name: Install Rust (stable) with iOS targets
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-ios,x86_64-apple-ios,aarch64-apple-ios-sim
+
+      - name: Pre-install iOS std (stable + pinned 1.93.1)
+        run: |
+          rustup set auto-self-update disable
+          rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
+          rustup toolchain install 1.93.1 --profile minimal || true
+          rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim --toolchain 1.93.1 || true
+          echo "Installed stable iOS targets:"
+          rustup target list --toolchain stable --installed | grep apple-ios || true
+
+      - name: Symlink Rust for Xcode
+        run: |
+          sudo ln -sf ~/.cargo/bin/cargo /usr/local/bin/cargo
+          sudo ln -sf ~/.cargo/bin/rustc /usr/local/bin/rustc
+          sudo ln -sf ~/.cargo/bin/rustup /usr/local/bin/rustup
+
+      - name: Cache Cargo (macOS)
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: macos-cargo-${{ env.RUST_VERSION }}-${{ hashFiles('app/rust/Cargo.lock', 'app/Cargo.lock') }}
+          restore-keys: macos-cargo-${{ env.RUST_VERSION }}-
+
+      - name: Dependencies
+        working-directory: app
+        run: flutter pub get
+
+      - name: Disable Swift Package Manager
+        working-directory: app
+        run: flutter config --no-enable-swift-package-manager
+
+      - name: Build iOS (No Codesign)
+        working-directory: app
+        run: |
+          set -o pipefail
+          flutter build ios --release --no-codesign > build_log.txt 2>&1
+
+      - name: Show tail of build log on failure
+        if: failure()
+        run: tail -n 120 app/build_log.txt || true
+
+      - name: Package iOS Build
+        working-directory: app
+        run: |
+          cd build/ios/iphoneos
+          # Copy to a payload folder to package as .ipa so iOS can natively install it 
+          mkdir -p Payload
+          cp -r Runner.app Payload/
+          zip -r ../../../../GravitySend-ios.zip Payload/
+
+      - name: Upload iOS artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-build
+          path: app/GravitySend-ios.zip
+          retention-days: 7
+
   # ── Create GitHub Release ─────────────────────────────────────────────────────
   release:
     name: Create GitHub Release
@@ -359,6 +439,7 @@ jobs:
       - android
       - windows
       - macos
+      - ios
       - linux-x64
     runs-on: ubuntu-24.04
     permissions:
@@ -407,10 +488,11 @@ jobs:
             | `GravitySend-windows-x64.exe` | Windows Installer |
             | `GravitySend-windows-x64.msix` | Microsoft Store Package (Auto-updates) |
 
-            ### 🍏 macOS
+            ### 🍏 macOS / iOS
             | File | Notes |
             |---|---|
             | `GravitySend-macos-universal.dmg` | macOS Installer |
+            | `GravitySend-ios.zip` | iOS App Bundle (unsigned) |
 
             ### 🐧 Linux
             | File | Notes |
@@ -419,7 +501,7 @@ jobs:
             | `GravitySend-linux-x86_64.deb` | Debian/Ubuntu installer |
 
             ---
-            🔒 Privacy Policy: https://teamantigravity.vercel.app/privacy/gravitysend.html
+            🔒 Privacy Policy: https://teamantigravity.vercel.app/privacy/gravity-send.html
             📂 Open Source: Built on [LocalSend](https://github.com/localsend/localsend) (Apache-2.0)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
