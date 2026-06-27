@@ -33,7 +33,20 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
   @override
   void initState() {
     super.initState();
-    _loadAd();
+    AdManager.adFreeNotifier.addListener(_onAdFreeChanged);
+    if (!AdManager.adFreeNotifier.value) _loadAd();
+  }
+
+  void _onAdFreeChanged() {
+    if (!mounted) return;
+    if (AdManager.adFreeNotifier.value) {
+      final ad = _ad;
+      if (ad != null) unawaited(ad.dispose());
+      setState(() {
+        _ad = null;
+        _loaded = false;
+      });
+    }
   }
 
   void _loadAd() {
@@ -80,6 +93,7 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
 
   @override
   void dispose() {
+    AdManager.adFreeNotifier.removeListener(_onAdFreeChanged);
     final adToDispose = _ad;
     if (adToDispose != null) unawaited(adToDispose.dispose()); // dispose() is void
     super.dispose();
@@ -87,6 +101,7 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
 
   @override
   Widget build(BuildContext context) {
+    if (AdManager.adFreeNotifier.value) return const SizedBox.shrink();
     final ad = _ad;
     if (ad == null || !_loaded) return const SizedBox.shrink();
     return SizedBox(

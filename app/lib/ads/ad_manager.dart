@@ -21,6 +21,10 @@ class AdManager {
   static InterstitialAd? _interstitialAd;
   static int _interstitialRetryAttempts = 0;
 
+  /// Reactive ad-free state. Widgets (e.g. banners) can listen to this to
+  /// hide ads immediately after an in-app purchase without needing a rebuild.
+  static final ValueNotifier<bool> adFreeNotifier = ValueNotifier<bool>(false);
+
   // ── Init ─────────────────────────────────────────────────────
   static Future<void> init() async {
     // google_mobile_ads is Android/iOS only — skip entirely on desktop/web
@@ -43,6 +47,7 @@ class AdManager {
 
       final prefs = await SharedPreferences.getInstance();
       _adFree = prefs.getBool('gravitysend_ad_free') ?? false;
+      adFreeNotifier.value = _adFree;
       _initialized = true;
       if (!_adFree) _preloadInterstitial();
     } catch (_) {
@@ -57,11 +62,13 @@ class AdManager {
 
   static Future<void> setAdFree(bool value) async {
     _adFree = value;
+    adFreeNotifier.value = value;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('gravitysend_ad_free', value);
     if (value) {
       final ad = _interstitialAd;
       if (ad != null) unawaited(ad.dispose());
+      _interstitialAd = null;
     }
   }
 
