@@ -34,16 +34,7 @@ class AdManager {
       // Await initialization so ad requests don't race with incomplete init
       await MobileAds.instance.initialize();
       
-      if (kDebugMode) {
-        // Enforce test mode configuration for emulators and physical devices in debug
-        final requestConfiguration = RequestConfiguration(
-          testDeviceIds: [
-            // Add standard test device IDs here if needed
-            // 'YOUR_DEVICE_ID', 
-          ],
-        );
-        unawaited(MobileAds.instance.updateRequestConfiguration(requestConfiguration));
-      }
+      // Removed debug overrides to ensure real ads serve globally
 
       final prefs = await SharedPreferences.getInstance();
       _adFree = prefs.getBool('gravitysend_ad_free') ?? false;

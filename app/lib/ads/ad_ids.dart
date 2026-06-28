@@ -12,9 +12,9 @@ import 'package:flutter/foundation.dart';
 
 class AdIds {
   // ── Toggle: automatically use test IDs in debug mode ─
-  // In debug builds → Google test ads. In release builds → real ads (revenue).
-  // Never ship with this hardcoded to `true`, or production serves $0 test ads.
-  static const bool _useTestIds = kDebugMode;
+  // Hardcoded to false to ALWAYS serve real ads per user request.
+  // Warning: Clicking your own live ads during development can lead to AdMob account suspension.
+  static const bool _useTestIds = false;
 
   // ── Google Official Test IDs ─────────────────────────────────
   // Android Test IDs
