@@ -76,7 +76,7 @@ jobs:
           targets: aarch64-linux-android,armv7-linux-androideabi,x86_64-linux-android,i686-linux-android
 
       - name: Cache Cargo
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/.cargo/registry
@@ -162,7 +162,7 @@ jobs:
           toolchain: ${{ env.RUST_VERSION }}
 
       - name: Cache Cargo (Windows)
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~\.cargo\registry
@@ -238,7 +238,7 @@ jobs:
           sudo ln -s ~/.cargo/bin/rustup /usr/local/bin/rustup
 
       - name: Cache Cargo (macOS)
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/.cargo/registry
@@ -302,7 +302,7 @@ jobs:
           toolchain: ${{ env.RUST_VERSION }}
 
       - name: Cache Cargo (Linux)
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/.cargo/registry
@@ -389,7 +389,7 @@ jobs:
           sudo ln -sf ~/.cargo/bin/rustup /usr/local/bin/rustup
 
       - name: Cache Cargo (macOS)
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/.cargo/registry
