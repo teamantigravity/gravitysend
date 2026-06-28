@@ -47,7 +47,7 @@ jobs:
         working-directory: app
         run: flutter config --no-enable-swift-package-manager
 
-      - name: Build macOS with auto-versioning
+      - name: Build macOS 
         working-directory: app
         run: |
           set -o pipefail

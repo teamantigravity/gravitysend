@@ -111,7 +111,7 @@ class _UpgradePageState extends State<UpgradePage> {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 8),
-              Text('One-time purchase. Ads removed forever.',
+              Text('Subscribe to remove ads & support development.',
                 style: Theme.of(context).textTheme.bodyMedium
                     ?.copyWith(color: scheme.onSurfaceVariant),
                 textAlign: TextAlign.center,
@@ -152,7 +152,7 @@ class _UpgradePageState extends State<UpgradePage> {
                     ? const SizedBox(width: 20, height: 20,
                         child: CircularProgressIndicator(strokeWidth: 2,
                           color: Colors.white))
-                    : Text('Remove Ads — ${_product?.price ?? '\$1.99'}',
+                    : Text('Subscribe — ${_product?.price ?? '\$1.99'} / mo',
                         style: const TextStyle(fontSize: 16,
                           fontWeight: FontWeight.w600)),
                 ),

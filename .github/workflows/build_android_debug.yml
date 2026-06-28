@@ -70,7 +70,7 @@ jobs:
         working-directory: app
         run: flutter pub get
 
-      - name: Build Debug APK with auto-versioning
+      - name: Build Debug APK 
         working-directory: app
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}

@@ -84,7 +84,7 @@ jobs:
         working-directory: app
         run: flutter pub get
 
-      - name: Build App Bundle (AAB) with auto-versioning
+      - name: Build App Bundle (AAB) 
         working-directory: app
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
