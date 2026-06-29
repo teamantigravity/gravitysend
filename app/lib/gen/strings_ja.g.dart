@@ -42,7 +42,7 @@ class TranslationsJa extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => '日本語';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$ja general = _Translations$general$ja._(_root);
   @override

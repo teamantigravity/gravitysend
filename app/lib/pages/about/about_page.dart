@@ -26,7 +26,7 @@ class AboutPage extends StatelessWidget {
           const SizedBox(height: 20),
           const LocalSendLogo(withText: true),
           Text(
-            '� ${DateTime.now().year} Team Antigravity',
+            '© ${DateTime.now().year} Team Antigravity',
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 10),

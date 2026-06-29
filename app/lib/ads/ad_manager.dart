@@ -5,14 +5,15 @@ import 'package:gravitysend_app/ads/ad_ids.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Returns true only on platforms where google_mobile_ads is supported.
-/// google_mobile_ads supports Android and iOS only.
+/// google_mobile_ads supports Android and iOS only — desktop/web are excluded.
 bool get _adsSupported =>
     defaultTargetPlatform == TargetPlatform.android ||
     defaultTargetPlatform == TargetPlatform.iOS;
 
-/// Central ad controller for GravitySend.
+/// Central ad controller for Gravity Send.
 /// Call AdManager.init() in main() before runApp().
 /// Call AdManager.showInterstitialAfterTransfer() after a transfer completes.
+/// Call AdManager.showAppOpenAd() on app foreground resume.
 class AdManager {
   AdManager._();
 
@@ -20,10 +21,18 @@ class AdManager {
   static bool _adFree = false;
   static InterstitialAd? _interstitialAd;
   static int _interstitialRetryAttempts = 0;
+  static AppOpenAd? _appOpenAd;
+  static bool _appOpenAdLoading = false;
+  static int _appOpenRetryAttempts = 0;
+  static DateTime? _appOpenLoadTime;
 
   /// Reactive ad-free state. Widgets (e.g. banners) can listen to this to
   /// hide ads immediately after an in-app purchase without needing a rebuild.
   static final ValueNotifier<bool> adFreeNotifier = ValueNotifier<bool>(false);
+
+  /// Reactive initialized state. BannerAdWidget listens to this so it can
+  /// reload itself once AdMob finishes initializing asynchronously.
+  static final ValueNotifier<bool> initializedNotifier = ValueNotifier<bool>(false);
 
   // ── Init ─────────────────────────────────────────────────────
   static Future<void> init() async {
@@ -33,16 +42,19 @@ class AdManager {
     try {
       // Await initialization so ad requests don't race with incomplete init
       await MobileAds.instance.initialize();
-      
-      // Removed debug overrides to ensure real ads serve globally
 
       final prefs = await SharedPreferences.getInstance();
       _adFree = prefs.getBool('gravitysend_ad_free') ?? false;
       adFreeNotifier.value = _adFree;
       _initialized = true;
-      if (!_adFree) _preloadInterstitial();
+      initializedNotifier.value = true;
+
+      if (!_adFree) {
+        _preloadInterstitial();
+        _preloadAppOpenAd();
+      }
     } catch (_) {
-      // If AdMob fails to init (no network, policy issue, simulator, etc.)
+      // If AdMob fails to init (no network, policy issue, etc.)
       // the app continues normally — ads just won't show.
       _initialized = false;
     }
@@ -60,6 +72,9 @@ class AdManager {
       final ad = _interstitialAd;
       if (ad != null) unawaited(ad.dispose());
       _interstitialAd = null;
+      final appOpenAd = _appOpenAd;
+      if (appOpenAd != null) unawaited(appOpenAd.dispose());
+      _appOpenAd = null;
     }
   }
 
@@ -90,14 +105,14 @@ class AdManager {
           _interstitialRetryAttempts = 0;
           _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
             onAdDismissedFullScreenContent: (ad) {
-              unawaited(ad.dispose()); // void — no unawaited needed
+              unawaited(ad.dispose());
               _interstitialAd = null;
-              _preloadInterstitial(); // pre-load next one immediately
+              _preloadInterstitial(); // pre-load next immediately
             },
             onAdFailedToShowFullScreenContent: (ad, _) {
-              unawaited(ad.dispose()); // void
+              unawaited(ad.dispose());
               _interstitialAd = null;
-              _preloadInterstitial(); // pre-load next one immediately if show failed
+              _preloadInterstitial();
             },
           );
         },
@@ -106,9 +121,7 @@ class AdManager {
           _interstitialRetryAttempts++;
           if (_interstitialRetryAttempts < 6) {
             final seconds = 1 << _interstitialRetryAttempts;
-            Future.delayed(Duration(seconds: seconds), () {
-              _preloadInterstitial();
-            });
+            Future.delayed(Duration(seconds: seconds), _preloadInterstitial);
           }
         },
       ),
@@ -118,22 +131,80 @@ class AdManager {
   static int _adhocEventCounter = 0;
 
   /// Call this AFTER a file transfer completes successfully.
-  /// Shows a full-screen ad once, then silently reloads the next.
   static void showInterstitialAfterTransfer() {
     if (!_adsSupported || !_initialized || _adFree || _interstitialAd == null) return;
-    unawaited(_interstitialAd!.show()); // returns Future<void> but fire-and-forget is fine here
+    unawaited(_interstitialAd!.show());
   }
 
   /// Call this on frequent actions (like tab switches or settings opening).
-  /// It will only show the ad every Nth time to avoid spamming the user.
+  /// Shows an ad every 2 qualifying events to maximize revenue.
   static void showInterstitialAdhoc() {
     if (!_adsSupported || !_initialized || _adFree || _interstitialAd == null) return;
-    
     _adhocEventCounter++;
-    // Show interstitial every 4 adhoc events (e.g. tab switches)
-    if (_adhocEventCounter >= 4) {
+    if (_adhocEventCounter >= 2) {
       _adhocEventCounter = 0;
       unawaited(_interstitialAd!.show());
     }
+  }
+
+  // ── App Open Ad ───────────────────────────────────────────────
+  /// Preloads an App Open Ad. Called automatically after init.
+  static void _preloadAppOpenAd() {
+    if (!_adsSupported || !_initialized || _adFree || _appOpenAdLoading) return;
+    if (_appOpenAd != null) return;
+    _appOpenAdLoading = true;
+    AppOpenAd.load(
+      adUnitId: AdIds.appOpen,
+      request: const AdRequest(),
+      adLoadCallback: AppOpenAdLoadCallback(
+        onAdLoaded: (ad) {
+          _appOpenAd = ad;
+          _appOpenAdLoading = false;
+          _appOpenRetryAttempts = 0;
+          _appOpenLoadTime = DateTime.now();
+        },
+        onAdFailedToLoad: (error) {
+          _appOpenAd = null;
+          _appOpenAdLoading = false;
+          _appOpenRetryAttempts++;
+          if (_appOpenRetryAttempts < 5) {
+            final seconds = 1 << _appOpenRetryAttempts;
+            Future.delayed(Duration(seconds: seconds), _preloadAppOpenAd);
+          }
+        },
+      ),
+    );
+  }
+
+  /// Returns true if the loaded App Open Ad is still fresh (< 4 hours old).
+  static bool _isAppOpenAdAvailable() {
+    if (_appOpenAd == null) return false;
+    final loadTime = _appOpenLoadTime;
+    if (loadTime == null) return false;
+    return DateTime.now().difference(loadTime) < const Duration(hours: 4);
+  }
+
+  /// Call this when the app is foregrounded (AppLifecycleState.resumed).
+  /// Shows the App Open Ad if available. Safe to call on all platforms —
+  /// the _adsSupported check ensures no-op on desktop/web.
+  static void showAppOpenAd() {
+    if (!_adsSupported || !_initialized || _adFree) return;
+    if (!_isAppOpenAdAvailable()) {
+      _preloadAppOpenAd(); // reload if stale or missing
+      return;
+    }
+    final ad = _appOpenAd!;
+    _appOpenAd = null;
+    ad.fullScreenContentCallback = FullScreenContentCallback(
+      onAdDismissedFullScreenContent: (ad) {
+        unawaited(ad.dispose());
+        _preloadAppOpenAd(); // pre-load the next one
+      },
+      onAdFailedToShowFullScreenContent: (ad, _) {
+        unawaited(ad.dispose());
+        _preloadAppOpenAd();
+      },
+    );
+    unawaited(ad.show());
   }
 }

@@ -42,7 +42,7 @@ class TranslationsFilPh extends Translations with BaseTranslations<AppLocale, Tr
   @override
   String get locale => 'Filipino';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$fil_PH general = _Translations$general$fil_PH._(_root);
   @override

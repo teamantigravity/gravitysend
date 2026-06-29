@@ -42,7 +42,7 @@ class TranslationsRu extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => 'Русский';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$ru general = _Translations$general$ru._(_root);
   @override

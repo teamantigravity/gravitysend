@@ -43,7 +43,7 @@ class TranslationsSrCyrl extends TranslationsSr with BaseTranslations<AppLocale,
   @override
   String get locale => 'Српски (ћирилица)';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$sr_Cyrl general = _Translations$general$sr_Cyrl._(_root);
   @override

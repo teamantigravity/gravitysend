@@ -9,6 +9,7 @@ import 'package:gravitysend_app/ads/ad_manager.dart';
 /// - Shows nothing if the user is ad-free
 /// - Shows nothing on desktop/web (google_mobile_ads is Android/iOS only)
 /// - Shows nothing while the ad is loading (no layout shift)
+/// - Listens to AdManager.initializedNotifier to reload once AdMob is ready
 ///
 /// Usage — add at the bottom of any Scaffold body column:
 ///
@@ -34,7 +35,21 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
   void initState() {
     super.initState();
     AdManager.adFreeNotifier.addListener(_onAdFreeChanged);
-    if (!AdManager.adFreeNotifier.value) _loadAd();
+    AdManager.initializedNotifier.addListener(_onInitialized);
+
+    if (AdManager.adFreeNotifier.value) return;
+
+    // If already initialized, load immediately. Otherwise wait for the notifier.
+    if (AdManager.initializedNotifier.value) {
+      _loadAd();
+    }
+  }
+
+  void _onInitialized() {
+    if (!mounted) return;
+    if (AdManager.initializedNotifier.value && !AdManager.adFreeNotifier.value) {
+      _loadAd();
+    }
   }
 
   void _onAdFreeChanged() {
@@ -94,8 +109,9 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
   @override
   void dispose() {
     AdManager.adFreeNotifier.removeListener(_onAdFreeChanged);
+    AdManager.initializedNotifier.removeListener(_onInitialized);
     final adToDispose = _ad;
-    if (adToDispose != null) unawaited(adToDispose.dispose()); // dispose() is void
+    if (adToDispose != null) unawaited(adToDispose.dispose());
     super.dispose();
   }
 

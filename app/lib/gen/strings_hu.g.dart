@@ -42,7 +42,7 @@ class TranslationsHu extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => 'Magyar';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$hu general = _Translations$general$hu._(_root);
   @override

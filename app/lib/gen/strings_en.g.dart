@@ -47,7 +47,7 @@ class Translations with BaseTranslations<AppLocale, Translations> {
   String get locale => 'English';
 
   /// en: 'GravitySend'
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
 
   late final Translations$general$en general = Translations$general$en.internal(_root);
   late final Translations$receiveTab$en receiveTab = Translations$receiveTab$en.internal(_root);
@@ -535,7 +535,7 @@ class Translations$aboutPage$en {
   // Translations
 
   /// en: 'About GravitySend'
-  String get title => 'About GravitySend';
+  String get title => 'About Gravity Send';
 
   List<String> get description => [
     'Send files. No cloud. No limits.',
@@ -1144,7 +1144,7 @@ class Translations$settingsTab$other$en {
   String get title => 'Other';
 
   /// en: 'Support GravitySend'
-  String get support => 'Support GravitySend';
+  String get support => 'Support Gravity Send';
 
   /// en: 'Donate'
   String get donate => 'Donate';

@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:gravitysend_app/gen/assets.gen.dart';
 
 class LocalSendLogo extends StatelessWidget {
@@ -8,23 +8,19 @@ class LocalSendLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final logo = ColorFiltered(
-      colorFilter: ColorFilter.mode(
-        Theme.of(context).colorScheme.primary,
-        BlendMode.srcATop,
-      ),
-      child: Assets.img.logo512.image(
-        width: 200,
-        height: 200,
-      ),
-    );
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    // In dark mode: show white variant for contrast. In light mode: show full-color Google logo.
+    final logo = isDark
+        ? Assets.img.logo512White.image(width: 120, height: 120)
+        : Assets.img.logo512.image(width: 120, height: 120);
 
     if (withText) {
       return Column(
         children: [
           logo,
           const Text(
-            'GravitySend',
+            'Gravity Send',
             style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
@@ -35,4 +31,3 @@ class LocalSendLogo extends StatelessWidget {
     }
   }
 }
-

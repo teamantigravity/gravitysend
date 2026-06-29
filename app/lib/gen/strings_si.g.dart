@@ -42,7 +42,7 @@ class TranslationsSi extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => 'සිංහල';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$si general = _Translations$general$si._(_root);
   @override

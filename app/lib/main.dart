@@ -81,6 +81,8 @@ class GravitySendApp extends StatelessWidget {
             switch (state) {
               case AppLifecycleState.resumed:
                 ref.redux(localIpProvider).dispatch(InitLocalIpAction());
+                // Show App Open Ad when user foregrounds the app (Android/iOS only)
+                AdManager.showAppOpenAd();
                 break;
               case AppLifecycleState.detached:
                 // The main isolate is only exited when all child isolates are exited.

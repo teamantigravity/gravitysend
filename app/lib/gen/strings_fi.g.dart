@@ -42,7 +42,7 @@ class TranslationsFi extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => 'Finnish';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$fi general = _Translations$general$fi._(_root);
   @override

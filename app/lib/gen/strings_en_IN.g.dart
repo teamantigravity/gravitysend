@@ -42,7 +42,7 @@ class TranslationsEnIn extends Translations with BaseTranslations<AppLocale, Tra
   @override
   String get locale => 'English(India)';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$en_IN general = _Translations$general$en_IN._(_root);
   @override
@@ -442,7 +442,7 @@ class _Translations$aboutPage$en_IN extends Translations$aboutPage$en {
 
   // Translations
   @override
-  String get title => 'About GravitySend';
+  String get title => 'About Gravity Send';
   @override
   List<String> get description => [
     'GravitySend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.',
@@ -988,7 +988,7 @@ class _Translations$settingsTab$other$en_IN extends Translations$settingsTab$oth
   @override
   String get title => 'Other';
   @override
-  String get support => 'Support GravitySend';
+  String get support => 'Support Gravity Send';
   @override
   String get donate => 'Donate';
   @override

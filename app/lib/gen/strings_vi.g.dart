@@ -42,7 +42,7 @@ class TranslationsVi extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => 'Tiếng Anh';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$vi general = _Translations$general$vi._(_root);
   @override

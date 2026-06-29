@@ -42,7 +42,7 @@ class TranslationsUr extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => 'اردو';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$ur general = _Translations$general$ur._(_root);
   @override

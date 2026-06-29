@@ -42,7 +42,7 @@ class TranslationsZhCn extends Translations with BaseTranslations<AppLocale, Tra
   @override
   String get locale => '简体中文';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final Translations$general$zh_CN general = Translations$general$zh_CN.internal(_root);
   @override

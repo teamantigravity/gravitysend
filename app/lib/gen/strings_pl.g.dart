@@ -42,7 +42,7 @@ class TranslationsPl extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => 'Polski';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$pl general = _Translations$general$pl._(_root);
   @override

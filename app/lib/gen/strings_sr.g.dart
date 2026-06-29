@@ -42,7 +42,7 @@ class TranslationsSr extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => 'Srpski (latinica)';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final Translations$general$sr general = Translations$general$sr.internal(_root);
   @override

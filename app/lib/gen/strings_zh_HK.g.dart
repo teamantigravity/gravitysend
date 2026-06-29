@@ -42,7 +42,7 @@ class TranslationsZhHk extends Translations with BaseTranslations<AppLocale, Tra
   @override
   String get locale => '繁體中文 (香港)';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final Translations$general$zh_HK general = Translations$general$zh_HK.internal(_root);
   @override

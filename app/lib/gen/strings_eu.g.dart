@@ -42,7 +42,7 @@ class TranslationsEu extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => 'Euskara';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$eu general = _Translations$general$eu._(_root);
   @override

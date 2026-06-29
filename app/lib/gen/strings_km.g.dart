@@ -42,7 +42,7 @@ class TranslationsKm extends Translations with BaseTranslations<AppLocale, Trans
   @override
   String get locale => 'ភាសាខ្មែរ';
   @override
-  String get appName => 'GravitySend';
+  String get appName => 'Gravity Send';
   @override
   late final _Translations$general$km general = _Translations$general$km._(_root);
   @override
