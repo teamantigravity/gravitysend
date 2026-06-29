@@ -1,6 +1,7 @@
-﻿import 'package:common/model/file_type.dart';
+import 'package:common/model/file_type.dart';
 import 'package:device_apps/device_apps.dart';
 import 'package:flutter/material.dart';
+import 'package:gravitysend_app/ads/banner_ad_widget.dart';
 import 'package:gravitysend_app/gen/strings.g.dart';
 import 'package:gravitysend_app/provider/apk_provider.dart';
 import 'package:gravitysend_app/provider/selection/selected_sending_files_provider.dart';
@@ -124,164 +125,170 @@ class _ApkPickerPageState extends State<ApkPickerPage> with Refena {
                 ],
               ),
             ),
-      body: ResponsiveListView.single(
-        padding: const EdgeInsets.symmetric(horizontal: 15),
-        tabletPadding: const EdgeInsets.symmetric(horizontal: 15),
-        child: CustomScrollView(
-          slivers: [
-            const SliverToBoxAdapter(
-              child: SizedBox(height: 10),
-            ),
-            SliverPinnedHeader(
-              height: 80,
-              child: Padding(
-                padding: const EdgeInsets.only(top: 10),
-                child: TextFormField(
-                  controller: _textController,
-                  autofocus: true,
-                  onChanged: (s) {
-                    ref.notifier(apkSearchParamProvider).setState((old) => old.copyWith(query: s));
-                    setState(() {});
-                  },
-                  decoration: InputDecoration(
-                    fillColor: ElevationOverlay.applySurfaceTint(
-                      Theme.of(context).inputDecorationTheme.fillColor!,
-                      Theme.of(context).colorScheme.surfaceTint,
-                      3,
-                    ),
-                    prefixIcon: const Icon(Icons.search),
-                    suffixIcon: apkParams.query.isNotEmpty
-                        ? IconButton(
-                            onPressed: () {
-                              ref.notifier(apkSearchParamProvider).setState((old) => old.copyWith(query: ''));
-                              _textController.clear();
-                            },
-                            icon: const Icon(Icons.clear),
-                          )
-                        : Text(apkParams.query),
+      body: Column(
+        children: [
+          Expanded(
+            child: ResponsiveListView.single(
+              padding: const EdgeInsets.symmetric(horizontal: 15),
+              tabletPadding: const EdgeInsets.symmetric(horizontal: 15),
+              child: CustomScrollView(
+                slivers: [
+                  const SliverToBoxAdapter(
+                    child: SizedBox(height: 10),
                   ),
-                ),
-              ),
-            ),
-            SliverToBoxAdapter(
-              child: Row(
-                children: [
-                  Text(t.apkPickerPage.apps(n: apkAsync.data?.length ?? 0)),
-                  const Spacer(),
-                  Row(
-                    children: [
-                      const Text('Select Multiple Apps'),
-                      const SizedBox(width: 5),
-                      Switch(
-                        value: apkParams.selectMultipleApps,
-                        onChanged: (bool newValue) {
-                          setState(() {
-                            apkParams.selectMultipleApps = !apkParams.selectMultipleApps;
-                          });
+                  SliverPinnedHeader(
+                    height: 80,
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 10),
+                      child: TextFormField(
+                        controller: _textController,
+                        autofocus: true,
+                        onChanged: (s) {
+                          ref.notifier(apkSearchParamProvider).setState((old) => old.copyWith(query: s));
+                          setState(() {});
                         },
-                        activeTrackColor: Theme.of(context).colorScheme.primary,
-                        activeThumbColor: Theme.of(context).colorScheme.onPrimary,
-                        inactiveThumbColor: Theme.of(context).colorScheme.outline,
-                        inactiveTrackColor: Theme.of(context).colorScheme.surface,
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            const SliverToBoxAdapter(
-              child: SizedBox(height: 10),
-            ),
-            apkAsync.when(
-              data: (appList) {
-                return SliverList(
-                  delegate: SliverChildBuilderDelegate(
-                    childCount: appList.length,
-                    (context, index) {
-                      final app = appList[index];
-                      final thumbnail = (app as ApplicationWithIcon).icon;
-
-                      return Padding(
-                        padding: const EdgeInsets.only(bottom: 10),
-                        child: InkWell(
-                          onTap: () async => (apkParams.selectMultipleApps) ? _appSelection(app) : _pickApp(app),
-                          customBorder: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
+                        decoration: InputDecoration(
+                          fillColor: ElevationOverlay.applySurfaceTint(
+                            Theme.of(context).inputDecorationTheme.fillColor!,
+                            Theme.of(context).colorScheme.surfaceTint,
+                            3,
                           ),
-                          child: Row(
-                            children: [
-                              MemoryThumbnail(
-                                bytes: thumbnail,
-                                size: 60,
-                                fileType: FileType.apk,
-                              ),
-                              const SizedBox(width: 10),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                          prefixIcon: const Icon(Icons.search),
+                          suffixIcon: apkParams.query.isNotEmpty
+                              ? IconButton(
+                                  onPressed: () {
+                                    ref.notifier(apkSearchParamProvider).setState((old) => old.copyWith(query: ''));
+                                    _textController.clear();
+                                  },
+                                  icon: const Icon(Icons.clear),
+                                )
+                              : Text(apkParams.query),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SliverToBoxAdapter(
+                    child: Row(
+                      children: [
+                        Text(t.apkPickerPage.apps(n: apkAsync.data?.length ?? 0)),
+                        const Spacer(),
+                        Row(
+                          children: [
+                            const Text('Select Multiple Apps'),
+                            const SizedBox(width: 5),
+                            Switch(
+                              value: apkParams.selectMultipleApps,
+                              onChanged: (bool newValue) {
+                                setState(() {
+                                  apkParams.selectMultipleApps = !apkParams.selectMultipleApps;
+                                });
+                              },
+                              activeTrackColor: Theme.of(context).colorScheme.primary,
+                              activeThumbColor: Theme.of(context).colorScheme.onPrimary,
+                              inactiveThumbColor: Theme.of(context).colorScheme.outline,
+                              inactiveTrackColor: Theme.of(context).colorScheme.surface,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SliverToBoxAdapter(
+                    child: SizedBox(height: 10),
+                  ),
+                  apkAsync.when(
+                    data: (appList) {
+                      return SliverList(
+                        delegate: SliverChildBuilderDelegate(
+                          childCount: appList.length,
+                          (context, index) {
+                            final app = appList[index];
+                            final thumbnail = (app as ApplicationWithIcon).icon;
+
+                            return Padding(
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: InkWell(
+                                onTap: () async => (apkParams.selectMultipleApps) ? _appSelection(app) : _pickApp(app),
+                                customBorder: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Row(
                                   children: [
-                                    Text(
-                                      app.appName,
-                                      maxLines: 1,
-                                      overflow: TextOverflow.fade,
-                                      softWrap: false,
+                                    MemoryThumbnail(
+                                      bytes: thumbnail,
+                                      size: 60,
+                                      fileType: FileType.apk,
                                     ),
-                                    Consumer(
-                                      builder: (context, ref) {
-                                        final appSize = ref.watch(apkSizeProvider(app.apkFilePath));
-                                        final appSizeString = appSize.maybeWhen(
-                                          data: (size) => '${size.asReadableFileSize} • ',
-                                          orElse: () => '',
-                                        );
-                                        return Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              '$appSizeString${app.versionName != null ? 'v${app.versionName}' : ''}',
-                                              style: Theme.of(context).textTheme.bodySmall,
-                                            ),
-                                            Text(
-                                              app.packageName,
-                                              style: Theme.of(context).textTheme.bodySmall,
-                                            ),
-                                          ],
-                                        );
-                                      },
+                                    const SizedBox(width: 10),
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            app.appName,
+                                            maxLines: 1,
+                                            overflow: TextOverflow.fade,
+                                            softWrap: false,
+                                          ),
+                                          Consumer(
+                                            builder: (context, ref) {
+                                              final appSize = ref.watch(apkSizeProvider(app.apkFilePath));
+                                              final appSizeString = appSize.maybeWhen(
+                                                data: (size) => '${size.asReadableFileSize} • ',
+                                                orElse: () => '',
+                                              );
+                                              return Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    '$appSizeString${app.versionName != null ? 'v${app.versionName}' : ''}',
+                                                    style: Theme.of(context).textTheme.bodySmall,
+                                                  ),
+                                                  Text(
+                                                    app.packageName,
+                                                    style: Theme.of(context).textTheme.bodySmall,
+                                                  ),
+                                                ],
+                                              );
+                                            },
+                                          ),
+                                        ],
+                                      ),
                                     ),
+                                    if (apkParams.selectMultipleApps)
+                                      Icon(
+                                        _selectedApps.contains(app) ? Icons.check_circle : Icons.radio_button_unchecked,
+                                        color: _selectedApps.contains(app) ? Theme.of(context).iconTheme.color : Colors.grey,
+                                      ),
                                   ],
                                 ),
                               ),
-                              if (apkParams.selectMultipleApps)
-                                Icon(
-                                  _selectedApps.contains(app) ? Icons.check_circle : Icons.radio_button_unchecked,
-                                  color: _selectedApps.contains(app) ? Theme.of(context).iconTheme.color : Colors.grey,
-                                ),
-                            ],
-                          ),
+                            );
+                          },
+                        ),
+                      );
+                    },
+                    error: (e, st) {
+                      return SliverToBoxAdapter(child: Text('Error: $e\n$st'));
+                    },
+                    loading: () {
+                      return const SliverToBoxAdapter(
+                        child: Center(
+                          child: CircularProgressIndicator(),
                         ),
                       );
                     },
                   ),
-                );
-              },
-              error: (e, st) {
-                return SliverToBoxAdapter(child: Text('Error: $e\n$st'));
-              },
-              loading: () {
-                return const SliverToBoxAdapter(
-                  child: Center(
-                    child: CircularProgressIndicator(),
+                  SliverToBoxAdapter(
+                    child: SizedBox(height: getNavBarPadding(context) + 50),
                   ),
-                );
-              },
+                ],
+              ),
             ),
-            SliverToBoxAdapter(
-              child: SizedBox(height: getNavBarPadding(context) + 50),
-            ),
-          ],
-        ),
+          ),
+          const BannerAdWidget(),
+        ],
       ),
     );
   }
 }
-
