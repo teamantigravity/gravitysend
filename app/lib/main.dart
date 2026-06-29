@@ -18,7 +18,6 @@ import 'package:gravitysend_app/widget/watcher/life_cycle_watcher.dart';
 import 'package:gravitysend_app/widget/watcher/shortcut_watcher.dart';
 import 'package:gravitysend_app/widget/watcher/tray_watcher.dart';
 import 'package:gravitysend_app/widget/watcher/window_watcher.dart';
-import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:refena_flutter/refena_flutter.dart';
 import 'package:routerino/routerino.dart';
 
@@ -26,24 +25,6 @@ Future<void> main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
   // Initialize AdMob in the background
   unawaited(AdManager.init());
-
-  // Restore ad-free status on app launch (for returning users)
-  if (defaultTargetPlatform == TargetPlatform.android ||
-      defaultTargetPlatform == TargetPlatform.iOS ||
-      defaultTargetPlatform == TargetPlatform.macOS) {
-    try {
-      InAppPurchase.instance.purchaseStream.listen((purchases) {
-        for (final p in purchases) {
-          if (p.productID == 'gravitysend_remove_ads' &&
-              (p.status == PurchaseStatus.purchased ||
-                  p.status == PurchaseStatus.restored)) {
-            unawaited(AdManager.setAdFree(true));
-            unawaited(InAppPurchase.instance.completePurchase(p));
-          }
-        }
-      });
-    } catch (_) {}
-  }
 
   final RefenaContainer container;
   try {

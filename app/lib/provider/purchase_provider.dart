@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:collection/collection.dart';
+import 'package:gravitysend_app/ads/ad_manager.dart';
 import 'package:gravitysend_app/model/state/purchase_state.dart';
 import 'package:gravitysend_app/util/native/platform_check.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
@@ -107,6 +108,11 @@ class _HandlePurchaseUpdate extends AsyncReduxAction<PurchaseService, PurchaseSt
         throw 'Unknown product ID: ${purchase.productID}';
       }
       dispatch(AddPurchaseAction(purchaseEnum, purchase));
+
+      // If this is the remove-ads product, immediately disable all ads
+      if (purchaseEnum == PurchaseItem.removeAds) {
+        await AdManager.setAdFree(true);
+      }
     }
 
     if (purchase.pendingCompletePurchase) {
