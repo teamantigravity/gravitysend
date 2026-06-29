@@ -137,10 +137,14 @@ class AdManager {
   }
 
   /// Call this on frequent actions (like tab switches or settings opening).
-  /// Shows an ad every time to maximize revenue (aggressive Pro monetization).
+  /// Shows an ad every 4 actions to maintain a professional, balanced frequency.
   static void showInterstitialAdhoc() {
     if (!_adsSupported || !_initialized || _adFree || _interstitialAd == null) return;
-    unawaited(_interstitialAd!.show());
+    _adhocEventCounter++;
+    if (_adhocEventCounter >= 4) {
+      _adhocEventCounter = 0;
+      unawaited(_interstitialAd!.show());
+    }
   }
 
   // ── App Open Ad ───────────────────────────────────────────────
