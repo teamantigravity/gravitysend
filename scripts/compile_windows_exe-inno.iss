@@ -1,5 +1,5 @@
 #define MyAppName "GravitySend"
-#define MyAppVersion "1.0.10"
+#define MyAppVersion "1.0.21"
 #define MyAppPublisher "Team Antigravity"
 #define MyAppURL "https://gravitysend.com"
 #define MyAppExeName "gravitysend.exe"
