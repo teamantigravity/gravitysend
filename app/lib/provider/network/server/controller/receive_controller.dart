@@ -44,6 +44,7 @@ import 'package:gravitysend_app/util/native/platform_check.dart';
 import 'package:gravitysend_app/util/native/tray_helper.dart';
 import 'package:gravitysend_app/util/rust.dart';
 import 'package:gravitysend_app/util/simple_server.dart';
+import 'package:gravitysend_app/util/transfer_service_helper.dart';
 import 'package:gravitysend_app/widget/dialogs/open_file_dialog.dart';
 import 'package:logging/logging.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -362,6 +363,9 @@ class ReceiveController {
       closeSession();
       return await request.respondJson(204);
     }
+
+    // Keep the app's process alive while receiving (screen off / background).
+    unawaited(TransferServiceHelper.start());
 
     server.setState(
       (oldState) {
@@ -827,6 +831,8 @@ class ReceiveController {
       return;
     }
 
+    unawaited(TransferServiceHelper.stop());
+
     server.setState(
       (oldState) => oldState?.copyWith(
         session: null,
@@ -880,4 +886,3 @@ extension on ReceiveSessionState {
     );
   }
 }
-

@@ -63,6 +63,9 @@ class _ProgressPageState extends State<ProgressPage> with Refena {
   Timer? _finishTimer;
   Timer? _wakelockPlusTimer;
 
+  // Sliding window of (timestamp, bytes) used to calculate current transfer speed.
+  final List<({int time, int bytes})> _speedHistory = [];
+
   bool _advanced = false;
 
   @override
@@ -232,18 +235,22 @@ class _ProgressPageState extends State<ProgressPage> with Refena {
 
     final title = receiveSession != null ? t.progressPage.titleReceiving : t.progressPage.titleSending;
     final startTime = commonSessionState.startTime;
-    final endTime = commonSessionState.endTime;
     final int? speedInBytes;
     if (startTime != null && currBytes >= 500 * 1024) {
-      speedInBytes = getFileSpeed(start: startTime, end: endTime ?? DateTime.now().millisecondsSinceEpoch, bytes: currBytes);
-
       final now = DateTime.now().millisecondsSinceEpoch;
+      _speedHistory.add((time: now, bytes: currBytes));
+      // Keep a ~2s sliding window; older samples no longer reflect current throughput.
+      _speedHistory.removeWhere((sample) => now - sample.time > 2000);
+
+      speedInBytes = _speedHistory.length < 2 ? getFileSpeed(start: startTime, end: now, bytes: currBytes) : getFileSpeedFromHistory(_speedHistory);
+
       if (now - _lastRemainingTimeUpdate >= 1000) {
         _remainingTime = getRemainingTime(bytesPerSeconds: speedInBytes, remainingBytes: _totalBytes - currBytes);
         _lastRemainingTimeUpdate = now;
       }
     } else {
       speedInBytes = null;
+      _speedHistory.clear();
     }
 
     final fileStatusMap = receiveSession?.files.map((k, f) => MapEntry(k, f.status)) ?? sendSession!.files.map((k, f) => MapEntry(k, f.status));
@@ -622,4 +629,3 @@ extension on SessionStatus {
     }
   }
 }
-

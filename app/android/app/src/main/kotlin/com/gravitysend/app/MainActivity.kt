@@ -72,6 +72,16 @@ class MainActivity : FlutterActivity() {
                     result.success(isAnimationsEnabled())
                 }
 
+                "startTransferService" -> {
+                    TransferService.start(this)
+                    result.success(null)
+                }
+
+                "stopTransferService" -> {
+                    TransferService.stop(this)
+                    result.success(null)
+                }
+
                 else -> result.notImplemented()
             }
         }
