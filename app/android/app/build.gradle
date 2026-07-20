@@ -80,6 +80,10 @@ android {
         }
     }
 
+    dependencies {
+        implementation 'androidx.core:core:1.13.0'
+    }
+
     // Required by F-Droid
     dependenciesInfo {
         // Disables dependency metadata when building APKs.

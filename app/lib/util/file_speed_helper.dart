@@ -1,4 +1,4 @@
-﻿import 'package:gravitysend_app/gen/strings.g.dart';
+import 'package:gravitysend_app/gen/strings.g.dart';
 
 const _millisecondsPerSecond = 1000;
 const _secondsPerMinute = 60;
@@ -11,7 +11,29 @@ int getFileSpeed({
   required int bytes,
 }) {
   final deltaTime = end - start;
+  if (deltaTime <= 0) {
+    return 0;
+  }
   return (_millisecondsPerSecond * bytes) ~/ deltaTime;
+}
+
+/// Calculates throughput over a recent sliding window of `(timestamp, bytes)` samples.
+/// Use this instead of [getFileSpeed] to avoid speed jumping around because of
+/// stalls earlier in the transfer.
+int getFileSpeedFromHistory(List<({int time, int bytes})> history) {
+  if (history.length < 2) {
+    return 0;
+  }
+
+  final start = history.first;
+  final end = history.last;
+  final deltaTime = end.time - start.time;
+  final deltaBytes = end.bytes - start.bytes;
+  if (deltaTime <= 0 || deltaBytes <= 0) {
+    return 0;
+  }
+
+  return (_millisecondsPerSecond * deltaBytes) ~/ deltaTime;
 }
 
 String getRemainingTime({
@@ -49,4 +71,3 @@ int _getRemainingTime({
 }) {
   return remainingBytes ~/ bytesPerSeconds;
 }
-

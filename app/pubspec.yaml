@@ -3,7 +3,7 @@ description: Send files to nearby devices — fast, private, no cloud.
 homepage: https://gravitysend.com
 publish_to: "none"
 
-version: 1.0.21+58
+version: 1.1.0+59
 
 environment:
   flutter: ^3.25.0
@@ -149,7 +149,7 @@ msix_config:
   display_name: GravitySend
   publisher_display_name: GravitySend Team
   identity_name: GravitySend.App
-  msix_version: 1.0.21.0
+  msix_version: 1.1.0.0
   logo_path: assets\img\app_icon.png
   capabilities: internetClient, localSystemNetwork, internetClientServer
   build_windows: false

@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:common/isolate.dart';
+import 'package:common/model/session_status.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -12,6 +13,8 @@ import 'package:gravitysend_app/gen/strings.g.dart';
 import 'package:gravitysend_app/model/persistence/color_mode.dart';
 import 'package:gravitysend_app/pages/home_page.dart';
 import 'package:gravitysend_app/provider/local_ip_provider.dart';
+import 'package:gravitysend_app/provider/network/send_provider.dart';
+import 'package:gravitysend_app/provider/network/server/server_provider.dart';
 import 'package:gravitysend_app/provider/settings_provider.dart';
 import 'package:gravitysend_app/util/ui/dynamic_colors.dart';
 import 'package:gravitysend_app/widget/watcher/life_cycle_watcher.dart';
@@ -68,7 +71,19 @@ class GravitySendApp extends StatelessWidget {
               case AppLifecycleState.detached:
                 // The main isolate is only exited when all child isolates are exited.
                 // https://github.com/gravitysend/app/issues/1568
-                ref.redux(parentIsolateProvider).dispatch(IsolateDisposeAction());
+                // While a transfer is running, keep the isolates alive so the
+                // foreground service can finish the transfer in the background.
+                final hasActiveTransfer =
+                    ref
+                        .read(sendProvider)
+                        .values
+                        .any(
+                          (s) => s.status == SessionStatus.sending || s.status == SessionStatus.waiting,
+                        ) ||
+                    ref.read(serverProvider)?.session != null;
+                if (!hasActiveTransfer) {
+                  ref.redux(parentIsolateProvider).dispatch(IsolateDisposeAction());
+                }
                 break;
               default:
                 break;
@@ -98,5 +113,3 @@ class GravitySendApp extends StatelessWidget {
     );
   }
 }
-
-

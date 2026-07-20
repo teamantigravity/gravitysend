@@ -53,5 +53,44 @@ void main() {
       expect(getFileSpeed(start: 0, end: 2000, bytes: 4000), 2000);
       expect(getFileSpeed(start: 1000, end: 3000, bytes: 10000), 5000);
     });
+
+    test('guards against zero/negative elapsed time', () {
+      expect(getFileSpeed(start: 0, end: 0, bytes: 1000), 0);
+      expect(getFileSpeed(start: 1000, end: 0, bytes: 1000), 0);
+    });
+  });
+
+  group('getFileSpeedFromHistory', () {
+    test('calculates speed from the first and last sliding window sample', () {
+      final history = [
+        (time: 0, bytes: 0),
+        (time: 1000, bytes: 5000),
+        (time: 2000, bytes: 10000),
+      ];
+      // 10 000 bytes over 2 s = 5 000 B/s
+      expect(getFileSpeedFromHistory(history), 5000);
+    });
+
+    test('returns 0 for histories with fewer than two samples', () {
+      expect(getFileSpeedFromHistory([(time: 0, bytes: 0)]), 0);
+      expect(getFileSpeedFromHistory([]), 0);
+    });
+
+    test('returns 0 when time or byte delta is not positive', () {
+      expect(
+        getFileSpeedFromHistory([
+          (time: 0, bytes: 1000),
+          (time: 0, bytes: 1000),
+        ]),
+        0,
+      );
+      expect(
+        getFileSpeedFromHistory([
+          (time: 0, bytes: 2000),
+          (time: 1000, bytes: 1000),
+        ]),
+        0,
+      );
+    });
   });
 }

@@ -1,0 +1,4 @@
+<resources>
+    <string name="transfer_notification_title">Transfer in progress</string>
+    <string name="transfer_notification_text">GravitySend is transferring files</string>
+</resources>

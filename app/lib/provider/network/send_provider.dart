@@ -25,6 +25,7 @@ import 'package:gravitysend_app/provider/settings_provider.dart';
 import 'package:gravitysend_app/rust/api/http.dart' as rust_http;
 import 'package:gravitysend_app/rust/api/model.dart' as rust_model;
 import 'package:gravitysend_app/util/rust.dart';
+import 'package:gravitysend_app/util/transfer_service_helper.dart';
 import 'package:gravitysend_app/widget/dialogs/pin_dialog.dart';
 import 'package:logging/logging.dart';
 import 'package:refena_flutter/refena_flutter.dart';
@@ -308,6 +309,9 @@ class SendNotifier extends Notifier<Map<String, SendSessionState>> {
       ),
     );
 
+    // Keep the app's process alive while sending (screen off / background).
+    unawaited(TransferServiceHelper.start());
+
     await _sendLoop(ref, sessionId, target, sendingFiles);
   }
 
@@ -576,6 +580,7 @@ class SendNotifier extends Notifier<Map<String, SendSessionState>> {
       return;
     }
     state = state.removeSession(ref, sessionId);
+    unawaited(TransferServiceHelper.stop());
     if (sessionState.status == SessionStatus.finished && ref.read(settingsProvider).sendMode == SendMode.single) {
       // clear selected files
       ref.redux(selectedSendingFilesProvider).dispatch(ClearSelectionAction());
@@ -659,4 +664,3 @@ String? _parseErrorMessage(Object? body) {
     return null;
   }
 }
-
