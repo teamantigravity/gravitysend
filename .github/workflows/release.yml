@@ -130,7 +130,7 @@ jobs:
           cp app/build/app/outputs/bundle/release/app-release.aab           dist/android/GravitySend-android-playstore.aab
 
       - name: Upload Android artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: android
           path: dist/android/
@@ -202,7 +202,7 @@ jobs:
 
 
       - name: Upload Windows Installer
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: windows
           path: dist/windows/
@@ -266,7 +266,7 @@ jobs:
           cp GravitySend.dmg "$GITHUB_WORKSPACE/dist/macos/GravitySend-macos-universal.dmg"
 
       - name: Upload macOS artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: macos
           path: dist/macos/
@@ -345,7 +345,7 @@ jobs:
           fi
 
       - name: Upload Linux artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: linux-x64
           path: dist/linux/
@@ -425,7 +425,7 @@ jobs:
           zip -r ../../../../GravitySend-ios.zip Payload/
 
       - name: Upload iOS artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ios-build
           path: app/GravitySend-ios.zip
